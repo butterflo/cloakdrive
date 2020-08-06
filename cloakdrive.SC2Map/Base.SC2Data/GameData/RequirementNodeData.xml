@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementConst id="10"/>
+    <CRequirementConst id="11">
+        <Tooltip value=""/>
+    </CRequirementConst>
+    <CRequirementConst id="14">
+        <Tooltip value=""/>
+    </CRequirementConst>
+    <CRequirementConst id="21">
+        <Value value="21"/>
+    </CRequirementConst>
+    <CRequirementConst id="3"/>
+    <CRequirementConst id="7">
+        <Tooltip value=""/>
+    </CRequirementConst>
+    <CRequirementConst id="99">
+        <Value value="99"/>
+    </CRequirementConst>
+    <CRequirementAnd id="AndEqCountUpgradeBansheeUpgradeEN12CompleteOnly1EqCountUpgradeBansheeUpgradeEN122InProgressOnly0EqCountUpgradeBansheeUpgradeEN122CompleteOnly0">
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN12CompleteOnly1"/>
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN122InProgressOnly0"/>
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN122CompleteOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountUpgradeBansheeUpgradeEN1CompleteOnly0EqCountUpgradeBansheeUpgradeEN1InProgressOnly0">
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN1CompleteOnly0"/>
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN1InProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountUpgradeBansheeUpgradeEN1CompleteOnly1EqCountUpgradeBansheeUpgradeEN12InProgressOnly0EqCountUpgradeBansheeUpgradeEN12CompleteOnly0">
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN1CompleteOnly1"/>
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN12InProgressOnly0"/>
+        <OperandArray value="EqCountUpgradeBansheeUpgradeEN12CompleteOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradeAssemblyUpgradeREGENCompleteOnly21EqCountUpgradeAssemblyUpgradeREGENInProgressOnly0">
+        <OperandArray value="LTCountUpgradeAssemblyUpgradeREGENCompleteOnly21"/>
+        <OperandArray value="EqCountUpgradeAssemblyUpgradeREGENInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradeBansheeUpgradeATKCompleteOnly99EqCountUpgradeBansheeUpgradeATKInProgressOnly0">
+        <OperandArray value="LTCountUpgradeBansheeUpgradeATKCompleteOnly99"/>
+        <OperandArray value="EqCountUpgradeBansheeUpgradeATKInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradeCloakDriveUpgradeCompleteOnly21EqCountUpgradeCloakDriveUpgradeInProgressOnly0">
+        <OperandArray value="LTCountUpgradeCloakDriveUpgradeCompleteOnly21"/>
+        <OperandArray value="EqCountUpgradeCloakDriveUpgradeInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradeHunterSeekerCompleteOnly14EqCountUpgradeHunterSeekerInProgressOnly0">
+        <OperandArray value="LTCountUpgradeHunterSeekerCompleteOnly14"/>
+        <OperandArray value="EqCountUpgradeHunterSeekerInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradeWraithCloakCompleteOnly14EqCountUpgradeWraithCloakInProgressOnly0">
+        <OperandArray value="LTCountUpgradeWraithCloakCompleteOnly14"/>
+        <OperandArray value="EqCountUpgradeWraithCloakInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorCloakfieldRelayCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="CloakfieldRelay" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="CloakspaceTurbineActive" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWeaponTypeBCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="WeaponTypeB" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUpgrade id="CountUpgradeAssemblyUpgradeREGENCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="AssemblyUpgradeREGEN" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAssemblyUpgradeREGENInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="AssemblyUpgradeREGEN" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeATKCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="BansheeUpgradeATK" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeATKInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="BansheeUpgradeATK" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeEN122CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BansheeUpgradeEN122" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeEN122InProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BansheeUpgradeEN122" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeEN12CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BansheeUpgradeEN12" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeEN12InProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BansheeUpgradeEN12" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeEN1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BansheeUpgradeEN1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeUpgradeEN1InProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BansheeUpgradeEN1" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCloakDriveUpgradeCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="CloakDriveUpgrade" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCloakDriveUpgradeInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="CloakDriveUpgrade" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHunterSeekerCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HunterSeeker" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHunterSeekerInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HunterSeeker" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTITANspreadCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="TITANspread" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeWraithCloakInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="WraithCloak" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="EqCountUpgradeAssemblyUpgradeREGENInProgressOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeAssemblyUpgradeREGENInProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN122CompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN122CompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN122InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN122InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN12CompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN12CompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN12CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN12CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN12InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN12InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN1CompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN1CompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeEN1InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeEN1InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeBansheeUpgradeATKInProgressOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeATKInProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeHunterSeekerInProgressOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeHunterSeekerInProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeWraithCloakInProgressOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeWraithCloakInProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeCloakDriveUpgradeInProgressOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeCloakDriveUpgradeInProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementLT id="LTCountUpgradeAssemblyUpgradeREGENCompleteOnly21">
+        <OperandArray index="0" value="CountUpgradeAssemblyUpgradeREGENCompleteOnly"/>
+        <OperandArray index="1" value="21"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeBansheeUpgradeATKCompleteOnly99">
+        <OperandArray index="0" value="CountUpgradeBansheeUpgradeATKCompleteOnly"/>
+        <OperandArray index="1" value="99"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeCloakDriveUpgradeCompleteOnly21">
+        <OperandArray index="0" value="CountUpgradeCloakDriveUpgradeCompleteOnly"/>
+        <OperandArray index="1" value="21"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeHunterSeekerCompleteOnly14">
+        <OperandArray index="0" value="CountUpgradeHunterSeekerCompleteOnly"/>
+        <OperandArray index="1" value="14"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeWraithCloakCompleteOnly14">
+        <OperandArray index="0" value="CountUpgradeWraithCloakCompleteOnly"/>
+        <OperandArray index="1" value="14"/>
+    </CRequirementLT>
+    <CRequirementNot id="NotCountBehaviorCloakfieldRelayCompleteOnlyAtUnit">
+        <OperandArray index="0" value="CountBehaviorCloakfieldRelayCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorWeaponTypeBCompleteOnlyAtUnit">
+        <OperandArray index="0" value="CountBehaviorWeaponTypeBCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+</Catalog>

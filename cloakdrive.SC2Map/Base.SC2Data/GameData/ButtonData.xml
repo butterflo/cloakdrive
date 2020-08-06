@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="Arbiter">
+        <Hotkey value="Button/Hotkey/ArbiterBTN"/>
+    </CButton>
+    <CButton id="ArbiterMPRecall">
+        <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+    </CButton>
+    <CButton id="ArbiterMPRecall2" parent="ArbiterMPRecall">
+        <Name value="Button/Name/ArbiterMPRecall2"/>
+        <Tooltip value="Button/Tooltip/ArbiterMPRecall2"/>
+        <AlertName value="Button/Name/ArbiterMPRecall2"/>
+        <AlertTooltip value="Button/Tooltip/ArbiterMPRecall2"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="BansheeResistUpgrade3">
+        <Icon value="UI\btn-custom-resist_3up.dds"/>
+        <AlertIcon value="UI\btn-custom-resist_3up.dds"/>
+        <Hotkey value="Button/Hotkey/BansheeENBTN"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="Cancel">
+        <Hotkey value="Button/Hotkey/CancelBTN"/>
+    </CButton>
+    <CButton id="CannonTurnLeft">
+        <Icon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
+    </CButton>
+    <CButton id="CannonTurnRight">
+        <Icon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
+    </CButton>
+    <CButton id="EvasiveCloakDrive">
+        <Icon value="btn-custom-terran-killcloakedunits.dds"/>
+        <AlertIcon value="btn-custom-terran-killcloakedunits.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CloakOnGhost"/>
+        <HidesForSimpleText value="0"/>
+        <HotkeySet value="BansheeBlood"/>
+    </CButton>
+    <CButton id="EvasiveCloakDrive2">
+        <Icon value="btn-custom-terran-killcloakedunits-mass.dds"/>
+        <AlertIcon value="btn-custom-terran-killcloakedunits-mass.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CloakOnGhost"/>
+        <HotkeySet value="BansheeBlood"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="EvasiveCloakDrive3">
+        <Icon value="btn-custom-terran-killcloakedunits-turbine.dds"/>
+        <AlertIcon value="btn-custom-terran-killcloakedunits.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CloakOnGhost"/>
+        <HotkeySet value="BansheeBlood"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Oracle">
+        <Hotkey value="Button/Hotkey/SingularityDeviceBTN"/>
+    </CButton>
+    <CButton id="PhasingMode">
+        <Icon value="btn-ability-inhibitordeploy.dds"/>
+        <AlertIcon value="btn-ability-inhibitordeploy.dds"/>
+        <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+    </CButton>
+    <CButton id="PhoenixHallucination">
+        <Icon value="Assets\Textures\btn-unit-protoss-disruptor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-disruptor.dds"/>
+        <Hotkey value="Button/Hotkey/LuxDriverBTN"/>
+    </CButton>
+    <CButton id="PhotonCruiserBTN">
+        <Icon value="Assets\Textures\btn-unit-terran-battlecruiser.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-battlecruiser.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HidesForSimpleText value="0"/>
+        <HotkeySet value="BansheeBlood"/>
+    </CButton>
+    <CButton id="BuildScienceVessel">
+        <Hotkey value="Button/Hotkey/NeutronVesselBTN"/>
+        <Icon value="Assets\Textures\btn-unit-terran-liberatorblackops.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-liberatorblackops.dds"/>
+        <HidesForSimpleText value="0"/>
+        <HotkeySet value="BansheeBlood"/>
+    </CButton>
+    <CButton id="CancelWaypoint">
+        <Icon value="Assets\Textures\btn-command-holdposition.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-holdposition.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <HotkeySet value="BansheeBlood"/>
+    </CButton>
+    <CButton id="ResearchDurableMaterials">
+        <Icon value="UI\btn-custom-resist_1up.dds"/>
+        <AlertIcon value="UI\btn-custom-resist_1up.dds"/>
+        <Hotkey value="Button/Hotkey/BansheeENBTN"/>
+        <Tooltip value="Button/Tooltip/BansheeResistUpgrade1"/>
+        <AlertName value="Button/Name/BansheeResistUpgrade1"/>
+        <AlertTooltip value="Button/Tooltip/BansheeResistUpgrade1"/>
+        <Name value="Button/Name/BansheeResistUpgrade1"/>
+    </CButton>
+    <CButton id="BansheeResistUpgrade2">
+        <Icon value="UI\btn-custom-resist_2up.dds"/>
+        <AlertIcon value="UI\btn-custom-resist_2up.dds"/>
+        <Hotkey value="Button/Hotkey/BansheeENBTN"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="ResearchMedivacEnergyUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-researchbosoniccore.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-researchbosoniccore.dds"/>
+    </CButton>
+    <CButton id="ResearchRavenEnergyUpgrade">
+        <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <Hotkey value="Button/Hotkey/AssemblyREGENBTN"/>
+    </CButton>
+    <CButton id="ResearchSeekerMissile">
+        <Icon value="Assets\Textures\btn-ability-terran-redlinereactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-redlinereactor.dds"/>
+        <Hotkey value="Button/Hotkey/BansheeRNGBTN"/>
+    </CButton>
+    <CButton id="SOAOrbitalStrike">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-chronomancy.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-chronomancy.dds"/>
+        <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+    </CButton>
+    <CButton id="SOAWarpTech">
+        <Icon value="Assets\Textures\btn-upgrade-karax-reconstructionbeamextratarget.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-karax-reconstructionbeamextratarget.dds"/>
+    </CButton>
+    <CButton id="SetWaypoint">
+        <Icon value="Assets\Textures\ui_btn_aicommand_commandcard_rally.dds"/>
+        <AlertIcon value="Assets\Textures\ui_btn_aicommand_commandcard_rally.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <HotkeySet value="BansheeBlood"/>
+    </CButton>
+    <CButton id="Raven">
+        <Hotkey value="Button/Hotkey/RavenFBTN"/>
+        <HidesForSimpleText value="0"/>
+        <HotkeySet value="BansheeBlood"/>
+    </CButton>
+    <CButton id="TerranBuild">
+        <Icon value="Assets\Textures\btn-building-terran-supplydepotlowered.dds"/>
+        <Hotkey value="Button/Hotkey/BuildBTN"/>
+        <TintRacially value="0"/>
+    </CButton>
+    <CButton id="TerranBuildAdvanced">
+        <Icon value="Assets\Textures\btn-building-terran-supplydepotlowered.dds"/>
+        <Hotkey value="Button/Hotkey/BuildAdvancedBTN"/>
+        <TintRacially value="0"/>
+    </CButton>
+    <CButton id="TerranShipWeaponsLevel3">
+        <Hotkey value="Button/Hotkey/BansheeATKBTN"/>
+    </CButton>
+    <CButton id="TestLearn">
+        <Icon value="Assets\Textures\btn-building-terran-techreactor.dds"/>
+        <Hotkey value="Button/Hotkey/UpgradeBTN"/>
+    </CButton>
+    <CButton id="TransportMode">
+        <Icon value="btn-unit-prisminhibitor.dds"/>
+        <AlertIcon value="btn-unit-prisminhibitor.dds"/>
+        <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+    </CButton>
+    <CButton id="VoodooShield">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
+    </CButton>
+    <CButton id="Vortex">
+        <Icon value="btn-ability-rift.dds"/>
+        <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+    </CButton>
+    <CButton id="WarpPrism">
+        <AlertIcon value="btn-unit-prisminhibitor.dds"/>
+        <Hotkey value="Button/Hotkey/WarpPrismBTN"/>
+        <Icon value="btn-unit-prisminhibitor.dds"/>
+    </CButton>
+    <CButton id="Wraith">
+        <Icon value="btn-custom-protoss-mohandar.dds"/>
+        <AlertIcon value="btn-custom-protoss-mohandar.dds"/>
+        <Hotkey value="Button/Hotkey/SeekerBTN"/>
+        <HotkeySet value="BansheeBlood"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="WraithCloak">
+        <Icon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+    </CButton>
+</Catalog>

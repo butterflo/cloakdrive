@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CGameUI id="Dflt">
+        <SoundData index="Movie" AlertFadeTimeOut="0" AlertFadeTimeIn="0">
+            <VolumeRolloffPoints index="0" Distance="30.000000"/>
+            <VolumeRolloffPoints index="1" Distance="60.000000"/>
+        </SoundData>
+        <SoundData index="Music" AlertFadeTimeOut="0" AlertFadeTimeIn="0" MinimumDuckingLevel="-12.000000"/>
+        <SoundData index="Combat" AlertFadeTimeOut="0" AlertFadeTimeIn="0" AlertFadeVolume="0.000000,0.000000">
+            <VolumeRolloffPoints index="0" Distance="14.000000"/>
+            <VolumeRolloffPoints index="1" Distance="49.000000"/>
+        </SoundData>
+        <GlobalSoundData HeadphoneModeMaxAngle="360.000000"/>
+        <SelectionColors index="Subgroup" value="255,0,250,250"/>
+        <SelectionColors index="Selected" value="255,0,250,250"/>
+    </CGameUI>
+</Catalog>

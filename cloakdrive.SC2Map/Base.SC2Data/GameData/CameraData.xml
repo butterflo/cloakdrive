@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CCamera id="SpacePlatform">
+        <ParamInitial index="FieldOfView" value="165.000000"/>
+        <ParamInitial index="FarClip" value="100000.000000"/>
+        <ParamInitial index="ShadowClip" value="1000.000000"/>
+        <ParamInitial index="Distance" value="10.000000"/>
+        <ParamInitial index="Pitch" value="75.000000"/>
+        <ParamInitial index="HeightOffset" value="3.000000"/>
+        <ZoomTable index="0">
+            <Param index="FieldOfView" Value="116.000000"/>
+            <Param index="Distance" Value="40.000000"/>
+            <Param index="Pitch" Modify="0" Value="0.000000"/>
+        </ZoomTable>
+        <ZoomTable index="1">
+            <Param index="FieldOfView" Value="115.000000"/>
+            <Param index="Distance" Value="32.000000"/>
+            <Param index="Pitch" Modify="0" Value="0.000000"/>
+        </ZoomTable>
+        <ZoomTable index="2">
+            <Param index="FieldOfView" Value="114.000000"/>
+            <Param index="Distance" Value="25.000000"/>
+            <Param index="Pitch" Modify="0" Value="0.000000"/>
+        </ZoomTable>
+        <ZoomTable index="3">
+            <Param index="FieldOfView" Value="113.000000"/>
+            <Param index="Distance" Value="19.000000"/>
+            <Param index="Pitch" Modify="0" Value="0.000000"/>
+        </ZoomTable>
+        <ZoomTable index="4">
+            <Param index="FieldOfView" Value="112.000000"/>
+            <Param index="Distance" Value="14.000000"/>
+            <Param index="Pitch" Modify="0" Value="0.000000"/>
+        </ZoomTable>
+        <ZoomTable>
+            <Param index="Distance" Modify="1" Value="10.000000"/>
+        </ZoomTable>
+        <ZoomDefault value="5"/>
+        <HeightMap value="Camera"/>
+        <BorderSizeX value="16"/>
+        <BorderSizeY value="16"/>
+    </CCamera>
+</Catalog>

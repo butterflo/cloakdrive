@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Asset path="assets\textures\zerg-border-button-game.dds" Type="Image"/>
+<Asset path="assets\textures\ui_loadingbar_metalframe_teran.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-protoss-preordain.dds" Type="Image"/>
+<Asset path="assets\textures\protoss-border-button-game.dds" Type="Image"/>
+<Asset path="assets\textures\ui_leaderpanel_buttonhover_terran.dds" Type="Image"/>
+<Asset path="btn-custom-terran-killcloakedunits-mass.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_frame_bucket_long.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-terran-techreactor.dds" Type="Image"/>
+<Asset path="assets\textures\ui_loadingbar_bar_highlighted_terran.dds" Type="Image"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="Aiur_EnergyWall"/>
+<Actor id="Blast_Craters_Big" Variations="1"/>
+<Actor id="ArtifactShrine"/>
+<Actor id="EnergyNovaShockwave"/>
+<Actor id="AssemblyDestroyedSoundActorMini"/>
+<Actor id="AssemblyDestroyedSoundActor"/>
+<Actor id="EnergyNovaShockwave2"/>
+<Behavior id="GhostCloak"/>
+<Behavior id="VoodooShield"/>
+<Behavior id="CloakfieldRelay"/>
+<Behavior id="CloakspaceTurbineActive2"/>
+<Behavior id="NoNukes"/>
+<Behavior id="Superspeed"/>
+<Behavior id="SpawnProtection"/>
+<Effect id="EnergyNovaSet"/>
+<Light id="PortZion"/>
+<Light id="Valhalla"/>
+<Light id="CutsceneFadeFromWhiteflash"/>
+<Model id="CloakModel"/>
+<Model id="PingBaseAttack"/>
+<Model id="PingBoss"/>
+<Model id="PingWarning"/>
+<Model id="GhostEMPAttackImpactEffect"/>
+<Model id="TimeWarp"/>
+<Model id="WarpPrismPowerVisual"/>
+<Model id="SOAHeroicShieldModel"/>
+<Model id="InhibitorActivateFlare"/>
+<Model id="InhibitorActivateModel"/>
+<Sound id="Terran_ExplosionLarge"/>
+<Sound id="Battlecruiser_YamatoAttackChargeUp" Variations="0"/>
+<Sound id="Ghost_NukeExplode" Variations="0"/>
+<Sound id="Immortal_HardenedShieldImpact"/>
+<Sound id="Mothership_AttackLaunch" Variations="0"/>
+<Sound id="Mothership_VortexLoop" Variations="0"/>
+<Sound id="AICommunication_TerranAICommand_024"/>
+<Sound id="AICommunication_TerranAICommand_107"/>
+<Sound id="AICommunication_TerranAICommand_261" Variations="0"/>
+<Sound id="UI_Unlock" Variations="2"/>
+<Sound id="UI_Bnet_PopUp_Generic" Variations="1,2"/>
+<Sound id="UI_ScoreScreenMissionCreditsLoop" Variations="0"/>
+<Sound id="UI_ScoreScreenMissionName" Variations="0"/>
+<Sound id="UI_MercenaryBriefcase_HireMerc" Variations="0"/>
+<Sound id="UI_TransmissionText" Variations="0"/>
+<Sound id="UI_ChatMessageReceived" Variations="0"/>
+<Sound id="UI_ReplayDropdownListSelect" Variations="0"/>
+<Sound id="Raven_DefensiveMatrixBirth" Variations="0"/>
+<Sound id="UI_TerranKlaxonAlert" Variations="0"/>
+<Sound id="WidowMine_ArmedBeep"/>
+<Sound id="Artifact_EnergyNova" Variations="0"/>
+<Sound id="Raynor_MorosDeviceStart" Variations="0"/>
+<Sound id="ArmoryDropShip_Work" Variations="0"/>
+<Sound id="ArmoryIntro_DoorOpen"/>
+<Sound id="HybridDYes" Variations="2"/>
+<Sound id="THorner03BriefingTychus00019"/>
+<Sound id="THorner05SRaynor00018"/>
+<Sound id="TTosh03BBriefingNova00010"/>
+<Sound id="TTychus02BriefingAdjutant00001"/>
+<Sound id="TTychus05Adjutant00011"/>
+<Sound id="TValerian02ASwann00058"/>
+<Sound id="TValerian02ATychus00061"/>
+<Sound id="TValerian02BRaynor00010"/>
+<Sound id="THorner03Tychus00032"/>
+<Sound id="Core_TransformEndHit" Variations="0"/>
+<Sound id="Core_SpinUp" Variations="0"/>
+<Sound id="PsiDecimator_PreExplosion_PowerFlux" Variations="0"/>
+<Sound id="Umojan_Lab02Tram_speedup" Variations="0"/>
+<Sound id="zUnit_HeroQueen_zExpedtion03Queen_038" Variations="0"/>
+<Sound id="zUnit_TacFighter_TacFighterPilot_005" Variations="0"/>
+<Sound id="zMission_Space02_Valerian_120"/>
+<Sound id="zCutscene_Zerg03_DeckOfficer3_005"/>
+<Sound id="zMission_Lab02_Lab02Mech_121" Variations="0"/>
+<Sound id="StarShip_Adun_Turret_Mech_Charge"/>
+<Sound id="AdunGeneratorPowerUpSound"/>
+<Sound id="Pylon_Containment_Unit_Power_Down"/>
+<Sound id="Event_Aiur03_Victory_BlastOff_QUAD" Variations="0"/>
+<Sound id="Event_Aiur03_Victory_SoA_RollOut" Variations="0"/>
+<Sound id="Event_Aiur03_Victory_Energy_Swirl_LR" Variations="0"/>
+<Sound id="BansheeBGM1"/>
+<Sound id="BansheeBGM2"/>
+<Sound id="BansheeBGM3"/>
+<Sound id="Battlecruiser_YamatoAttackChargeUp2"/>
+<Sound id="InhibitorActivate"/>
+<Sound id="InhibitorUberShield"/>
+<Sound id="PurifierClick" Variations="0"/>
+<Sound id="Raynor_MorosDeviceStart2"/>
+<Sound id="Raynor_MorosDeviceStart22"/>
+<Sound id="BansheeBGM0"/>
+<Soundtrack id="Music_Silence"/>
+<Soundtrack id="BansheeOST0"/>
+<Soundtrack id="BansheeOST1"/>
+<Soundtrack id="BansheeOST2"/>
+<Soundtrack id="BansheeOST3"/>
+<Soundtrack id="BansheeOSTT1"/>
+<Soundtrack id="BansheeOSTT2"/>
+<Terrain id="BraxisAlphaEx1"/>
+<Unit id="GhostAcademy"/>
+<Unit id="Banshee"/>
+<Unit id="Raven"/>
+<Unit id="Battlecruiser"/>
+<Unit id="WarpPrism"/>
+<Unit id="WarpPrismPhasing"/>
+<Unit id="Oracle"/>
+<Unit id="Disruptor"/>
+<Unit id="Beacon_Protoss"/>
+<Unit id="Beacon_Terran"/>
+<Unit id="DuskWing"/>
+<Unit id="ScienceVessel"/>
+<Unit id="VoidSeeker"/>
+<Unit id="RipFieldGenerator"/>
+<Unit id="LabTurret"/>
+<Unit id="ExpeditionJumpGate"/>
+<Unit id="ArbiterMP"/>
+<Unit id="VoidRiftUnselectable"/>
+<Unit id="PylonContainmentUnit"/>
+</Preload>

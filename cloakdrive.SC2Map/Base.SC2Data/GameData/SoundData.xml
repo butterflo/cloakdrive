@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="AICommunication_TerranAICommand_024">
+        <Category value="Movie"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="AICommunication_TerranAICommand_107">
+        <Category value="Movie"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="AICommunication_TerranAICommand_261">
+        <Category value="Movie"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="AdunGeneratorPowerUpSound">
+        <Category value="Movie"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Aiur_EnergyWall_Loop">
+        <Volume value="-12.000000,-12.000000"/>
+    </CSound>
+    <CSound id="Archon_LandSweetener">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="ArmoryDropShip_Work">
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="ArmoryIntro_DoorOpen">
+        <Volume value="-7.000000,-7.000000"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="BansheeBGM1" parent="MUSIC">
+        <AssetArray File="bgm1.ogg" FacialGroup=""/>
+        <Flags index="Wait" value="1"/>
+        <Pitch value="-1.000000,-1.000000"/>
+        <SpeakerMix index="LFE" value="2.000000"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="BansheeBGM2" parent="MUSIC">
+        <AssetArray File="bgm2.ogg" Volume="3.000000,3.000000" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+        <SpeakerMix index="LFE" value="2.000000"/>
+        <Flags index="Wait" value="1"/>
+    </CSound>
+    <CSound id="BansheeBGM3" parent="MUSIC">
+        <AssetArray File="bgm3.ogg" Volume="3.000000,3.000000" FacialGroup="">
+            <SyncPoints value="11483640"/>
+            <SyncPoints value="12030480"/>
+        </AssetArray>
+        <Flags index="Wait" value="1"/>
+        <Pitch value="-1.000000,-1.000000"/>
+        <SpeakerMix index="LFE" value="2.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="BansheeBGMT1" parent="MUSIC">
+        <AssetArray File="The Grid.ogg" Volume="3.000000,3.000000" FacialGroup="">
+            <SyncPoints value="11483640"/>
+            <SyncPoints value="12030480"/>
+        </AssetArray>
+        <Flags index="Wait" value="1"/>
+        <SpeakerMix index="LFE" value="2.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="BansheeBGMT2" parent="MUSIC">
+        <AssetArray File="Anthropocene.ogg" Volume="3.000000,3.000000" FacialGroup="">
+            <SyncPoints value="11483640"/>
+            <SyncPoints value="12030480"/>
+        </AssetArray>
+        <Flags index="Wait" value="1"/>
+        <SpeakerMix index="LFE" value="2.000000"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="Banshee_Attack"/>
+    <CSound id="Banshee_AttackImpact2">
+        <AssetArray index="0" File="Assets\Sounds\PowerCore_Boom_01.wav"/>
+        <AssetArray index="1" File="Assets\Sounds\PowerCore_Boom_02.wav"/>
+        <AssetArray index="2" File="Assets\Sounds\PowerCore_Boom_03.wav"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Battlecruiser_GroundAttackLaunch">
+        <DupeDestroyCount value="24"/>
+        <DupeMuteCount value="24"/>
+        <Pitch value="0.000000,0.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Battlecruiser_YamatoAttackChargeUp">
+        <Category value="Combat"/>
+        <Pitch value="7.000000,7.000000"/>
+        <Volume value="-7.000000,-7.000000"/>
+    </CSound>
+    <CSound id="Battlecruiser_YamatoAttackChargeUp2" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_YamatoAttackCharge0.wav"/>
+        <Category value="Combat"/>
+        <DupeDestroyCount value="8"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="8"/>
+        <Pitch value="7.000000,7.000000"/>
+    </CSound>
+    <CSound id="Core_SpinUp">
+        <Flags index="Download" value="1"/>
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Pitch value="-4.000000,-4.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Core_TransformEndHit">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Pitch value="-4.000000,-4.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Doodad_DominionEnergyCannon_Launch">
+        <AssetArray index="1" File="Assets\Sounds\Doodad_DominionEnergyCannon_Launch_01.wav" Volume="3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Doodad_DominionEnergyCannon_Launch_06.wav" FacialGroup=""/>
+        <AssetArray index="6" File="Assets\Sounds\Doodad_DominionEnergyCannon_Launch_07.wav" FacialGroup=""/>
+        <AssetArray index="7" removed="1"/>
+        <Flags index="Download" value="1"/>
+        <Flags index="Purgable" value="1"/>
+        <Category value="Combat"/>
+        <DupeMuteCount value="20"/>
+        <Pitch value="-3.000000,-3.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Doodad_SparkBurstLong">
+        <Category value="Combat"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Doodad_SparkBurstShort">
+        <Category value="Combat"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Doodad_XelNagaHalo">
+        <LoopCount value="0"/>
+    </CSound>
+    <CSound id="Eradicator_Explode">
+        <Flags index="Ignorable" value="0"/>
+        <Flags index="Purgable" value="1"/>
+        <Flags index="Wait" value="1"/>
+        <Category value="Movie"/>
+        <PanLevel value="0.000000"/>
+        <Pitch value="-7.000000,-7.000000"/>
+        <SpeakerMix index="LFE" value="1.000000"/>
+        <VolumeRolloffPoints index="0" removed="1"/>
+        <VolumeRolloffPoints index="1" removed="1"/>
+    </CSound>
+    <CSound id="CarrierDestroyedMini" parent="Death">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Shakuras_Vault_ObjectFloat_Up02.wav" FacialGroup=""/>
+        <Flags index="Ignorable" value="0"/>
+        <Flags index="Purgable" value="1"/>
+        <Flags index="Wait" value="1"/>
+        <Category value="Movie"/>
+        <PanLevel value="0.000000"/>
+        <Pitch value="7.000000,7.000000"/>
+        <SpeakerMix index="LFE" value="1.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Event_Aiur03_Victory_BlastOff_QUAD">
+        <Category value="Movie"/>
+        <SpeakerMix index="Center" value="1.000000"/>
+        <SpeakerMix index="SideLeft" value="1.000000"/>
+        <SpeakerMix index="SideRight" value="1.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Event_Aiur03_Victory_Energy_Swirl_LR">
+        <Category value="Movie"/>
+        <SpeakerMix index="Center" value="1.000000"/>
+        <SpeakerMix index="BackLeft" value="1.000000"/>
+        <SpeakerMix index="BackRight" value="1.000000"/>
+        <SpeakerMix index="SideLeft" value="1.000000"/>
+        <SpeakerMix index="SideRight" value="1.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Event_Aiur03_Victory_SoA_RollOut">
+        <Category value="Movie"/>
+        <SpeakerMix index="Center" value="1.000000"/>
+        <SpeakerMix index="BackLeft" value="1.000000"/>
+        <SpeakerMix index="BackRight" value="1.000000"/>
+        <SpeakerMix index="SideLeft" value="1.000000"/>
+        <SpeakerMix index="SideRight" value="1.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Ghost_NukeDrop">
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="Ghost_NukeExplode">
+        <Flags index="Purgable" value="0"/>
+        <Category value="Combat"/>
+        <Pitch value="-7.000000,-7.000000"/>
+        <SpeakerMix index="LFE" value="1.000000"/>
+        <Spread value="0.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Ghost_NukeLaunch">
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="Ghost_NukeSeek">
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="HybridDYes">
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="HyperionYamatoSpecialAttackImpact">
+        <AssetArray index="0" File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_DefensiveMatrixDeath0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Pitch value="14.000000,21.000000"/>
+    </CSound>
+    <CSound id="HyperionYamatoSpecialAttackLaunch">
+        <Category value="Combat"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Immortal_HardenedShieldImpact">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="InhibitorActivate" parent="Spell">
+        <AssetArray File="Assets\Sounds\Protoss\Purifier\Purifier_PlanetCracker0.wav" FacialGroup=""/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Combat"/>
+        <Pitch value="-7.000000,-7.000000"/>
+    </CSound>
+    <CSound id="Liberator_AA_Morph">
+        <Pitch value="-14.000000,-14.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Liberator_AG_Morph">
+        <Pitch value="-14.000000,-14.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Mothership_AttackLaunch">
+        <AssetArray index="1" removed="1"/>
+        <Pitch value="-14.000000,-14.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Mothership_TimeWarpLaunch">
+        <AssetArray index="0" File="Assets\Sounds\DominionCannon_Rotate.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="AnnihilatorSoundHitSound" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="pcorlasr1.ogg" FacialGroup=""/>
+        <AssetArray File="pcorlasr2.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <DupeDestroyCount value="48"/>
+        <DupeHistoryCount value="1"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="32"/>
+        <Pitch value="-5.000000,-5.000000"/>
+        <Volume value="5.000000,5.000000"/>
+    </CSound>
+    <CSound id="Mothership_VortexLoop">
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="Mothership_VortexStart">
+        <Category value="Combat"/>
+        <Pitch value="-4.000000,-4.000000"/>
+    </CSound>
+    <CSound id="Obelisk_WarpJumpEnd">
+        <Pitch value="14.000000,14.000000"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="Obelisk_WarpJumpLoop">
+        <Category value="Combat"/>
+        <LoopCount value="1"/>
+        <Pitch value="7.000000,7.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Oracle_StasisTrap_Explode">
+        <AssetArray index="0" File="Assets\Sounds\Karax_ReclamCast_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Karax_ReclamCast_02.wav" FacialGroup=""/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="InhibitorSound" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Protoss\Obelisk\Obelisk_ProtonChargeLoop.wav" Volume="6.000000,6.000000" FacialGroup=""/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Combat"/>
+        <LoopCount value="-1"/>
+        <Pitch value="-7.000000,-7.000000"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="OrbitalCommand_Movement">
+        <Category value="Combat"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="OrbitalCommand_ScannerSweep">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_BuildingPlacement0.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Pitch value="4.900000,4.900000"/>
+    </CSound>
+    <CSound id="OrbitalCommand_ScannerSweep2" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown1.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown1a.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown2.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown2a.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown3.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown3a.ogg" FacialGroup=""/>
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="InhibitorUberShield">
+        <EditorCategories value="Race:Neutral"/>
+        <AssetArray File="protect3.wav" Volume="6.000000,6.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="PPurifier01_PurifierVault_StandWorkStart_A">
+        <Category value="Combat"/>
+        <PlayDelay value="500,500"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="PhotonCannon_AttackImpact">
+        <Volume value="-7.000000,-7.000000"/>
+    </CSound>
+    <CSound id="PhotonCannon_AttackLaunch">
+        <Pitch value="0.000000,0.000000"/>
+        <Volume value="0.000000,0.000000"/>
+        <SpeakerMix index="FrontLeft" value="0.500000"/>
+        <SpeakerMix index="FrontRight" value="0.500000"/>
+        <SpeakerMix index="Center" value="0.500000"/>
+        <SpeakerMix index="LFE" value="4.000000"/>
+        <SpeakerMix index="BackLeft" value="0.500000"/>
+        <SpeakerMix index="BackRight" value="0.500000"/>
+        <SpeakerMix index="SideLeft" value="0.500000"/>
+        <SpeakerMix index="SideRight" value="0.500000"/>
+        <AssetArray index="0" File="plasmx1a.wav"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <DupeDestroyCount value="128"/>
+        <DupeMuteCount value="120"/>
+    </CSound>
+    <CSound id="PirateCapitalShip_YamatoAttackLaunch">
+        <Volume value="1.000000,2.000000"/>
+    </CSound>
+    <CSound id="Probe_AttackImpact">
+        <AssetArray index="0" File="Assets\Sounds\El_Grande_Explosion_01a.wav"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Probe_AttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\VoidShard_Zone_Launch_01.wav" Volume="0.000000,4.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\VoidShard_Zone_Launch_01a.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\VoidShard_Zone_Launch_01b.wav" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\VoidShard_Zone_Launch_03a.wav" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\VoidShard_Zone_Launch_03b.wav" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="PsiDecimator_PreExplosion_PowerFlux">
+        <Category value="Combat"/>
+        <Pitch value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="PsiPowerLink_Amb_Lp">
+        <Category value="Combat"/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
+    <CSound id="PurifierClick">
+        <EditorCategories value="Race:Neutral"/>
+        <AssetArray File="Assets\Sounds\Uni\UI\Replay_Click.wav" FacialGroup=""/>
+        <Category value="Movie"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Pylon_Containment_Unit_Power_Down">
+        <Category value="Movie"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Raven_DefensiveMatrixBirth">
+        <Category value="Movie"/>
+        <Mode value="3DHead"/>
+        <PanLevel value="0.000000"/>
+        <Pitch value="-7.000000,-7.000000"/>
+        <SpeakerMix index="Center" value="0.000000"/>
+        <SpeakerMix index="LFE" value="5.000000"/>
+    </CSound>
+    <CSound id="Raynor_MorosDeviceStart">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Sentry\Sentry_GuardianShieldLaunch0.wav" Pitch="7.000000,7.000000" Volume="-7.000000,-7.000000"/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Movie"/>
+        <DupeDestroyCount value="343"/>
+        <DupeMuteCount value="343"/>
+        <SpeakerMix index="LFE" value="5.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Raynor_MorosDeviceStart2" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Spell_HyperionJumpOut_00.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Spell_HyperionJumpOut_01.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Spell_HyperionJumpOut_02.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Movie"/>
+        <DupeDestroyCount value="14"/>
+        <DupeMuteCount value="14"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="Raynor_MorosDeviceStart22" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Spell_HyperionJumpOut_00.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Spell_HyperionJumpOut_01.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Spell_HyperionJumpOut_02.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Movie"/>
+        <DupeDestroyCount value="14"/>
+        <DupeMuteCount value="14"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="SOAPurifierBeamEnd">
+        <Category value="Movie"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="SOAPurifierBeamFiring_Loop">
+        <Category value="Movie"/>
+        <Mode value="3DHead"/>
+        <Volume value="-40.000000,-40.000000"/>
+        <AssetArray index="0" File="Assets\Sounds\VoidRift_St_Launch_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\VoidRift_St_Launch_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\VoidRift_St_Launch_03.wav" FacialGroup=""/>
+        <LoopCount value="0"/>
+        <Pitch value="-3.000000,-3.000000"/>
+        <SpeakerMix index="LFE" value="5.000000"/>
+    </CSound>
+    <CSound id="Scout_AirAttackImpact">
+        <Pitch value="-7.000000,-7.000000"/>
+        <AssetArray index="0" File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion01.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion02.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion03.wav" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion06.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion07.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\HH_Hellion_Grenade_ImpactExplosion08.wav" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Scout_AirAttackLaunch">
+        <Pitch value="-7.000000,-7.000000"/>
+        <AssetArray index="0" File="Assets\Sounds\WarMissile_Launch00.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\WarMissile_Launch01.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\WarMissile_Launch02.wav" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+    </CSound>
+    <CSound id="BansheeBGM0" parent="MUSIC">
+        <AssetArray File="bgm0.ogg" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+        <Pitch value="-1.000000,-1.000000"/>
+        <SpeakerMix index="LFE" value="2.000000"/>
+        <Flags index="Wait" value="1"/>
+    </CSound>
+    <CSound id="Sentry_ForceFieldLaunch">
+        <AssetArray index="0" removed="1"/>
+    </CSound>
+    <CSound id="Shakura_Xelnaga_Temple_Raise">
+        <Pitch value="1.000000,1.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="SiegeBreaker_SiegedAttackLaunch">
+        <Flags index="AutoUnload" value="1"/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Movie"/>
+        <DupeDestroyCount value="64"/>
+        <DupeMuteCount value="64"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="Spectre_UltrasonicPulseImpact">
+        <AssetArray index="0" File="Assets\Sounds\Oracle_Land_01.wav"/>
+        <AssetArray index="1" File="Assets\Sounds\Oracle_Land_02.wav"/>
+        <AssetArray index="2" File="Assets\Sounds\Oracle_Land_03.wav"/>
+        <AssetArray File="Assets\Sounds\Oracle_Land_04.wav"/>
+        <Volume value="6.000000,6.000000"/>
+        <Category value="Combat"/>
+        <Pitch value="0.000000,1.000000"/>
+    </CSound>
+    <CSound id="StarShip_Adun_Turret_Mech_Charge">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="THorner03BriefingTychus00019">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="THorner03Tychus00032">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="THorner05SRaynor00018">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="TRaynor01Raynor00039">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="TTosh03BBriefingNova00010">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TTychus02BriefingAdjutant00001">
+        <Category value="Movie"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TTychus05Adjutant00011">
+        <Category value="Movie"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TValerian02ASwann00058">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TValerian02ATychus00061">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TValerian02BRaynor00010">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TValerian02BRaynor00036">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="TitanMechGunShotChargeSound2">
+        <AssetArray index="0" File="Assets\Sounds\PUlnar01_CelestialLock_StandWorkStart_0237ms_1ch.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Volume value="6.000000,6.000000"/>
+        <Pitch value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Tosh_PsiShieldBirth"/>
+    <CSound id="UI_BnetCountdown321">
+        <Flags index="Ignorable" value="0"/>
+        <Category value="Movie"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="UI_BnetError">
+        <Flags index="Ignorable" value="0"/>
+        <Category value="Movie"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="UI_CampaignNPCSelect">
+        <AssetArray index="0" File="Assets\Sounds\Uni\UI\UI_CampaignNPCSelect.wav" LoopCount="1" LoopTime="0,7777"/>
+        <Category value="Movie"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="UI_MercenaryBriefcase_HireMerc">
+        <AssetArray index="0" File="Assets\Sounds\Uni\UI\UI_MercenaryBriefcase_HireMerc_2.wav"/>
+        <AssetArray index="1" removed="1"/>
+        <Flags index="Ignorable" value="0"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="UI_NovaUT_EquipClick">
+        <AssetArray index="0" File="Assets\Sounds\Terran\CommandCenter\CommandCenter_Land.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SpeakerMix index="FrontLeft" value="1.000000"/>
+        <SpeakerMix index="FrontRight" value="1.000000"/>
+        <SpeakerMix index="BackLeft" value="1.000000"/>
+        <SpeakerMix index="BackRight" value="1.000000"/>
+        <SpeakerMix index="SideLeft" value="1.000000"/>
+        <SpeakerMix index="SideRight" value="1.000000"/>
+        <Volume value="5.000000,5.000000"/>
+    </CSound>
+    <CSound id="UI_ScoreScreenMissionCreditsLoop">
+        <Pitch value="-1.000000,-1.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+        <Flags index="Ignorable" value="0"/>
+    </CSound>
+    <CSound id="UI_Starmap_ZoomIn">
+        <Flags index="Ignorable" value="0"/>
+        <Category value="Music"/>
+        <Mode value="3DHead"/>
+        <Pitch value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="UI_TerranKlaxonAlert">
+        <Pitch value="-7.000000,-7.000000"/>
+        <Volume value="0.000000,0.000000"/>
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="UI_TutorialSelect">
+        <Pitch value="-3.000000,-3.000000"/>
+        <Volume value="-14.000000,-14.000000"/>
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="Umojan_Lab02Tram_speedup">
+        <Flags index="Stream" value="1"/>
+        <Category value="Movie"/>
+        <Mode value="3DWorld"/>
+        <Pitch value="-14.000000,-14.000000"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="VoidSeeker_AttackImpact">
+        <Category value="Movie"/>
+        <AssetArray index="0" File="Assets\Sounds\ArbiterMP_DeathExplosion00.wav"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="WidowMine_ArmedBeep">
+        <AssetArray index="0" File="Assets\Sounds\WidowMine_Pulse.wav" LoopCount="2" FacialGroup=""/>
+        <Flags index="Purgable" value="0"/>
+        <Category value="Movie"/>
+        <Chance value="100"/>
+        <Mode value="2D"/>
+        <Pitch value="0.000000,0.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="XelNaga_Techno_Holo_Planet_DNA_Sculpture_Stand_A">
+        <Category value="Combat"/>
+        <Pitch value="0.000000,2.000000"/>
+        <AssetArray index="0" File="Assets\Sounds\Shakuras_Temple_Rise01.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="zCutscene_Zerg03_DeckOfficer3_005">
+        <Category value="Movie"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="zMission_Lab02_Lab02Mech_121">
+        <Category value="Movie"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="zMission_Space02_Valerian_120">
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="zUnit_HeroQueen_zExpedtion03Queen_038">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="zUnit_TacFighter_TacFighterPilot_003">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="zUnit_TacFighter_TacFighterPilot_005">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+</Catalog>

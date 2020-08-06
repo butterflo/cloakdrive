@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectTarget id="ArbiterMPRecall">
+        <Effect index="0" value="CloakDriveDummyMassLonger"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown Link="Abil/ArbiterMPRecall" TimeUse="70"/>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements="IsNotTransferring"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ArtanisPsionicShockwave">
+        <Effect index="0" value="SolarisDELAY"/>
+        <Cost index="0">
+            <Cooldown TimeUse="70"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilAttack id="AttackAllowsInvulnerable">
+        <CmdButtonArray index="Execute">
+            <Flags index="AllowSelfCast" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Towards">
+            <Flags index="AllowSelfCast" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Barrage">
+            <Flags index="AllowSelfCast" value="1"/>
+        </CmdButtonArray>
+        <AcquireFilters value="-;-"/>
+        <SmartFilters value="-;-"/>
+        <SupportedFilters value="-;-"/>
+    </CAbilAttack>
+    <CAbilEffectTarget id="ForceField">
+        <AbilSetId value="CloakDriveSingular"/>
+        <Effect index="0" value="WarpSingularDUMMY"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="LineMovement" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <VitalFraction index="Energy" value="1"/>
+            <Cooldown Link="Abil/CloakDriveSingular"/>
+        </Cost>
+        <Range index="0" value="500"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <ArcSlop value="360"/>
+        <CursorEffect index="0" removed="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EvasiveCloakDrive" Requirements="HasNoTurbineCharge">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <PlaceUnit value=""/>
+        <FollowRange value="0"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="CloakdriveTurbine" parent="ForceField">
+        <Name value="Abil/Name/CloakdriveTurbine"/>
+        <AbilSetId value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EvasiveCloakDrive3" State="Suppressed" Requirements="HasTurbineCharge"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="GuardianShield">
+        <Effect index="0" value="RiftCHARGE"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <HideCount value="1"/>
+            </Charge>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Vortex"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HallucinationOracle">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown>
+                <Link value="Abil/BansheeArenaSpecialUnit"/>
+                <Location value="Player"/>
+                <TimeStart value="280"/>
+                <TimeUse value="280"/>
+            </Cooldown>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HallucinationPhoenix">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge CountStart="1"/>
+            <Cooldown>
+                <Link value="Abil/BansheeArenaSpecialUnit"/>
+                <Location value="Player"/>
+                <TimeStart value="280"/>
+                <TimeUse value="280"/>
+            </Cooldown>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhoenixHallucination" Requirements=""/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HallucinationProbe">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown>
+                <Link value="Abil/BansheeArenaSpecialUnit"/>
+                <Location value="Player"/>
+                <TimeStart value="280"/>
+                <TimeUse value="280"/>
+            </Cooldown>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Arbiter" Requirements=""/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HallucinationWarpPrism">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown>
+                <Link value="Abil/BansheeArenaSpecialUnit"/>
+                <Location value="Player"/>
+                <TimeStart value="280"/>
+                <TimeUse value="280"/>
+            </Cooldown>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="LiberatorMorphtoAA">
+        <Flags index="DisableAbils" value="1"/>
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="6.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="6.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="LiberatorMorphtoAG">
+        <Flags index="DisableAbils" value="1"/>
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="6.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="6.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectTarget id="MassCloakDrive">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="WarpMassDUMMY"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/ForceField"/>
+            <Cooldown Link="Abil/CloakDriveMass" TimeStart="140" TimeUse="140"/>
+        </Cost>
+        <Range value="500"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <ArcSlop value="360"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <AINotifyEffect value="ForceField"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EvasiveCloakDrive2"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <FollowRange value="0"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="PhasingMode">
+        <Flags index="WaitUntilStopped" value="0"/>
+    </CAbilMorph>
+    <CAbilResearch id="StarportTechLabResearch">
+        <InfoArray index="Research1" Time="1" Upgrade="BansheeUpgradeHP">
+            <Resource index="Minerals" value="343"/>
+            <Resource index="Vespene" value="0"/>
+            <Button DefaultButtonFace="TerranShipPlatingLevel3" State="Available" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="1" Upgrade="BansheeUpgradeATK">
+            <Resource index="Minerals" value="343"/>
+            <Button DefaultButtonFace="TerranShipWeaponsLevel3" Requirements="BansheeUpgradeATKMAX"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="1" Upgrade="CloakDriveUpgrade">
+            <Resource index="Minerals" value="2401"/>
+            <Resource index="Vespene" value="0"/>
+            <Button State="Available" Requirements="CloakDriveUpgradeMAX"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="1" Upgrade="AssemblyUpgradeREGEN">
+            <Resource index="Minerals" value="2401"/>
+            <Resource index="Vespene" value="0"/>
+            <Button State="Available" Requirements="AssemblyUpgradeREGENMAX"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="1">
+            <Resource index="Minerals" value="2401"/>
+            <Resource index="Vespene" value="0"/>
+            <Button State="Available" Requirements="MassCloakDriveUpgradeMAX"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="1">
+            <Resource index="Minerals" value="2401"/>
+            <Resource index="Vespene" value="0"/>
+            <Button State="Available" Requirements="BansheeUpgradeRNGMAX2"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="1" Upgrade="BansheeUpgradeEN1">
+            <Resource index="Minerals" value="16807"/>
+            <Resource index="Vespene" value="0"/>
+            <Button State="Available" Requirements="BansheeUpgradeENLV1"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="1" Upgrade="BansheeUpgradeEN12">
+            <Resource index="Minerals" value="33614"/>
+            <Button DefaultButtonFace="BansheeResistUpgrade2" Requirements="BansheeUpgradeENLV12"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="1" Upgrade="BansheeUpgradeEN122">
+            <Resource index="Minerals" value="50421"/>
+            <Button DefaultButtonFace="BansheeResistUpgrade3" Requirements="BansheeUpgradeENLV122"/>
+        </InfoArray>
+        <InfoArray index="Research12" Upgrade="SeekerUnlimited">
+            <Resource index="Minerals" value="117649"/>
+            <Button DefaultButtonFace="SOAWarpTech"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilTrain id="StarportTrain">
+        <Flags index="DisableCollision" value="1"/>
+        <Range value="77"/>
+        <InfoArray index="Train1" Time="0.1">
+            <Button DefaultButtonFace="MegaBansheeBTN" State="Available"/>
+            <Unit index="0" value="DuskWing"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="0.1">
+            <Button DefaultButtonFace="PhotonCruiserBTN" State="Available" Requirements=""/>
+            <Unit index="0" value="Battlecruiser"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="0.1">
+            <Button State="Available" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Train4">
+            <Button DefaultButtonFace="U238Rounds"/>
+            <Unit index="0" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="0.1">
+            <Button DefaultButtonFace="BuildScienceVessel" State="Available" Requirements=""/>
+            <Unit index="0" value="Liberator"/>
+            <Unit index="1" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Train8" Time="0.1">
+            <Charge CountMax="1" CountStart="1" CountUse="1"/>
+            <Button State="Available" Requirements=""/>
+            <Unit index="0" value="VoidSeeker"/>
+            <Unit index="1" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Train9" Time="1">
+            <Charge CountMax="1" CountUse="1" Link="Abil/InhibitorTrain"/>
+            <Cooldown TimeStart="140"/>
+            <Button DefaultButtonFace="WarpPrism" State="Suppressed"/>
+            <Unit value="WarpPrism"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilEffectInstant id="SwitchToB">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ApplyModeB"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="ChannelingMinimum" value="0"/>
+        <Flags index="ClearLastAttackTarget" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReApproachable" value="0"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="UpdateTarget" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CannonTurnRight" State="Suppressed" Requirements="HasTypeA">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SwitchToA">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ApplyModeA"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="ChannelingMinimum" value="0"/>
+        <Flags index="ClearLastAttackTarget" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReApproachable" value="0"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="UpdateTarget" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CannonTurnLeft" State="Suppressed" Requirements="HasTypeB">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TaurenStimpack">
+        <AbilSetId value=""/>
+        <Effect index="0" value="Stimpack"/>
+        <Cost index="0">
+            <Vital index="Life" value="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements="IsTransferring"/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="TransportMode">
+        <Flags index="WaitUntilStopped" value="0"/>
+    </CAbilMorph>
+    <CAbilEffectInstant id="VoodooShield">
+        <AbilSetId value="Resist"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <VitalFraction index="Energy" value="1"/>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" State="Available">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Player,Ally,Neutral,Cloaked,Stasis,Hidden,Invulnerable"/>
+        <AutoCastRange value="9.8"/>
+        <EffectRange index="0" value="0,1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="Transient" value="0"/>
+    </CAbilEffectInstant>
+    <CAbilRally id="Waypoint">
+        <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="Rally1" DefaultButtonFace="SetWaypoint"/>
+    </CAbilRally>
+    <CAbilEffectInstant id="CancelWaypoint" parent="Stimpack">
+        <Name value="Abil/Name/CancelWaypoint"/>
+        <Cost index="0">
+            <Vital index="Life" value="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CancelWaypoint" State="Available" Requirements=""/>
+    </CAbilEffectInstant>
+</Catalog>
