@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="BansheeResist_1_req">
+        <NodeArray index="Use" Link="CountUpgradeBansheeUpgradeEN1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="BansheeResist_2_req">
+        <NodeArray index="Use" Link="CountUpgradeBansheeUpgradeEN12CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="BansheeResist_3_req">
+        <NodeArray index="Use" Link="CountUpgradeBansheeUpgradeEN122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="BansheeUpgradeENLV1">
+        <NodeArray index="Show" Link="AndEqCountUpgradeBansheeUpgradeEN1CompleteOnly0EqCountUpgradeBansheeUpgradeEN1InProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="BansheeUpgradeENLV12">
+        <NodeArray index="Show" Link="AndEqCountUpgradeBansheeUpgradeEN1CompleteOnly1EqCountUpgradeBansheeUpgradeEN12InProgressOnly0EqCountUpgradeBansheeUpgradeEN12CompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="BansheeUpgradeENLV122">
+        <NodeArray index="Show" Link="AndEqCountUpgradeBansheeUpgradeEN12CompleteOnly1EqCountUpgradeBansheeUpgradeEN122InProgressOnly0EqCountUpgradeBansheeUpgradeEN122CompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="BansheeUpgradeRNGMAX2">
+        <NodeArray index="Show" Link="AndLTCountUpgradeHunterSeekerCompleteOnly14EqCountUpgradeHunterSeekerInProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="BansheeUpgradeATKMAX">
+        <NodeArray index="Show" Link="AndLTCountUpgradeBansheeUpgradeATKCompleteOnly99EqCountUpgradeBansheeUpgradeATKInProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="CloakDriveUpgradeMAX">
+        <NodeArray index="Show" Link="AndLTCountUpgradeCloakDriveUpgradeCompleteOnly21EqCountUpgradeCloakDriveUpgradeInProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="AssemblyUpgradeREGENMAX">
+        <NodeArray index="Show" Link="AndLTCountUpgradeAssemblyUpgradeREGENCompleteOnly21EqCountUpgradeAssemblyUpgradeREGENInProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="HasTurbineCharge">
+        <NodeArray index="Show" Link="CountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HasNoTurbineCharge">
+        <NodeArray index="Show" Link="NotCountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HasTypeA">
+        <NodeArray index="Show" Link="NotCountBehaviorWeaponTypeBCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HasTypeB">
+        <NodeArray index="Show" Link="CountBehaviorWeaponTypeBCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="IsNotTransferring">
+        <NodeArray index="Show" Link="NotCountBehaviorCloakfieldRelayCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="IsTransferring">
+        <NodeArray index="Show" Link="CountBehaviorCloakfieldRelayCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="MassCloakDriveUpgradeMAX">
+        <NodeArray index="Show" Link="AndLTCountUpgradeWraithCloakCompleteOnly14EqCountUpgradeWraithCloakInProgressOnly0"/>
+    </CRequirement>
+</Catalog>

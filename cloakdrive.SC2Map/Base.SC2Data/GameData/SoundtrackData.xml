@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSoundtrack id="BansheeOST0" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="BansheeBGM0"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Delay value="75,140"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="BansheeOST1" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="BansheeBGM1"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Delay value="75,140"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="BansheeOST2" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="BansheeBGM2"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Delay value="75,140"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="BansheeOST3" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="BansheeBGM3"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Delay value="75,140"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="BansheeOSTT1" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="BansheeBGMT1"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Delay value="75,140"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="BansheeOSTT2" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="BansheeBGMT2"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Delay value="75,140"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+</Catalog>

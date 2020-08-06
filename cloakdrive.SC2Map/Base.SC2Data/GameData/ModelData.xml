@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="Aiur_EnergyWall">
+        <AnimSpeed value="0.100000"/>
+        <Events index="0" removed="1"/>
+        <Events index="1" removed="1"/>
+        <Events index="2" removed="1"/>
+    </CModel>
+    <!--                                                                                         -->
+    <!-- Arbiter ............................................................................... -->
+    <!--                                                                                         -->
+    <CModel id="ArbiterMP">
+        <!--ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/-->
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="ArtifactShrine">
+        <AnimSpeed value="0.250000"/>
+    </CModel>
+    <CModel id="Banshee">
+        <Tipability value="0.000000"/>
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="Battlecruiser">
+        <Tipability value="0.000000"/>
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="BeaconCustom1">
+        <Model value="Assets\UI\Feedback\AIBeaconHarass\AIBeaconHarass.m3"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+    </CModel>
+    <CModel id="Beacon_Protoss">
+        <Model value="Assets\Effects\Protoss\SingularityAreaImpact\SingularityAreaImpact.m3"/>
+        <ScaleMax value="1.000000,1.000000,7.000000"/>
+        <ScaleMin value="1.000000,1.000000,7.000000"/>
+        <AnimSpeed value="1.400000"/>
+    </CModel>
+    <CModel id="Beacon_Terran">
+        <Model value="Assets\Effects\Zerg\Void_Kerrigan_QuantumRay_Hand_Charge\Void_Kerrigan_QuantumRay_Hand_Charge.m3"/>
+        <AnimSpeed value="14.000000"/>
+        <ScaleMax value="7.000000,7.000000,7.000000"/>
+        <ScaleMin value="7.000000,7.000000,7.000000"/>
+    </CModel>
+    <CModel id="CloakModel">
+        <AnimSpeed value="16.000000"/>
+    </CModel>
+    <CModel id="DarkWarpPrism">
+        <Model value="Assets\Units\Protoss\WarpPrism\WarpPrism.m3"/>
+    </CModel>
+    <CModel id="Disruptor"/>
+    <CModel id="EnergyNovaShockwave">
+        <Model value="Assets\Effects\Zerg\KerriganApocalypseExplosion\KerriganApocalypseExplosion.m3"/>
+        <ScaleMax value="2.800000,2.800000,2.800000"/>
+        <ScaleMin value="2.800000,2.800000,2.800000"/>
+        <AnimSpeed value="0.700000"/>
+    </CModel>
+    <CModel id="FenixChargeImpactModel">
+        <Model value="Assets\Effects\Terran\ArchAngel_Xanthos_Experimentation_SmallEMPMissile_Impact\ArchAngel_Xanthos_Experimentation_SmallEMPMissile_Impact.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+    </CModel>
+    <CModel id="GhostAcademy">
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+        <AnimSpeed value="0.100000"/>
+    </CModel>
+    <CModel id="GhostAcademyDeath">
+        <AnimSpeed value="0.300000"/>
+    </CModel>
+    <CModel id="GhostNukeLaunch">
+        <AnimSpeed value="1.400000"/>
+    </CModel>
+    <CModel id="GlazeSuperShield">
+        <Model value="Assets\Effects\Glaze\Glaze_Rock_TangentSpace\Glaze_Rock_TangentSpace.m3"/>
+    </CModel>
+    <CModel id="HyperionYamatoSpecialWeapon">
+        <Model value="Assets\Effects\Zerg\StukovCorrosiveBlastMissile\StukovCorrosiveBlastMissile.m3"/>
+    </CModel>
+    <CModel id="InhibitorActivateFlare" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\RecallImpactOut\RecallImpactOut.m3"/>
+        <AnimSpeed value="1.400000"/>
+        <ScaleMax value="2.800000,2.800000,2.800000"/>
+        <ScaleMin value="2.800000,2.800000,2.800000"/>
+    </CModel>
+    <CModel id="InhibitorActivateModel" parent="Doodad">
+        <Model value="Assets\Effects\Protoss\ProtonChargeLaunch\ProtonChargeLaunch.m3"/>
+        <AnimSpeed value="1.400000"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="UIBeaconProtossDeath"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="UI_BeaconProtossDeath"/>
+        </Events>
+        <ScaleMax value="1.400000,1.400000,4.900000"/>
+        <ScaleMin value="1.400000,1.400000,4.900000"/>
+        <SelectionLayer value="1"/>
+        <SelectionRadius value="2.100000"/>
+        <ShadowRadius value="1.999700"/>
+    </CModel>
+    <CModel id="CloakDriveFXModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\AirUnits_TeleportIn_COOP\AirUnits_TeleportIn_COOP.m3"/>
+        <AnimSpeed value="8.000000"/>
+        <ScaleMax value="2.800000,2.800000,2.800000"/>
+        <ScaleMin value="1.400000,1.400000,1.400000"/>
+    </CModel>
+    <CModel id="GhostEMPAttackImpactEffect">
+        <Model value="Assets\Effects\Terran\SiegeTankWeaponImpact\SiegeTankWeaponImpact.m3"/>
+        <ScaleMax value="2.800000,2.800000,2.800000"/>
+        <ScaleMin value="1.400000,1.400000,1.400000"/>
+    </CModel>
+    <CModel id="GhostNukeTarget">
+        <ScaleMax value="4.900000,4.900000,4.900000"/>
+        <ScaleMin value="4.900000,4.900000,4.900000"/>
+    </CModel>
+    <CModel id="HyperionYamatoSpecialAttackImpact">
+        <Model value="Assets\Effects\Protoss\EyeOfAdunMissileImpact\EyeofAdunMissileImpact.m3"/>
+        <Flags index="FOW" value="0"/>
+        <Flags index="VariationFallback" value="0"/>
+        <ScaleMax value="4.900000,4.900000,4.900000"/>
+        <ScaleMin value="4.900000,4.900000,4.900000"/>
+    </CModel>
+    <CModel id="LabTurret">
+        <Flags index="FOW" value="0"/>
+    </CModel>
+    <CModel id="LaserDrillTripodBiggerAttackBeam">
+        <Model value="Assets\Effects\Protoss\MothershipPhotonBeam\MothershipPhotonBeam_Low.m3"/>
+        <AnimSpeed value="9.800000"/>
+        <Flags index="FOW" value="0"/>
+        <RadiusLoose value="500.000000"/>
+    </CModel>
+    <CModel id="Liberator">
+        <Model value="Assets\Units\Terran\Liberator_CovertsOps_Collection\Liberator_CovertsOps_Collection.m3"/>
+        <SelectionRadius value="2.000000"/>
+    </CModel>
+    <CModel id="LiberatorAG">
+        <Model value="Assets\Units\Terran\Liberator_CovertsOps_Collection\Liberator_CovertsOps_Collection.m3"/>
+        <SelectionRadius value="2.000000"/>
+    </CModel>
+    <CModel id="LiberatorDeath">
+        <Model value="Assets\Units\Terran\Liberator_CovertsOps_Collection_Death\Liberator_CovertsOps_Collection_Death.m3"/>
+    </CModel>
+    <CModel id="LiberatorDeathRagdoll">
+        <Model value="Assets\Units\Terran\Liberator_CovertsOps_Collection_DeathRagdoll\Liberator_CovertsOps_Collection_DeathRagdoll.m3"/>
+    </CModel>
+    <CModel id="MedicHealBeam">
+        <Model value="Assets\Effects\Zerg\HybridEnergizeBeam\HybridEnergizeBeam.m3"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+    </CModel>
+    <CModel id="MedicHealModel">
+        <Model value="Assets\Effects\Protoss\ProtossShield_Battery_Beam_Impact\ProtossShield_Battery_Beam_Impact.m3"/>
+    </CModel>
+    <CModel id="MindBlastExplosion">
+        <ScaleMax value="1.400000,1.400000,1.400000"/>
+        <ScaleMin value="1.400000,1.400000,1.400000"/>
+    </CModel>
+    <CModel id="Oracle">
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="OracleStasisTrapExplosion">
+        <ScaleMax value="1.200000,1.200000,1.000000"/>
+        <ScaleMin value="1.200000,1.200000,1.000000"/>
+        <!--ScaleMax value="2.100000,2.100000,1.100000"/>
+        <ScaleMin value="2.100000,2.100000,1.100000"/-->
+    </CModel>
+    <CModel id="PhotonCannonAttackImpact">
+        <Model value="Assets\Effects\Protoss\ScoutAirMissileImpact\ScoutAirMissileImpact.m3"/>
+        <ScaleMax value="1.800000,1.800000,1.800000"/>
+        <ScaleMin value="1.800000,1.800000,1.800000"/>
+    </CModel>
+    <CModel id="PhotonCannonWeapon">
+        <Model value="Assets\Effects\Protoss\PhalanxMissile\PhalanxMissile.m3"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+    </CModel>
+    <CModel id="PingBoss">
+        <AnimSpeed value="0.100000"/>
+    </CModel>
+    <CModel id="ProbeAttackBeam">
+        <Model value="Assets\Effects\Terran\LaserDrillBeamLong\LaserDrillBeamLong.m3"/>
+        <AnimSpeed value="9.800000"/>
+        <Radius value="999999.000000"/>
+        <RadiusLoose value="999999.000000"/>
+        <ScaleMax value="0.400000,0.400000,0.200000"/>
+        <ScaleMin value="0.400000,0.400000,0.200000"/>
+    </CModel>
+    <CModel id="PsiDisruptor">
+        <AnimSpeed value="0.100000"/>
+    </CModel>
+    <CModel id="PsionicShockwave">
+        <Model value="Assets\Effects\Terran\HyperionEMP\HyperionEMP.m3"/>
+        <AnimSpeed value="1.400000"/>
+        <ScaleMax value="1.400000,1.400000,1.400000"/>
+        <ScaleMin value="1.400000,1.400000,1.400000"/>
+    </CModel>
+    <CModel id="PylonContainmentUnit">
+        <Events index="0" removed="1"/>
+        <Events index="1" removed="1"/>
+        <Events index="2" removed="1"/>
+        <Events index="3" removed="1"/>
+        <Events index="4" removed="1"/>
+        <Events index="5" removed="1"/>
+        <Events index="6" removed="1"/>
+        <Events index="7" removed="1"/>
+        <ScaleMax value="2.800000,2.800000,2.100000"/>
+        <ScaleMin value="2.800000,2.800000,2.100000"/>
+    </CModel>
+    <CModel id="PylonPlacement"/>
+    <CModel id="Raven">
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="RipFieldGenerator">
+        <AnimSpeed value="0.125000"/>
+        <ScaleMax value="3.000000,3.000000,1.000000"/>
+        <ScaleMin value="3.000000,3.000000,1.000000"/>
+    </CModel>
+    <CModel id="SJPirateYamatoAWeapon">
+        <ScaleMax value="1.400000,1.400000,1.400000"/>
+        <ScaleMin value="1.400000,1.400000,1.400000"/>
+    </CModel>
+    <CModel id="SOAHeroicShieldModel">
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="SOAPurifierBeam">
+        <AnimSpeed value="16.000000"/>
+        <ScaleMax value="0.200000,0.200000,1.300000"/>
+        <ScaleMin value="0.200000,0.200000,1.300000"/>
+        <!--Events>
+            <Anim value="Death,00"/>
+            <Name value="SOA_PurifierBeam_Death"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="SOA_PurifierBeam_Death"/>
+        </Events-->
+    </CModel>
+    <CModel id="SOAVortexStormTargetLocation">
+        <Model value="Assets\Effects\Terran\HyperionEMP\HyperionEMP.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="SOA_Beam">
+        <ScaleMax value="0.100000,0.100000,7.000000"/>
+        <ScaleMin value="0.100000,0.100000,7.000000"/>
+        <Model value="Assets\Effects\Protoss\SOA_Reinforcements_Beam\SOA_Reinforcements_Beam.m3"/>
+    </CModel>
+    <CModel id="ScannerSweepModel">
+        <Model value="Assets\UI\Cursors\ProtossCursor1Geo\ProtossCursor1Geo.m3"/>
+        <ScaleMax value="4.900000,4.900000,4.900000"/>
+        <ScaleMin value="4.900000,4.900000,4.900000"/>
+        <AnimSpeed value="1.400000"/>
+    </CModel>
+    <CModel id="CloakDriveModelMass" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ArchonSummoningCircle\ArchonSummoningCircle.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="4.900000,4.900000,4.900000"/>
+        <ScaleMin value="4.900000,4.900000,4.900000"/>
+        <AnimSpeed value="1.400000"/>
+    </CModel>
+    <CModel id="ScoutAirLeftAttackImpact">
+        <AnimSpeed value="0.070000"/>
+    </CModel>
+    <CModel id="ScoutAirRightAttackImpact">
+        <AnimSpeed value="0.070000"/>
+    </CModel>
+    <CModel id="ShieldBattery">
+        <Model value="Assets\Effects\Protoss\ProtossShield_Battery_Taldarim\ProtossShield_Battery_Taldarim.m3"/>
+        <ScaleMax value="0.100000,0.100000,1.000000"/>
+        <ScaleMin value="0.100000,0.100000,1.000000"/>
+        <SelectionRadius value="5.000000"/>
+    </CModel>
+    <CModel id="SiegeBreakerSiegedAttackImpact">
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="SiegeBreakerSiegedAttackImpact2" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\SiegeTankWeaponImpact\SiegeTankWeaponImpact.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="7.000000,7.000000,7.000000"/>
+        <ScaleMin value="7.000000,7.000000,7.000000"/>
+    </CModel>
+    <CModel id="SiegeTankSiegedAttackImpact">
+        <Flags index="Ignorable" value="1"/>
+        <ScaleMax value="0.140000,0.140000,0.140000"/>
+        <ScaleMin value="0.140000,0.140000,0.140000"/>
+    </CModel>
+    <CModel id="SiegeTankSiegedAttackLaunch">
+        <ScaleMax value="0.490000,0.490000,0.490000"/>
+        <ScaleMin value="0.490000,0.490000,0.490000"/>
+    </CModel>
+    <CModel id="SkyBoxPortZionSpace">
+        <Flags index="FOW" value="0"/>
+        <Priority value="8"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="SmokeMedium">
+        <AnimSpeed value="4.900000"/>
+    </CModel>
+    <CModel id="SpacePlatformCablesLarge">
+        <AnimSpeed value="0.250000"/>
+    </CModel>
+    <CModel id="SpaceTurbine">
+        <AnimSpeed value="0.250000"/>
+    </CModel>
+    <CModel id="SpaceTurbineSquare">
+        <AnimSpeed value="0.250000"/>
+    </CModel>
+    <CModel id="SpiderMineExplosion">
+        <Model value="Assets\Effects\Zerg\KerriganRespawnImpact\KerriganRespawnImpact.m3"/>
+        <LowQualityModel value=""/>
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="StormSphereAttachment">
+        <AnimSpeed value="0.010000"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+    </CModel>
+    <CModel id="TempestPurifier">
+        <AnimSpeed value="0.050000"/>
+        <ScaleMax value="0.900000,1.400000,0.900000"/>
+        <ScaleMin value="0.900000,1.400000,0.900000"/>
+    </CModel>
+    <CModel id="TempestPurifierStormSphereAttachment">
+        <Model value="Assets\Effects\Zerg\KerriganApocalypseChannel\KerriganApocalypseChannel.m3"/>
+        <ScaleMax value="0.100000,0.100000,0.100000"/>
+        <ScaleMin value="0.100000,0.100000,0.100000"/>
+    </CModel>
+    <CModel id="TempestPurifierStormSphereAttachment2" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\Void_Kerrigan_Extinction_Charge\Void_Kerrigan_Extinction_Charge.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.100000,0.100000,0.100000"/>
+        <ScaleMin value="0.100000,0.100000,0.100000"/>
+    </CModel>
+    <CModel id="TemporalFieldImpactModel">
+        <AnimSpeed value="0.700000"/>
+        <ScaleMax value="0.100000,0.100000,0.100000"/>
+        <ScaleMin value="0.070000,0.070000,0.070000"/>
+        <Model value="Assets\Effects\Zerg\Kerrigan_ImmobilizationWave\Kerrigan_ImmobilizationWave.m3"/>
+    </CModel>
+    <CModel id="AnnihilatorModelHitModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\PowerOverwhelming\PowerOverwhelming.m3"/>
+        <AnimSpeed value="33.000000"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.750000,0.750000,0.375000"/>
+        <ScaleMin value="0.750000,0.750000,0.375000"/>
+    </CModel>
+    <CModel id="TerrainObjectExpeditionGateDoodad">
+        <ScaleMax value="1.400000,1.400000,1.400000"/>
+        <ScaleMin value="1.400000,1.400000,1.400000"/>
+    </CModel>
+    <CModel id="TerrainObjectXelNagaHullReactorDoodad">
+        <Events index="0" removed="1"/>
+    </CModel>
+    <CModel id="TimeWarp">
+        <AnimSpeed value="0.100000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <Model value="Assets\UI\Cursors\WayPointAttack_Zerg\WayPointAttack_Zerg.m3"/>
+    </CModel>
+    <CModel id="VoidRiftUnselectable">
+        <AnimSpeed value="0.050000"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+    </CModel>
+    <CModel id="VoidSeeker">
+        <AnimSpeed value="0.200000"/>
+        <SelectionRadius value="3.000000"/>
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="VoidSeekerAttackImpact">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_SmashAOE\Xelnaga_Construct_SmashAOE.m3"/>
+        <ScaleMax value="1.400000,1.400000,1.400000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+    </CModel>
+    <CModel id="VoidSeekerWeapon">
+        <Model value="Assets\Effects\Protoss\ProtossBuildingFireArcs\ProtossBuildingFireArcs.m3"/>
+        <ScaleMax value="4.900000,4.900000,4.900000"/>
+        <ScaleMin value="4.900000,4.900000,4.900000"/>
+    </CModel>
+    <CModel id="VoodooShield">
+        <Model value="Assets\Effects\Protoss\MineralShield\MineralShield.m3"/>
+        <AnimSpeed value="2.000000"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+    </CModel>
+    <CModel id="VortexModel">
+        <AnimSpeed value="0.100000"/>
+        <ScaleMax value="2.000000,2.000000,1.000000"/>
+        <ScaleMin value="2.000000,2.000000,1.000000"/>
+    </CModel>
+    <CModel id="WarpPrism">
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="WarpPrismPhasing">
+        <SelectionOffset value="0.000000,0.000000,0.000000"/>
+    </CModel>
+    <CModel id="WarpPrismPowerVisual">
+        <Model value="Assets\Effects\Protoss\XelNagaShieldDome\XelNagaShieldDome.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="6.600000,6.600000,6.600000"/>
+        <ScaleMin value="6.600000,6.600000,6.600000"/>
+        <RadiusLoose value="77.000000"/>
+    </CModel>
+    <CModel id="WraithAirWeaponLeft">
+        <Model value="Assets\Effects\Terran\ThorShoulderMissile\ThorShoulderMissile.m3"/>
+    </CModel>
+    <CModel id="ZeratulBlinkIn">
+        <Model value="Assets\Effects\Protoss\TimeWarpLaunch\TimeWarpLaunch.m3"/>
+        <ScaleMax value="1.000000,1.000000,4.900000"/>
+        <ScaleMin value="1.000000,1.000000,4.900000"/>
+    </CModel>
+</Catalog>
