@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="ATALaserBattery">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="btn-custom-terran-ocularimplants.dds"/>
+        <DisplayEffect value="YamatoGunSpecialDamage"/>
+        <TargetFilters value="-;Missile,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByDistance"/>
+        <MinScanRange value="0"/>
+        <Range value="9.8"/>
+        <RangeSlop value="0"/>
+        <Period value="6.37"/>
+        <Backswing value="0"/>
+        <Effect value="YamatoGunSpecialLaunchMissile"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DamagePoint value="0"/>
+        <AcquireFilters value="-;Self,Player,Ally,Neutral,Cloaked,Hidden,Invulnerable"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Diamondback">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fluxvanes.dds"/>
+        <DisplayAttackCount value="7"/>
+        <TargetFilters value="Visible;Self,Player,Missile,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="19.6"/>
+        <RangeSlop value="0"/>
+        <Period value="13.72"/>
+        <Backswing value="0"/>
+        <Effect value="LDXDUMMY"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HailstormMissilePods">
+        <Options index="Disabled" value="0"/>
+        <Options index="Hidden" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="1"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DisplayAttackCount value="0"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="19.6"/>
+        <Period value="13.72"/>
+        <Backswing value="0"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DisplayEffect value="NukeDamage"/>
+        <MinScanRange value="0"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InterceptorBeam2">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+        <DisplayEffect value="InterceptorBeamDamage"/>
+        <TargetFilters value="Visible;Ally,Neutral,Enemy,Hover,Missile,Cloaked,Stasis,Dead,Hidden"/>
+        <AcquireFilters value="-;Ally,Neutral,Enemy,Hover,Missile,Cloaked,Hidden"/>
+        <MinScanRange value="0"/>
+        <Range value="4.9"/>
+        <RangeSlop value="0"/>
+        <RangeDisplayFlags index="CollapseBuffed" value="1"/>
+        <Period value="0.28"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="heal"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="IonCannons">
+        <Options index="Melee" value="1"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
+        <DisplayAttackCount value="0"/>
+        <TargetFilters value="-;Missile,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="9.8"/>
+        <RangeSlop value="0"/>
+        <Arc value="0"/>
+        <Period value="6.37"/>
+        <Backswing value="0"/>
+        <Effect value="OracleStasisTrapActivateCP"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ParticleBeam">
+        <Options index="Melee" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-oraclepulsarcannonoff.dds"/>
+        <TargetFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="78.4"/>
+        <RangeSlop value="0"/>
+        <Period value="13.72"/>
+        <Backswing value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DamagePoint value="0"/>
+        <ArcSlop value="0"/>
+        <Effect value="LDXLRDelay"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-tips-terran-energynova.dds"/>
+        <MinScanRange value="0"/>
+        <Range value="9.8"/>
+        <Period value="0.07"/>
+        <Backswing value="0"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <ArcSlop value="0"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SJPirateCapitalShip">
+        <Options index="LinkedCooldown" value="1"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+        <DisplayEffect value="SJPirateYamatoADamage"/>
+        <DisplayAttackCount value="0"/>
+        <TargetFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="9.8"/>
+        <RangeSlop value="0"/>
+        <Arc value="0"/>
+        <Period value="1.12"/>
+        <Backswing value="0"/>
+        <!--RandomDelayMax value="0.1875"/-->
+        <Effect value="SJPirateYamatoA"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VoidSeeker">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <TargetFilters value="Air;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="49"/>
+        <Period value="24.01"/>
+        <Backswing value="0"/>
+        <Effect value="MassRecallSearch"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VolatileBurstDummy">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <DisplayEffect value="TurbineChargeDummy"/>
+        <TargetFilters value="-;Missile,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="49"/>
+        <Period value="24.01"/>
+        <AcquireFilters value="-;Missile,Cloaked,Stasis,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Backswing value="0"/>
+        <Effect value="TurbineAddCharge"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WraithA">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel3.dds"/>
+        <DisplayAttackCount value="0"/>
+        <MinScanRange value="0"/>
+        <Range value="4.9"/>
+        <RangeSlop value="0"/>
+        <Period value="0.28"/>
+        <Backswing value="0"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <RangeDisplayFlags index="CollapseBuffed" value="1"/>
+        <DamagePoint value="0"/>
+        <TargetFilters value="Air,Visible;Player,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireFilters value="-;Player,Ally,Neutral,Missile,Cloaked,Stasis,Dead,Invulnerable"/>
+        <Effect value="WraithALeftLaunchMissile"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+    </CWeaponLegacy>
+</Catalog>

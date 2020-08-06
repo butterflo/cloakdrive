@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="Footprint2x2NoCollision">
+        <Layers index="Check">
+            <Rows index="0" value=".."/>
+            <Rows index="1" value=".."/>
+        </Layers>
+        <Layers index="Place">
+            <Sets index="0" removed="1"/>
+            <Rows index="0" value=".."/>
+            <Rows index="1" value=".."/>
+        </Layers>
+        <Layers index="Pathing" removed="1"/>
+    </CFootprint>
+    <CFootprint id="Footprint4x4">
+        <Layers index="Check">
+            <Sets index="0" removed="1"/>
+            <Rows index="0" value="...."/>
+            <Rows index="1" value="...."/>
+            <Rows index="2" value="...."/>
+            <Rows index="3" value="...."/>
+        </Layers>
+        <Layers index="Place">
+            <Sets index="0" removed="1"/>
+            <Rows index="0" value="...."/>
+            <Rows index="1" value="...."/>
+            <Rows index="2" value="...."/>
+            <Rows index="3" value="...."/>
+        </Layers>
+        <Shape>
+            <Radius value="0"/>
+            <Offsets value=""/>
+            <Borders value=""/>
+        </Shape>
+    </CFootprint>
+</Catalog>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="AnnihilatorDELAY">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="500"/>
+        <DurationRandomMin value="2"/>
+        <DurationRandomMax value="0.7"/>
+        <ExpireEffect value="VoidSeekerU"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CloakfieldRelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="-1"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <AbilLinkDisableArray value="ForceField"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CloakspaceTurbineActive2">
+        <InfoIcon value="btn-custom-terran-killcloakedunits-turbine.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="TempestSEARCH"/>
+        <Modification>
+            <VitalRegenMultiplier index="Energy" value="-2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Detector11"/>
+    <CBehaviorBuff id="GhostCloak">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray index="0" removed="1"/>
+        <RemoveValidatorArray index="1" removed="1"/>
+        <Modification AccelerationBonus="1" DetectArc="0" RadarArc="0">
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="SuppressCombat" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <StateFlags index="Unstoppable" value="1"/>
+            <VitalRegenArray index="Energy" value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SOAPurifierBeamBuildUp">
+        <Duration value="0.1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SOAPurifierBeamFiring">
+        <Duration value="7"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InhibitorArea" parent="Detector">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+        <Period value="1"/>
+        <InitialEffect value="InhibitorLoop"/>
+        <PeriodicEffect value="InhibitorLoop"/>
+        <Modification Radar="19.6"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Inhibited">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <InfoIcon value="btn-ability-inhibitordeploy.dds"/>
+        <Modification>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <AbilLinkDisableArray value="ForceField"/>
+            <AbilLinkDisableArray value="MassCloakDrive"/>
+            <AbilLinkDisableArray value="VoodooShield"/>
+            <AbilLinkDisableArray value="GuardianShield"/>
+            <AbilLinkDisableArray value="PhasingMode"/>
+            <AbilLinkDisableArray value="ArbiterMPRecall"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SOASuperShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <MaxStackCount value="49"/>
+        <Duration value="-1"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="539"/>
+        </Modification>
+        <!--Modification>
+            <VitalMaxArray index="Shields" value="200"/>
+        </Modification-->
+        <DamageResponse>
+            <Chance value="0"/>
+            <ModifyFraction value="1"/>
+            <ModifyLimit value="0"/>
+            <ModifyMinimumDamage value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SolarisCHARGE">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <AbilLinkDisableArray value="ForceField"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="NoNukes">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="-1"/>
+        <Modification>
+            <WeaponDisableArray value="HailstormMissilePods"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Superspeed">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <TimeScale value="10"/>
+            <MoveSpeedBonus value="77"/>
+            <MoveSpeedMultiplier value="343"/>
+            <AccelerationBonus value="3200"/>
+            <DecelerationBonus value="3200"/>
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <AbilLinkDisableArray value="StarportTrain"/>
+            <AbilLinkDisableArray value="StarportTechLabResearch"/>
+            <AbilLinkDisableArray value="HallucinationPhoenix"/>
+            <AbilLinkDisableArray value="HallucinationWarpPrism"/>
+            <AbilLinkDisableArray value="HallucinationOracle"/>
+            <AbilLinkDisableArray value="HallucinationProbe"/>
+            <WeaponDisableArray value="HailstormMissilePods"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="49"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CloakspaceTurbineActive">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="7"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TerranBuildingBurnDown">
+        <PeriodicEffect value=""/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VoodooShield">
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
+        <RemoveValidatorArray index="0" removed="1"/>
+        <Duration value="1.5"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <VitalMaxArray index="Shields" value="0"/>
+        </Modification>
+        <DamageResponse Chance="1" ModifyFraction="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpawnProtection">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="-1"/>
+        <DamageResponse Chance="1" ModifyFraction="0" ModifyMinimumDamage="1"/>
+        <Modification>
+            <StateFlags index="UnitAttrOnPsionic" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VortexEventHorizon">
+        <InfoIcon value="btn-ability-rift.dds"/>
+        <Duration value="7"/>
+        <ExpireEffect value="RiftREMOVE"/>
+        <Modification MoveSpeedMinimum="1" MoveSpeedBonus="1">
+            <ModifyFlags index="Warpable" value="0"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressEnergy" value="1"/>
+            <BehaviorLinkDisableArray value="InhibitorArea"/>
+            <BehaviorLinkDisableArray value="Superspeed"/>
+        </Modification>
+        <Replace value="ShortestDuration"/>
+        <ReplaceLocation Effect="" Value="CasterUnit"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WeaponTypeA">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="PhotonCannon"/>
+            <WeaponEnableArray value="ATALaserBattery"/>
+            <WeaponEnableArray value="Diamondback"/>
+            <WeaponEnableArray value="VoidSeeker"/>
+            <WeaponEnableArray value="WraithA"/>
+            <WeaponDisableArray value="SJPirateCapitalShip"/>
+            <WeaponDisableArray value="IonCannons"/>
+            <WeaponDisableArray value="ParticleBeam"/>
+            <WeaponDisableArray value="VolatileBurstDummy"/>
+            <WeaponDisableArray value="InterceptorBeam2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WeaponTypeB">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="WeaponTypeA"/>
+            <WeaponEnableArray value="SJPirateCapitalShip"/>
+            <WeaponEnableArray value="IonCannons"/>
+            <WeaponEnableArray value="ParticleBeam"/>
+            <WeaponEnableArray value="VolatileBurstDummy"/>
+            <WeaponEnableArray value="InterceptorBeam2"/>
+            <WeaponDisableArray value="PhotonCannon"/>
+            <WeaponDisableArray value="ATALaserBattery"/>
+            <WeaponDisableArray value="Diamondback"/>
+            <WeaponDisableArray value="VoidSeeker"/>
+            <WeaponDisableArray value="WraithA"/>
+        </Modification>
+    </CBehaviorBuff>
+</Catalog>

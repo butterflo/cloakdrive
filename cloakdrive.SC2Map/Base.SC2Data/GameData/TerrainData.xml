@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTerrain id="BraxisAlphaEx1">
+        <DSPArray index="Movie">
+            <LinkArray value="LowRumble"/>
+        </DSPArray>
+        <DSPArray index="Music">
+            <LinkArray value="LowRumble"/>
+        </DSPArray>
+        <DSPArray index="Combat">
+            <LinkArray value="LowRumble"/>
+        </DSPArray>
+        <ReverbAmbient value="Off"/>
+        <BlendTextures index="0" value="BraxisAlphaMesh"/>
+        <BlendTextures index="1" value="CastanarTiles"/>
+        <BlendTextures index="2" value="KorhalPlatform5"/>
+        <BlendTextures index="3" value="SpearOfAdun8"/>
+        <BlendTextures index="4" value="XelNagaCavern8"/>
+        <BlendTextures index="5" removed="1"/>
+        <BlendTextures index="6" removed="1"/>
+        <BlendTextures index="7" removed="1"/>
+        <CliffSets index="0" value="HybridLabOuterCliff1"/>
+        <CliffSets index="1" value="HybridLabXelNagaCliff1"/>
+        <FixedSkyboxModel value=""/>
+        <NonFixedSkyboxModel value=""/>
+        <FogColor value="64,0,0,0"/>
+        <Gravity value="0.000000"/>
+        <HeightFlags index="AirSmoothing" value="0"/>
+        <SoundDistanceFactor value="7.000000"/>
+        <SoundRolloffFactor value="7.000000"/>
+    </CTerrain>
+</Catalog>

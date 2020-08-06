@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CDSPLowPassSimple id="HighLimit">
+        <Cutoff value="7000.000000"/>
+    </CDSPLowPassSimple>
+    <CDSPParamEQ id="LowRumble">
+        <Bandwidth value="0.750000"/>
+        <Center value="50.000000"/>
+        <Gain value="1.500000"/>
+    </CDSPParamEQ>
+</Catalog>

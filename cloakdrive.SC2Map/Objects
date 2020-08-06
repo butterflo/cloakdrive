@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="27">
+    <ObjectCamera Id="67733191" Position="128,128,0" Rotation="3.1362" Scale="1,1,1" Name="EDITOR_CAM" Color="0,0,0,0" CameraTarget="128,128">
+        <Flag Index="CameraHidden" Value="1"/>
+        <CameraValue Index="FieldOfView" Value="90"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="10000"/>
+        <CameraValue Index="ShadowClip" Value="300"/>
+        <CameraValue Index="Distance" Value="70"/>
+        <CameraValue Index="Pitch" Value="60"/>
+        <CameraValue Index="Yaw" Value="179.7065"/>
+        <CameraValue Index="HeightOffset" Value="10.1093"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="0.0002"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+        <CameraValue Index="FalloffStartNear" Value="0.0002"/>
+        <CameraValue Index="FalloffEndNear" Value="0.0002"/>
+        <CameraValue Index="BokehFStop" Value="0.0187"/>
+        <CameraValue Index="BokehMaxCoC" Value="1"/>
+    </ObjectCamera>
+    <ObjectCamera Id="7" Position="128,128,0" Rotation="3.14" Scale="1,1,1" Name="INTRO_CAM" Color="0,0,0,0" CameraTarget="128,128">
+        <Flag Index="CameraHidden" Value="1"/>
+        <CameraValue Index="FieldOfView" Value="45"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="100000"/>
+        <CameraValue Index="ShadowClip" Value="1000"/>
+        <CameraValue Index="Distance" Value="0.0998"/>
+        <CameraValue Index="Yaw" Value="179.9165"/>
+        <CameraValue Index="Roll" Value="180"/>
+        <CameraValue Index="HeightOffset" Value="10"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="0.0002"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+        <CameraValue Index="FalloffStartNear" Value="0.0002"/>
+        <CameraValue Index="FalloffEndNear" Value="0.0002"/>
+        <CameraValue Index="BokehFStop" Value="0.0097"/>
+        <CameraValue Index="BokehMaxCoC" Value="1"/>
+    </ObjectCamera>
+    <ObjectUnit Id="37" Position="128,128,0" Scale="1,1,1" UnitType="Beacon_Protoss">
+        <Flag Index="UnitHidden" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="86" Position="128,128,0" Scale="1,1,1" UnitType="ExpeditionJumpGate">
+        <Flag Index="UnitHidden" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="32" Position="128,128,0" Rotation="1.5705" Scale="1,1,1" UnitType="RipFieldGenerator">
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="33" Position="128,128,0" Rotation="3.1413" Scale="1,1,1" UnitType="RipFieldGenerator">
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="463829644" Position="128,128,0" Rotation="5.4975" Scale="1,1,1" UnitType="PylonContainmentUnit">
+        <Flag Index="UnitHidden" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="34" Position="128,128,0" Rotation="4.7121" Scale="1,1,1" UnitType="RipFieldGenerator">
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="35" Position="128,128,0" Scale="1,1,1" UnitType="RipFieldGenerator">
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="261959662" Position="128,128,0" Scale="1,1,1" UnitType="VoidRiftUnselectable">
+        <Flag Index="UnitHidden" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="11" Position="128,128,0" Scale="1,1,1" UnitType="Beacon_Terran">
+        <Flag Index="UnitHidden" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="5" Position="128,128,0" Scale="1,1,1" UnitType="LabTurret">
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="CameraHidden" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectUnit>
+    <ObjectDoodad Id="13" Position="128,112,-11.0034" Rotation="4.7121" Scale="2,2,2" Type="Aiur_EnergyWall" TintColor="0,255,255 0.100000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="12" Position="144,128,-11.0036" Scale="2,2,2" Type="Aiur_EnergyWall" TintColor="0,255,255 0.100000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="2" Position="128,128,7.7963" Scale="0.5,0.5,0.5" Type="ArtifactShrine" TintColor="NULL 0.500000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="10" Variation="1" Position="128,128,7.9965" Scale="1,1,1" Type="Blast_Craters_Big" TintColor="0,16,255 2.000000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="15" Position="128,144,-11.0034" Rotation="1.5705" Scale="2,2,2" Type="Aiur_EnergyWall" TintColor="0,255,255 0.100000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="14" Position="112,128,-11.0036" Rotation="3.1413" Scale="2,2,2" Type="Aiur_EnergyWall" TintColor="0,255,255 0.100000">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+        <Flag Index="NoSoundEmitters" Value="1"/>
+    </ObjectDoodad>
+    <ObjectPoint Id="36" Position="128,128,0" Scale="1,1,1" Type="Normal" Name="Center Point" Color="0,0,0,0"/>
+</PlacedObjects>

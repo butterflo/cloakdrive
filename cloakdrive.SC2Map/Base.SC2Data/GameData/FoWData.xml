@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CFoW id="Black">
+        <Color value="0,0,0,0"/>
+        <UnhideRadius value="0"/>
+    </CFoW>
+    <CFoW id="BlackNoUnhide">
+        <Color value="0,0,0,0"/>
+    </CFoW>
+    <CFoW id="Dark">
+        <Color value="0,0,0,0"/>
+        <Hidden value="1"/>
+    </CFoW>
+</Catalog>

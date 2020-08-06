@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+
+    <Frame type="EquipmentIcon" name="EquipmentIconTemplate" file="EquipmentIcon">
+        <Width val="48"/>
+        <Frame type="Label" name="LevelLabel">
+            <Anchor side="Bottom" relative="$parent" pos="1.0" offset="1"/>
+            <Anchor side="Right" relative="$parent" pos="1.0" offset="0"/>
+            <Style val="Cloakdrive14Right"/>
+        </Frame>
+    </Frame>
+    <Frame type="AlertItem" name="AlertItemTemplate" file="AlertPanel">
+        <Frame type="Image" name="AlertBorder">
+            <Width val="32"/>
+            <Height val="32"/>
+        </Frame>
+        <Frame type="Image" name="AlertIcon">
+            <Width val="32"/>
+            <Height val="32"/>
+            <Frame type="Label" name="CountLabel">
+                <Style val="Cloakdrive14Right"/>
+            </Frame>
+        </Frame>
+        <Frame type="Label" name="AlertLabel">
+            <Style val="Cloakdrive14Left"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="ConsolePanel" name="GameUI/UIContainer/ConsolePanel" file="GameUI">
+        <Frame type="Model" name="InfopanelModel">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Model" name="MinimapModel">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Frame" name="InfoStub">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="PortraitPanel" name="PortraitPanel">
+            <Anchor side="Bottom" relative="$parent" pos="Min" offset="-500"/>
+        </Frame>
+
+        <Frame type="Model" name="CommandPanelModel">
+            <Visible val="false"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="GameUI" name="GameUI" file="GameUI">
+        <ConsoleWorldBottomOffset val="0"/>
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/FullscreenUpperContainer" file="GameUI">
+        <Frame type="MessageDisplay" name="ErrorDisplay">
+            <Anchor side="Top" relative="$parent/AlertPanel" pos="1.9" offset="0"/>
+            <MaxMessages val="7"/>
+            <MessageDuration val="7000"/>
+            <FadeDuration val="700"/>
+            <Width val="550"/>
+            <Height val="192"/>
+        </Frame>
+
+        <Frame type="MessageDisplay" name="ChatDisplay">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-192"/>
+            <MaxMessages val="4"/>
+            <MessageDuration val="10000"/>
+            <FadeDuration val="700"/>
+            <Height val="200"/>
+            <Width val="800"/>
+            <Style val="Cloakdrive14Left"/>
+        </Frame>
+
+        <Frame type="ChatBar" name="ChatBar">
+            <Anchor side="Top" relative="$parent" pos="0.7" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-200"/>
+            <Anchor side="Left" relative="$parent" pos="0.5" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="0.5" offset="0"/>
+            <Width val="1009"/>
+            <Height val="122"/>
+            <Frame type="Button" name="EmoticonButton">
+                <Visible val="False"/>
+            </Frame>
+            <Frame type="Image" name="EmojiBorderLine">
+                <Visible val="False"/>
+            </Frame>
+            <Frame type="Image" name="RecipientImage">
+                <Visible val="False"/>
+            </Frame>
+            <Frame type="Label" name="RecipientLabel">
+                <Style val="Cloakdrive14Left"/>
+            </Frame>
+            <Frame type="EditBox" name="ChatEditBox">
+                <Frame type="Frame" name="LabelContainerFrame">
+                    <Frame type="Label" name="Label">
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="Image" name="BackgroundImage">
+                <Visible val="False"/>
+            </Frame>
+        </Frame>
+
+        <Frame type="TextCrawlPanel" name="TextCrawlPanel">
+            <Anchor side="Left" relative="$parent" pos="Min" offset="333"/>
+        </Frame>
+
+        <Frame type="ResourcePanel" name="ResourcePanel">
+            <Frame type="ResourceFrame" name="ResourceFrame">
+                <Frame type="CountdownLabel" name="SupplyLabel">
+                    <CountdownTime val="150"/>
+                    <Style val="Cloakdrive14Left"/>
+                    <Width val="70"/>
+                    <Height val="24"/>
+                </Frame>
+                <Frame type="Image" name="SupplyBackground">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="10"/>
+                    <Width val="24"/>
+                    <Height val="24"/>
+                </Frame>
+                <Frame type="Image" name="SupplyIcon">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="7"/>
+                    <Width val="24"/>
+                    <Height val="24"/>
+                </Frame>
+                <Frame type="CountdownLabel" name="ResourceLabel0">
+                    <CountdownTime val="150"/>
+                    <Style val="Cloakdrive14Left"/>
+                    <Width val="140"/>
+                    <Height val="24"/>
+                </Frame>
+                <Frame type="Image" name="ResourceIconBackground0">
+                    <Anchor side="Right" relative="$parent\ResourceLabel0" pos="Min" offset="0"/>
+                    <Width val="24"/>
+                    <Height val="24"/>
+                </Frame>
+                <Frame type="Image" name="ResourceIcon0">
+                    <Width val="24"/>
+                    <Height val="24"/>
+                </Frame>
+            </Frame>
+        </Frame>
+        <Frame type="HeroPanel" name="HeroPanel">
+            <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="0.0" offset="0"/>
+        </Frame>
+        <Frame type="AlertPanel" name="AlertPanel">
+            <ItemHeight val="40"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
+
+        <Frame type="ControlGroupPanel" name="ControlGroupPanel">
+            <Height val="96"/>
+            <Width val="308"/>
+            <Anchor side="Left" relative="$this" pos="0.0" offset="0"/>
+            <Anchor side="Left" relative="$parent/MinimapPanel" pos="1.0" offset="28"/>
+            <Anchor side="Bottom" relative="$parent/MinimapPanel" pos="1.0" offset="28"/>
+            <Frame type="ControlGroupButton" name="ControlGroupButton0">
+                <Frame type="Label" name="IndexLabel">
+                    <Anchor side="Bottom" relative="$parent" pos="0" offset="-6"/>
+                </Frame>
+                <Frame type="Image" name="UnitImage">
+                    <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+            </Frame>
+            <Frame type="ControlGroupButton" name="ControlGroupButton1">
+                <Frame type="Label" name="IndexLabel">
+                    <Anchor side="Bottom" relative="$parent" pos="0" offset="-6"/>
+                </Frame>
+                <Frame type="Image" name="UnitImage">
+                    <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+            </Frame>
+            <Frame type="ControlGroupButton" name="ControlGroupButton2">
+                <Frame type="Label" name="IndexLabel">
+                    <Anchor side="Bottom" relative="$parent" pos="0" offset="-6"/>
+                </Frame>
+                <Frame type="Image" name="UnitImage">
+                    <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+            </Frame>
+        </Frame>
+        <Frame type="MissionTimePanel" name="MissionTimePanel">
+            <Anchor side="Bottom" relative="$parent" pos="Min" offset="-500"/>
+        </Frame>
+
+        <Frame type="InfoPanel" name="InfoPanel">
+            <Height val="150"/>
+            <Width val="1800"/>
+            <Unclipped val="true"/>
+            <Anchor side="Left" relative="$parent" pos="0.07" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+
+            <Frame type="InfoPaneUnit" name="InfoPaneUnit">
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+                <Height val="150"/>
+                <Width val="900"/>
+                <Frame type="Label" name="NameLabel">
+                    <Anchor side="Top" relative="$parent" pos="0.05" offset="0"/>
+                    <Anchor side="Left" relative="$parent" pos="0" offset="0"/>
+                    <Style val="Cloakdrive14"/>
+                </Frame>
+                <Frame type="Label" name="InfoLabel">
+                    <Anchor side="Bottom" relative="$parent" pos="0" offset="0"/>
+                </Frame>
+                <Frame type="Label" name="TypeLabel">
+                    <Visible val="False"/>
+                </Frame>
+                <Frame type="Frame" name="EquipmentPanel">
+                    <Anchor side="Top" relative="$parent" pos="0" offset="64"/>
+                    <Height val="48"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="Frame" name="UnitPanel">
+                <Frame type="BehaviorBar" name="BehaviorBar">
+                    <Anchor side="Left" relative="$parent" pos="0.5" offset="10"/>
+                </Frame>
+                <Frame type="UnitWireframe" name="UnitWireframe">
+                    <Anchor side="Left" relative="$parent/BehaviorBar" pos="Max" offset="0"/>
+                    <Width val="100"/>
+                    <Height val="100"/>
+                </Frame>
+                <Frame type="Label" name="ShieldLabel">
+                    <Style val="Cloakdrive14"/>
+                    <Width val="300"/>
+                    <Height val="14"/>
+                    <Unclipped val="True"/>
+                    <WriteOutText val="True"/>
+                    <WriteOutTextDuration val="50"/>
+                </Frame>
+                <Frame type="Label" name="LifeLabel">
+                    <Style val="Cloakdrive14"/>
+                    <Width val="300"/>
+                    <Height val="14"/>
+                    <Unclipped val="True"/>
+                    <WriteOutText val="True"/>
+                    <WriteOutTextDuration val="50"/>
+                </Frame>
+                <Frame type="Label" name="EnergyLabel">
+                    <Style val="Cloakdrive14"/>
+                    <Width val="300"/>
+                    <Height val="14"/>
+                    <Unclipped val="True"/>
+                    <WriteOutText val="True"/>
+                    <WriteOutTextDuration val="50"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="InfoPaneQueue" name="InfoPaneQueue">
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+                <Height val="150"/>
+                <Width val="900"/>
+                <Frame type="Label" name="NameLabel">
+                    <Anchor side="Top" relative="$parent" pos="0.05" offset="0"/>
+                    <Anchor side="Left" relative="$parent" pos="0" offset="0"/>
+                    <Style val="Cloakdrive14"/>
+                </Frame>
+                <Frame type="Frame" name="QueuePanel">
+                    <Frame type="ActiveQueuePanel" name="ActiveQueuePanel00">
+                        <Frame type="QueueButton" name="QueueButton">
+                            <Height val="48"/>
+                            <Width val="48"/>
+                        </Frame>
+                        <Frame type="Label" name="ActivityLabel">
+                            <Style val="Cloakdrive14Left"/>
+                        </Frame>
+                    </Frame>
+                </Frame>
+            </Frame>
+
+            <Frame type="InfoPaneGroup" name="InfoPaneGroup">
+                <Frame type="UnitButton" name="GroupUnitButtonTemplate">
+                    <Height val="48"/>
+                    <Width val="48"/>
+                </Frame>
+                <Frame type="Frame" name="PageFrame0">
+                    <Frame type="Button" name="GroupUnitButton0">
+                        <Anchor side="Left" relative="$parent" pos="0.5" offset="63"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton8">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton7" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton7" pos="1" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton12">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton0" pos="1" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton0" pos="0" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton16">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton15" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton15" pos="1" offset="0"/>
+                    </Frame>
+                </Frame>
+                <Frame type="Frame" name="PageFrame1">
+                    <Frame type="Button" name="GroupUnitButton0">
+                        <Anchor side="Left" relative="$parent" pos="0.5" offset="63"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton8">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton7" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton7" pos="1" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton12">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton0" pos="1" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton0" pos="0" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton16">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton15" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton15" pos="1" offset="0"/>
+                    </Frame>
+                </Frame>
+                <Frame type="Frame" name="PageFrame2">
+                    <Frame type="Button" name="GroupUnitButton0">
+                        <Anchor side="Left" relative="$parent" pos="0.5" offset="63"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton8">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton7" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton7" pos="1" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton12">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton0" pos="1" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton0" pos="0" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton16">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton15" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton15" pos="1" offset="0"/>
+                    </Frame>
+                </Frame>
+                <Frame type="Frame" name="PageFrame3">
+                    <Frame type="Button" name="GroupUnitButton0">
+                        <Anchor side="Left" relative="$parent" pos="0.5" offset="63"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton8">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton7" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton7" pos="1" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton12">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton0" pos="1" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton0" pos="0" offset="0"/>
+                    </Frame>
+                    <Frame type="Button" name="GroupUnitButton16">
+                        <Anchor side="Top" relative="$parent/GroupUnitButton15" pos="0" offset="0"/>
+                        <Anchor side="Left" relative="$parent/GroupUnitButton15" pos="1" offset="0"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </Frame>
+
+        <Frame type="CommandPanel" name="CommandPanel">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-18"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-21"/>
+            <Width val="320"/>
+            <Height val="160"/>
+
+            <Frame type="CommandTooltip" name="CommandTooltip">
+                <Frame type="Image" name="BackgroundImage">
+                    <Alpha val="64"/>
+                </Frame>
+                <Frame type="Label" name="ResourceLabel0">
+                    <Width val="150"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="CommandButton" name="CommandButton00">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton01">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton02">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton03">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton04">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton05">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Anchor side="Top" relative="$parent/CommandButton00" pos="Max" offset="1"/>
+                <Anchor side="Left" relative="$parent/CommandButton00" pos="Min" offset="16"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton06">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton07">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton08">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton09">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton10">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Anchor side="Top" relative="$parent/CommandButton05" pos="Max" offset="1"/>
+                <Anchor side="Left" relative="$parent/CommandButton05" pos="Min" offset="16"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton11">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton12">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton13">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton14">
+                <Width val="48"/>
+                <Height val="48"/>
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Anchor side="Top" relative="$parent" pos="0" offset="-2"/>
+                        <Anchor side="Left" relative="$parent" pos="0" offset="-2"/>
+                        <Style val="Cloakdrive14Left"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </Frame>
+
+        <Frame type="MinimapPanel" name="MinimapPanel">
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+            <Width val="192"/>
+            <Height val="192"/>
+
+            <Frame type="Minimap" name="Minimap">
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                <Width val="192"/>
+                <Height val="192"/>
+                <Alpha val="128"/>
+                <TooltipFrame val="MinimapPanelTooltip"/>
+            </Frame>
+
+            <Frame type="Button" name="ColorButton">
+                <Visible val="false"/>
+
+                <Frame type="Image" name="Icon">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="Button" name="PingButton">
+                <Visible val="false"/>
+
+                <Frame type="Image" name="Icon">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="Button" name="TerrainButton">
+                <Visible val="false"/>
+
+                <Frame type="Image" name="Icon">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+        </Frame>
+
+        <Frame type="AlertDisplay" name="AlertDisplay">
+            <Frame type="Label" name="AlertLabel"> 
+                <Style val="Cloakdrive14"/>
+            </Frame>
+        </Frame>
+    </Frame>
+</Desc>

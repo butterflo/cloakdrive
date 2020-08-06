@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CValidatorPlayerRequirement id="BansheeResist_is_1">
+        <WhichPlayer Value="Caster"/>
+        <Find value="1"/>
+        <Value value="BansheeResist_1_req"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="BansheeResist_is_2">
+        <WhichPlayer Value="Caster"/>
+        <Find value="1"/>
+        <Value value="BansheeResist_2_req"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="BansheeResist_is_3">
+        <WhichPlayer Value="Caster"/>
+        <Find value="1"/>
+        <Value value="BansheeResist_3_req"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitFilters id="CasterIsNotNeutral">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Ally,Neutral,Enemy"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="IsNOTVortexDisabled">
+        <Behavior value="VortexEventHorizon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CloakFieldIsActive">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="CloakfieldRelay"/>
+    </CValidatorUnitCompareBehaviorCount>
+</Catalog>

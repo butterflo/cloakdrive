@@ -1,0 +1,184 @@
+﻿Abil/EditorPrefix/CancelWaypoint=CLOAKDRIVE
+Abil/EditorPrefix/ForceField=CLOAKDRIVE
+Abil/EditorPrefix/GuardianShield=CLOAKDRIVE
+Abil/EditorPrefix/HallucinationOracle=CLOAKDRIVE
+Abil/EditorPrefix/HallucinationPhoenix=CLOAKDRIVE
+Abil/EditorPrefix/HallucinationProbe=CLOAKDRIVE
+Abil/EditorPrefix/HallucinationWarpPrism=CLOAKDRIVE
+Abil/EditorPrefix/MassCloakDrive=CLOAKDRIVE
+Abil/EditorPrefix/StarportTechLabResearch=CLOAKDRIVE
+Abil/EditorPrefix/StarportTrain=CLOAKDRIVE
+Abil/EditorPrefix/VoodooShield=CLOAKDRIVE
+Abil/EditorPrefix/Waypoint=CLOAKDRIVE
+Abil/EditorSuffix/CancelWaypoint=
+Actor/EditorPrefix/AnnihilatorActorHitModel=CLOAKDRIVE
+Actor/EditorPrefix/AnnihilatorActorHitSound=CLOAKDRIVE
+Actor/EditorPrefix/InhibitorActorLoopsound=CLOAKDRIVE
+Actor/EditorPrefix/OracleStasisTrapExplosion=CLOAKDRIVE
+Actor/EditorPrefix/Oracle_StasisTrap_Explode=CLOAKDRIVE
+Actor/EditorPrefix/ProbeAttackBeam=CLOAKDRIVE
+Actor/EditorPrefix/SeekerModelAdd=CLOAKDRIVE
+Actor/EditorPrefix/WeaponModeSwitchSound=CLOAKDRIVE
+Actor/EditorSuffix/ProbeAttackBeam=Beam
+Actor/EditorSuffix/WeaponModeSwitchSound=Sound
+Actor/Name/EnergyNovaShockwave=Assembly model: death main
+Actor/Name/HyperionYamatoSpecialAttack=Raven ATK
+Actor/Name/HyperionYamatoSpecialAttackMissile=Raven PROJ
+Actor/Name/InhibitorActorLoopsound=Inhibitor Actor Loopsound
+Actor/Name/NukeAOE=NukeAOE
+Actor/Name/OracleStasisTrapExplosion=Shield Projector Launch Model
+Actor/Name/Oracle_StasisTrap_Explode=Shield Projector Launch Sound
+Actor/Name/ProbeAttackBeam=LDX-LR
+Actor/Name/PsionicShockwave=RiftShockwave
+Actor/Name/RiftPreChargeModel=RiftPreChargeModel
+Actor/Name/ScannerDroneRadarActor=ScannerDroneRadarActor
+Actor/Name/TemportalFieldLaunch=Annihilator Actor Launch Sound
+Actor/Name/VortexExitOpacity=RiftColorFX
+Actor/Name/VortexModel=RiftLoopActor
+Actor/Name/VortexPreChargeSound=Rift Charge Sound
+Actor/Name/WeaponModeSwitchSound=WeaponModeSwitch
+Behavior/EditorPrefix/CloakspaceTurbineActive2=CLOAKDRIVE
+Behavior/EditorPrefix/EnergyFillArea=CLOAKDRIVE
+Behavior/EditorPrefix/VortexEventHorizon=CLOAKDRIVE
+Behavior/Name/AnnihilatorDELAY=Annihilator DELAY
+Behavior/Name/CloakfieldRelay=Cloakfield Relay
+Behavior/Name/GhostCloak=Jump_Prepare
+Behavior/Name/Superspeed=Superspeed
+Behavior/Name/VortexEventHorizon=Vortex DISABLE
+Button/EditorPrefix/CancelWaypoint=CLOAKDRIVE
+Button/EditorPrefix/EvasiveCloakDrive=CLOAKDRIVE
+Button/EditorPrefix/EvasiveCloakDrive2=CLOAKDRIVE
+Button/EditorPrefix/SetWaypoint=CLOAKDRIVE
+Effect/EditorPrefix/WarpSingularDUMMY=CLOAKDRIVE
+Effect/EditorPrefix/WraithARightLaunchMissile=CLOAKDRIVE
+Effect/EditorPrefix/YamatoGunSpecialDamage=CLOAKDRIVE
+Effect/EditorPrefix/YamatoGunSpecialLaunchMissile=CLOAKDRIVE
+Effect/EditorSuffix/AnnihilatorAPPLY=APPLY
+Effect/EditorSuffix/DiamondbackBeam=DM
+Effect/EditorSuffix/EnergyNovaPersistent=
+Effect/EditorSuffix/IonCannonsU= 
+Effect/EditorSuffix/MassRecallSearch=SEARCH
+Effect/EditorSuffix/NukeDamage=
+Effect/EditorSuffix/NukeDetonate=
+Effect/EditorSuffix/ParticleBeam=DM
+Effect/EditorSuffix/PhotonCannonU=
+Effect/EditorSuffix/PurifierPlanetCrackerSearch=SEARCH
+Effect/EditorSuffix/VoidSeekerU=DM
+Effect/EditorSuffix/VoidSeekerU2=DM
+Effect/EditorSuffix/WraithAU=
+Light/EditorPrefix/Valhalla=CLOAKDRIVE -
+Light/Name/BraxisAlpha=CLOAKDRIVE default lights
+Light/Name/EditorTestLight=default
+Light/Name/Monlyth=CLOAKDRIVE hot lights
+Light/Name/PortZion=CLOAKDRIVE dark lights
+Light/Name/Valhalla=CLOAKDRIVE void lights
+Model/EditorPrefix/AnnihilatorHitModel=CLOAKDRIVE
+Model/EditorPrefix/AnnihilatorModelHitModel=CLOAKDRIVE
+Model/EditorPrefix/LaserDrillTripodBiggerAttackBeam=CLOAKDRIVE
+Model/EditorPrefix/ProbeAttackBeam=CLOAKDRIVE
+Model/EditorSuffix/LaserDrillTripodBiggerAttackBeam=Beam
+Model/EditorSuffix/ProbeAttackBeam=Beam
+Model/Name/AnnihilatorModelHitModel=Annihilator Model Hit Model
+Model/Name/LaserDrillTripodBiggerAttackBeam=LDX
+Model/Name/ProbeAttackBeam=LDX-LR
+Model/Name/ScannerSweepModel=CloakDriveModelSingular
+Model/Name/TimeWarp=SpecialUnitShield
+Model/Name/VoodooShield=ResistT0
+RequirementNode/Name/10=10
+RequirementNode/Name/11=11
+RequirementNode/Name/14=14
+RequirementNode/Name/21=21
+RequirementNode/Name/3=3
+RequirementNode/Name/7=7
+RequirementNode/Name/99=99
+RequirementNode/Name/AndEqCountUpgradeBansheeUpgradeEN12CompleteOnly1EqCountUpgradeBansheeUpgradeEN122InProgressOnly0EqCountUpgradeBansheeUpgradeEN122CompleteOnly0=CountUpgrade(BansheeUpgradeEN12,CompleteOnly) == 1 && CountUpgrade(BansheeUpgradeEN122,InProgressOnly) == 0 && CountUpgrade(BansheeUpgradeEN122,CompleteOnly) == 0
+RequirementNode/Name/AndEqCountUpgradeBansheeUpgradeEN1CompleteOnly0EqCountUpgradeBansheeUpgradeEN1InProgressOnly0=CountUpgrade(BansheeUpgradeEN1,CompleteOnly) == 0 && CountUpgrade(BansheeUpgradeEN1,InProgressOnly) == 0
+RequirementNode/Name/AndEqCountUpgradeBansheeUpgradeEN1CompleteOnly1EqCountUpgradeBansheeUpgradeEN12InProgressOnly0EqCountUpgradeBansheeUpgradeEN12CompleteOnly0=CountUpgrade(BansheeUpgradeEN1,CompleteOnly) == 1 && CountUpgrade(BansheeUpgradeEN12,InProgressOnly) == 0 && CountUpgrade(BansheeUpgradeEN12,CompleteOnly) == 0
+RequirementNode/Name/AndLTCountUpgradeAssemblyUpgradeREGENCompleteOnly21EqCountUpgradeAssemblyUpgradeREGENInProgressOnly0=CountUpgrade(AssemblyUpgradeREGEN,CompleteOnly) < 21 && CountUpgrade(AssemblyUpgradeREGEN,InProgressOnly) == 0
+RequirementNode/Name/AndLTCountUpgradeBansheeUpgradeATKCompleteOnly99EqCountUpgradeBansheeUpgradeATKInProgressOnly0=CountUpgrade(BansheeUpgradeATK,CompleteOnly) < 99 && CountUpgrade(BansheeUpgradeATK,InProgressOnly) == 0
+RequirementNode/Name/AndLTCountUpgradeBansheeUpgradeENCompleteOnly7EqCountUpgradeBansheeUpgradeENQueuedOnly0=CountUpgrade(BansheeUpgradeEN,CompleteOnly) < 7 && CountUpgrade(BansheeUpgradeEN,QueuedOnly) == 0
+RequirementNode/Name/AndLTCountUpgradeCloakDriveUpgradeCompleteOnly21EqCountUpgradeCloakDriveUpgradeInProgressOnly0=CountUpgrade(CloakDriveUpgrade,CompleteOnly) < 21 && CountUpgrade(CloakDriveUpgrade,InProgressOnly) == 0
+RequirementNode/Name/AndLTCountUpgradeHunterSeekerCompleteOnly14EqCountUpgradeHunterSeekerInProgressOnly0=CountUpgrade(HunterSeeker,CompleteOnly) < 14 && CountUpgrade(HunterSeeker,InProgressOnly) == 0
+RequirementNode/Name/AndLTCountUpgradeWraithCloakCompleteOnly14EqCountUpgradeWraithCloakInProgressOnly0=CountUpgrade(WraithCloak,CompleteOnly) < 14 && CountUpgrade(WraithCloak,InProgressOnly) == 0
+RequirementNode/Name/CountBehaviorCloakfieldRelayCompleteOnlyAtUnit=CountBehavior(CloakfieldRelay,CompleteOnlyAtUnit)
+RequirementNode/Name/CountBehaviorWeaponTypeBCompleteOnlyAtUnit=CountBehavior(WeaponTypeB,CompleteOnlyAtUnit)
+RequirementNode/Name/CountUpgradeAssemblyUpgradeREGENCompleteOnly=CountUpgrade(AssemblyUpgradeREGEN,CompleteOnly)
+RequirementNode/Name/CountUpgradeAssemblyUpgradeREGENInProgressOnly=CountUpgrade(AssemblyUpgradeREGEN,InProgressOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeATKCompleteOnly=CountUpgrade(BansheeUpgradeATK,CompleteOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeATKInProgressOnly=CountUpgrade(BansheeUpgradeATK,InProgressOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeEN122CompleteOnly=CountUpgrade(BansheeUpgradeEN122,CompleteOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeEN122InProgressOnly=CountUpgrade(BansheeUpgradeEN122,InProgressOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeEN12CompleteOnly=CountUpgrade(BansheeUpgradeEN12,CompleteOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeEN12InProgressOnly=CountUpgrade(BansheeUpgradeEN12,InProgressOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeEN1CompleteOnly=CountUpgrade(BansheeUpgradeEN1,CompleteOnly)
+RequirementNode/Name/CountUpgradeBansheeUpgradeEN1InProgressOnly=CountUpgrade(BansheeUpgradeEN1,InProgressOnly)
+RequirementNode/Name/CountUpgradeCloakDriveUpgradeCompleteOnly=CountUpgrade(CloakDriveUpgrade,CompleteOnly)
+RequirementNode/Name/CountUpgradeCloakDriveUpgradeInProgressOnly=CountUpgrade(CloakDriveUpgrade,InProgressOnly)
+RequirementNode/Name/CountUpgradeHunterSeekerCompleteOnly=CountUpgrade(HunterSeeker,CompleteOnly)
+RequirementNode/Name/CountUpgradeHunterSeekerInProgressOnly=CountUpgrade(HunterSeeker,InProgressOnly)
+RequirementNode/Name/CountUpgradeTITANspreadCompleteOnly=CountUpgrade(TITANspread,CompleteOnly)
+RequirementNode/Name/CountUpgradeWraithCloakInProgressOnly=CountUpgrade(WraithCloak,InProgressOnly)
+RequirementNode/Name/EqCountUpgradeAssemblyUpgradeREGENInProgressOnly0=CountUpgrade(AssemblyUpgradeREGEN,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeATKInProgressOnly0=CountUpgrade(BansheeUpgradeATK,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN122CompleteOnly0=CountUpgrade(BansheeUpgradeEN122,CompleteOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN122InProgressOnly0=CountUpgrade(BansheeUpgradeEN122,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN12CompleteOnly0=CountUpgrade(BansheeUpgradeEN12,CompleteOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN12CompleteOnly1=CountUpgrade(BansheeUpgradeEN12,CompleteOnly) == 1
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN12InProgressOnly0=CountUpgrade(BansheeUpgradeEN12,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN1CompleteOnly0=CountUpgrade(BansheeUpgradeEN1,CompleteOnly) == 0
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN1CompleteOnly1=CountUpgrade(BansheeUpgradeEN1,CompleteOnly) == 1
+RequirementNode/Name/EqCountUpgradeBansheeUpgradeEN1InProgressOnly0=CountUpgrade(BansheeUpgradeEN1,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeCloakDriveUpgradeInProgressOnly0=CountUpgrade(CloakDriveUpgrade,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeHunterSeekerInProgressOnly0=CountUpgrade(HunterSeeker,InProgressOnly) == 0
+RequirementNode/Name/EqCountUpgradeWraithCloakInProgressOnly0=CountUpgrade(WraithCloak,InProgressOnly) == 0
+RequirementNode/Name/LTCountUpgradeAssemblyUpgradeREGENCompleteOnly21=CountUpgrade(AssemblyUpgradeREGEN,CompleteOnly) < 21
+RequirementNode/Name/LTCountUpgradeBansheeUpgradeATKCompleteOnly99=CountUpgrade(BansheeUpgradeATK,CompleteOnly) < 99
+RequirementNode/Name/LTCountUpgradeBansheeUpgradeENCompleteOnly7=CountUpgrade(BansheeUpgradeEN,CompleteOnly) < 7
+RequirementNode/Name/LTCountUpgradeCloakDriveUpgradeCompleteOnly21=CountUpgrade(CloakDriveUpgrade,CompleteOnly) < 21
+RequirementNode/Name/LTCountUpgradeHunterSeekerCompleteOnly14=CountUpgrade(HunterSeeker,CompleteOnly) < 14
+RequirementNode/Name/LTCountUpgradeWraithCloakCompleteOnly14=CountUpgrade(WraithCloak,CompleteOnly) < 14
+RequirementNode/Name/NotCountBehaviorCloakfieldRelayCompleteOnlyAtUnit=!CountBehavior(CloakfieldRelay,CompleteOnlyAtUnit)
+Sound/Name/CarrierDestroyedMini=Carrier Destroyed Mini
+Sound/Name/Core_SpinUp=Charge 2
+Sound/Name/Core_TransformEndHit=Sound 2-2
+Sound/Name/Eradicator_Explode=Carrier Destroyed
+Sound/Name/Ghost_NukeExplode=Nuke Explode
+Sound/Name/HybridDYes=Masswarp Voice 9
+Sound/Name/HyperionYamatoSpecialAttackImpact=BFG-VII Impact Sound
+Sound/Name/HyperionYamatoSpecialAttackLaunch=BFG-VII Launch Sound
+Sound/Name/Immortal_HardenedShieldImpact=ResistT0
+Sound/Name/InhibitorActivate=Inhibitor Activate
+Sound/Name/InhibitorSound=Inhibitor Loop
+Sound/Name/Mothership_TimeWarpLaunch=Annihilator Sound Launch Sound
+Sound/Name/Oracle_StasisTrap_Explode=Shield Projector Sound
+Sound/Name/OrbitalCommand_Movement=Carrier Move
+Sound/Name/OrbitalCommand_ScannerSweep=Cloakdrive Order Placed
+Sound/Name/OrbitalCommand_ScannerSweep2=CloakDriveSoundMass
+Sound/Name/PPurifier01_PurifierVault_StandWorkStart_A=Arbiter Relay Open
+Sound/Name/Probe_AttackImpact=LDX-LR Impact
+Sound/Name/Probe_AttackLaunch=LDX-LR Sound
+Sound/Name/PurifierClick=PurifierClick
+Sound/Name/Raynor_MorosDeviceStart=CloakDriveLaunch
+Sound/Name/Raynor_MorosDeviceStart2=CloakDriveArrive
+Sound/Name/Raynor_MorosDeviceStart22=Cloakdrive Arrive Loud
+Sound/Name/THorner03BriefingTychus00019=Masswarp Voice 8
+Sound/Name/THorner03Tychus00032=Masswarp Voice 4
+Sound/Name/TTosh03BBriefingNova00010=Masswarp Voice 5
+Sound/Name/TValerian02ASwann00058=Masswarp Voice 6
+Sound/Name/TValerian02ATychus00061=Masswarp Voice 7
+Sound/Name/TValerian02BRaynor00010=Masswarp Voice 3
+Sound/Name/UI_NovaUT_EquipClick=WeaponModeSwitch
+Sound/Name/zMission_Lab02_Lab02Mech_121=Masswarp Voice 11
+Sound/Name/zUnit_HeroQueen_zExpedtion03Queen_038=Masswarp Voice 12
+Sound/Name/zUnit_TacFighter_TacFighterPilot_005=Masswarp Voice 13
+Soundtrack/Name/BansheeOST0=BansheeOST0
+Soundtrack/Name/BansheeOST1=BansheeOST1
+Soundtrack/Name/BansheeOST2=BansheeOST2
+Soundtrack/Name/BansheeOSTT2=BansheeOSTT2
+Unit/EditorSuffix/DuskWing=
+Upgrade/EditorPrefix/HunterSeeker=
+Validator/Name/BansheeResist_is_1=BansheeResist_is_1
+Validator/Name/BansheeResist_is_2=BansheeResist_is_2
+Validator/Name/BansheeResist_is_3=BansheeResist_is_3
+Validator/Name/CloakFieldIsActive=CloakFieldIsActive
+Validator/Name/IsNOTVortexDisabled=IsNOTVortexDisabled
