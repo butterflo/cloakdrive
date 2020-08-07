@@ -111,7 +111,7 @@ Button/Tooltip/WarpPrism=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Disabl
 Button/Tooltip/Wraith=<c val="00FF00">T5 UNIT</c><n/><n/><c val="FF0000">[DATA EXPUNGED]</c><n/><c val="FF0000">[DATA EXPUNGED]</c>
 Button/Tooltip/WraithCloak=<c val="FFFFFF">Mass cloakdrive cooldown -7s</c><n/><c val="00FFFF">(Provides charge immediately)</c><n/><c val="00FFFF">Cooldown: <d ref="Abil,MassCloakDrive,Cost[0].Cooldown.TimeStart"/>s (current)</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=Epic space warfare.<n/><n/>* Up to 7 players with AI support.<n/>* Press C to warp anywhere.<n/><n/>@ Jul.28.2019 update
+DocInfo/DescLong=Epic space warfare.<n/><n/>* Up to 7 players with AI support.<n/>* Press C to warp anywhere.<n/><n/>@ Aug.07.2020 update
 DocInfo/DescShort=.
 DocInfo/HowToPlayBasic00=Destroy enemy units to loot resources. Build high-tier units and warp in.
 DocInfo/HowToPlayBasic01=Use combat units and Cloakdrive ability to destroy enemy Carriers.
@@ -157,7 +157,12 @@ DocInfo/PatchNote037=* Banshees now have cloakdrive battery chargers
 DocInfo/PatchNote038=* Turbine warps are now charge-based
 DocInfo/PatchNote039=* Lights reworked, FX polished
 DocInfo/PatchNote040=* New splash screen
-DocInfo/PatchNote041=* Fix collision bug at the center of the map
+DocInfo/PatchNote041=* Fix collision bug at the map center
+DocInfo/PatchNote042=* Fix UI
+DocInfo/PatchNote043=* Remove the delay after carrier destruction and explosion effect
+DocInfo/PatchNote044=* Fix where Raven's secondary weapon was not charging other units shield after full stack
+DocInfo/PatchNote045=* New loading screen
+DocInfo/PatchNote046=* Change Cancel hotkey from X to Esc
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB

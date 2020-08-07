@@ -53,6 +53,32 @@
     </Frame>
 
     <Frame type="Frame" name="GameUI/UIContainer/FullscreenUpperContainer" file="GameUI">
+
+        <Frame type="Frame" name="MenuBarConsoleAnchor">
+            <Anchor side="Bottom" relative="$parent" pos="1.0" offset="23"/>
+            <Anchor side="Right" relative="$parent" pos="0.82" offset="0"/>
+        </Frame>
+        <Frame type="Frame" name="MenuBarFullscreenAnchor">
+            <Anchor side="Bottom" relative="$parent" pos="1.0" offset="23"/>
+            <Anchor side="Right" relative="$parent" pos="0.82" offset="0"/>
+        </Frame>
+
+        <Frame type="MenuBar" name="MenuBar">
+            <Frame type="Image" name="MenuBarBackgroundImage">
+                <Alpha val="1"/>
+            </Frame>
+            <Frame type="SocialButton" name="SocialButton">
+                <Frame type="Label" name="CountLabel">
+                    <Style val="Cloakdrive14"/>
+                </Frame>
+            </Frame>
+            <Frame type="Button" name="MenuButton">
+                <Frame type="Label" name="MenuLabel">
+                    <Style val="Cloakdrive14"/>
+                </Frame>
+            </Frame>
+        </Frame>
+
         <Frame type="MessageDisplay" name="ErrorDisplay">
             <Anchor side="Top" relative="$parent/AlertPanel" pos="1.9" offset="0"/>
             <MaxMessages val="7"/>
@@ -144,6 +170,63 @@
         </Frame>
         <Frame type="HeroPanel" name="HeroPanel">
             <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="0.0" offset="0"/>
+            <Frame type="HeroFrame" name="HeroFrame00">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame01">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame02">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame03">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame04">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame05">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame06">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+            <Frame type="HeroFrame" name="HeroFrame07">
+                <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
+                    <Frame type="Label" name="HotkeyLabel">
+                        <Style val="Cloakdrive14"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+
         </Frame>
         <Frame type="AlertPanel" name="AlertPanel">
             <ItemHeight val="40"/>
@@ -160,26 +243,46 @@
             <Anchor side="Bottom" relative="$parent/MinimapPanel" pos="1.0" offset="28"/>
             <Frame type="ControlGroupButton" name="ControlGroupButton0">
                 <Frame type="Label" name="IndexLabel">
+                    <Style val="Cloakdrive14"/>
                     <Anchor side="Bottom" relative="$parent" pos="0" offset="-6"/>
                 </Frame>
                 <Frame type="Image" name="UnitImage">
                     <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+                <Frame type="Label" name="CountLabel">
+                    <Style val="Cloakdrive14"/>
                 </Frame>
             </Frame>
             <Frame type="ControlGroupButton" name="ControlGroupButton1">
                 <Frame type="Label" name="IndexLabel">
+                    <Style val="Cloakdrive14"/>
                     <Anchor side="Bottom" relative="$parent" pos="0" offset="-6"/>
                 </Frame>
                 <Frame type="Image" name="UnitImage">
                     <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+                <Frame type="Label" name="CountLabel">
+                    <Style val="Cloakdrive14"/>
                 </Frame>
             </Frame>
             <Frame type="ControlGroupButton" name="ControlGroupButton2">
                 <Frame type="Label" name="IndexLabel">
+                    <Style val="Cloakdrive14"/>
                     <Anchor side="Bottom" relative="$parent" pos="0" offset="-6"/>
                 </Frame>
                 <Frame type="Image" name="UnitImage">
                     <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+                <Frame type="Label" name="CountLabel">
+                    <Style val="Cloakdrive14"/>
+                </Frame>
+            </Frame>
+            <Frame type="ControlGroupButton" name="ControlGroupButton3">
+                <Frame type="Image" name="UnitImage">
+                    <Anchor side="Top" relative="$parent" pos="0" offset="10"/>
+                </Frame>
+                <Frame type="Label" name="CountLabel">
+                    <Style val="Cloakdrive14"/>
                 </Frame>
             </Frame>
         </Frame>
@@ -531,6 +634,17 @@
                         <Style val="Cloakdrive14Left"/>
                     </Frame>
                 </Frame>
+            </Frame>
+
+            <Frame type="Image" name="CommandTargetImage">
+                <Width val="38"/>
+                <Height val="38"/>
+            </Frame>
+            <Frame type="Label" name="CommandTargetName">
+                <Style val="Cloakdrive14Left"/>
+            </Frame>
+            <Frame type="Label" name="CommandTargetPrompt">
+                <Style val="Cloakdrive14Left"/>
             </Frame>
         </Frame>
 

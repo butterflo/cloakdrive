@@ -14,23 +14,23 @@
     <CUpgrade id="BansheeUpgradeEN1">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Subtract" Reference="Unit,DuskWing,EnergyMax" Value="14"/>
-        <EffectArray Operation="Set" Reference="Actor,DuskWingBanshee,LifeArmorIcon" Value="btn-custom-resist_1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DuskWingBanshee,LifeArmorIcon" Value="btn-custom-resist_1up.dds"/>
         <EffectArray Reference="Unit,DuskWing,LifeArmorLevel" Value="1"/>
-        <EffectArray Operation="Set" Reference="Button,VoodooShield,Icon" Value="UI\btn-custom-resist_1up.dds"/>
+        <EffectArray Operation="Set" Reference="Button,VoodooShield,Icon" Value="btn-custom-resist_1up.dds"/>
     </CUpgrade>
     <CUpgrade id="BansheeUpgradeEN12">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Subtract" Reference="Unit,DuskWing,EnergyMax" Value="14"/>
-        <EffectArray Operation="Set" Reference="Actor,DuskWingBanshee,LifeArmorIcon" Value="UI\btn-custom-resist_2up.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DuskWingBanshee,LifeArmorIcon" Value="btn-custom-resist_2up.dds"/>
         <EffectArray Reference="Unit,DuskWing,LifeArmorLevel" Value="1"/>
-        <EffectArray Operation="Set" Reference="Button,VoodooShield,Icon" Value="btn-custom-resist_2.dds"/>
+        <EffectArray Operation="Set" Reference="Button,VoodooShield,Icon" Value="btn-custom-resist_2up.dds"/>
     </CUpgrade>
     <CUpgrade id="BansheeUpgradeEN122">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Subtract" Reference="Unit,DuskWing,EnergyMax" Value="14"/>
-        <EffectArray Operation="Set" Reference="Actor,DuskWingBanshee,LifeArmorIcon" Value="UI\btn-custom-resist_3up.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DuskWingBanshee,LifeArmorIcon" Value="btn-custom-resist_3up.dds"/>
         <EffectArray Reference="Unit,DuskWing,LifeArmorLevel" Value="1"/>
-        <EffectArray Operation="Set" Reference="Button,VoodooShield,Icon" Value="btn-custom-resist_3.dds"/>
+        <EffectArray Operation="Set" Reference="Button,VoodooShield,Icon" Value="btn-custom-resist_3up.dds"/>
     </CUpgrade>
     <CUpgrade id="CloakDriveUpgrade">
         <EffectArray Reference="Unit,GhostAcademy,EnergyRegenRate" Value="1.000000"/>

@@ -74,20 +74,20 @@
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SOASuperShield">
-        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="ShieldGZero"/>
         <MaxStackCount value="49"/>
         <Duration value="-1"/>
         <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
             <VitalMaxArray index="Shields" value="539"/>
         </Modification>
         <!--Modification>
             <VitalMaxArray index="Shields" value="200"/>
         </Modification-->
-        <DamageResponse>
+        <DamageResponse ModifyFraction="1" ModifyLimit="0" ModifyMinimumDamage="0">
             <Chance value="0"/>
-            <ModifyFraction value="1"/>
-            <ModifyLimit value="0"/>
-            <ModifyMinimumDamage value="0"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="SolarisCHARGE">
@@ -147,14 +147,18 @@
             <ModifyFlags index="SuppressTurning" value="1"/>
             <VitalMaxArray index="Shields" value="0"/>
         </Modification>
-        <DamageResponse Chance="1" ModifyFraction="0"/>
+        <DamageResponse ModifyFraction="0">
+            <Chance value="1"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="SpawnProtection">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="-1"/>
-        <DamageResponse Chance="1" ModifyFraction="0" ModifyMinimumDamage="1"/>
+        <DamageResponse ModifyFraction="0" ModifyMinimumDamage="1">
+            <Chance value="1"/>
+        </DamageResponse>
         <Modification>
             <StateFlags index="UnitAttrOnPsionic" value="1"/>
         </Modification>

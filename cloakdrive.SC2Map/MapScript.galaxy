@@ -785,8 +785,8 @@ bool auto_gf_cloakdrive_send_unit_TriggerFunc (bool testConds, bool runActions) 
 
     }
 
-    SoundPlayAtPoint(SoundLink("Raynor_MorosDeviceStart2", -1), PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
-    SoundPlayAtPoint(SoundLink("Raynor_MorosDeviceStart", -1), PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("Raynor_MorosDeviceStart2", -1), c_maxPlayers, PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("Raynor_MorosDeviceStart", -1), c_maxPlayers, PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
     UnitBehaviorRemove(lp_u, "GhostCloak", 1);
     Wait(0.1, c_timeGame);
     UnitBehaviorRemove(lp_u, "Superspeed", 1);
@@ -865,7 +865,7 @@ bool auto_gf_cloakdrive_send_unit_turbine_TriggerFunc (bool testConds, bool runA
     libNtve_gf_CreateActorAtPoint("EnergyNovaShockwave", UnitGetPosition(lp_u));
     libNtve_gf_CreateActorAtPoint("AssemblyDestroyedSoundActor", UnitGetPosition(lp_u));
     UnitBehaviorAdd(lp_u, "CloakspaceTurbineActive2", lp_u, 1);
-    SoundPlayOnUnit(SoundLink("Raynor_MorosDeviceStart", -1), PlayerGroupAll(), lp_u, 0.0, 100.0, 0.0);
+    SoundPlayOnUnitForPlayer(SoundLink("Raynor_MorosDeviceStart", -1), c_maxPlayers, PlayerGroupAll(), lp_u, 0.0, 100.0, 0.0);
     UnitSetFacing(lp_u, lp_angle, 0.0);
     UnitBehaviorAdd(lp_u, "Superspeed", lp_u, 1);
     while ((DistanceBetweenPoints(lv_destination, UnitGetPosition(lp_u)) >= 35.0) && (UnitHasBehavior2(lp_u, "Superspeed") == true)) {
@@ -873,8 +873,8 @@ bool auto_gf_cloakdrive_send_unit_turbine_TriggerFunc (bool testConds, bool runA
         UnitIssueOrder(lp_u, OrderTargetingPoint(AbilityCommand("move", 0), lv_destination), c_orderQueueReplace);
         Wait(0.0625, c_timeGame);
     }
-    SoundPlayAtPoint(SoundLink("Raynor_MorosDeviceStart2", -1), PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
-    SoundPlayAtPoint(SoundLink("Raynor_MorosDeviceStart", -1), PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("Raynor_MorosDeviceStart2", -1), c_maxPlayers, PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("Raynor_MorosDeviceStart", -1), c_maxPlayers, PlayerGroupAll(), lv_destination, 0.0, 100.0, 0.0);
     UnitBehaviorRemove(lp_u, "GhostCloak", 1);
     Wait(0.1, c_timeGame);
     UnitBehaviorRemove(lp_u, "Superspeed", 1);
@@ -1023,13 +1023,13 @@ bool auto_gf_HQ_inbound_alarm_TriggerFunc (bool testConds, bool runActions) {
         if (auto52E05EBE_var == null) { break; }
         UIDisplayMessage(PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), c_messageAreaSubtitle, StringExternal("Param/Value/0CBE6BDF"));
         MinimapPing(PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), lp_location, 7.0, Color(100.00, 100.00, 100.00));
-        SoundPlay(SoundLink("WidowMine_ArmedBeep", -1), PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), 100.0, 0.0);
+        SoundPlayForPlayer(SoundLink("WidowMine_ArmedBeep", -1), c_maxPlayers, PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), 100.0, 0.0);
         auto8B48406D_val = RandomInt(1, 2);
         if (auto8B48406D_val == 1) {
-            SoundPlay(SoundLink("zCutscene_Zerg03_DeckOfficer3_005", -1), PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), 100.0, 0.0);
+            SoundPlayForPlayer(SoundLink("zCutscene_Zerg03_DeckOfficer3_005", -1), c_maxPlayers, PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), 100.0, 0.0);
         }
         else if (auto8B48406D_val == 2) {
-            SoundPlay(SoundLink("zMission_Space02_Valerian_120", -1), PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), 100.0, 0.0);
+            SoundPlayForPlayer(SoundLink("zMission_Space02_Valerian_120", -1), c_maxPlayers, PlayerGroupSingle(UnitGetOwner(auto52E05EBE_var)), 100.0, 0.0);
         }
         else {
         }
@@ -2313,7 +2313,6 @@ bool gt_init_Func (bool testConds, bool runActions) {
     GameSetSpeedLocked(true);
     gf_discinit();
     UISetMode(PlayerGroupAll(), c_uiModeFullscreen, c_transitionDurationImmediate);
-    UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypeMenuBar, false);
     UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypeAchievementMenuButton, false);
     UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypeHelpMenuButton, false);
     UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
@@ -2617,10 +2616,10 @@ bool gt_init_game_Func (bool testConds, bool runActions) {
     SoundPlayForPlayer(SoundLink("Raynor_MorosDeviceStart22", -1), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UISetCursorVisible(PlayerGroupAll(), true);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/287E31AE"));
-    SoundPlay(SoundLink("UI_TransmissionText", 0), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_TransmissionText", 0), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     lv_sound = SoundLastPlayed();
     Wait(3.5, c_timeReal);
-    SoundPlay(SoundLink("UI_Unlock", 2), PlayerGroupAll(), 300.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Unlock", 2), c_maxPlayers, PlayerGroupAll(), 300.0, 0.0);
     lv_i = 1;
     for ( ; ( (auto5A565504_ai >= 0 && lv_i <= auto5A565504_ae) || (auto5A565504_ai < 0 && lv_i >= auto5A565504_ae) ) ; lv_i += auto5A565504_ai ) {
         if ((gv_base_is_active[lv_i] == true)) {
@@ -2646,7 +2645,7 @@ bool gt_init_game_Func (bool testConds, bool runActions) {
     }
     Wait(2.65, c_timeReal);
     SoundStop(lv_sound, false);
-    SoundPlay(SoundLink("UI_ReplayDropdownListSelect", 0), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_ReplayDropdownListSelect", 0), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     lv_i = 1;
     for ( ; ( (autoA5852815_ai >= 0 && lv_i <= autoA5852815_ae) || (autoA5852815_ai < 0 && lv_i >= autoA5852815_ae) ) ; lv_i += autoA5852815_ai ) {
         if ((gv_base_is_active[lv_i] == true)) {
@@ -2658,7 +2657,7 @@ bool gt_init_game_Func (bool testConds, bool runActions) {
     gf_AI_activate();
     TriggerExecute(gt_abilcheck_loop, true, false);
     Wait(7.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 1), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 1), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     MinimapPing(PlayerGroupAll(), PointFromId(36), 7.0, Color(0.00, 100.00, 75.29));
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/7C0858ED"));
     Wait(1.4, c_timeReal);
@@ -2674,7 +2673,7 @@ bool gt_init_game_Func (bool testConds, bool runActions) {
     }
     Wait(1.4, c_timeReal);
     TriggerExecute(gt_ui_fastloop, true, false);
-    SoundPlay(SoundLink("UI_ReplayDropdownListSelect", 0), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_ReplayDropdownListSelect", 0), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     BoardShowAll(true, PlayerGroupAll());
     TriggerExecute(gt_spawn_loop, true, false);
     lv_i = 1;
@@ -2685,10 +2684,10 @@ bool gt_init_game_Func (bool testConds, bool runActions) {
 
     }
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 1), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 1), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/304540E6"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/1BA6A432"));
     return true;
 }
@@ -2796,13 +2795,13 @@ bool gt_init_tutorial_Func (bool testConds, bool runActions) {
 
     }
     DialogSetVisible(gv_map_box, PlayerGroupAll(), true);
-    SoundPlay(SoundLink("Raynor_MorosDeviceStart2", -1), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("Raynor_MorosDeviceStart2", -1), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UISetCursorVisible(PlayerGroupAll(), true);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/5295BDE4"));
     Wait(7.0, c_timeReal);
     TriggerExecute(gt_abilcheck_loop, true, false);
     Wait(7.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 1), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 1), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     MinimapPing(PlayerGroupAll(), PointFromId(36), 7.0, Color(0.00, 100.00, 75.29));
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/7020CAF5"));
     Wait(1.4, c_timeReal);
@@ -2818,7 +2817,7 @@ bool gt_init_tutorial_Func (bool testConds, bool runActions) {
     }
     Wait(1.4, c_timeReal);
     TriggerExecute(gt_ui_fastloop, true, false);
-    SoundPlay(SoundLink("UI_ReplayDropdownListSelect", 0), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_ReplayDropdownListSelect", 0), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/A5D35DD9"));
     BoardShowAll(true, PlayerGroupAll());
     TriggerExecute(gt_tutorial_01, true, false);
@@ -2869,20 +2868,20 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
         TechTreeAbilityAllow(autoCE746540_var, AbilityCommand("MassCloakDrive", 0), false);
     }
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/5CC34E07"));
     TriggerExecute(gt_spawn_loop, true, false);
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/AA6C3A95"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/E75899E5"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/4B26A219"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/EA0A9FC8"));
     autoC1652A2C_var = 1;
     for ( ; autoC1652A2C_var <= autoC1652A2C_ae; autoC1652A2C_var += 1 ) {
@@ -2903,13 +2902,13 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
         if (autoF1085DD2_var < 0) { break; }
         PlayerModifyPropertyFixed(autoF1085DD2_var, c_playerPropMinerals, c_playerPropOperSetTo, 10000.0);
     }
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/D75208DF"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/0B6DAEEF"));
     Wait(21.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/D59092BB"));
     Wait(14.0, c_timeReal);
     auto70AFC9D4_g = gv_active_players;
@@ -2920,7 +2919,7 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
         TechTreeAbilityAllow(auto70AFC9D4_var, AbilityCommand("MassCloakDrive", 0), true);
         libNtve_gf_UnitAbilityRemoveCooldown(gv_base_array[auto70AFC9D4_var], "MassCloakDrive", "Abil/CloakDriveMass");
     }
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/F3502E6F"));
     Wait(28.0, c_timeReal);
     auto78E17A74_g = gv_active_players;
@@ -2948,19 +2947,19 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
     Wait(14.0, c_timeReal);
     SoundtrackStop(PlayerGroupAll(), c_soundtrackCategoryMusic, false);
     SoundtrackPlay(PlayerGroupAll(), c_soundtrackCategoryMusic, "BansheeOSTT2", c_soundtrackCueAny, c_soundtrackIndexAny, false);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/F124F810"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/CD0196A2"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/FF6A47F4"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/F43AC23A"));
     Wait(14.0, c_timeReal);
-    SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
+    SoundPlayForPlayer(SoundLink("UI_Bnet_PopUp_Generic", 2), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/0F8CE0AC"));
     Wait(18.0, c_timeReal);
     SoundPlay(SoundLink("UI_Bnet_PopUp_Generic", 2), PlayerGroupAll(), 100.0, 0.0);
@@ -3257,7 +3256,7 @@ bool gt_cloakdrive_event_Func (bool testConds, bool runActions) {
 
     lv_angle = AngleBetweenPoints(UnitGetPosition(lv_u), lv_destination);
     lv_distance = DistanceBetweenPoints(UnitGetPosition(lv_u), lv_destination);
-    SoundPlayOnUnit(SoundLink("Battlecruiser_YamatoAttackChargeUp", -1), PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
+    SoundPlayOnUnitForPlayer(SoundLink("Battlecruiser_YamatoAttackChargeUp", -1), c_maxPlayers, PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
     gf_cloakdrive_send_unit(lv_u, lv_angle, lv_distance);
     return true;
 }
@@ -3345,7 +3344,7 @@ bool gt_cloakturbine_up_Func (bool testConds, bool runActions) {
     lv_distance = DistanceBetweenPoints(UnitGetPosition(lv_u), lv_destination);
     UnitIssueOrder(lv_u, OrderTargetingPoint(AbilityCommand("move", 0), lv_destination), c_orderQueueReplace);
     libNtve_gf_MakeUnitUncommandable(lv_u, true);
-    SoundPlayOnUnitForPlayer(SoundLink("AdunGeneratorPowerUpSound", -1), c_maxPlayers, PlayerGroupAll(), EventUnit(), 0.0, 100.0, 0.0);
+    SoundPlayOnUnitForPlayer(SoundLink("AdunGeneratorPowerUpSound", -1), c_maxPlayers, PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
     gf_cloakturbine_alarm(0, UnitGetPosition(lv_u));
     for (auto216EA748_i = 1; auto216EA748_i <= auto216EA748_n; auto216EA748_i += 1) {
         lv_k *= 1.3;
@@ -3353,7 +3352,7 @@ bool gt_cloakturbine_up_Func (bool testConds, bool runActions) {
         Wait(0.25, c_timeGame);
     }
     libNtve_gf_MakeUnitUncommandable(lv_u, false);
-    SoundPlayOnUnit(SoundLink("Battlecruiser_YamatoAttackChargeUp2", -1), PlayerGroupAll(), lv_u, 0.0, 700.0, 0.0);
+    SoundPlayOnUnitForPlayer(SoundLink("Battlecruiser_YamatoAttackChargeUp2", -1), c_maxPlayers, PlayerGroupAll(), lv_u, 0.0, 700.0, 0.0);
     gf_cloakdrive_send_unit_turbine(lv_u, lv_angle, lv_distance);
     Wait(4.0, c_timeGame);
     libNtve_gf_KillModel(libNtve_gf_ActorLastCreated());
@@ -3451,7 +3450,7 @@ bool gt_HQ_masswarp_Func (bool testConds, bool runActions) {
     UnitBehaviorRemove(lv_u, "SpawnProtection", 1);
     libNtve_gf_SendActorMessageToUnit(lv_u, "HaloStop");
     gf_HQ_warp_voice(lv_u);
-    SoundPlayOnUnit(SoundLink("Battlecruiser_YamatoAttackChargeUp", -1), PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
+    SoundPlayOnUnitForPlayer(SoundLink("Battlecruiser_YamatoAttackChargeUp", -1), c_maxPlayers, PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
     lv_p = UnitGetOwner(lv_u);
     gv_masscloak_tip[lv_p] = false;
     UIDisplayMessage(PlayerGroupSingle(lv_p), c_messageAreaError, StringExternal("Param/Value/F0E12982"));
@@ -3530,7 +3529,7 @@ bool gt_resistFX_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    SoundPlayOnUnit(SoundLink("Immortal_HardenedShieldImpact", -1), PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
+    SoundPlayOnUnitForPlayer(SoundLink("Immortal_HardenedShieldImpact", -1), c_maxPlayers, PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
     CameraShakeStart(UnitGetOwner(EventUnit()), c_cameraPositionTarget, c_cameraDirectionXYZ, (Log2(EventUnitDamageAbsorbed()) / 50.0), 4.0, 100.0, 0.05);
     return true;
 }
@@ -3959,7 +3958,7 @@ bool gt_abilcheck_loop_Func (bool testConds, bool runActions) {
             if (auto9DF37672_var < 0) { break; }
             if ((UnitAbilityGetCooldown(gv_base_array[auto9DF37672_var], "MassCloakDrive", "Abil/CloakDriveMass") == 0.0) && (UnitIsAlive(gv_base_array[auto9DF37672_var]) == true) && (gv_masscloak_tip[auto9DF37672_var] == false)) {
                 gv_masscloak_tip[auto9DF37672_var] = true;
-                HelpPanelAddTip(PlayerGroupSingle(auto9DF37672_var), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/BA27F891"), libNtve_ge_TipType_NormalTip), StringToText(""), StringExternal("Param/Value/8A586320"), "btn-custom-terran-killcloakedunits-mass.dds");
+                HelpPanelAddTip(PlayerGroupSingle(auto9DF37672_var), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/BA27F891"), libNtve_ge_TipType_NormalTip), StringToText(""), StringExternal("Param/Value/8A586320"), "btn-ability-cloakdrive-mass.dds");
                 UISetButtonHighlighted(PlayerGroupSingle(auto9DF37672_var), AbilityCommand("MassCloakDrive", 0), false);
                 if ((gv_aI_controller[auto9DF37672_var] == true)) {
                     gv_aI_massjump_ready[auto9DF37672_var] = true;

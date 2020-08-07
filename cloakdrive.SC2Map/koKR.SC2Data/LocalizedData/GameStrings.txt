@@ -17,11 +17,13 @@ Attribute001/Name=GameMode
 Behavior/Name/CloakspaceTurbineActive=충전중
 Behavior/Name/CloakspaceTurbineActive2=터바인 활성화
 Behavior/Name/SOAPurifierBeamFiring=Solaris LOOP
+Behavior/Name/SOASuperShield=보호막
 Behavior/Name/SolarisCHARGE=Solaris CHARGE
 Behavior/Name/SpawnProtection=소환 보호
 Behavior/Name/TempestOrb=TempestOrb
 Behavior/Name/VoodooShield=저항
 Behavior/Name/VortexBehavior=Vortex FORCE
+Behavior/Tooltip/SOASuperShield=
 Behavior/Tooltip/VortexBehavior=
 Button/Name/Arbiter=Arbiter Relay
 Button/Name/ArbiterMPRecall=은폐장 활성화
@@ -67,7 +69,7 @@ Button/Tooltip/BuildScienceVessel=<c val="00FF00">티어4 유닛</c><n/><c val="
 Button/Tooltip/Cancel=
 Button/Tooltip/CancelWaypoint=<c val="FFFFFF">지점 공격을 취소합니다.</c>
 Button/Tooltip/EvasiveCloakDrive=<c val="FFFFFF">대상 지점으로 워프합니다.</c><n/><n/><c val="00FFFF">(거리 제한 없음)
-Button/Tooltip/EvasiveCloakDrive2=<c val="FFFFFF">주변의 아군 유닛들을 대상 지점으로 워프시킵니다.</c><n/><c val="00FFFF">(거리 제한 없음)<n/>(에너지 소모 없음)<n/>(모함 제외)</c>
+Button/Tooltip/EvasiveCloakDrive2=<c val="FFFFFF">주변의 아군 유닛들을 대상 지점으로 워프시킵니다.</c><n/><n/><c val="00FFFF">(거리 제한 없음)<n/>(에너지 소모 없음)<n/>(모함 제외)</c>
 Button/Tooltip/EvasiveCloakDrive3=<c val="FFFFFF">대상 지점으로 워프합니다. 경로상의 모든 유닛을 파괴합니다. 출발 지점에 치명적인 충격파가 발생합니다.</c><n/><n/><c val="FFFF00">(거리 제한 없음)<n/>(즉사기)<n/>(모함 영향 받음)<n/>(아군 유닛도 영향 받음)
 Button/Tooltip/Oracle=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">반경 내의 모든 유닛을 흡수하는 중력장을 전개합니다.</c>
 Button/Tooltip/PhasingMode=<c val="FFFFFF">억제장을 전개합니다. 활성화된 동안 반경 내 모든 적 유닛의 능력 및 그 효과를 무효화시킵니다. <n/><n/><c val="FFFF00">(에너지 재생 억제)</c>
@@ -91,7 +93,7 @@ Button/Tooltip/WarpPrism=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">�
 Button/Tooltip/Wraith=<c val="00FF00">티어5 유닛</c><n/><n/><c val="FF0000">[데이터 말소]<n/>[데이터 말소]<n/>[데이터 말소]
 Button/Tooltip/WraithCloak=<c val="FFFFFF">재사용 대기시간 -7초</c><n/><c val="00FFFF">(즉시 사용 가능)</c><n/><c val="00FFFF"><n/>(현재 레벨 <d ref="140 - Abil,MassCloakDrive,Cost[0].Cooldown.TimeUse / 7"/> / 14)<n/>(현재 재사용 대기시간 <d ref="Abil,MassCloakDrive,Cost[0].Cooldown.TimeUse"/>초)</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=본격 우주 함대전.<n/><n/>* 최대 7인 (AI 지원)<n/>* C 키를 눌러 워프하세요.<n/>* 튜토리얼이 있습니다.<n/><n/>@ 07.28.2019 패치
+DocInfo/DescLong=본격 우주 함대전.<n/><n/>* 최대 7인 (AI 지원)<n/>* C 키를 눌러 워프하세요.<n/>* 튜토리얼이 있습니다.<n/><n/>@ 08.07.2020 패치
 DocInfo/DescShort=.
 DocInfo/HowToPlayBasic00=적 유닛을 파괴해서 자원을 모으고, 고급 유닛을 생산해 워프하세요.
 DocInfo/HowToPlayBasic01=공격 유닛과 워프 스킬을 활용하여 적 모함을 파괴하세요.
@@ -138,6 +140,11 @@ DocInfo/PatchNote038=* 터바인 워프 사용방식을 자신에게 충전 부�
 DocInfo/PatchNote039=* 조명 재작업 및 FX 개선
 DocInfo/PatchNote040=* 로고 재작업
 DocInfo/PatchNote041=* 맵 중앙의 충돌 판정 버그 수정
+DocInfo/PatchNote042=* UI 문제 수정
+DocInfo/PatchNote043=* 모함 파괴 판정 후 폭발 모션까지의 딜레이 삭제
+DocInfo/PatchNote044=* 밤까마귀의 보호막 충전기가 최대 스택 이후부터 보호막을 회복하지 않던 문제 수정
+DocInfo/PatchNote045=* 새 로딩화면
+DocInfo/PatchNote046=* 취소 단축키를 X에서 Esc로 변경
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -169,6 +176,8 @@ Effect/Name/SOAPurifierBeamCU=Solaris CREATE UNIT
 Effect/Name/SOAPurifierBeamDamage=Solaris DM
 Effect/Name/SOAPurifierBeamSearch=Solaris SEARCH
 Effect/Name/SOASuperShieldApplyBehavior=Shield Projector APPLY
+Effect/Name/ShieldProjectorHEAL=Shield Projector HEAL
+Effect/Name/ShieldProjectorSET=Shield Projector SET
 Effect/Name/SolarisAPPLY=Solaris APPLY
 Effect/Name/SolarisDELAY=Solaris DELAY
 Effect/Name/SolarisSET=Solaris SET
@@ -256,7 +265,7 @@ Param/Value/37F1E1C4=<c val="FF0080">
 Param/Value/3AC5FBD3= <c val="FFFF00">( 
 Param/Value/3CF50DAA=<c val="FFFF00">실전에서 뵙겠습니다. (끝)
 Param/Value/3D03C7AF=<c val="FFFF00">
-Param/Value/3EE08298=<s val="OrbitronBold40"><c val="FFFFFF">
+Param/Value/3EE08298=<s val="Cloakdrive14">모함 재생성: <c val="80FF00">
 Param/Value/3FA3F55D=<s val="Cloakdrive14"><전투> 유닛 파괴: 자원 +
 Param/Value/42B84A0D=팁: 탭 키를 누른 상태에서 마우스로 시점을 조절할 수 있습니다.
 Param/Value/456AF322=<c val="00FF00">
@@ -440,6 +449,7 @@ Variant002/ModeName=개인전
 Weapon/Name/ATALaserBattery=BFG-VII
 Weapon/Name/Diamondback=LDX Focus Array
 Weapon/Name/HailstormMissilePods=Nuclear Defense System
+Weapon/Name/InterceptorBeam2=Jumpstarter
 Weapon/Name/IonCannons=Shield Projector
 Weapon/Name/ParticleBeam=LDX-LR Focus Array
 Weapon/Name/PhotonCannon=Rapid Plasma Cannon

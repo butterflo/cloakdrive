@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocInfo>
     <Icon>
-        <Value>c5_225.png</Value>
+        <Value>c6_640_225.bmp</Value>
     </Icon>
     <Tutorial>
         <Type>
@@ -30,7 +30,7 @@
     </Dependencies>
     <Screenshot>
         <File>
-            <Value>c5_800.png</Value>
+            <Value>c6_1280_800.bmp</Value>
         </File>
         <CaptionId>
             <Value>1</Value>
@@ -65,6 +65,7 @@
             <Value>1.11</Value>
             <Value>1.12</Value>
             <Value>1.13</Value>
+            <Value>1.14</Value>
         </Version>
         <Date>
             <Value>10/24/2015</Value>
@@ -81,6 +82,7 @@
             <Value>2/2/2019</Value>
             <Value>7/27/2019</Value>
             <Value>12/14/2019</Value>
+            <Value>8/7/2020</Value>
         </Date>
         <Notes>
             <Value>1,2</Value>
@@ -97,6 +99,7 @@
             <Value>36</Value>
             <Value>37,38,39,40</Value>
             <Value>41</Value>
+            <Value>42,43,44,45,46</Value>
         </Notes>
     </PatchNote>
     <Preload>

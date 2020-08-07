@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Preload>
+<Asset path="btn-ability-cloakdrive-mass.dds" Type="Image"/>
 <Asset path="assets\textures\zerg-border-button-game.dds" Type="Image"/>
 <Asset path="assets\textures\ui_loadingbar_metalframe_teran.dds" Type="Image"/>
 <Asset path="assets\textures\btn-ability-protoss-preordain.dds" Type="Image"/>
 <Asset path="assets\textures\protoss-border-button-game.dds" Type="Image"/>
 <Asset path="assets\textures\ui_leaderpanel_buttonhover_terran.dds" Type="Image"/>
-<Asset path="btn-custom-terran-killcloakedunits-mass.dds" Type="Image"/>
 <Asset path="assets\textures\ui_battlenet_glue_frame_bucket_long.dds" Type="Image"/>
 <Asset path="assets\textures\btn-building-terran-techreactor.dds" Type="Image"/>
 <Asset path="assets\textures\ui_loadingbar_bar_highlighted_terran.dds" Type="Image"/>
