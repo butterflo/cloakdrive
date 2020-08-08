@@ -98,6 +98,11 @@
             <Change value="539"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectSet id="ShieldProjectorSET">
+        <EditorCategories value=""/>
+        <EffectArray value="SOASuperShieldApplyBehavior"/>
+        <EffectArray value="ShieldProjectorHEAL"/>
+    </CEffectSet>
     <CEffectDamage id="TempestDM">
         <EditorCategories value=""/>
         <Amount value="184877"/>
@@ -221,8 +226,7 @@
     </CEffectDamage>
     <CEffectEnumArea id="OracleStasisTrapActivate">
         <SearchFilters value="-;Ally,Neutral,Enemy,Missile,Destructible,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray index="0" Radius="4.9" Effect="SOASuperShieldApplyBehavior"/>
-        <AreaArray Radius="4.9" Effect="ShieldProjectorHEAL"/>
+        <AreaArray index="0" Radius="4.9" Effect="ShieldProjectorSET"/>
         <MinCount value="1"/>
     </CEffectEnumArea>
     <CEffectDamage id="ParticleBeam">

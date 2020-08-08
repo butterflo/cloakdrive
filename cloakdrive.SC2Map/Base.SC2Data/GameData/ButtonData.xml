@@ -31,24 +31,24 @@
         <AlertIcon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
     </CButton>
     <CButton id="EvasiveCloakDrive">
-        <Icon value="btn-custom-terran-killcloakedunits.dds"/>
-        <AlertIcon value="btn-custom-terran-killcloakedunits.dds"/>
+        <Icon value="btn-ability-cloakdrive.dds"/>
+        <AlertIcon value="btn-ability-cloakdrive.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CloakOnGhost"/>
         <HidesForSimpleText value="0"/>
         <HotkeySet value="BansheeBlood"/>
     </CButton>
     <CButton id="EvasiveCloakDrive2">
-        <Icon value="btn-custom-terran-killcloakedunits-mass.dds"/>
-        <AlertIcon value="btn-custom-terran-killcloakedunits-mass.dds"/>
+        <Icon value="btn-ability-cloakdrive-mass.dds"/>
+        <AlertIcon value="btn-ability-cloakdrive-mass.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CloakOnGhost"/>
         <HotkeySet value="BansheeBlood"/>
         <HidesForSimpleText value="0"/>
     </CButton>
     <CButton id="EvasiveCloakDrive3">
-        <Icon value="btn-custom-terran-killcloakedunits-turbine.dds"/>
-        <AlertIcon value="btn-custom-terran-killcloakedunits.dds"/>
+        <Icon value="btn-ability-cloakdrive-turbine.dds"/>
+        <AlertIcon value="btn-ability-cloakdrive-turbine.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CloakOnGhost"/>
         <HotkeySet value="BansheeBlood"/>

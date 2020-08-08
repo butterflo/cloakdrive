@@ -74,7 +74,7 @@
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SOASuperShield">
-        <RemoveValidatorArray index="0" removed="1"/>
+        <DisableValidatorArray value="ShieldGZero"/>
         <MaxStackCount value="49"/>
         <Duration value="-1"/>
         <Modification>
