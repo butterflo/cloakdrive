@@ -618,7 +618,6 @@ void gf_rebuild (int lp_p, point lp_pL, bool lp_no_delay);
 void gf_rebuild_timer (int lp_p);
 void gf_player_score_update (int lp_a, int lp_p, int lp_gOLD);
 text gf_player_kda_text (int lp_player);
-void gf_techunit_deathmessage (unit lp_aU, unit lp_pU, int lp_p);
 void gf_showtip (playergroup lp_playergroup, int lp_tip_id);
 void gf_discinit ();
 void gf_validate (int lp_i);
@@ -652,6 +651,7 @@ trigger gt_inhibitor;
 trigger gt_inhibited_FX;
 trigger gt_solaris_FX_up;
 trigger gt_solaris_FX_dn;
+trigger gt_solaris_hits_inhibitor;
 trigger gt_postproduction;
 trigger gt_abilcheck_loop;
 trigger gt_spawn_loop;
@@ -1650,6 +1650,7 @@ bool auto_gf_AI_command_units_TriggerFunc (bool testConds, bool runActions) {
         if (lv_u == null) { break; }
         if ((UnitHasBehavior2(lv_u, "CloakspaceTurbineActive") == true)) {
             gf_AI_request_rescue(lv_u);
+            gf_AI_singleunit_order(lv_u, OrderTargetingPoint(AbilityCommand("CloakdriveTurbine", 0), gv_aI_attack_poi[lp_p][RandomInt(1, gv_aI_max_pois)]), 1, false);
         }
 
     }
@@ -2078,34 +2079,6 @@ text gf_player_kda_text (int lp_player) {
     return lv_text;
 }
 
-trigger auto_gf_techunit_deathmessage_Trigger = null;
-unit auto_gf_techunit_deathmessage_lp_aU;
-unit auto_gf_techunit_deathmessage_lp_pU;
-int auto_gf_techunit_deathmessage_lp_p;
-
-void gf_techunit_deathmessage (unit lp_aU, unit lp_pU, int lp_p) {
-    auto_gf_techunit_deathmessage_lp_aU = lp_aU;
-    auto_gf_techunit_deathmessage_lp_pU = lp_pU;
-    auto_gf_techunit_deathmessage_lp_p = lp_p;
-
-    if (auto_gf_techunit_deathmessage_Trigger == null) {
-        auto_gf_techunit_deathmessage_Trigger = TriggerCreate("auto_gf_techunit_deathmessage_TriggerFunc");
-    }
-
-    TriggerExecute(auto_gf_techunit_deathmessage_Trigger, false, false);
-}
-
-bool auto_gf_techunit_deathmessage_TriggerFunc (bool testConds, bool runActions) {
-    unit lp_aU = auto_gf_techunit_deathmessage_lp_aU;
-    unit lp_pU = auto_gf_techunit_deathmessage_lp_pU;
-    int lp_p = auto_gf_techunit_deathmessage_lp_p;
-
-    // Automatic Variable Declarations
-    // Implementation
-    UIDisplayMessage(PlayerGroupSingle(lp_p), c_messageAreaSubtitle, (StringExternal("Param/Value/CD87750E") + UnitGetName(lp_pU) + StringExternal("Param/Value/B848A21D") + UnitGetName(lp_aU) + StringExternal("Param/Value/1712B51A")));
-    return true;
-}
-
 void gf_showtip (playergroup lp_playergroup, int lp_tip_id) {
     // Automatic Variable Declarations
     int auto69358DB2_val;
@@ -2176,7 +2149,6 @@ void gf_showtip (playergroup lp_playergroup, int lp_tip_id) {
         UIDisplayMessage(lp_playergroup, c_messageAreaSubtitle, StringExternal("Param/Value/098A1EFD"));
     }
     else if (auto69358DB2_val == 22) {
-        UIDisplayMessage(lp_playergroup, c_messageAreaSubtitle, StringExternal("Param/Value/D58CE4AD"));
     }
     else if (auto69358DB2_val == 23) {
         UIDisplayMessage(lp_playergroup, c_messageAreaSubtitle, StringExternal("Param/Value/00E29370"));
@@ -3694,7 +3666,7 @@ bool gt_inhibitor_Func (bool testConds, bool runActions) {
 
     lv_u = EventUnit();
     CameraShakeStart(UnitGetOwner(lv_u), c_cameraPositionTarget, c_cameraDirectionXYZ, 0.7, 4.0, 100.0, 0.1);
-    SoundPlayOnUnit(SoundLink("InhibitorActivate", -1), PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("InhibitorActivate", -1), c_maxPlayers, PlayerGroupAll(), libNtve_gf_PointWithZOffset(UnitGetPosition(lv_u), 0.0), 0.0, 100.0, 0.0);
     libNtve_gf_AttachModelToUnit(lv_u, "InhibitorActivateFlare", "Ref_Center");
     lv_fX = libNtve_gf_ActorLastCreated();
     for (auto91CC0002_i = 1; auto91CC0002_i <= auto91CC0002_n; auto91CC0002_i += 1) {
@@ -3738,7 +3710,6 @@ bool gt_inhibited_FX_Func (bool testConds, bool runActions) {
     lv_p = UnitGetOwner(lv_u);
     UnitBehaviorRemove(lv_u, "Superspeed", 1);
     CameraShakeStart(lv_p, c_cameraPositionTarget, c_cameraDirectionXYZ, 0.7, 4.0, 100.0, 0.1);
-    MinimapPing(PlayerGroupSingle(lv_p), UnitGetPosition(lv_u), 7.0, Color(100.00, 0.00, 0.00));
     libNtve_gf_AttachModelToUnit(lv_u, "GhostEMPAttackImpactEffect", "Ref_Center");
     SoundPlayOnUnit(SoundLink("Immortal_HardenedShieldImpact", -1), PlayerGroupAll(), lv_u, 0.0, 100.0, 0.0);
     UnitIssueOrder(lv_u, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
@@ -3775,7 +3746,7 @@ bool gt_solaris_FX_up_Func (bool testConds, bool runActions) {
 
     gf_solaris_alarm(UnitGetOwner(lv_u), UnitGetPosition(lv_u));
     libNtve_gf_AttachModelToUnit(lv_u, "SOAHeroicShieldModel", "Ref_Center");
-    SoundPlayOnUnitForPlayer(SoundLink("AdunGeneratorPowerUpSound", -1), c_maxPlayers, PlayerGroupAll(), EventUnit(), 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("AdunGeneratorPowerUpSound", -1), c_maxPlayers, PlayerGroupAll(), libNtve_gf_PointWithZOffset(UnitGetPosition(EventUnit()), 0.0), 0.0, 100.0, 0.0);
     for (auto4A61DF2D_i = 1; auto4A61DF2D_i <= auto4A61DF2D_n; auto4A61DF2D_i += 1) {
         lv_k *= 1.2;
         libNtve_gf_SendActorMessageToUnit(lv_u, (("AnimSetTimeScale Spin " + FixedToString(lv_k, 1))));
@@ -3812,7 +3783,7 @@ bool gt_solaris_FX_dn_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    SoundPlayOnUnitForPlayer(SoundLink("Pylon_Containment_Unit_Power_Down", -1), c_maxPlayers, PlayerGroupAll(), EventUnit(), 0.0, 100.0, 0.0);
+    SoundPlayAtPointForPlayer(SoundLink("Pylon_Containment_Unit_Power_Down", -1), c_maxPlayers, PlayerGroupAll(), libNtve_gf_PointWithZOffset(UnitGetPosition(EventUnit()), 0.0), 0.0, 100.0, 0.0);
     for (autoC6783D60_i = 1; autoC6783D60_i <= autoC6783D60_n; autoC6783D60_i += 1) {
         lv_k /= 1.4;
         if ((FixedToString(lv_k, 1) != "0.0")) {
@@ -3828,6 +3799,47 @@ bool gt_solaris_FX_dn_Func (bool testConds, bool runActions) {
 void gt_solaris_FX_dn_Init () {
     gt_solaris_FX_dn = TriggerCreate("gt_solaris_FX_dn_Func");
     TriggerAddEventUnitBehaviorChange(gt_solaris_FX_dn, null, "SolarisCHARGE", c_unitBehaviorChangeDestroy);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: solaris_hits_inhibitor
+//--------------------------------------------------------------------------------------------------
+bool gt_solaris_hits_inhibitor_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_u;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "WarpPrismPhasing"))) {
+            return false;
+        }
+
+        if (!((UnitHasBehavior2(EventUnit(), "InhibitorArea") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_u = EventUnit();
+    UnitBehaviorRemove(lv_u, "InhibitorArea", 1);
+    SoundPlayAtPointForPlayer(SoundLink("InhibitorDeactivationSound", -1), c_maxPlayers, PlayerGroupAll(), libNtve_gf_PointWithZOffset(UnitGetPosition(lv_u), 0.0), 0.0, 100.0, 0.0);
+    libNtve_gf_AttachModelToUnit(lv_u, "InhibitorSnipedDeactivationModel", "Ref_Center");
+    Wait(7.0, c_timeReal);
+    libNtve_gf_KillModel(libNtve_gf_ActorLastCreated());
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_solaris_hits_inhibitor_Init () {
+    gt_solaris_hits_inhibitor = TriggerCreate("gt_solaris_hits_inhibitor_Func");
+    TriggerAddEventUnitDamaged(gt_solaris_hits_inhibitor, null, c_unitDamageTypeAny, c_unitDamageNonFatal, "SOAPurifierBeamDamage");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4726,7 +4738,7 @@ bool gt_unit_destroyed_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "DuskWing") || (UnitGetType(EventUnit()) == "Battlecruiser") || (UnitGetType(EventUnit()) == "Raven") || (UnitGetType(EventUnit()) == "Liberator") || (UnitGetType(EventUnit()) == "LiberatorAG") || (UnitGetType(EventUnit()) == "VoidSeeker") || (UnitGetType(EventUnit()) == "GhostAcademy") || (UnitGetType(EventUnit()) == "WarpPrism") || (UnitGetType(EventUnit()) == "WarpPrismPhasing") || (UnitGetType(EventUnit()) == "Oracle") || (UnitGetType(EventUnit()) == "ArbiterMP")))) {
+        if (!(((UnitGetType(EventUnit()) == "DuskWing") || (UnitGetType(EventUnit()) == "Battlecruiser") || (UnitGetType(EventUnit()) == "Raven") || (UnitGetType(EventUnit()) == "Liberator") || (UnitGetType(EventUnit()) == "LiberatorAG") || (UnitGetType(EventUnit()) == "VoidSeeker") || (UnitGetType(EventUnit()) == "GhostAcademy")))) {
             return false;
         }
     }
@@ -4769,18 +4781,6 @@ bool gt_unit_destroyed_Func (bool testConds, bool runActions) {
         gv_assembly_bounty[lv_p] = 0;
         gv_assembly_bounty_increment[lv_p] = 1;
         lv_is_big = true;
-    }
-    else if (auto0152EE8E_val == "WarpPrism") {
-        gf_techunit_deathmessage(lv_aU, lv_pU, lv_p);
-    }
-    else if (auto0152EE8E_val == "WarpPrismPhasing") {
-        gf_techunit_deathmessage(lv_aU, lv_pU, lv_p);
-    }
-    else if (auto0152EE8E_val == "Oracle") {
-        gf_techunit_deathmessage(lv_aU, lv_pU, lv_p);
-    }
-    else if (auto0152EE8E_val == "ArbiterMP") {
-        gf_techunit_deathmessage(lv_aU, lv_pU, lv_p);
     }
     else {
     }
@@ -5240,6 +5240,8 @@ bool gt_purifier_activate_Func (bool testConds, bool runActions) {
     GameSetLighting("CutsceneFadeFromWhiteflash", 0.0);
     auto70E33A7A_val = gv_purge_type;
     if (auto70E33A7A_val == 1) {
+        libNtve_gf_ShowHideUnit(UnitFromId(37), true);
+        libNtve_gf_SendActorMessageToUnit(UnitFromId(37), ("SetScale 1.000000,1.000000,3.000000 7.00000"));
         auto4C5261D8_g = UnitGroup("RipFieldGenerator", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
         auto4C5261D8_u = UnitGroupCount(auto4C5261D8_g, c_unitCountAll);
         for (;; auto4C5261D8_u -= 1) {
@@ -5450,6 +5452,7 @@ void InitTriggers () {
     gt_inhibited_FX_Init();
     gt_solaris_FX_up_Init();
     gt_solaris_FX_dn_Init();
+    gt_solaris_hits_inhibitor_Init();
     gt_postproduction_Init();
     gt_abilcheck_loop_Init();
     gt_spawn_loop_Init();

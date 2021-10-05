@@ -66,6 +66,7 @@
             <Value>1.12</Value>
             <Value>1.13</Value>
             <Value>1.14</Value>
+            <Value>1.15</Value>
         </Version>
         <Date>
             <Value>10/24/2015</Value>
@@ -83,6 +84,7 @@
             <Value>7/27/2019</Value>
             <Value>12/14/2019</Value>
             <Value>8/7/2020</Value>
+            <Value>10/8/2021</Value>
         </Date>
         <Notes>
             <Value>1,2</Value>
@@ -100,6 +102,7 @@
             <Value>37,38,39,40</Value>
             <Value>41</Value>
             <Value>42,43,44,45,46</Value>
+            <Value>47,48,49,50,51,52,53</Value>
         </Notes>
     </PatchNote>
     <Preload>

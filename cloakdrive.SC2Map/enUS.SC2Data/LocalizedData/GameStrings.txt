@@ -106,63 +106,71 @@ Button/Tooltip/TerranShipWeaponsLevel3=<c val="FFFFFF">ATK +11</c><n/><n/><c val
 Button/Tooltip/TestLearn=
 Button/Tooltip/TransportMode=
 Button/Tooltip/VoodooShield=<c val="FFFFFF">Absorbs all damage for a short time.</c>
-Button/Tooltip/Vortex=<c val="FFFFFF">Self-destruct into a permanent singularity.<n/><n/><c val="FFFF00">(Instant kill)<n/>(Also kills your units)<n/>(Does not kill Carriers)<n/>(Permanent)
+Button/Tooltip/Vortex=<c val="FFFFFF">Self-destruct into a permanent singularity.<n/><n/><c val="FFFF00">(Instant kill)<n/>(Also kills your units)<n/>(Does not kill Carriers)<n/>(Does not kill Tech units)<n/>(Permanent)
 Button/Tooltip/WarpPrism=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Disables enemy non-orbital abilities within AoE.
 Button/Tooltip/Wraith=<c val="00FF00">T5 UNIT</c><n/><n/><c val="FF0000">[DATA EXPUNGED]</c><n/><c val="FF0000">[DATA EXPUNGED]</c>
 Button/Tooltip/WraithCloak=<c val="FFFFFF">Mass cloakdrive cooldown -7s</c><n/><c val="00FFFF">(Provides charge immediately)</c><n/><c val="00FFFF">Cooldown: <d ref="Abil,MassCloakDrive,Cost[0].Cooldown.TimeStart"/>s (current)</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=Epic space warfare.<n/><n/>* Up to 7 players with AI support.<n/>* Press C to warp anywhere.<n/><n/>@ Aug.07.2020 update
+DocInfo/DescLong=Epic space warfare.<n/><n/>* Up to 7 players with AI support.<n/>* Press C to warp anywhere.
 DocInfo/DescShort=.
 DocInfo/HowToPlayBasic00=Destroy enemy units to loot resources. Build high-tier units and warp in.
 DocInfo/HowToPlayBasic01=Use combat units and Cloakdrive ability to destroy enemy Carriers.
 DocInfo/HowToPlayBasic02=Try the tutorial.
 DocInfo/HowToPlayWinning00=Destroy enemy Carriers and get the highest score to win.
 DocInfo/Name=CLOAKDRIVE
-DocInfo/PatchNote001=New game
-DocInfo/PatchNote002=Global release
-DocInfo/PatchNote003=Font bug fix for unicode characters
-DocInfo/PatchNote004=Cloakdrive bug fix
-DocInfo/PatchNote005=Secondary weapons added
-DocInfo/PatchNote006=Upgrade limits expanded
-DocInfo/PatchNote007=Unit balance calibration
-DocInfo/PatchNote008=Banshee unit cap expanded to 77
-DocInfo/PatchNote009=Hotkeys added for Tech units
-DocInfo/PatchNote010=Removed cam fix in respawns
-DocInfo/PatchNote011=New purge device added
-DocInfo/PatchNote012=Carriers are now excluded from Mass Cloakdrive transfers
-DocInfo/PatchNote013=Orbital Focus now does not show a marker to other players
-DocInfo/PatchNote014=Cloakdrive now does not show a marker
-DocInfo/PatchNote015=Cloakdrive visual effects are replaced with a faster one
-DocInfo/PatchNote016=Improved lighting system
-DocInfo/PatchNote017=Group buttons added
-DocInfo/PatchNote018=Removed autocast for resist ability
-DocInfo/PatchNote019=Bug fix where units go haywire in cloakspace
-DocInfo/PatchNote020=Banshee nerfed: range decreased
-DocInfo/PatchNote021=AIs are now greatly improved
-DocInfo/PatchNote022=Now with basic player stats
-DocInfo/PatchNote023=Self-destructions are now penalized
-DocInfo/PatchNote024=Carriers now explode with a boom
-DocInfo/PatchNote025=Added gameover alarms before 1 minute to purge
-DocInfo/PatchNote026=Tutorial added
-DocInfo/PatchNote027=Buffed Inhibitors
-DocInfo/PatchNote028=UI revamp
-DocInfo/PatchNote029=Improved lighting system
-DocInfo/PatchNote030=Intro cutscene optimized
-DocInfo/PatchNote031=Science vessels are now Liberators
-DocInfo/PatchNote032=Wider FOV
-DocInfo/PatchNote033=New splash screen
-DocInfo/PatchNote034=FX polished for some units
+DocInfo/PatchNote001=* New game
+DocInfo/PatchNote002=* Global release
+DocInfo/PatchNote003=* Font bug fix for unicode characters
+DocInfo/PatchNote004=* Cloakdrive ability bug fix
+DocInfo/PatchNote005=* Secondary weapons added
+DocInfo/PatchNote006=* Upgrade limits expanded
+DocInfo/PatchNote007=* Unit balance calibration
+DocInfo/PatchNote008=* Banshee unit cap expanded to 77
+DocInfo/PatchNote009=* Hotkeys added for Tech units
+DocInfo/PatchNote010=* Removed camera fix when respawning
+DocInfo/PatchNote011=* New purge device added
+DocInfo/PatchNote012=* Carriers are now excluded from Mass Cloakdrive transfers
+DocInfo/PatchNote013=* Orbital Focus now does not show a marker to other players
+DocInfo/PatchNote014=* Cloakdrive now does not show a marker
+DocInfo/PatchNote015=* Cloakdrive visual effects are replaced with a faster one
+DocInfo/PatchNote016=* Improved lighting system
+DocInfo/PatchNote017=* Group buttons added
+DocInfo/PatchNote018=* Removed autocast for resist ability
+DocInfo/PatchNote019=* Bug fix where units go haywire in cloakspace
+DocInfo/PatchNote020=* Banshee nerfed: range decreased
+DocInfo/PatchNote021=* AIs are now greatly improved
+DocInfo/PatchNote022=* Now with basic player stats
+DocInfo/PatchNote023=* Self-destructions are now penalized
+DocInfo/PatchNote024=* Carriers now explode with a boom
+DocInfo/PatchNote025=* Added gameover alarms before 1 minute to purge
+DocInfo/PatchNote026=* Tutorial added
+DocInfo/PatchNote027=* Buffed Inhibitors
+DocInfo/PatchNote028=* UI revamp
+DocInfo/PatchNote029=* Improved lighting system
+DocInfo/PatchNote030=* Intro cutscene polished
+DocInfo/PatchNote031=* Science vessels are now Liberators
+DocInfo/PatchNote032=* Wider FOV
+DocInfo/PatchNote033=* New loading screen
+DocInfo/PatchNote034=* FX polished for some units
+DocInfo/PatchNote035=
 DocInfo/PatchNote036=* Liberators can hold fire
 DocInfo/PatchNote037=* Banshees now have cloakdrive battery chargers
 DocInfo/PatchNote038=* Turbine warps are now charge-based
 DocInfo/PatchNote039=* Lights reworked, FX polished
-DocInfo/PatchNote040=* New splash screen
+DocInfo/PatchNote040=* New loading screen
 DocInfo/PatchNote041=* Fix collision bug at the map center
 DocInfo/PatchNote042=* Fix UI
 DocInfo/PatchNote043=* Remove the delay after carrier destruction and explosion effect
 DocInfo/PatchNote044=* Fix where Raven's secondary weapon was not charging other units shield after full stack
 DocInfo/PatchNote045=* New loading screen
 DocInfo/PatchNote046=* Change Cancel hotkey from X to Esc
+DocInfo/PatchNote047=* Fix Orbital Focus sound bug
+DocInfo/PatchNote048=* Decrease BGM volume
+DocInfo/PatchNote049=* Seeker production is now unlimited
+DocInfo/PatchNote050=* Now Tech units cannot be destroyed
+DocInfo/PatchNote051=* (Now Singularity rift does not kill tech units)
+DocInfo/PatchNote052=* (Now Orbital strike now only disables inhibitor field instead of destroying the unit)
+DocInfo/PatchNote053=
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -246,7 +254,6 @@ Param/Value/12BB9CD8=<c val="FFFFFF"> >>> </c>
 Param/Value/12F43E79=TIP: Cloakdrive has infinite range. The way jumpdrives are meant to be.
 Param/Value/14447F34=<c val="FFFF00">
 Param/Value/15EC1D77=<s val="Cloakdrive14"><c val="808080">[[ P
-Param/Value/1712B51A=)
 Param/Value/1735D4CC=<s val="Cloakdrive14">Player</s>
 Param/Value/18384A10=: Shield Upgrade III reached.<n/>
 Param/Value/1AF2E0D2=<c val="FFFF00">Destroy enemy units [ 
@@ -361,7 +368,6 @@ Param/Value/AF520109=TIP: Playing defensive is usually not effective.
 Param/Value/B0AE83A2=<c val="FFFF00">
 Param/Value/B2699825=<c val="ffff00">Alert: Orbital activity detected.</c>
 Param/Value/B60DF783=<s val="Cloakdrive14">
-Param/Value/B848A21D= was destroyed. (Cause: 
 Param/Value/B895A408=TIP: Orbital strikes also damage units in cloakspace.
 Param/Value/BA27F891=<s val="Cloakdrive14"><c val="00FFFF">Mass Cloakdrive Ready</c></s>
 Param/Value/BA453ED2=TIP: Use mouse wheel to zoom out and see orbital units.
@@ -377,7 +383,6 @@ Param/Value/C9F9B0C7=: Shield Upgrade I reached.<n/><n/>(2 left until infinity s
 Param/Value/CA33A69B=</c>)
 Param/Value/CD0196A2=<c val="00FF80">Advanced controls</c><n/><n/>When your Carrier is selected, press <c val="FFFF00">[ Z ]</c> and click on a location to set it as a rally point.
 Param/Value/CD111D85= <c val="FFFF00">( +
-Param/Value/CD87750E=<c val="FFFF00">Your 
 Param/Value/D01ABB37=</c><c val="FFFFFF"> is respawning..</c>
 Param/Value/D12EB370=완료 [
 Param/Value/D1ADFEDB=<s val="Cloakdrive14"><c val="00FF00">Purge in:
@@ -451,7 +456,6 @@ Upgrade/Name/BansheeUpgradeEN12=BansheeUpgradeEN2
 Upgrade/Name/BansheeUpgradeEN122=BansheeUpgradeEN3
 Upgrade/Name/CloakDriveUpgrade=CloakDriveUpgrade
 Upgrade/Name/HunterSeeker=BansheeUpgradeRNG
-Upgrade/Name/SeekerUnlimited=SeekerUnlimited
 Upgrade/Name/WeakenAllUnits=WeakenAllUnits
 Upgrade/Name/WraithCloak=MassCloakDriveUpgrade
 Variant001/ModeDesc=Tutorial.

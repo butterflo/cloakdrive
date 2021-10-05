@@ -55,6 +55,15 @@
         <ScaleMin value="2.800000,2.800000,2.800000"/>
         <AnimSpeed value="0.700000"/>
     </CModel>
+    <CModel id="InhibitorSnipedDeactivationModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\EMP_ShadowScrambler_Shockwave\EMP_ShadowScrambler_Shockwave.m3"/>
+        <AnimSpeed value="0.250000"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.100000,2.100000,2.100000"/>
+        <ScaleMin value="2.100000,2.100000,2.100000"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+    </CModel>
     <CModel id="FenixChargeImpactModel">
         <Model value="Assets\Effects\Terran\ArchAngel_Xanthos_Experimentation_SmallEMPMissile_Impact\ArchAngel_Xanthos_Experimentation_SmallEMPMissile_Impact.m3"/>
         <AnimSpeed value="0.500000"/>

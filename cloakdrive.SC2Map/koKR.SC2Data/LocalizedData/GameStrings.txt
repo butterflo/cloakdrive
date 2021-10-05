@@ -93,7 +93,7 @@ Button/Tooltip/WarpPrism=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">�
 Button/Tooltip/Wraith=<c val="00FF00">티어5 유닛</c><n/><n/><c val="FF0000">[데이터 말소]<n/>[데이터 말소]<n/>[데이터 말소]
 Button/Tooltip/WraithCloak=<c val="FFFFFF">재사용 대기시간 -7초</c><n/><c val="00FFFF">(즉시 사용 가능)</c><n/><c val="00FFFF"><n/>(현재 레벨 <d ref="140 - Abil,MassCloakDrive,Cost[0].Cooldown.TimeUse / 7"/> / 14)<n/>(현재 재사용 대기시간 <d ref="Abil,MassCloakDrive,Cost[0].Cooldown.TimeUse"/>초)</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=본격 우주 함대전.<n/><n/>* 최대 7인 (AI 지원)<n/>* C 키를 눌러 워프하세요.<n/>* 튜토리얼이 있습니다.<n/><n/>@ 08.07.2020 패치
+DocInfo/DescLong=본격 우주 함대전.<n/><n/>* 최대 7인 (AI 지원)<n/>* C 키를 눌러 워프하세요.<n/>* 튜토리얼이 있습니다.
 DocInfo/DescShort=.
 DocInfo/HowToPlayBasic00=적 유닛을 파괴해서 자원을 모으고, 고급 유닛을 생산해 워프하세요.
 DocInfo/HowToPlayBasic01=공격 유닛과 워프 스킬을 활용하여 적 모함을 파괴하세요.
@@ -145,6 +145,13 @@ DocInfo/PatchNote043=* 모함 파괴 판정 후 폭발 모션까지의 딜레이
 DocInfo/PatchNote044=* 밤까마귀의 보호막 충전기가 최대 스택 이후부터 보호막을 회복하지 않던 문제 수정
 DocInfo/PatchNote045=* 새 로딩화면
 DocInfo/PatchNote046=* 취소 단축키를 X에서 Esc로 변경
+DocInfo/PatchNote047=* 궤도 포격기의 소리 버그 수정
+DocInfo/PatchNote048=* 배경음악 볼륨 낮춤
+DocInfo/PatchNote049=* T5 유닛 생산 무제한으로 변경
+DocInfo/PatchNote050=* 이제 전술 유닛은 파괴 불가
+DocInfo/PatchNote051=* (이제 전술 유닛은 블랙홀에 흡수되지 않음)
+DocInfo/PatchNote052=* (이제 궤도 포격기로 억제기 공격시 억제장만 취소되고 억제기는 파괴 불가)
+DocInfo/PatchNote053=
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB

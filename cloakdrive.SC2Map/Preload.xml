@@ -38,6 +38,7 @@
 <Model id="SOAHeroicShieldModel"/>
 <Model id="InhibitorActivateFlare"/>
 <Model id="InhibitorActivateModel"/>
+<Model id="InhibitorSnipedDeactivationModel"/>
 <Sound id="Terran_ExplosionLarge"/>
 <Sound id="Battlecruiser_YamatoAttackChargeUp" Variations="0"/>
 <Sound id="Ghost_NukeExplode" Variations="0"/>
@@ -97,6 +98,7 @@
 <Sound id="Raynor_MorosDeviceStart2"/>
 <Sound id="Raynor_MorosDeviceStart22"/>
 <Sound id="BansheeBGM0"/>
+<Sound id="InhibitorDeactivationSound"/>
 <Soundtrack id="Music_Silence"/>
 <Soundtrack id="BansheeOST0"/>
 <Soundtrack id="BansheeOST1"/>

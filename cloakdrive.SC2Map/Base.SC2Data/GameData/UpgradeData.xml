@@ -50,11 +50,6 @@
         <AffectedUnitArray index="0" removed="1"/>
         <MaxLevel value="14"/>
     </CUpgrade>
-    <CUpgrade id="SeekerUnlimited">
-        <EffectArray Operation="Set" Reference="Abil,StarportTrain,InfoArray[Train8].Charge.CountMax" Value="0"/>
-        <EffectArray Operation="Set" Reference="Abil,StarportTrain,InfoArray[Train8].Charge.CountStart" Value="0"/>
-        <EffectArray Operation="Set" Reference="Abil,StarportTrain,InfoArray[Train8].Charge.CountUse" Value="0"/>
-    </CUpgrade>
     <CUpgrade id="WeakenAllUnits">
         <EffectArray Operation="Subtract" Reference="Effect,WraithAU,Amount" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Effect,PhotonCannonU,Amount" Value="7"/>

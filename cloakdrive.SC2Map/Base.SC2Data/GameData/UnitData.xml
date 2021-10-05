@@ -27,6 +27,13 @@
         </CardLayouts>
         <Attributes index="Armored" value="0"/>
         <Attributes index="Mechanical" value="0"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="Archon">
         <AbilArray index="6" removed="1"/>
@@ -132,6 +139,7 @@
         <Attributes index="Light" value="0"/>
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Hover" value="1"/>
+        <Attributes index="Heroic" value="1"/>
         <EnergyStart value="700"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
@@ -160,6 +168,13 @@
             <ChanceArray index="Turn" value="0"/>
         </Fidget>
         <Description value="Button/Tooltip/PhoenixHallucination"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeArmor value="0"/>
+        <LifeRegenRate value="777"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="DuskWing">
         <FlagArray index="IndividualSubgroups" value="1"/>
@@ -441,6 +456,7 @@
         <Attributes index="Light" value="0"/>
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Psionic" value="0"/>
+        <Attributes index="Heroic" value="1"/>
         <EnergyStart value="700"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
@@ -463,6 +479,12 @@
             <LayoutButtons index="10" removed="1"/>
         </CardLayouts>
         <BehaviorArray index="0" removed="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="PhotonCannonWeapon">
         <Race value="Terr"/>
@@ -653,9 +675,16 @@
         <Attributes index="Armored" value="0"/>
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Psionic" value="0"/>
+        <Attributes index="Heroic" value="1"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
         <EnergyStart value="700"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="WarpPrismPhasing">
         <FlagArray index="Movable" value="0"/>
@@ -687,9 +716,16 @@
         <Attributes index="Armored" value="0"/>
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Psionic" value="0"/>
+        <Attributes index="Heroic" value="1"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
         <Description value="Button/Tooltip/WarpPrism"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenDelay value="0"/>
+        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="WraithAirWeaponLeft">
         <LifeStart value="77777"/>

@@ -154,6 +154,7 @@ RequirementNode/Name/LTCountUpgradeCloakDriveUpgradeCompleteOnly21=CountUpgrade(
 RequirementNode/Name/LTCountUpgradeHunterSeekerCompleteOnly14=CountUpgrade(HunterSeeker,CompleteOnly) < 14
 RequirementNode/Name/LTCountUpgradeWraithCloakCompleteOnly14=CountUpgrade(WraithCloak,CompleteOnly) < 14
 RequirementNode/Name/NotCountBehaviorCloakfieldRelayCompleteOnlyAtUnit=!CountBehavior(CloakfieldRelay,CompleteOnlyAtUnit)
+Sound/Name/BansheeBGM2=BansheeBGM2
 Sound/Name/CarrierDestroyedMini=Carrier Destroyed Mini
 Sound/Name/Core_SpinUp=Charge 2
 Sound/Name/Core_TransformEndHit=Sound 2-2

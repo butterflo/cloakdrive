@@ -273,6 +273,7 @@
     <CEffectDamage id="SOAPurifierBeamDamage">
         <Amount value="77777"/>
         <AttributeBonus index="Armored" value="0"/>
+        <AttributeBonus index="Heroic" value="-77770"/>
     </CEffectDamage>
     <CEffectEnumArea id="SOAPurifierBeamSearch">
         <AreaArray index="0" Radius="0.7"/>
@@ -343,7 +344,7 @@
         <HeightTime value="7"/>
     </CEffectModifyUnit>
     <CEffectEnumArea id="VortexEventHorizonSearchArea">
-        <SearchFilters value="-;Neutral,Psionic,Structure,Hover,Missile,Item,Dead,Hidden"/>
+        <SearchFilters value="-;Neutral,Psionic,Structure,Hover,Heroic,Missile,Item,Dead,Hidden"/>
         <AreaArray index="0" Radius="9.8" Effect="RiftSET"/>
     </CEffectEnumArea>
     <CEffectApplyForce id="VortexForce">
