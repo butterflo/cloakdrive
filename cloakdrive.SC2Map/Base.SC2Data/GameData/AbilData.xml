@@ -308,6 +308,24 @@
     <CAbilRally id="Waypoint">
         <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
         <CmdButtonArray index="Rally1" DefaultButtonFace="SetWaypoint"/>
+        <OrderArray index="0">
+            <DisplayType value="Rally"/>
+            <Color value="0,200,200,200"/>
+            <Model value="Assets\UI\Feedback\WayPointRally\WayPointRally.m3"/>
+            <LineTexture value="Assets\Textures\blank.dds"/>
+        </OrderArray>
+        <OrderArray index="1">
+            <DisplayType value="Rally"/>
+            <Color value="0,245,140,70"/>
+            <Model value="Assets\UI\Feedback\WayPointRally\WayPointRally.m3"/>
+            <LineTexture value="Assets\Textures\blank.dds"/>
+        </OrderArray>
+        <OrderArray index="2">
+            <DisplayType value="Rally"/>
+            <Color value="0,200,40,200"/>
+            <Model value="Assets\UI\Feedback\WayPointRally\WayPointRally.m3"/>
+            <LineTexture value="Assets\Textures\blank.dds"/>
+        </OrderArray>
     </CAbilRally>
     <CAbilEffectInstant id="CancelWaypoint" parent="Stimpack">
         <Name value="Abil/Name/CancelWaypoint"/>

@@ -9,6 +9,7 @@ Abil/Name/HallucinationOracle=Singularity Module
 Abil/Name/HallucinationPhoenix=Orbital Lux Driver
 Abil/Name/HallucinationProbe=Warp Arbitor
 Abil/Name/HallucinationWarpPrism=Prism Inhibitor
+Abil/Name/MassCloakDrive=Cloakdrive: Mass
 Abil/Name/PhasingMode=DEPLOY
 Abil/Name/StarportTechLabResearch=Upgrades
 Abil/Name/StarportTrain=Build
@@ -29,6 +30,7 @@ Behavior/Name/CloakspaceTurbineActive2=Turbine Active
 Behavior/Name/GhostCloak=Prepare for jump
 Behavior/Name/InhibitorArea=Inhibitor area
 Behavior/Name/SOAPurifierBeamFiring=Solaris LOOP
+Behavior/Name/SOASuperShield=Shield
 Behavior/Name/SolarisCHARGE=Solaris CHARGE
 Behavior/Name/SpawnProtection=Spawn Protection
 Behavior/Name/Superspeed=Superspeed
@@ -61,7 +63,6 @@ Button/Name/ResearchMedivacEnergyUpgrade=Carrier: Capacitor Upgrade
 Button/Name/ResearchRavenEnergyUpgrade=Carrier: Hull Repair Upgrade
 Button/Name/ResearchSeekerMissile=Banshee RNG Upgrade
 Button/Name/SOAOrbitalStrike=DEPLOY
-Button/Name/SOAWarpTech=Seeker Forge
 Button/Name/SetWaypoint=Set Waypoint
 Button/Name/TerranBuild=Build: Attack Units
 Button/Name/TerranBuildAdvanced=Build: Tech Units
@@ -98,7 +99,6 @@ Button/Tooltip/ResearchMedivacEnergyUpgrade=<c val="FFFFFF">EN regen +1</c><n/><
 Button/Tooltip/ResearchRavenEnergyUpgrade=<c val="FFFFFF">HP regen +7</c><n/><c val="00FFFF"><n/>Level <d ref="Unit,GhostAcademy,LifeRegenRate /7"/> / 21 (current)<n/>HP regen +<d ref="Unit,GhostAcademy,LifeRegenRate"/> (current)</c>
 Button/Tooltip/ResearchSeekerMissile=<c val="FFFFFF">RNG +0.7</c><n/><c val="00FFFF"><n/>Level <d ref="Weapon,WraithA,Range-4.9/0.7"/> / 14 (current)<n/>RNG <d ref="Weapon,WraithA,Range" precision="1"/> (current)</c>
 Button/Tooltip/SOAOrbitalStrike=<c val="FFFFFF">Strikes current 2D location.</c><n/><n/><c val="FFFF00">(Instant kill)<n/>(Kills Carriers)<n/>(Also kills your units)
-Button/Tooltip/SOAWarpTech=<c val="FFFF00">(Remove T5 unit build cap)</c>
 Button/Tooltip/SetWaypoint=<c val="FFFFFF">Order your entire fleet to attack to the target location.
 Button/Tooltip/TerranBuild=
 Button/Tooltip/TerranBuildAdvanced=
@@ -171,6 +171,11 @@ DocInfo/PatchNote050=* Now Tech units cannot be destroyed
 DocInfo/PatchNote051=* (Now Singularity rift does not kill tech units)
 DocInfo/PatchNote052=* (Now Orbital strike now only disables inhibitor field instead of destroying the unit)
 DocInfo/PatchNote053=
+DocInfo/PatchNote054=* Reverted "BGM volume decrease"
+DocInfo/PatchNote055=* Removed T5 unit pings
+DocInfo/PatchNote056=* Endgame scores are now displayed on chat instead of screen center
+DocInfo/PatchNote057=* Rally lines are now invisible
+DocInfo/PatchNote058=* Version sync between regions
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -178,18 +183,24 @@ Effect/Name/BFGDelay=BFG Delay
 Effect/Name/BFGSEARCH=BFG SEARCH
 Effect/Name/CloakDriveDummyMassLonger=Warp Relay DUMMY
 Effect/Name/DarkArchonConfusionApply=CloakspaceTurbineOrbApply
+Effect/Name/DiamondbackBeam=LDX
+Effect/Name/InhibitorLoop=InhibitorLoop
 Effect/Name/InhibitorPROJDM=Inhibitor PROJ DM
 Effect/Name/InhibitorSEARCHPROJ=Inhibitor SEARCH PROJ
 Effect/Name/InhibitorSearch=Inhibitor SEARCH
 Effect/Name/IonCannonsU=Shield Projector DM
 Effect/Name/LDXDUMMY=LDX DUMMY
+Effect/Name/LDXLRDelay=LDX-LR Delay
 Effect/Name/LDXLRSEARCH=LDX-LR SEARCH
+Effect/Name/MassRecallSearch=Annihilator
 Effect/Name/MegalithWeaponDamageDelay=LDX-LR Delay
 Effect/Name/MegalithWeaponFreindlyCP=LDX-LR Friendly Loop
 Effect/Name/MegalithWeaponFriendlyDamage=LDX-LR Friendly Damage
+Effect/Name/NukeDetonate=Nuclear Defense System LM
 Effect/Name/OracleStasisTrapActivate=Shield Projector SEARCH
 Effect/Name/OracleStasisTrapActivateCP=Shield Projector FIRE
 Effect/Name/ParticleBeam=LDX-LR
+Effect/Name/PurifierPlanetCrackerSearch=LDX
 Effect/Name/PhotonCannonLM=Photon Catalyst Cannon LM
 Effect/Name/RiftCHARGE=Rift CHARGE
 Effect/Name/RiftREMOVE=Rift REMOVE
@@ -199,11 +210,14 @@ Effect/Name/SOAPurifierBeamCU=Solaris CREATE UNIT
 Effect/Name/SOAPurifierBeamDamage=Solaris DM
 Effect/Name/SOAPurifierBeamSearch=Solaris SEARCH
 Effect/Name/SOASuperShieldApplyBehavior=Shield Projector APPLY
+Effect/Name/ShieldProjectorHEAL=Shield Projector HEAL
+Effect/Name/ShieldProjectorSET=Shield Projector SET
 Effect/Name/SolarisAPPLY=Solaris APPLY
 Effect/Name/SolarisDELAY=Solaris DELAY
 Effect/Name/SolarisSET=Solaris SET
 Effect/Name/TempestDM=Tempest DM
 Effect/Name/TempestSEARCH=Tempest SEARCH
+Effect/Name/VoidSeekerU=Annihilator
 Effect/Name/TurbineAddCharge=Turbine ADD CHARGE
 Effect/Name/TurbineChargeDummy=Turbine Charge Dummy
 Effect/Name/VoodooShieldSet=Resist SET
@@ -214,10 +228,12 @@ Effect/Name/VortexForce=Rift FORCE
 Effect/Name/WarpMassDUMMY=Warp Mass DUMMY
 Effect/Name/WarpSingularDUMMY=Warp Singular DUMMY
 Effect/Name/WraithALeftLaunchMissile=Valkyrie Missile Pod LM
+Effect/Name/WraithARightLaunchMissile=Banshee LM
+Effect/Name/WraithAU=Valkyrie Missile Pod DM
 Effect/Name/YamatoGunSpecialDamage=BFG DM
 Effect/Name/YamatoGunSpecialLaunchMissile=BFG LM
 Effect/Name/heal=Energy Battery
-LoadingScreen/Tip=<s val="Cloakdrive14"><c val="FFFFFF">concept & coding : butterflo</s>
+LoadingScreen/Tip=<s val="Cloakdrive14"><c val="00FFFF">developer</c>  <c val="FFFFFF">butterflo</c></s>
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=CPU_1
 MapInfo/Player02/Name=CPU_2
@@ -235,7 +251,7 @@ MapInfo/Player13/Name=CPU_13
 MapInfo/Player14/Name=CPU_14
 MapInfo/Player15/Name=Hostile
 Param/Value/00E29370=TIP: Deploying a singularity tech unit is a good way to get resources.
-Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>fairithm - wisdom<n/>fairithm - Kuroki Fuusetsu no Majo<n/>fairithm - Hades: the bloody rage<n/>fairithm - schwarzer sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game will not be used for any profit.
+Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>fairithm - wisdom<n/>fairithm - Kuroki Fuusetsu no Majo<n/>fairithm - Hades: the bloody rage<n/>fairithm - schwarzer sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
 Param/Value/04105D6E=TIP: Orbital strike aims at the Z-axis bottom of the caster. Be careful to not to accidentally destroy your units.
 Param/Value/0564F4E1=<c val="00FF80">Mass Cloakdrive</c><n/><n/>Now, build some combat units and try to destroy some enemy units.
 Param/Value/06B19764=TIP: A T5 Seeker can be overwhelmed by well-timed ganks. Protect it, or overwhelm it.
@@ -254,15 +270,16 @@ Param/Value/12BB9CD8=<c val="FFFFFF"> >>> </c>
 Param/Value/12F43E79=TIP: Cloakdrive has infinite range. The way jumpdrives are meant to be.
 Param/Value/14447F34=<c val="FFFF00">
 Param/Value/15EC1D77=<s val="Cloakdrive14"><c val="808080">[[ P
+Param/Value/1712B51A=)
 Param/Value/1735D4CC=<s val="Cloakdrive14">Player</s>
 Param/Value/18384A10=: Shield Upgrade III reached.<n/>
 Param/Value/1AF2E0D2=<c val="FFFF00">Destroy enemy units [ 
-Param/Value/1BA6A432=<c val="00FF80">All units are equipped with Cloakdrive.</c><n/><n/>Press <c val="FFFF00">[C]</c> to jump to anywhere. Use <c val="FFFF00">[2]</c> to select units ready to jump.
+Param/Value/1BA6A432=<c val="00FF80">All units are equipped with Cloakdrive.</c><n/><n/>Press <c val="FFFF00">[C]</c> to jump to anywhere.
 Param/Value/1C2B9B06=<s val="Cloakdrive14"><c val="FFFF00">Score (bounty)</c></c></s>
 Param/Value/1CB8CC98=,
 Param/Value/1CB9A7F6=<s val="Cloakdrive14"><c val="80FF00">Cam aligning..</c><n/><c val="FFFFFF">Steady.
 Param/Value/1EBA8F89=
-Param/Value/2034729A=Warning: <c val="FFFF00">
+Param/Value/2034729A=<c val="FFFF00">
 Param/Value/23FFAA08=<c val="00FFFF">Tutorial complete</c><n/><n/>The tutorial is now complete.<n/>Sandbox mode is now active.
 Param/Value/25F8E3B0=,
 Param/Value/286A9CBD= place - 
@@ -272,7 +289,6 @@ Param/Value/2A899D3B=<s val="ModCenterSize24Bold"><c val="00FF80">
 Param/Value/2AD73227=<s val="Cloakdrive14"><c val="80FF00">Cam aligning..</c><n/>Steady.
 Param/Value/2C7E20CB=<c val="FFFF00">* 1 MINUTE LEFT *</c>
 Param/Value/2CEC4294=TIP: Hold <c val="FFFF00">[ TAB ]</c> and move the mouse around to see from different viewpoints.
-Param/Value/2DB96813=</c> now controls a T5 unit.
 Param/Value/2E1FFC4C=TIP: Banshees can fire their weapon while moving around.
 Param/Value/2EBFED0F=</c> <c val="FFFFFF">( +
 Param/Value/304540E6=<c val="00FF80">When timer expires, the player with the highest score wins.</c><n/><n/>Destroy enemy units, collect resources and expand your fleet.
@@ -281,8 +297,9 @@ Param/Value/340639F7=<c val="FFFF00">[ Type I Purge ]<c val="FFFFFF"> was select
 Param/Value/357CBB84=,
 Param/Value/359FE8D8=<s val="Cloakdrive14">> Rally point set
 Param/Value/37234FEE= )
-Param/Value/37F1E1C4=A T5 unit was destroyed (owned by <c val="FFFF00">
+Param/Value/37F1E1C4=<c val="FF0080">
 Param/Value/3AC5FBD3= <c val="FFFF00">( 
+Param/Value/3BEED82D=<c val="00FF80">Hotkeys</c><n/><n/><c val="FFFF00">[1]</c> Carrier<n/><c val="FFFF00">[2]</c> Units that are ready to jump<n/><c val="FFFF00">[3]</c> Banshees<n/><c val="FFFF00">[Mouse wheel]</c> Zoom in/out<n/><c val="FFFF00">[Tab + mouse]</c> Free camera
 Param/Value/3CF50DAA=<c val="FFFF00">See you in the real game. (End)
 Param/Value/3D03C7AF=<c val="FFFF00">
 Param/Value/3EE08298=<s val="Cloakdrive14">Respawn in <c val="80FF00">
@@ -295,6 +312,7 @@ Param/Value/4A8708DD=<s val="Cloakdrive14"><c val="80FF00">
 Param/Value/4B26A219=<c val="00FF80">Basic controls</c><n/><n/>Cloakdrive has unlimited range. Go further!
 Param/Value/4B975FAE=TIP: Arbiter Relays can be chained.
 Param/Value/4C44910C=
+Param/Value/4ED16871=<s val="ModCenterSize24Bold">T2</s>
 Param/Value/50EC30E5=<s val="Cloakdrive14"><c val="FFFFFF">
 Param/Value/51675A53=<s val="ModCenterSize40Bold">
 Param/Value/5295BDE4=OBJECTIVE: <c val="00FF80">Follow the Tutorial.
@@ -346,10 +364,9 @@ Param/Value/882FC29E=st
 Param/Value/88AAC987= - (New player)<n/>
 Param/Value/8A586320=<s val="Cloakdrive14"><c val="00FFFF">Mass Cloakdrive Ready</c></s>
 Param/Value/8B73F44E=SetRotation {
-Param/Value/8B85A5CC=TIP: How are you?
 Param/Value/8DFE8744=TIP: Carrier nukes are used like a regular weapon.
 Param/Value/8E9E7B3D=
-Param/Value/8EBA2D09=<s val="Cloakdrive40">
+Param/Value/8EBA2D09=<c val="80FF00">
 Param/Value/8F9E1150=</c> )
 Param/Value/951B6973=)
 Param/Value/99B9013D=<s val="Cloakdrive16">
@@ -366,7 +383,7 @@ Param/Value/A998F020=TIP: Turbine-warp creates a deadly shockwave around the poi
 Param/Value/AA6C3A95=<c val="00FF80">Basic controls</c><n/><n/>The Carrier spawns Banshees as your basic minions. Select a banshee and try to move it around.
 Param/Value/AF520109=TIP: Playing defensive is usually not effective.
 Param/Value/B0AE83A2=<c val="FFFF00">
-Param/Value/B2699825=<c val="ffff00">Alert: Orbital activity detected.</c>
+Param/Value/B2699825=<c val="FFFF00">Alert: Orbital activity detected.</c>
 Param/Value/B60DF783=<s val="Cloakdrive14">
 Param/Value/B895A408=TIP: Orbital strikes also damage units in cloakspace.
 Param/Value/BA27F891=<s val="Cloakdrive14"><c val="00FFFF">Mass Cloakdrive Ready</c></s>
@@ -380,7 +397,6 @@ Param/Value/C50B8F85=<c val="FFFF00">
 Param/Value/C5C29628=
 Param/Value/C74E8809=<c val="FFFF00">[ Type II Purge ]<c val="FFFFFF"> was selected.</c>
 Param/Value/C9F9B0C7=: Shield Upgrade I reached.<n/><n/>(2 left until infinity shield)
-Param/Value/CA33A69B=</c>)
 Param/Value/CD0196A2=<c val="00FF80">Advanced controls</c><n/><n/>When your Carrier is selected, press <c val="FFFF00">[ Z ]</c> and click on a location to set it as a rally point.
 Param/Value/CD111D85= <c val="FFFF00">( +
 Param/Value/D01ABB37=</c><c val="FFFFFF"> is respawning..</c>
@@ -390,7 +406,6 @@ Param/Value/D28E47C1=
 Param/Value/D4385BA4=<s val="Cloakdrive14"><c val="80FF00">Warping in..</c><n/><c val="FFFFFF">Standby.
 Param/Value/D4DC3715=TIP: Upgraded Banshees give more resources when destroyed.
 Param/Value/D5224D06=<c val="FFFFFF"> >>> </c>
-Param/Value/D58CE4AD=TIP: T5 Seeker can be built only once in each Carrier spawn.
 Param/Value/D59092BB=<c val="00FF80">Mass Cloakdrive</c><n/><n/>The Carrier has a unique ability: Mass Cloakdrive. When activated, it sends the units around the Carrier to the target location through a series of Cloakdrive jumps, without consuming each unit's energy. The Carrier does not jump.
 Param/Value/D665FB1B= ]]
 Param/Value/D75208DF=<c val="00FF80">Combat units</c><n/><n/>Destroy enemy units to get resources. Try to build a combat unit! Select your Carrier and press <c val="FFFF00">[ Q ]</c> to see the build menu.
@@ -400,7 +415,7 @@ Param/Value/D8C87923=
 Param/Value/D9935B62=<c val="00FF80">* 2 MINUTES LEFT *</c>
 Param/Value/DD3C83D8=)
 Param/Value/E04B0090=<c val="FFFF00">Warning: Singularity detected.</c>
-Param/Value/E04FF842=<n/><s val="Cloakdrive24"><c val="FFFFFF">[ 
+Param/Value/E04FF842= <c val="FFFFFF">[ 
 Param/Value/E051B660=</c> )
 Param/Value/E2025BF4= / 3 ]
 Param/Value/E2450E31=TIP: Most of the weapons inflict splash damage, also on your units.
@@ -422,7 +437,6 @@ Param/Value/F3502E6F=<c val="00FF80">Mass Cloakdrive</c><n/><n/>Select your Carr
 Param/Value/F43AC23A=<c val="00FF80">Advanced controls</c><n/><n/>When your Carrier is selected, press <c val="FFFF00">[ W ]</c> to see the build menu for Tech units. The Tech units are equipped with special abilities instead of a normal weapon.
 Param/Value/F4BEDB16=TIP: Combat units have secondary weapon modes.
 Param/Value/F84F25CF=<c val="FFFFFF">
-Param/Value/FC7E797B=팁: 5티어 유닛은 모함이 재생성되면 추가로 생산할 수 있습니다.
 Param/Value/FD83E6E9= / 1 ]
 Param/Value/FE5E4219=
 Param/Value/FF6A47F4=<c val="00FF80">Advanced controls</c><n/><n/>When your Carrier is selected, press <c val="FFFF00">[ E ]</c> to see the upgrade menu. Banshees and Carriers are upgradable.

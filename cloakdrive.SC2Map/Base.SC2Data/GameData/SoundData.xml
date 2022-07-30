@@ -34,11 +34,11 @@
         <Flags index="Wait" value="1"/>
         <Pitch value="-1.000000,-1.000000"/>
         <SpeakerMix index="LFE" value="2.000000"/>
-        <Volume value="-2.000000,-2.000000"/>
+        <Volume value="3.000000,3.000000"/>
     </CSound>
     <CSound id="BansheeBGM2" parent="MUSIC">
         <AssetArray File="bgm2.ogg" Volume="3.000000,3.000000" FacialGroup=""/>
-        <Volume value="-2.000000,-2.000000"/>
+        <Volume value="6.000000,6.000000"/>
         <SpeakerMix index="LFE" value="2.000000"/>
         <Flags index="Wait" value="1"/>
     </CSound>
@@ -50,7 +50,7 @@
         <Flags index="Wait" value="1"/>
         <Pitch value="-1.000000,-1.000000"/>
         <SpeakerMix index="LFE" value="2.000000"/>
-        <Volume value="-2.000000,-2.000000"/>
+        <Volume value="6.000000,6.000000"/>
     </CSound>
     <CSound id="BansheeBGMT1" parent="MUSIC">
         <AssetArray File="The Grid.ogg" Volume="3.000000,3.000000" FacialGroup="">
@@ -390,6 +390,8 @@
         <Mode value="2D"/>
         <Pitch value="-3.000000,0.000000"/>
         <Select value="Random"/>
+        <Flags index="Purgable" value="0"/>
+        <Volume value="6.000000,6.000000"/>
     </CSound>
     <CSound id="Raven_DefensiveMatrixBirth">
         <Category value="Movie"/>
@@ -468,7 +470,7 @@
     </CSound>
     <CSound id="BansheeBGM0" parent="MUSIC">
         <AssetArray File="bgm0.ogg" FacialGroup=""/>
-        <Volume value="-2.000000,-2.000000"/>
+        <Volume value="3.000000,3.000000"/>
         <Pitch value="-1.000000,-1.000000"/>
         <SpeakerMix index="LFE" value="2.000000"/>
         <Flags index="Wait" value="1"/>

@@ -1,7 +1,14 @@
 ﻿Abil/Name/ArbiterMPRecall=전송
 Abil/Name/ArtanisPsionicShockwave=Charge
 Abil/Name/AttackAllowsInvulnerable=Attack (Utility)
+Abil/Name/CancelWaypoint=Cancel Waypoint
+Abil/Name/CloakdriveTurbine=Cloakdrive: Turbine
+Abil/Name/ForceField=Cloakdrive
+Abil/Name/GuardianShield=Singularity
+Abil/Name/HallucinationOracle=Singularity Module
 Abil/Name/HallucinationPhoenix=Orbital Lux Driver
+Abil/Name/HallucinationProbe=Warp Arbitor
+Abil/Name/HallucinationWarpPrism=Prism Inhibitor
 Abil/Name/MassCloakDrive=Cloakdrive: Mass
 Abil/Name/PhasingMode=억제장 전개
 Abil/Name/StarportTechLabResearch=Upgrades
@@ -14,8 +21,12 @@ Abil/Name/VoodooShield=저항
 Abil/Name/Waypoint=Waypoint
 Abil/TargetMessage/attack=
 Attribute001/Name=GameMode
+Attribute001/Value001/Name=TDM
+Attribute001/Value002/Name=ARENA
+Attribute001/Value003/Name=TUTORIAL
 Behavior/Name/CloakspaceTurbineActive=충전중
 Behavior/Name/CloakspaceTurbineActive2=터바인 활성화
+Behavior/Name/InhibitorArea=Inhibitor area
 Behavior/Name/SOAPurifierBeamFiring=Solaris LOOP
 Behavior/Name/SOASuperShield=보호막
 Behavior/Name/SolarisCHARGE=Solaris CHARGE
@@ -23,6 +34,8 @@ Behavior/Name/SpawnProtection=소환 보호
 Behavior/Name/TempestOrb=TempestOrb
 Behavior/Name/VoodooShield=저항
 Behavior/Name/VortexBehavior=Vortex FORCE
+Behavior/Tooltip/CloakspaceTurbineActive=
+Behavior/Tooltip/CloakspaceTurbineActive2=
 Behavior/Tooltip/SOASuperShield=
 Behavior/Tooltip/VortexBehavior=
 Button/Name/Arbiter=Arbiter Relay
@@ -68,9 +81,11 @@ Button/Tooltip/BansheeResistUpgrade3=<c val="4040FF">(연속 시전 쿨타임 �
 Button/Tooltip/BuildScienceVessel=<c val="00FF00">티어4 유닛</c><n/><c val="FFFFFF">공성 해방선입니다.</c><n/><c val="00FFFF">(장거리 공격)</c>
 Button/Tooltip/Cancel=
 Button/Tooltip/CancelWaypoint=<c val="FFFFFF">지점 공격을 취소합니다.</c>
+Button/Tooltip/DuskWing=<c val="00FF00">티어1 유닛</c><n/><n/><c val="FFFFFF">빠르고 스마트합니다.
 Button/Tooltip/EvasiveCloakDrive=<c val="FFFFFF">대상 지점으로 워프합니다.</c><n/><n/><c val="00FFFF">(거리 제한 없음)
 Button/Tooltip/EvasiveCloakDrive2=<c val="FFFFFF">주변의 아군 유닛들을 대상 지점으로 워프시킵니다.</c><n/><n/><c val="00FFFF">(거리 제한 없음)<n/>(에너지 소모 없음)<n/>(모함 제외)</c>
 Button/Tooltip/EvasiveCloakDrive3=<c val="FFFFFF">대상 지점으로 워프합니다. 경로상의 모든 유닛을 파괴합니다. 출발 지점에 치명적인 충격파가 발생합니다.</c><n/><n/><c val="FFFF00">(거리 제한 없음)<n/>(즉사기)<n/>(모함 영향 받음)<n/>(아군 유닛도 영향 받음)
+Button/Tooltip/GhostAcademy=<c val="00FF00">중요 유닛</c><n/><n/><c val="FFFFFF">모함입니다.
 Button/Tooltip/Oracle=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">반경 내의 모든 유닛을 흡수하는 중력장을 전개합니다.</c>
 Button/Tooltip/PhasingMode=<c val="FFFFFF">억제장을 전개합니다. 활성화된 동안 반경 내 모든 적 유닛의 능력 및 그 효과를 무효화시킵니다. <n/><n/><c val="FFFF00">(에너지 재생 억제)</c>
 Button/Tooltip/PhoenixHallucination=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">궤도 포격 유닛입니다.
@@ -134,6 +149,7 @@ DocInfo/PatchNote031=* 과학선 유닛을 해방선으로 변경
 DocInfo/PatchNote032=* 게임 시야각 확대
 DocInfo/PatchNote033=* 로딩스크린 업데이트
 DocInfo/PatchNote034=* 일부 유닛의 FX 개선
+DocInfo/PatchNote035=
 DocInfo/PatchNote036=* 해방선에 공격 중단 능력 추가
 DocInfo/PatchNote037=* 밴시에 워프엔진 에너지 충전 능력 추가
 DocInfo/PatchNote038=* 터바인 워프 사용방식을 자신에게 충전 부여 방식으로 변경
@@ -152,11 +168,18 @@ DocInfo/PatchNote050=* 이제 전술 유닛은 파괴 불가
 DocInfo/PatchNote051=* (이제 전술 유닛은 블랙홀에 흡수되지 않음)
 DocInfo/PatchNote052=* (이제 궤도 포격기로 억제기 공격시 억제장만 취소되고 억제기는 파괴 불가)
 DocInfo/PatchNote053=
+DocInfo/PatchNote054=* "배경음악 볼륨 낮춤" 되돌림
+DocInfo/PatchNote055=* T5 유닛 관련 핑 삭제
+DocInfo/PatchNote056=* 게임 종료 후 점수를 화면 상단 대신 채팅창에 표시
+DocInfo/PatchNote057=* 생산 랠리 경로의 시각효과 삭제
+DocInfo/PatchNote058=* 서버간 버전 동기화
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
+Effect/Name/BFGDelay=BFG Delay
 Effect/Name/BFGSEARCH=BFG SEARCH
 Effect/Name/CloakDriveDummyMassLonger=Warp Relay DUMMY
+Effect/Name/DarkArchonConfusionApply=CloakspaceTurbineOrbApply
 Effect/Name/DiamondbackBeam=LDX
 Effect/Name/InhibitorLoop=InhibitorLoop
 Effect/Name/InhibitorPROJDM=Inhibitor PROJ DM
@@ -174,6 +197,7 @@ Effect/Name/NukeDetonate=Nuclear Defense System LM
 Effect/Name/OracleStasisTrapActivate=Shield Projector SEARCH
 Effect/Name/OracleStasisTrapActivateCP=Shield Projector FIRE
 Effect/Name/ParticleBeam=LDX-LR
+Effect/Name/PhotonCannonLM=Photon Catalyst Cannon LM
 Effect/Name/PurifierPlanetCrackerSearch=LDX
 Effect/Name/RiftCHARGE=Rift CHARGE
 Effect/Name/RiftREMOVE=Rift REMOVE
@@ -190,6 +214,8 @@ Effect/Name/SolarisDELAY=Solaris DELAY
 Effect/Name/SolarisSET=Solaris SET
 Effect/Name/TempestDM=Tempest DM
 Effect/Name/TempestSEARCH=Tempest SEARCH
+Effect/Name/TurbineAddCharge=Turbine ADD CHARGE
+Effect/Name/TurbineChargeDummy=Turbine Charge Dummy
 Effect/Name/VoidSeekerU=Annihilator
 Effect/Name/VoodooShieldSet=Resist SET
 Effect/Name/VortexCreatePersistentInitial=Rift LOOP
@@ -203,7 +229,8 @@ Effect/Name/WraithARightLaunchMissile=Banshee LM
 Effect/Name/WraithAU=Valkyrie Missile Pod DM
 Effect/Name/YamatoGunSpecialDamage=BFG DM
 Effect/Name/YamatoGunSpecialLaunchMissile=BFG LM
-LoadingScreen/Tip=<s val="Cloakdrive14"><c val="FFFFFF">concept & coding : butterflo</s>
+Effect/Name/heal=Energy Battery
+LoadingScreen/Tip=<s val="Cloakdrive14"><c val="00FFFF">developer</c>  <c val="FFFFFF">butterflo</c></s>
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=CPU_1
 MapInfo/Player02/Name=CPU_2
@@ -229,7 +256,7 @@ Param/Value/0769D90E=팁: 승리에 있어, 유닛 조합은 컨트롤보다도 
 Param/Value/098A1EFD=팁: 점수가 높은 플레이어일수록 현상금도 빠르게 증가합니다.
 Param/Value/0B6DAEEF=<c val="00FF80">공격 유닛</c><n/><n/>고급 유닛일수록 워프 엔진 충전에 더 오랜 시간이 걸립니다. <c val="FFFF00">[ 2 ]</c> 키를 누르면 워프 충전이 완료된 유닛들을 선택할 수 있습니다.
 Param/Value/0C4B523B=<c val="FFFF00">
-Param/Value/0CBE6BDF=<c val="ffff00">경고: 적 부대 접근 중!!</c>
+Param/Value/0CBE6BDF=<c val="FFFF00">경고: 적 부대 접근 중!!</c>
 Param/Value/0CCDBA45=저장소 불러오는 중..
 Param/Value/0D25A7EC=</c><c val="FFFF00">: 저항 업그레이드 2단계 달성.<n/>(무제한 저항까지 1단계 남음)</c>
 Param/Value/0F8CE0AC=<c val="00FF80">고급 지시</c><n/><n/>마우스 휠을 사용해 더 넓은 지역을 볼 수 있습니다.
@@ -259,7 +286,6 @@ Param/Value/2A899D3B=<s val="ModCenterSize24Bold"><c val="00FF80">
 Param/Value/2AD73227=<s val="Cloakdrive14"><c val="80FF00">카메라 정렬중.</c><n/><c val="FFFFFF">곧 완료됩니다.
 Param/Value/2C7E20CB=<c val="FFFF00">* 1분 남음 *</c>
 Param/Value/2CEC4294=팁: TAB 키를 누른 상태에서 마우스를 움직이면 시점을 자유롭게 회전시킬 수 있습니다.
-Param/Value/2DB96813=: 5티어 유닛 생산.
 Param/Value/2E1FFC4C=팁: 밴시는 이동 중에도 적을 공격할 수 있습니다.
 Param/Value/2EBFED0F=</c> <c val="FFFFFF">( +
 Param/Value/304540E6=<c val="00FF80">제일 점수가 높은 플레이어가 게임을 승리합니다.</c><n/><c val="FFFFFF">적 유닛을 파괴하고 자원을 모아, 강력한 함대를 이끌어 보세요.</c>
@@ -270,6 +296,7 @@ Param/Value/359FE8D8=<s val="Cloakdrive14">> 랠리 지정
 Param/Value/37234FEE= )
 Param/Value/37F1E1C4=<c val="FF0080">
 Param/Value/3AC5FBD3= <c val="FFFF00">( 
+Param/Value/3BEED82D=<c val="00FF80">조작</c><n/><n/><c val="FFFF00">[1]</c> 모함<n/><c val="FFFF00">[2]</c> 워프 가능 유닛<n/><c val="FFFF00">[3]</c> 밴시<n/><c val="FFFF00">[마우스 휠]</c> 카메라 확대/축소<n/><c val="FFFF00">[탭 + 마우스]</c> 카메라 시점 변경
 Param/Value/3CF50DAA=<c val="FFFF00">실전에서 뵙겠습니다. (끝)
 Param/Value/3D03C7AF=<c val="FFFF00">
 Param/Value/3EE08298=<s val="Cloakdrive14">모함 재생성: <c val="80FF00">
@@ -289,7 +316,7 @@ Param/Value/5295BDE4=목표: <c val="00FF80">튜토리얼 완료.</c>
 Param/Value/52F43F43=
 Param/Value/559ED564=
 Param/Value/55AADF65=팁: 밤까마귀의 보호막 투사는 최대 49스택까지 겹칠 수 있습니다.<n/>풀스택 보호막은 5티어 유닛의 공격을 1회 막아냅니다.
-Param/Value/57202303=팁: 대규모 워프 사용시 티어가 낮은 유닛이 먼저 이동합니다.
+Param/Value/57202303=팁: 대규모 클록드라이브 사용시 티어가 낮은 유닛이 먼저 이동합니다.
 Param/Value/57EBFD61=
 Param/Value/58BD799A=<c val="00FF80">* 15분 남음 *</c>
 Param/Value/58D0324B=<s val="Cloakdrive24">시작</s>
@@ -335,10 +362,9 @@ Param/Value/882FC29E=위
 Param/Value/88AAC987= - (처음 플레이)<n/>
 Param/Value/8A586320=<s val="Cloakdrive14"><c val="00FFFF">대규모 전송 준비됨</c></s>
 Param/Value/8B73F44E=SetRotation {
-Param/Value/8B85A5CC=팁: 잘 지내시나요?
 Param/Value/8DFE8744=팁: 모함의 핵은 기본 공격과 같은 방식으로 쓸 수 있습니다.
 Param/Value/8E9E7B3D=
-Param/Value/8EBA2D09=<s val="Cloakdrive40">
+Param/Value/8EBA2D09=<c val="80FF00">
 Param/Value/8F9E1150=</c> )
 Param/Value/951B6973=)
 Param/Value/99B9013D=<s val="Cloakdrive14">
@@ -353,11 +379,10 @@ Param/Value/A62EBB60=}
 Param/Value/A86E4B9A=점 ]
 Param/Value/A998F020=팁: 터바인-워프 시전시 출발 지점에 치명적인 충격파가 발생합니다. 자신의 모함을 파괴하지 않도록 주의하세요.
 Param/Value/AA6C3A95=<c val="00FF80">기본 조작</c><n/><n/>모함은 주기적으로 밴시를 생성합니다. 밴시를 선택해서 움직여 보세요.
-Param/Value/AF520109=팁: Cloakdrive에서는 방어적으로 플레이하면 불리해집니다.
+Param/Value/AF520109=팁: 방어적으로 플레이하면 불리해집니다.
 Param/Value/B0AE83A2=<c val="FFFF00">
-Param/Value/B2699825=<c val="ffff00">경고: 궤도 활동 감지.</c>
+Param/Value/B2699825=<c val="FFFF00">경고: 궤도 활동 감지.</c>
 Param/Value/B60DF783=<s val="Cloakdrive14">
-Param/Value/B848A21D=가 파괴되었습니다. (원인: 
 Param/Value/B895A408=팁: 궤도 포격은 워프 중인 유닛들도 파괴합니다.
 Param/Value/BA27F891=<s val="Cloakdrive14"><c val="00FFFF">대규모 전송 준비됨</c></s>
 Param/Value/BA453ED2=팁: 마우스를 스크롤하면 궤도 유닛을 포함해 더 넓은 범위를 볼 수 있습니다.
@@ -370,10 +395,8 @@ Param/Value/C50B8F85=<c val="FFFF00">
 Param/Value/C5C29628=
 Param/Value/C74E8809=<c val="FFFF00">[ 타입 II 정화장치 ]<c val="FFFFFF"> 가 대기 중입니다.</c>
 Param/Value/C9F9B0C7=</c><c val="FFFF00">: 저항 업그레이드 1단계 달성.<n/>(무제한 저항까지 2단계 남음)</c>
-Param/Value/CA33A69B=</c>님의 5티어 유닛이 파괴되었습니다.
 Param/Value/CD0196A2=<c val="00FF80">고급 지시</c><n/><n/>모함을 선택한 채 <c val="FFFF00">[ Z ]</c> 키를 누르고 대상 좌표를 지정하면, 자신의 모든 유닛에게 이동 공격 명령을 내릴 수 있습니다.
 Param/Value/CD111D85= <c val="FFFF00">( +
-Param/Value/CD87750E=<c val="FFFF00">아군 
 Param/Value/D01ABB37=</c><c val="FFFFFF">의 모함을 재생성합니다.</c>
 Param/Value/D12EB370=완료 [
 Param/Value/D1ADFEDB=<s val="Cloakdrive14"><c val="00FF00">남은 시간:</c></s>
@@ -381,22 +404,19 @@ Param/Value/D28E47C1=
 Param/Value/D4385BA4=<s val="Cloakdrive14"><c val="80FF00">워프 엔진 가동.</c><n/><c val="FFFFFF">대기중..
 Param/Value/D4DC3715=팁: 업그레이드된 밴시를 파괴하면 기본 밴시에 비해 자원을 더 많이 얻을 수 있습니다.
 Param/Value/D5224D06=<c val="FFFFFF"> >>> </c>
-Param/Value/D58CE4AD=팁: 모함이 재생성되면 5티어 유닛을 추가로 생산할 수 있습니다.
-Param/Value/D59092BB=<c val="00FF80">대규모 워프</c><n/><n/>모함은 대규모 워프 능력을 사용해, 모함 주변에 있는 자신의 유닛들을 에너지 소모 없이 대상 지점으로 전송할 수 있습니다. 모함은 이동하지 않습니다.
+Param/Value/D59092BB=<c val="00FF80">대규모 클록드라이브</c><n/><n/>모함은 대규모 클록드라이브 능력을 사용해, 모함 주변에 있는 자신의 유닛들을 에너지 소모 없이 대상 지점으로 전송할 수 있습니다. 모함은 이동하지 않습니다.
 Param/Value/D665FB1B= ]]
 Param/Value/D75208DF=<c val="00FF80">공격 유닛</c><n/><n/>적 유닛을 처치하면 자원을 얻을 수 있습니다. 아무 유닛이나 생산해 보세요! 모함을 선택하고 <c val="FFFF00">[ Q ]</c> 키를 누르면 생산 메뉴를 볼 수 있습니다.
 Param/Value/D7B40C35=초..
 Param/Value/D7D1E298=팁: 모함을 선택한 상태에서 Z 키를 누르고 대상 위치를 지정하면,<n/>모든 유닛에게 한번에 공격 명령을 보낼 수 있습니다.
 Param/Value/D8C87923=데스
 Param/Value/D9935B62=<c val="00FF80">* 2분 남음 *</c>
-Param/Value/DA1F47B3=<s val="ModCenterSize24Bold">OFF</s>
 Param/Value/DD3C83D8=)
 Param/Value/E04B0090=<c val="FFFF00">경고: 블랙홀 생성 감지.</c>
-Param/Value/E04FF842=<n/><s val="Cloakdrive24"><c val="FFFFFF">[ 
+Param/Value/E04FF842=</c><c val="FFFFFF"> [ 
 Param/Value/E051B660=</c> )
 Param/Value/E2025BF4= / 3 ]
 Param/Value/E2450E31=팁: 모든 방사 피해는 자신의 유닛에게도 영향을 줍니다.
-Param/Value/E28CE01B=<s val="ModCenterSize24Bold">T3</s>
 Param/Value/E30CB1F3=팁: 고급 유닛일수록 공속이 느립니다. 유닛을 혼자 내버려두지 않도록 조심하세요.
 Param/Value/E5A2BD30=<s val="Cloakdrive24">방장 :  
 Param/Value/E6A95545=</c> <c val="FFFFFF">( 
@@ -407,25 +427,26 @@ Param/Value/EA02264B=<s val="Cloakdrive14"><c val="FF4000">전술유닛 준비�
 Param/Value/EA0A9FC8=<c val="00FF80">기본 조작</c><n/><n/>이제, 워프 능력을 사용해 적 유닛을 처치해 보세요.<n/><c val="FFFF00">[ 3 ]</c> 키를 누르면 모든 밴시를 선택할 수 있습니다.
 Param/Value/EC0EB46A=<n/>
 Param/Value/EC447A43=<s val="Cloakdrive14"><c val="80FF00">워프 엔진 가동.</c><n/><c val="FFFFFF">대기중..
-Param/Value/F0E12982=<s val="Cloakdrive14"><전투> 대규모 하이퍼드라이브 사용
+Param/Value/F0323C38=
+Param/Value/F0E12982=<s val="Cloakdrive14"><전투> 대규모 클록드라이브 사용
 Param/Value/F0E93575=<s val="Cloakdrive14"><c val="00FFFF">Credits</c></s>
 Param/Value/F124F810=<c val="00FF80">고급 지시</c><n/><n/>마지막으로, 고급 지시들을 설명합니다. 우선, 모함의 단축키는 <c val="FFFF00">[ 1 ]</c> 입니다.
-Param/Value/F3502E6F=<c val="00FF80">대규모 워프</c><n/><n/>모함을 선택하고 <c val="FFFF00">[ V ]</c> 키를 누른 뒤, 대상 지점을 선택하면 대규모 워프를 사용할 수 있습니다. 한번 사용해 보세요!
+Param/Value/F3502E6F=<c val="00FF80">대규모 클록드라이브</c><n/><n/>모함을 선택하고 <c val="FFFF00">[ V ]</c> 키를 누른 뒤, 대상 지점을 선택하면 대규모 클록드라이브를 사용할 수 있습니다. 한번 사용해 보세요!
 Param/Value/F43AC23A=<c val="00FF80">고급 지시</c><n/><n/>모함을 선택한 채 <c val="FFFF00">[ W ]</c> 키를 누르면 특수 유닛 메뉴를 확인할 수 있습니다. 특수 유닛은 공격 무기가 없는 대신, 강력한 고유 능력을 사용해 전투에 도움을 주는 유닛입니다.
 Param/Value/F4BEDB16=팁: 무기를 바꿔 보세요.
 Param/Value/F84F25CF=<c val="FFFFFF">모함 파괴: 
-Param/Value/FC7E797B=팁: 5티어 유닛은 모함이 재생성되면 추가로 생산할 수 있습니다.
 Param/Value/FD83E6E9= / 1 ]
 Param/Value/FE5E4219=
 Param/Value/FF6A47F4=<c val="00FF80">고급 지시</c><n/><n/>모함을 선택한 채 <c val="FFFF00">[ E ]</c> 키를 누르면 업그레이드 메뉴를 확인할 수 있습니다. 밴시와 모함 업그레이드가 있습니다.
 Unit/Name/ArbiterMP=Arbiter Relay
 Unit/Name/Battlecruiser=Battlecruiser
-Unit/Name/Beacon_Protoss=SuperCharger
+Unit/Name/Beacon_Protoss=Purge Effect Blue
 Unit/Name/Beacon_Terran=MegaCharger
 Unit/Name/Disruptor=Orbital Disruptor Focus
 Unit/Name/DuskWing=Banshee Squad
 Unit/Name/ExpeditionJumpGate=Purifier Core
 Unit/Name/GhostAcademy=Carrier
+Unit/Name/HyperionYamatoSpecialWeapon=BFG Proj
 Unit/Name/Liberator=Liberator Laser Artillery
 Unit/Name/LiberatorAG=Liberator Laser Artillery
 Unit/Name/Oracle=Singularity Module
@@ -433,7 +454,6 @@ Unit/Name/PhotonCannonWeapon=Photon Catalyst Cannon PROJ
 Unit/Name/PylonContainmentUnit=VoidContainmentUnit
 Unit/Name/Raven=Raven Type:F
 Unit/Name/RipFieldGenerator=Purifier
-Unit/Name/ScienceVessel=Laser Artillery Vessel
 Unit/Name/TempestPurifier=Tempest
 Unit/Name/VoidRiftUnselectable=Void
 Unit/Name/VoidSeeker=Seeker
@@ -448,6 +468,7 @@ Upgrade/Name/BansheeUpgradeEN12=BansheeUpgradeEN2
 Upgrade/Name/BansheeUpgradeEN122=BansheeUpgradeEN3
 Upgrade/Name/CloakDriveUpgrade=CloakDriveUpgrade
 Upgrade/Name/HunterSeeker=BansheeUpgradeRNG
+Upgrade/Name/WeakenAllUnits=WeakenAllUnits
 Upgrade/Name/WraithCloak=MassCloakDriveUpgrade
 Variant001/ModeDesc=튜토리얼 모드입니다.
 Variant001/ModeName=튜토리얼

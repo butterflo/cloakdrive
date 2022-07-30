@@ -66,6 +66,7 @@
             <StateFlags index="SuppressEnergyRegen" value="1"/>
             <AbilLinkDisableArray value="ForceField"/>
             <AbilLinkDisableArray value="MassCloakDrive"/>
+            <AbilLinkDisableArray value="CloakdriveTurbine"/>
             <AbilLinkDisableArray value="VoodooShield"/>
             <AbilLinkDisableArray value="GuardianShield"/>
             <AbilLinkDisableArray value="PhasingMode"/>
