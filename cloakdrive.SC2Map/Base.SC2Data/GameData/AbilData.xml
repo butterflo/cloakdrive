@@ -4,7 +4,7 @@
         <Effect index="0" value="CloakDriveDummyMassLonger"/>
         <Cost index="0">
             <Vital index="Energy" value="0"/>
-            <Cooldown Link="Abil/ArbiterMPRecall" TimeUse="70"/>
+            <Cooldown Link="Abil/ArbiterMPRecall" Operation="Set" TimeUse="70"/>
         </Cost>
         <CmdButtonArray index="Execute" Requirements="IsNotTransferring"/>
     </CAbilEffectTarget>
@@ -13,6 +13,7 @@
         <Cost index="0">
             <Cooldown TimeUse="70"/>
         </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SOAOrbitalStrike"/>
     </CAbilEffectInstant>
     <CAbilAttack id="AttackAllowsInvulnerable">
         <CmdButtonArray index="Execute">
@@ -165,14 +166,12 @@
     </CAbilEffectTarget>
     <CAbilMorph id="PhasingMode">
         <Flags index="WaitUntilStopped" value="0"/>
+        <Cost>
+            <Cooldown Operation="Set" TimeUse="70"/>
+        </Cost>
     </CAbilMorph>
     <CAbilResearch id="StarportTechLabResearch">
-        <InfoArray index="Research1" Time="1" Upgrade="BansheeUpgradeHP">
-            <Resource index="Minerals" value="343"/>
-            <Resource index="Vespene" value="0"/>
-            <Button DefaultButtonFace="TerranShipPlatingLevel3" State="Available" Requirements=""/>
-        </InfoArray>
-        <InfoArray index="Research2" Upgrade="BansheeUpgradeATK">
+        <InfoArray index="Research2" Time="0.1" Upgrade="BansheeUpgradeATK">
             <Resource index="Minerals" value="343"/>
             <Button DefaultButtonFace="TerranShipWeaponsLevel3" Requirements="BansheeUpgradeATKMAX"/>
         </InfoArray>
@@ -191,7 +190,7 @@
             <Resource index="Vespene" value="0"/>
             <Button State="Available" Requirements="MassCloakDriveUpgradeMAX"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="0">
+        <InfoArray index="Research7" Time="0.1">
             <Resource index="Minerals" value="2401"/>
             <Resource index="Vespene" value="0"/>
             <Button State="Available" Requirements="BansheeUpgradeRNGMAX2"/>
@@ -208,10 +207,6 @@
         <InfoArray index="Research10" Time="1" Upgrade="BansheeUpgradeEN122">
             <Resource index="Minerals" value="50421"/>
             <Button DefaultButtonFace="BansheeResistUpgrade3" Requirements="BansheeUpgradeENLV122"/>
-        </InfoArray>
-        <InfoArray index="Research12" Upgrade="SeekerUnlimited">
-            <Resource index="Minerals" value="117649"/>
-            <Button DefaultButtonFace="SOAWarpTech"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilTrain id="StarportTrain">
@@ -282,11 +277,15 @@
         <Effect index="0" value="Stimpack"/>
         <Cost index="0">
             <Vital index="Life" value="0"/>
+            <Cooldown Link="Abil/ArbiterMPRecall"/>
         </Cost>
-        <CmdButtonArray index="Execute" Requirements="IsTransferring"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPRecall2" Requirements="IsTransferring"/>
     </CAbilEffectInstant>
     <CAbilMorph id="TransportMode">
         <Flags index="WaitUntilStopped" value="0"/>
+        <Cost>
+            <Cooldown Link="Abil/PhasingMode"/>
+        </Cost>
     </CAbilMorph>
     <CAbilEffectInstant id="VoodooShield">
         <AbilSetId value="Resist"/>

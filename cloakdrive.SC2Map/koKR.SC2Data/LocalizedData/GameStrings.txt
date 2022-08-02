@@ -6,8 +6,8 @@ Abil/Name/CloakdriveTurbine=Cloakdrive: Turbine
 Abil/Name/ForceField=Cloakdrive
 Abil/Name/GuardianShield=Singularity
 Abil/Name/HallucinationOracle=Singularity Module
-Abil/Name/HallucinationPhoenix=Orbital Lux Driver
-Abil/Name/HallucinationProbe=Warp Arbitor
+Abil/Name/HallucinationPhoenix=Orbital Disruptor Focus
+Abil/Name/HallucinationProbe=Arbiter Relay
 Abil/Name/HallucinationWarpPrism=Prism Inhibitor
 Abil/Name/MassCloakDrive=Cloakdrive: Mass
 Abil/Name/PhasingMode=억제장 전개
@@ -26,17 +26,15 @@ Attribute001/Value002/Name=ARENA
 Attribute001/Value003/Name=TUTORIAL
 Behavior/Name/CloakspaceTurbineActive=충전중
 Behavior/Name/CloakspaceTurbineActive2=터바인 활성화
-Behavior/Name/InhibitorArea=Inhibitor area
-Behavior/Name/SOAPurifierBeamFiring=Solaris LOOP
 Behavior/Name/SOASuperShield=보호막
-Behavior/Name/SolarisCHARGE=Solaris CHARGE
 Behavior/Name/SpawnProtection=소환 보호
 Behavior/Name/TempestOrb=TempestOrb
 Behavior/Name/VoodooShield=저항
 Behavior/Name/VortexBehavior=Vortex FORCE
 Behavior/Tooltip/CloakspaceTurbineActive=
 Behavior/Tooltip/CloakspaceTurbineActive2=
-Behavior/Tooltip/SOASuperShield=
+Behavior/Tooltip/ResistBehavior=<c val="FFFFFF">데미지를 무시합니다.</c>
+Behavior/Tooltip/SOASuperShield=<c val="FFFFFF">통통합니다.</c>
 Behavior/Tooltip/VortexBehavior=
 Button/Name/Arbiter=Arbiter Relay
 Button/Name/ArbiterMPRecall=은폐장 활성화
@@ -70,8 +68,8 @@ Button/Name/VoodooShield=저항
 Button/Name/Vortex=중력장 전개
 Button/Name/WarpPrism=Prism Inhibitor
 Button/Name/Wraith=Seeker
-Button/Name/WraithCloak=모함: 대규모 전송 연구
-Button/Tooltip/Arbiter=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">은폐장을 사용해 아군 유닛을 대상 지점으로 전송합니다. 연계 워프가 가능합니다.</c>
+Button/Name/WraithCloak=모함: 대규모 클록드라이브 연구
+Button/Tooltip/Arbiter=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">아군 유닛을 대상 지점으로 전송합니다.</c>
 Button/Tooltip/ArbiterMPRecall=<c val="FFFFFF">전송 지점을 설정하고 은폐장을 활성화합니다. 반경 내의 아군 및 적군 유닛이 대상 지점으로 전송됩니다.<n/><n/><c val="FFFF00">(모함 제외)<n/>(전술 유닛 제외)<n/>(활성화 중 이동 불가)</c>
 Button/Tooltip/ArbiterMPRecall2=<c val="FFFFFF">은폐장을 비활성화합니다.
 Button/Tooltip/AttackAllowsInvulnerable=
@@ -89,20 +87,20 @@ Button/Tooltip/GhostAcademy=<c val="00FF00">중요 유닛</c><n/><n/><c val="FFF
 Button/Tooltip/Oracle=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">반경 내의 모든 유닛을 흡수하는 중력장을 전개합니다.</c>
 Button/Tooltip/PhasingMode=<c val="FFFFFF">억제장을 전개합니다. 활성화된 동안 반경 내 모든 적 유닛의 능력 및 그 효과를 무효화시킵니다. <n/><n/><c val="FFFF00">(에너지 재생 억제)</c>
 Button/Tooltip/PhoenixHallucination=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">궤도 포격 유닛입니다.
-Button/Tooltip/PhotonCruiserBTN=<c val="00FF00">티어2 유닛<n/></c><c val="FFFFFF">양자포를 달았습니다.</c>
+Button/Tooltip/PhotonCruiserBTN=<c val="00FF00">티어2 유닛<n/><n/></c><c val="FFFFFF">양자포를 달았습니다.</c>
 Button/Tooltip/Raven=<c val="00FF00">티어3 유닛</c><n/><c val="FFFFFF">타격감이 좋습니다.</c><n/><c val="FFFF00">(아군 방사 피해 주의)</c>
 Button/Tooltip/ResearchBattlecruiserEnergyUpgrade=
 Button/Tooltip/ResearchMedivacEnergyUpgrade=<c val="FFFFFF">에너지 재생 +1</c><n/><c val="00FFFF"><n/>(현재 레벨 <d ref="Unit,GhostAcademy,EnergyRegenRate - 7"/> / 21)<n/>(현재 에너지 재생 +<d ref="Unit,GhostAcademy,EnergyRegenRate"/>)</c>
 Button/Tooltip/ResearchRavenEnergyUpgrade=<c val="FFFFFF">체력 재생 +7</c><n/><c val="00FFFF"><n/>(현재 레벨 <d ref="Unit,GhostAcademy,LifeRegenRate /7"/> / 21)<n/>(현재 체력 재생 +<d ref="Unit,GhostAcademy,LifeRegenRate"/>)</c>
 Button/Tooltip/ResearchSeekerMissile=<c val="FFFFFF">밴시 사거리 +0.7</c><n/><c val="00FFFF"><n/>(현재 레벨 <d ref="Weapon,WraithA,Range-4.9/0.7"/> / 14)<n/>(현재 사거리 <d ref="Weapon,WraithA,Range" precision="1"/>)</c>
-Button/Tooltip/SOAOrbitalStrike=<c val="FFFFFF">현재 2D 위치에 궤도 포격을 시전합니다.</c><n/><n/><c val="FFFF00">(즉사기)<n/>(모함 영향 받음)<n/>(아군 유닛도 영향 받음)
+Button/Tooltip/ResistBehavior=<c val="FFFFFF">잠시동안 모든 피해를 흡수합니다.</c>
+Button/Tooltip/SOAOrbitalStrike=<c val="FFFFFF">현재 2D 위치에 궤도 포격을 시전합니다.</c><n/><n/><c val="FFFF00">(즉사기)<n/>(모함 영향 받음)<n/>(아군 유닛도 영향 받음)<n/>(억제기 무효화)
 Button/Tooltip/SetWaypoint=<c val="FFFFFF">자신의 모든 유닛에게 대상 지점을 향해 공격하도록 지시합니다. 유닛이 추가로 생산되면 지점 공격에 합류합니다.</c>
 Button/Tooltip/TerranBuild=
 Button/Tooltip/TerranBuildAdvanced=
 Button/Tooltip/TerranShipWeaponsLevel3=<c val="FFFFFF">밴시 공격력 +11</c><n/><n/><c val="00FFFF">(현재 레벨 <d ref="Effect,WraithAU,Amount -11/ 11"/> / 99)<n/>(현재 공격력 <d ref="Effect,WraithAU,Amount"/>)</c>
 Button/Tooltip/TestLearn=
 Button/Tooltip/TransportMode=
-Button/Tooltip/VoodooShield=<c val="FFFFFF">잠시동안 모든 피해를 흡수합니다.</c>
 Button/Tooltip/Vortex=<c val="FFFFFF">자신을 파괴해 블랙홀을 생성합니다.</c><n/><n/><c val="FFFF00">(즉사기)<n/>(모함 제외)<n/>(아군 유닛도 영향 받음)<n/>(지속 시간 무제한)
 Button/Tooltip/WarpPrism=<c val="FF2000">전술 유닛</c><n/><c val="FFFFFF">억제장을 전개합니다. 반경 내 모든 적 유닛의 능력 및 효과를 무효화시킵니다.</c>
 Button/Tooltip/Wraith=<c val="00FF00">티어5 유닛</c><n/><n/><c val="FF0000">[데이터 말소]<n/>[데이터 말소]<n/>[데이터 말소]
@@ -173,6 +171,12 @@ DocInfo/PatchNote055=* T5 유닛 관련 핑 삭제
 DocInfo/PatchNote056=* 게임 종료 후 점수를 화면 상단 대신 채팅창에 표시
 DocInfo/PatchNote057=* 생산 랠리 경로의 시각효과 삭제
 DocInfo/PatchNote058=* 서버간 버전 동기화
+DocInfo/PatchNote059=* T5 유닛은 이제 터바인 워프의 피해를 받지 않음
+DocInfo/PatchNote060=* 억제기 전개 해제 후 전개시 쿨다운 70초 필요
+DocInfo/PatchNote061=* 아비터 쿨다운이 이제 전개 해제 후부터 시작됨
+DocInfo/PatchNote062=* 화면 상단의 메시지가 이제 화면 중앙에 표시됨
+DocInfo/PatchNote063=* 일부 텍스트 수정
+DocInfo/PatchNote064=* 일부 인터페이스 다듬음
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -180,8 +184,8 @@ Effect/Name/BFGDelay=BFG Delay
 Effect/Name/BFGSEARCH=BFG SEARCH
 Effect/Name/CloakDriveDummyMassLonger=Warp Relay DUMMY
 Effect/Name/DarkArchonConfusionApply=CloakspaceTurbineOrbApply
-Effect/Name/DiamondbackBeam=LDX
-Effect/Name/InhibitorLoop=InhibitorLoop
+Effect/Name/InhibitorApply=Inhibitor APPLY
+Effect/Name/InhibitorLoop=Inhibitor LOOP
 Effect/Name/InhibitorPROJDM=Inhibitor PROJ DM
 Effect/Name/InhibitorSEARCHPROJ=Inhibitor SEARCH PROJ
 Effect/Name/InhibitorSearch=Inhibitor SEARCH
@@ -189,16 +193,13 @@ Effect/Name/IonCannonsU=Shield Projector DM
 Effect/Name/LDXDUMMY=LDX DUMMY
 Effect/Name/LDXLRDelay=LDX-LR Delay
 Effect/Name/LDXLRSEARCH=LDX-LR SEARCH
-Effect/Name/MassRecallSearch=Annihilator
 Effect/Name/MegalithWeaponDamageDelay=LDX-LR Delay
 Effect/Name/MegalithWeaponFreindlyCP=LDX-LR Friendly Loop
 Effect/Name/MegalithWeaponFriendlyDamage=LDX-LR Friendly Damage
-Effect/Name/NukeDetonate=Nuclear Defense System LM
 Effect/Name/OracleStasisTrapActivate=Shield Projector SEARCH
 Effect/Name/OracleStasisTrapActivateCP=Shield Projector FIRE
 Effect/Name/ParticleBeam=LDX-LR
 Effect/Name/PhotonCannonLM=Photon Catalyst Cannon LM
-Effect/Name/PurifierPlanetCrackerSearch=LDX
 Effect/Name/RiftCHARGE=Rift CHARGE
 Effect/Name/RiftREMOVE=Rift REMOVE
 Effect/Name/RiftSET=Rift SET
@@ -216,7 +217,9 @@ Effect/Name/TempestDM=Tempest DM
 Effect/Name/TempestSEARCH=Tempest SEARCH
 Effect/Name/TurbineAddCharge=Turbine ADD CHARGE
 Effect/Name/TurbineChargeDummy=Turbine Charge Dummy
-Effect/Name/VoidSeekerU=Annihilator
+Effect/Name/TurbineDM=Turbine DM
+Effect/Name/TurbineSEARCH=Turbine SEARCH
+Effect/Name/ValkyrieMissilePodEXSEARCH=Valkyrie Missile Pod SEARCH
 Effect/Name/VoodooShieldSet=Resist SET
 Effect/Name/VortexCreatePersistentInitial=Rift LOOP
 Effect/Name/VortexEventHorizon=Rift APPLY
@@ -226,7 +229,6 @@ Effect/Name/WarpMassDUMMY=Warp Mass DUMMY
 Effect/Name/WarpSingularDUMMY=Warp Singular DUMMY
 Effect/Name/WraithALeftLaunchMissile=Valkyrie Missile Pod LM
 Effect/Name/WraithARightLaunchMissile=Banshee LM
-Effect/Name/WraithAU=Valkyrie Missile Pod DM
 Effect/Name/YamatoGunSpecialDamage=BFG DM
 Effect/Name/YamatoGunSpecialLaunchMissile=BFG LM
 Effect/Name/heal=Energy Battery
@@ -249,6 +251,7 @@ MapInfo/Player14/Name=CPU_14
 MapInfo/Player15/Name=Hostile
 Param/Value/00E29370=팁: 블랙홀로 흡수한 적 유닛에게서도 자원을 얻을 수 있습니다.
 Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>fairithm - wisdom<n/>fairithm - Kuroki Fuusetsu no Majo<n/>fairithm - Hades: the bloody rage<n/>fairithm - schwarzer sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
+Param/Value/02E975EB=모함이 재생성되었습니다. <c val="FFFF00">[ 1 ]</c> 키로 모함을 선택하세요.
 Param/Value/04105D6E=팁: 궤도 포격은 버튼을 누르는 즉시 유닛의 현재 위치에 사용됩니다. 자신의 모함에 대고 발사하지 않도록 주의하세요.
 Param/Value/0564F4E1=<c val="00FF80">대규모 워프</c><n/><n/>이제, 공격 유닛을 생산하고 대규모 워프를 사용해 적 유닛을 처치해 보세요.
 Param/Value/06B19764=팁: 무작정 자원을 모아 5티어 유닛을 먼저 뽑으면 적의 기습에 취약해집니다. 대비할 유닛을 먼저 모아 두세요.
@@ -347,7 +350,6 @@ Param/Value/78B772CD=<c val="FFFF00">시뮬레이션 모듈 활성화
 Param/Value/7C0858ED=20분 후 정화설비가 가동됩니다.<n/>제한 시간 내에 적 모함을 최대한 많이 파괴하세요.
 Param/Value/7F5A00B2= ( 
 Param/Value/7FD6118A=완료: 플레이카운트 기준으로 호스트를 설정합니다.
-Param/Value/80312655=<s val="ModCenterSize24Bold">T1</s>
 Param/Value/803AF2B4= ]]
 Param/Value/808E15C0=</c><c val="FFFF00"> (자폭, -1점)
 Param/Value/80DFED5B=위
@@ -440,36 +442,39 @@ Param/Value/FE5E4219=
 Param/Value/FF6A47F4=<c val="00FF80">고급 지시</c><n/><n/>모함을 선택한 채 <c val="FFFF00">[ E ]</c> 키를 누르면 업그레이드 메뉴를 확인할 수 있습니다. 밴시와 모함 업그레이드가 있습니다.
 Unit/Name/ArbiterMP=Arbiter Relay
 Unit/Name/Battlecruiser=Battlecruiser
-Unit/Name/Beacon_Protoss=Purge Effect Blue
-Unit/Name/Beacon_Terran=MegaCharger
+Unit/Name/Beacon_Protoss=Purge Type I Visual Effect
+Unit/Name/Beacon_Terran=Purge Type II Visual Effect
 Unit/Name/Disruptor=Orbital Disruptor Focus
 Unit/Name/DuskWing=Banshee Squad
-Unit/Name/ExpeditionJumpGate=Purifier Core
+Unit/Name/ExpeditionJumpGate=Purge Type II
 Unit/Name/GhostAcademy=Carrier
-Unit/Name/HyperionYamatoSpecialWeapon=BFG Proj
+Unit/Name/HyperionYamatoSpecialWeapon=BFG PROJ
+Unit/Name/LabTurret=Space Projector
 Unit/Name/Liberator=Liberator Laser Artillery
 Unit/Name/LiberatorAG=Liberator Laser Artillery
 Unit/Name/Oracle=Singularity Module
-Unit/Name/PhotonCannonWeapon=Photon Catalyst Cannon PROJ
-Unit/Name/PylonContainmentUnit=VoidContainmentUnit
+Unit/Name/PhotonCannonWeapon=Rapid Plasma Cannon PROJ
+Unit/Name/PylonContainmentUnit=Purge Type III
 Unit/Name/Raven=Raven Type:F
-Unit/Name/RipFieldGenerator=Purifier
+Unit/Name/RipFieldGenerator=Purge Type I
+Unit/Name/SJPirateYamatoAWeapon=EMP Plasma Cannon PROJ
+Unit/Name/SOAPurifierBeamUnit=Orbital Disruptor Focus BEAM
 Unit/Name/TempestPurifier=Tempest
-Unit/Name/VoidRiftUnselectable=Void
+Unit/Name/VoidRiftUnselectable=Purge Type III Visual Effect
 Unit/Name/VoidSeeker=Seeker
 Unit/Name/WarpPrism=Prism Inhibitor
 Unit/Name/WarpPrismPhasing=Prism Inhibitor
 Unit/Name/WraithAirWeaponLeft=Valkyrie Missile Pod EX PROJ L
-Unit/ShieldArmorName/CLOAKDRIVEShields=보호막
-Upgrade/Name/AssemblyUpgradeREGEN=AssemblyUpgradeREGEN
-Upgrade/Name/BansheeUpgradeATK=BansheeUpgradeATK
-Upgrade/Name/BansheeUpgradeEN1=BansheeUpgradeEN1
-Upgrade/Name/BansheeUpgradeEN12=BansheeUpgradeEN2
-Upgrade/Name/BansheeUpgradeEN122=BansheeUpgradeEN3
-Upgrade/Name/CloakDriveUpgrade=CloakDriveUpgrade
-Upgrade/Name/HunterSeeker=BansheeUpgradeRNG
+Unit/ShieldArmorName/CLOAKDRIVEShields=Shield
+Upgrade/Name/AssemblyUpgradeREGEN=Carrier Hull Upgrade
+Upgrade/Name/BansheeUpgradeATK=Banshee ATK Upgrade
+Upgrade/Name/BansheeUpgradeEN1=Banshee Shield Upgrade 1
+Upgrade/Name/BansheeUpgradeEN12=Banshee Shield Upgrade 2
+Upgrade/Name/BansheeUpgradeEN122=Banshee Shield Upgrade 3
+Upgrade/Name/CloakDriveUpgrade=Carrier Capacitor Upgrade
+Upgrade/Name/HunterSeeker=Banshee Range Upgrade
 Upgrade/Name/WeakenAllUnits=WeakenAllUnits
-Upgrade/Name/WraithCloak=MassCloakDriveUpgrade
+Upgrade/Name/WraithCloak=Carrier Mass Cloakdrive Upgrade
 Variant001/ModeDesc=튜토리얼 모드입니다.
 Variant001/ModeName=튜토리얼
 Variant002/ModeDesc=개인전 모드입니다.
@@ -497,6 +502,7 @@ Weapon/Tip/VoidSeeker=<c val="FFFFFF">(범위 내 모든 적 유닛 공격)
 Weapon/Tip/VolatileBurstDummy=<c val="FFFF00">(터바인-워프 충전 부여)
 Weapon/Tip/WraithA=<c val="FFFF00">방사 피해 범위:</c> 0.7
 e_cmdCantTargetEnemyUnits=<s val="Cloakdrive14"><c val="FFFF00">> 적 유닛을 대상으로 할 수 없습니다.</c></s>
+e_cmdCantTargetThatUnit=<s val="Cloakdrive14"><c val="FFFF00">> 이 유닛을 대상으로 할 수 없습니다.</c>
 e_cmdCantTargetYourOwnUnits=<s val="Cloakdrive14"><c val="FFFF00">> 자신의 유닛을 대상으로 할 수 없습니다.</c>
 e_cmdCooldown=<s val="Cloakdrive14"><c val="FFFF00">> 재사용 대기 중입니다.</c>
 e_cmdNotEnoughEnergy=<s val="Cloakdrive14"><c val="FFFF00">> 에너지가 부족합니다.</c>

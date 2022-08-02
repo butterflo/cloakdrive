@@ -1,13 +1,13 @@
 ﻿Abil/Name/ArbiterMPRecall=Cloakfield Transfer Relay
-Abil/Name/ArtanisPsionicShockwave=Charge
+Abil/Name/ArtanisPsionicShockwave=DEPLOY
 Abil/Name/AttackAllowsInvulnerable=Attack (Utility)
 Abil/Name/CancelWaypoint=Cancel Waypoint
 Abil/Name/CloakdriveTurbine=Cloakdrive: Turbine
 Abil/Name/ForceField=Cloakdrive
 Abil/Name/GuardianShield=Singularity
 Abil/Name/HallucinationOracle=Singularity Module
-Abil/Name/HallucinationPhoenix=Orbital Lux Driver
-Abil/Name/HallucinationProbe=Warp Arbitor
+Abil/Name/HallucinationPhoenix=Orbital Disruptor Focus
+Abil/Name/HallucinationProbe=Arbiter Relay
 Abil/Name/HallucinationWarpPrism=Prism Inhibitor
 Abil/Name/MassCloakDrive=Cloakdrive: Mass
 Abil/Name/PhasingMode=DEPLOY
@@ -24,22 +24,17 @@ Attribute001/Name=GameMode
 Attribute001/Value001/Name=TDM
 Attribute001/Value002/Name=ARENA
 Attribute001/Value003/Name=TUTORIAL
-Behavior/Name/AnnihilatorDELAY=Annihilator DELAY
 Behavior/Name/CloakspaceTurbineActive=Turbine Charged
 Behavior/Name/CloakspaceTurbineActive2=Turbine Active
-Behavior/Name/GhostCloak=Prepare for jump
-Behavior/Name/InhibitorArea=Inhibitor area
-Behavior/Name/SOAPurifierBeamFiring=Solaris LOOP
 Behavior/Name/SOASuperShield=Shield
-Behavior/Name/SolarisCHARGE=Solaris CHARGE
 Behavior/Name/SpawnProtection=Spawn Protection
-Behavior/Name/Superspeed=Superspeed
 Behavior/Name/TempestOrb=TempestOrb
-Behavior/Name/VoodooShield=Resistance Shield
+Behavior/Name/VoodooShield=Resist
 Behavior/Name/VortexBehavior=Vortex FORCE
-Behavior/Name/VortexEventHorizon=Vortex DISABLE
 Behavior/Tooltip/CloakspaceTurbineActive=
 Behavior/Tooltip/CloakspaceTurbineActive2=
+Behavior/Tooltip/ResistBehavior=<c val="FFFFFF">Shrugs all damage.</c>
+Behavior/Tooltip/SOASuperShield=<c val="FFFFFF">Has shield.</c>
 Behavior/Tooltip/VortexBehavior=
 Button/Name/Arbiter=Arbiter Relay
 Button/Name/ArbiterMPRecall=DEPLOY
@@ -61,7 +56,7 @@ Button/Name/PhotonCruiserBTN=Battlecruiser
 Button/Name/Raven=Raven Type:F
 Button/Name/ResearchMedivacEnergyUpgrade=Carrier: Capacitor Upgrade
 Button/Name/ResearchRavenEnergyUpgrade=Carrier: Hull Repair Upgrade
-Button/Name/ResearchSeekerMissile=Banshee RNG Upgrade
+Button/Name/ResearchSeekerMissile=Banshee Range Upgrade
 Button/Name/SOAOrbitalStrike=DEPLOY
 Button/Name/SetWaypoint=Set Waypoint
 Button/Name/TerranBuild=Build: Attack Units
@@ -74,7 +69,7 @@ Button/Name/Vortex=DEPLOY
 Button/Name/WarpPrism=Prism Inhibitor
 Button/Name/Wraith=Seeker
 Button/Name/WraithCloak=Carrier: Mass Cloakdrive Upgrade
-Button/Tooltip/Arbiter=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Deployable. Transfers friendly units to target location with Cloakfield Relay. Chainable.
+Button/Tooltip/Arbiter=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Transfers friendly units to target location.
 Button/Tooltip/ArbiterMPRecall=<c val="FFFFFF">Deploy cloakfield relay, transferring friendly units within AoE to target location. Relay jumps fire instantly without charging.</c><n/><n/><c val="FFFF00">(Does not transfer Carrier)<n/>(Does not transfer Tech Units)</c>
 Button/Tooltip/ArbiterMPRecall2=
 Button/Tooltip/AttackAllowsInvulnerable=
@@ -87,28 +82,28 @@ Button/Tooltip/CancelWaypoint=
 Button/Tooltip/DuskWing=<c val="00FF00">T1 UNIT</c><n/><n/><c val="FFFFFF">Fast and smart.
 Button/Tooltip/EvasiveCloakDrive=<c val="FFFFFF">Jump to the target location.</c><n/><n/><c val="00FFFF">(Infinite range)
 Button/Tooltip/EvasiveCloakDrive2=<c val="FFFFFF">Transfer your nearby units to target location.</c><n/><c val="00FFFF">(Infinite range)<n/>(No energy cost)<n/>(Does not transfer Carrier)
-Button/Tooltip/EvasiveCloakDrive3=<c val="FFFFFF">Jump to the target location, drilling through every unit in path. Creates a deadly shockwave at point of origin upon entering cloakspace.</c><n/><n/><c val="FFFF00">(Infinite range)<n/>(Instant kill)<n/>(Kills Carriers)<n/>(Also kills your units)
+Button/Tooltip/EvasiveCloakDrive3=<c val="FFFFFF">Jump to the target location, drilling through every unit in path. Creates a deadly shockwave at point of origin upon entering cloakspace.</c><n/><n/><c val="FFFF00">(Infinite range)<n/>(Instant kill)<n/>(Kills Carriers)<n/>(Also kills your units)<n/>(Does not damage Seekers)
 Button/Tooltip/GhostAcademy=<c val="00FF00">BASE UNIT</c><n/><n/><c val="FFFFFF">The Carrier.
 Button/Tooltip/Oracle=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Self-destructs into a permanent singularity.
 Button/Tooltip/PhasingMode=<c val="FFFFFF">Deploy inhibition field, disabling non-orbital enemy abilities within AoE.</c><n/><n/><c val="FFFF00">(Disables EN regen)
 Button/Tooltip/PhoenixHallucination=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Reigns from above.
-Button/Tooltip/PhotonCruiserBTN=<c val="00FF00">T2 UNIT<n/></c><c val="FFFFFF">Plasma cannon. Rapid-fire.</c>
+Button/Tooltip/PhotonCruiserBTN=<c val="00FF00">T2 UNIT<n/><n/></c><c val="FFFFFF">Plasma cannon. Rapid-fire.</c>
 Button/Tooltip/Raven=<c val="00FF00">T3 UNIT</c><n/><c val="FFFFFF">Big, uh, freakin' gun.</c><n/><c val="FFFF00">(self splash damage)</c>
 Button/Tooltip/ResearchBattlecruiserEnergyUpgrade=
 Button/Tooltip/ResearchMedivacEnergyUpgrade=<c val="FFFFFF">EN regen +1</c><n/><c val="00FFFF"><n/>Level <d ref="Unit,GhostAcademy,EnergyRegenRate - 7"/> / 21 (current)<n/>EN regen +<d ref="Unit,GhostAcademy,EnergyRegenRate"/> (current)</c>
 Button/Tooltip/ResearchRavenEnergyUpgrade=<c val="FFFFFF">HP regen +7</c><n/><c val="00FFFF"><n/>Level <d ref="Unit,GhostAcademy,LifeRegenRate /7"/> / 21 (current)<n/>HP regen +<d ref="Unit,GhostAcademy,LifeRegenRate"/> (current)</c>
-Button/Tooltip/ResearchSeekerMissile=<c val="FFFFFF">RNG +0.7</c><n/><c val="00FFFF"><n/>Level <d ref="Weapon,WraithA,Range-4.9/0.7"/> / 14 (current)<n/>RNG <d ref="Weapon,WraithA,Range" precision="1"/> (current)</c>
-Button/Tooltip/SOAOrbitalStrike=<c val="FFFFFF">Strikes current 2D location.</c><n/><n/><c val="FFFF00">(Instant kill)<n/>(Kills Carriers)<n/>(Also kills your units)
+Button/Tooltip/ResearchSeekerMissile=<c val="FFFFFF">Range +0.7</c><n/><c val="00FFFF"><n/>Level <d ref="Weapon,WraithA,Range-4.9/0.7"/> / 14 (current)<n/>Range <d ref="Weapon,WraithA,Range" precision="1"/> (current)</c>
+Button/Tooltip/ResistBehavior=<c val="FFFFFF">Absorbs all damage for a short time.</c>
+Button/Tooltip/SOAOrbitalStrike=<c val="FFFFFF">Strikes current 2D location.</c><n/><n/><c val="FFFF00">(Instant kill)<n/>(Kills Carriers)<n/>(Also kills your units)<n/>(Disables Inhibitors)
 Button/Tooltip/SetWaypoint=<c val="FFFFFF">Order your entire fleet to attack to the target location.
 Button/Tooltip/TerranBuild=
 Button/Tooltip/TerranBuildAdvanced=
 Button/Tooltip/TerranShipWeaponsLevel3=<c val="FFFFFF">ATK +11</c><n/><n/><c val="00FFFF">Level <d ref="Effect,WraithAU,Amount -11/ 11"/> / 99 (current)<n/>ATK <d ref="Effect,WraithAU,Amount"/> (current)</c>
 Button/Tooltip/TestLearn=
 Button/Tooltip/TransportMode=
-Button/Tooltip/VoodooShield=<c val="FFFFFF">Absorbs all damage for a short time.</c>
 Button/Tooltip/Vortex=<c val="FFFFFF">Self-destruct into a permanent singularity.<n/><n/><c val="FFFF00">(Instant kill)<n/>(Also kills your units)<n/>(Does not kill Carriers)<n/>(Does not kill Tech units)<n/>(Permanent)
 Button/Tooltip/WarpPrism=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Disables enemy non-orbital abilities within AoE.
-Button/Tooltip/Wraith=<c val="00FF00">T5 UNIT</c><n/><n/><c val="FF0000">[DATA EXPUNGED]</c><n/><c val="FF0000">[DATA EXPUNGED]</c>
+Button/Tooltip/Wraith=<c val="00FF00">T5 UNIT</c><n/><c val="FF0000">[DATA EXPUNGED]</c><n/><c val="FF0000">[DATA EXPUNGED]</c>
 Button/Tooltip/WraithCloak=<c val="FFFFFF">Mass cloakdrive cooldown -7s</c><n/><c val="00FFFF">(Provides charge immediately)</c><n/><c val="00FFFF">Cooldown: <d ref="Abil,MassCloakDrive,Cost[0].Cooldown.TimeStart"/>s (current)</c>
 DocInfo/Author=butterflo
 DocInfo/DescLong=Epic space warfare.<n/><n/>* Up to 7 players with AI support.<n/>* Press C to warp anywhere.
@@ -171,11 +166,17 @@ DocInfo/PatchNote050=* Now Tech units cannot be destroyed
 DocInfo/PatchNote051=* (Now Singularity rift does not kill tech units)
 DocInfo/PatchNote052=* (Now Orbital strike now only disables inhibitor field instead of destroying the unit)
 DocInfo/PatchNote053=
-DocInfo/PatchNote054=* Reverted "BGM volume decrease"
+DocInfo/PatchNote054=* Reverted "Decrease BGM volume"
 DocInfo/PatchNote055=* Removed T5 unit pings
 DocInfo/PatchNote056=* Endgame scores are now displayed on chat instead of screen center
 DocInfo/PatchNote057=* Rally lines are now invisible
 DocInfo/PatchNote058=* Version sync between regions
+DocInfo/PatchNote059=* T5 Seekers are now immune from turbine damage
+DocInfo/PatchNote060=* Inhibitors now have a 70s cooldown that starts from undeploying
+DocInfo/PatchNote061=* Arbiters cooldown now starts from undeploying
+DocInfo/PatchNote062=* Upper screen messages are now shown on screen center
+DocInfo/PatchNote063=* Minor text changes
+DocInfo/PatchNote064=* Minor UI cleanup
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -183,8 +184,8 @@ Effect/Name/BFGDelay=BFG Delay
 Effect/Name/BFGSEARCH=BFG SEARCH
 Effect/Name/CloakDriveDummyMassLonger=Warp Relay DUMMY
 Effect/Name/DarkArchonConfusionApply=CloakspaceTurbineOrbApply
-Effect/Name/DiamondbackBeam=LDX
-Effect/Name/InhibitorLoop=InhibitorLoop
+Effect/Name/InhibitorApply=Inhibitor APPLY
+Effect/Name/InhibitorLoop=Inhibitor LOOP
 Effect/Name/InhibitorPROJDM=Inhibitor PROJ DM
 Effect/Name/InhibitorSEARCHPROJ=Inhibitor SEARCH PROJ
 Effect/Name/InhibitorSearch=Inhibitor SEARCH
@@ -192,15 +193,12 @@ Effect/Name/IonCannonsU=Shield Projector DM
 Effect/Name/LDXDUMMY=LDX DUMMY
 Effect/Name/LDXLRDelay=LDX-LR Delay
 Effect/Name/LDXLRSEARCH=LDX-LR SEARCH
-Effect/Name/MassRecallSearch=Annihilator
 Effect/Name/MegalithWeaponDamageDelay=LDX-LR Delay
 Effect/Name/MegalithWeaponFreindlyCP=LDX-LR Friendly Loop
 Effect/Name/MegalithWeaponFriendlyDamage=LDX-LR Friendly Damage
-Effect/Name/NukeDetonate=Nuclear Defense System LM
 Effect/Name/OracleStasisTrapActivate=Shield Projector SEARCH
 Effect/Name/OracleStasisTrapActivateCP=Shield Projector FIRE
 Effect/Name/ParticleBeam=LDX-LR
-Effect/Name/PurifierPlanetCrackerSearch=LDX
 Effect/Name/PhotonCannonLM=Photon Catalyst Cannon LM
 Effect/Name/RiftCHARGE=Rift CHARGE
 Effect/Name/RiftREMOVE=Rift REMOVE
@@ -217,9 +215,11 @@ Effect/Name/SolarisDELAY=Solaris DELAY
 Effect/Name/SolarisSET=Solaris SET
 Effect/Name/TempestDM=Tempest DM
 Effect/Name/TempestSEARCH=Tempest SEARCH
-Effect/Name/VoidSeekerU=Annihilator
 Effect/Name/TurbineAddCharge=Turbine ADD CHARGE
 Effect/Name/TurbineChargeDummy=Turbine Charge Dummy
+Effect/Name/TurbineDM=Turbine DM
+Effect/Name/TurbineSEARCH=Turbine SEARCH
+Effect/Name/ValkyrieMissilePodEXSEARCH=Valkyrie Missile Pod SEARCH
 Effect/Name/VoodooShieldSet=Resist SET
 Effect/Name/VortexCreatePersistentInitial=Rift LOOP
 Effect/Name/VortexEventHorizon=Rift APPLY
@@ -229,7 +229,6 @@ Effect/Name/WarpMassDUMMY=Warp Mass DUMMY
 Effect/Name/WarpSingularDUMMY=Warp Singular DUMMY
 Effect/Name/WraithALeftLaunchMissile=Valkyrie Missile Pod LM
 Effect/Name/WraithARightLaunchMissile=Banshee LM
-Effect/Name/WraithAU=Valkyrie Missile Pod DM
 Effect/Name/YamatoGunSpecialDamage=BFG DM
 Effect/Name/YamatoGunSpecialLaunchMissile=BFG LM
 Effect/Name/heal=Energy Battery
@@ -252,6 +251,7 @@ MapInfo/Player14/Name=CPU_14
 MapInfo/Player15/Name=Hostile
 Param/Value/00E29370=TIP: Deploying a singularity tech unit is a good way to get resources.
 Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>fairithm - wisdom<n/>fairithm - Kuroki Fuusetsu no Majo<n/>fairithm - Hades: the bloody rage<n/>fairithm - schwarzer sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
+Param/Value/02E975EB=Carrier respawned: press <c val="FFFF00">[ 1 ]</c> to select your Carrier.
 Param/Value/04105D6E=TIP: Orbital strike aims at the Z-axis bottom of the caster. Be careful to not to accidentally destroy your units.
 Param/Value/0564F4E1=<c val="00FF80">Mass Cloakdrive</c><n/><n/>Now, build some combat units and try to destroy some enemy units.
 Param/Value/06B19764=TIP: A T5 Seeker can be overwhelmed by well-timed ganks. Protect it, or overwhelm it.
@@ -415,7 +415,7 @@ Param/Value/D8C87923=
 Param/Value/D9935B62=<c val="00FF80">* 2 MINUTES LEFT *</c>
 Param/Value/DD3C83D8=)
 Param/Value/E04B0090=<c val="FFFF00">Warning: Singularity detected.</c>
-Param/Value/E04FF842= <c val="FFFFFF">[ 
+Param/Value/E04FF842=</c><c val="FFFFFF"> [ 
 Param/Value/E051B660=</c> )
 Param/Value/E2025BF4= / 3 ]
 Param/Value/E2450E31=TIP: Most of the weapons inflict splash damage, also on your units.
@@ -442,36 +442,39 @@ Param/Value/FE5E4219=
 Param/Value/FF6A47F4=<c val="00FF80">Advanced controls</c><n/><n/>When your Carrier is selected, press <c val="FFFF00">[ E ]</c> to see the upgrade menu. Banshees and Carriers are upgradable.
 Unit/Name/ArbiterMP=Arbiter Relay
 Unit/Name/Battlecruiser=Battlecruiser
-Unit/Name/Beacon_Protoss=Purge Effect Blue
-Unit/Name/Beacon_Terran=MegaCharger
+Unit/Name/Beacon_Protoss=Purge Type I Visual Effect
+Unit/Name/Beacon_Terran=Purge Type II Visual Effect
 Unit/Name/Disruptor=Orbital Disruptor Focus
 Unit/Name/DuskWing=Banshee Squad
-Unit/Name/ExpeditionJumpGate=Purifier Core
+Unit/Name/ExpeditionJumpGate=Purge Type II
 Unit/Name/GhostAcademy=Carrier
-Unit/Name/HyperionYamatoSpecialWeapon=BFG Proj
+Unit/Name/HyperionYamatoSpecialWeapon=BFG PROJ
+Unit/Name/LabTurret=Space Projector
 Unit/Name/Liberator=Liberator Laser Artillery
 Unit/Name/LiberatorAG=Liberator Laser Artillery
 Unit/Name/Oracle=Singularity Module
-Unit/Name/PhotonCannonWeapon=Photon Catalyst Cannon PROJ
-Unit/Name/PylonContainmentUnit=VoidContainmentUnit
+Unit/Name/PhotonCannonWeapon=Rapid Plasma Cannon PROJ
+Unit/Name/PylonContainmentUnit=Purge Type III
 Unit/Name/Raven=Raven Type:F
-Unit/Name/RipFieldGenerator=Purifier
+Unit/Name/RipFieldGenerator=Purge Type I
+Unit/Name/SJPirateYamatoAWeapon=EMP Plasma Cannon PROJ
+Unit/Name/SOAPurifierBeamUnit=Orbital Disruptor Focus BEAM
 Unit/Name/TempestPurifier=Tempest
-Unit/Name/VoidRiftUnselectable=Void
+Unit/Name/VoidRiftUnselectable=Purge Type III Visual Effect
 Unit/Name/VoidSeeker=Seeker
 Unit/Name/WarpPrism=Prism Inhibitor
 Unit/Name/WarpPrismPhasing=Prism Inhibitor
 Unit/Name/WraithAirWeaponLeft=Valkyrie Missile Pod EX PROJ L
 Unit/ShieldArmorName/CLOAKDRIVEShields=Shield
-Upgrade/Name/AssemblyUpgradeREGEN=AssemblyUpgradeREGEN
-Upgrade/Name/BansheeUpgradeATK=BansheeUpgradeATK
-Upgrade/Name/BansheeUpgradeEN1=BansheeUpgradeEN1
-Upgrade/Name/BansheeUpgradeEN12=BansheeUpgradeEN2
-Upgrade/Name/BansheeUpgradeEN122=BansheeUpgradeEN3
-Upgrade/Name/CloakDriveUpgrade=CloakDriveUpgrade
-Upgrade/Name/HunterSeeker=BansheeUpgradeRNG
+Upgrade/Name/AssemblyUpgradeREGEN=Carrier Hull Upgrade
+Upgrade/Name/BansheeUpgradeATK=Banshee ATK Upgrade
+Upgrade/Name/BansheeUpgradeEN1=Banshee Shield Upgrade 1
+Upgrade/Name/BansheeUpgradeEN12=Banshee Shield Upgrade 2
+Upgrade/Name/BansheeUpgradeEN122=Banshee Shield Upgrade 3
+Upgrade/Name/CloakDriveUpgrade=Carrier Capacitor Upgrade
+Upgrade/Name/HunterSeeker=Banshee Range Upgrade
 Upgrade/Name/WeakenAllUnits=WeakenAllUnits
-Upgrade/Name/WraithCloak=MassCloakDriveUpgrade
+Upgrade/Name/WraithCloak=Carrier Mass Cloakdrive Upgrade
 Variant001/ModeDesc=Tutorial.
 Variant001/ModeName=Tutorial
 Variant002/ModeDesc=Deathmatch.

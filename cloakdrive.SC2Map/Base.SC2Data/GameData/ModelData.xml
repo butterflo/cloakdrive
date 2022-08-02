@@ -48,7 +48,6 @@
     <CModel id="DarkWarpPrism">
         <Model value="Assets\Units\Protoss\WarpPrism\WarpPrism.m3"/>
     </CModel>
-    <CModel id="Disruptor"/>
     <CModel id="EnergyNovaShockwave">
         <Model value="Assets\Effects\Zerg\KerriganApocalypseExplosion\KerriganApocalypseExplosion.m3"/>
         <ScaleMax value="2.800000,2.800000,2.800000"/>
@@ -216,7 +215,6 @@
         <ScaleMax value="2.800000,2.800000,2.100000"/>
         <ScaleMin value="2.800000,2.800000,2.100000"/>
     </CModel>
-    <CModel id="PylonPlacement"/>
     <CModel id="Raven">
         <SelectionOffset value="0.000000,0.000000,0.000000"/>
     </CModel>

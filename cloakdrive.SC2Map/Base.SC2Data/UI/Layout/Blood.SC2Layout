@@ -9,6 +9,7 @@
             <Style val="Cloakdrive14Right"/>
         </Frame>
     </Frame>
+
     <Frame type="AlertItem" name="AlertItemTemplate" file="AlertPanel">
         <Frame type="Image" name="AlertBorder">
             <Width val="32"/>
@@ -58,6 +59,7 @@
             <Anchor side="Bottom" relative="$parent" pos="1.0" offset="23"/>
             <Anchor side="Right" relative="$parent" pos="0.82" offset="0"/>
         </Frame>
+
         <Frame type="Frame" name="MenuBarFullscreenAnchor">
             <Anchor side="Bottom" relative="$parent" pos="1.0" offset="23"/>
             <Anchor side="Right" relative="$parent" pos="0.82" offset="0"/>
@@ -96,6 +98,10 @@
             <Height val="200"/>
             <Width val="800"/>
             <Style val="Cloakdrive14Left"/>
+        </Frame>
+
+        <Frame type="GameMessageDisplay" name="DirectiveDisplay">
+            <Anchor side="Top" relative="$parent" pos="0.4" offset="170"/>
         </Frame>
 
         <Frame type="ChatBar" name="ChatBar">
@@ -168,13 +174,28 @@
                 </Frame>
             </Frame>
         </Frame>
+
         <Frame type="HeroPanel" name="HeroPanel">
+
             <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="0.0" offset="0"/>
+
             <Frame type="HeroFrame" name="HeroFrame00">
                 <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
                     <Frame type="Label" name="HotkeyLabel">
                         <Style val="Cloakdrive14"/>
                     </Frame>
+                </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
                 </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame01">
@@ -183,12 +204,36 @@
                         <Style val="Cloakdrive14"/>
                     </Frame>
                 </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
+                </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame02">
                 <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
                     <Frame type="Label" name="HotkeyLabel">
                         <Style val="Cloakdrive14"/>
                     </Frame>
+                </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
                 </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame03">
@@ -197,12 +242,36 @@
                         <Style val="Cloakdrive14"/>
                     </Frame>
                 </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
+                </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame04">
                 <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
                     <Frame type="Label" name="HotkeyLabel">
                         <Style val="Cloakdrive14"/>
                     </Frame>
+                </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
                 </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame05">
@@ -211,12 +280,36 @@
                         <Style val="Cloakdrive14"/>
                     </Frame>
                 </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
+                </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame06">
                 <Frame type="CommandHotkeyFrame" name="HotkeyFrame">
                     <Frame type="Label" name="HotkeyLabel">
                         <Style val="Cloakdrive14"/>
                     </Frame>
+                </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
                 </Frame>
             </Frame>
             <Frame type="HeroFrame" name="HeroFrame07">
@@ -225,12 +318,26 @@
                         <Style val="Cloakdrive14"/>
                     </Frame>
                 </Frame>
+                <Frame type="Image" name="ShieldBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="ShieldBar">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBarBackground">
+                    <Alpha val="0"/>
+                </Frame>
+                <Frame type="Image" name="HealthBar">
+                    <Alpha val="0"/>
+                </Frame>
             </Frame>
 
         </Frame>
+
         <Frame type="AlertPanel" name="AlertPanel">
             <ItemHeight val="40"/>
         </Frame>
+
     </Frame>
 
     <Frame type="Frame" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
@@ -694,4 +801,5 @@
             </Frame>
         </Frame>
     </Frame>
+
 </Desc>

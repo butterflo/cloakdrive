@@ -5,9 +5,18 @@
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
+        <Attributes index="Armored" value="0"/>
+        <Attributes index="Mechanical" value="0"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
         <EnergyStart value="700"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
         <Speed value="3.5"/>
         <Acceleration value="3.5"/>
         <Height value="16.75"/>
@@ -25,21 +34,19 @@
             <LayoutButtons index="7" Face="EvasiveCloakDrive" Type="AbilCmd" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="8" Face="ArbiterMPRecall2" AbilCmd="TaurenStimpack,Execute" Column="1"/>
         </CardLayouts>
-        <Attributes index="Armored" value="0"/>
-        <Attributes index="Mechanical" value="0"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="77777"/>
-        <LifeMax value="77777"/>
-        <LifeRegenRate value="777"/>
-        <ShieldsStart value="77777"/>
-        <ShieldsMax value="77777"/>
-        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="Archon">
+        <AbilArray index="0" removed="1"/>
+        <AbilArray index="1" removed="1"/>
+        <AbilArray index="2" removed="1"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <!--BehaviorArray Link="SOACheatDeathSupply4"/-->
     </CUnit>
     <CUnit id="Battlecruiser">
+        <Description value="Button/Tooltip/PhotonCruiserBTN"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
         <Attributes index="Armored" value="0"/>
         <Attributes index="Mechanical" value="0"/>
@@ -50,6 +57,7 @@
         <EnergyStart value="0"/>
         <EnergyMax value="196"/>
         <EnergyRegenRate value="10"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
         <Speed value="3.5"/>
         <Acceleration value="3.5"/>
         <StationaryTurningRate value="360"/>
@@ -64,6 +72,8 @@
         <AbilArray index="5" Link="SwitchToA"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray index="0" Link="WeaponTypeA"/>
+        <BehaviorArray index="1" removed="1"/>
         <WeaponArray index="0" Link="PhotonCannon"/>
         <WeaponArray index="1" Link="SJPirateCapitalShip"/>
         <CardLayouts index="0">
@@ -76,10 +86,6 @@
         <ScoreKill value="0"/>
         <MinimapRadius value="0.75"/>
         <RankDisplay value="Never"/>
-        <BehaviorArray index="0" Link="WeaponTypeA"/>
-        <BehaviorArray index="1" removed="1"/>
-        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
-        <Description value="Button/Tooltip/PhotonCruiserBTN"/>
     </CUnit>
     <CUnit id="Beacon_Protoss">
         <FlagArray index="Unselectable" value="1"/>
@@ -95,38 +101,32 @@
         <Height value="-6"/>
     </CUnit>
     <CUnit id="Beacon_Terran">
-        <LifeStart value="77777"/>
-        <LifeMax value="77777"/>
         <Attributes index="Psionic" value="1"/>
         <Attributes index="Massive" value="1"/>
         <Attributes index="Structure" value="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
         <Height value="7"/>
     </CUnit>
     <CUnit id="Bunker">
-        <AbilArray index="13" removed="1"/>
-        <AbilArray index="14" removed="1"/>
-    </CUnit>
-    <CUnit id="CommandCenterFlying">
-        <FlagArray index="Movable" value="0"/>
-        <LifeStart value="77777"/>
-        <LifeMax value="77777"/>
-        <Height value="10.25"/>
-        <Food value="0"/>
-        <AbilArray index="0" Link="stop"/>
+        <AbilArray index="0" removed="1"/>
         <AbilArray index="1" removed="1"/>
         <AbilArray index="2" removed="1"/>
         <AbilArray index="3" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="0" Face="Stop" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons index="1" removed="1"/>
-            <LayoutButtons index="2" removed="1"/>
-            <LayoutButtons index="3" removed="1"/>
-            <LayoutButtons index="4" removed="1"/>
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-        </CardLayouts>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
+        <AbilArray index="8" removed="1"/>
+        <AbilArray index="9" removed="1"/>
+        <AbilArray index="10" removed="1"/>
+        <AbilArray index="11" removed="1"/>
+        <AbilArray index="12" removed="1"/>
+        <AbilArray index="13" removed="1"/>
+        <AbilArray index="14" removed="1"/>
     </CUnit>
     <CUnit id="Disruptor">
+        <Description value="Button/Tooltip/PhoenixHallucination"/>
         <FlagArray index="Hero" value="1"/>
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="Invulnerable" value="1"/>
@@ -140,9 +140,16 @@
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Hover" value="1"/>
         <Attributes index="Heroic" value="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeArmor value="0"/>
+        <LifeRegenRate value="777"/>
         <EnergyStart value="700"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
         <Mover value="Fly"/>
         <Acceleration value="3.5"/>
         <Deceleration value="3.5"/>
@@ -167,14 +174,6 @@
             <ChanceArray index="Idle" value="100"/>
             <ChanceArray index="Turn" value="0"/>
         </Fidget>
-        <Description value="Button/Tooltip/PhoenixHallucination"/>
-        <LifeStart value="77777"/>
-        <LifeMax value="77777"/>
-        <LifeArmor value="0"/>
-        <LifeRegenRate value="777"/>
-        <ShieldsStart value="77777"/>
-        <ShieldsMax value="77777"/>
-        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="DuskWing">
         <FlagArray index="IndividualSubgroups" value="1"/>
@@ -242,7 +241,6 @@
         <Collide index="Small" value="0"/>
         <Attributes index="Armored" value="0"/>
         <Attributes index="Mechanical" value="0"/>
-        <Attributes index="Massive" value="1"/>
         <LifeStart value="77777"/>
         <LifeMax value="77777"/>
         <LifeArmor value="0"/>
@@ -363,15 +361,16 @@
         <FlagArray index="Buried" value="0"/>
         <FlagArray index="VisionTestCenterOnly" value="1"/>
         <FogVisibility value="Visible"/>
-        <Height value="-4"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Structure" value="0"/>
         <Attributes index="Armored" value="0"/>
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Psionic" value="1"/>
         <Attributes index="Massive" value="1"/>
-        <Collide index="Burrow" value="0"/>
-        <Collide index="Structure" value="0"/>
+        <Height value="-4"/>
     </CUnit>
     <CUnit id="Liberator">
+        <Description value="Button/Tooltip/BuildScienceVessel"/>
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
         <Attributes index="Armored" value="0"/>
@@ -380,6 +379,7 @@
         <LifeMax value="26411"/>
         <EnergyMax value="1372"/>
         <EnergyRegenRate value="10"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
         <Speed value="0.6992"/>
         <Acceleration value="0.6875"/>
         <StationaryTurningRate value="90"/>
@@ -402,10 +402,9 @@
             <LayoutButtons Face="SpectreWeaponsFree" Type="AbilCmd" AbilCmd="GhostWeaponsFree,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <RankDisplay value="Never"/>
-        <Description value="Button/Tooltip/BuildScienceVessel"/>
-        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
     </CUnit>
     <CUnit id="LiberatorAG">
+        <Description value="Button/Tooltip/BuildScienceVessel"/>
         <FlagArray index="Turnable" value="1"/>
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
@@ -415,6 +414,7 @@
         <LifeMax value="26411"/>
         <EnergyMax value="1372"/>
         <EnergyRegenRate value="10"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
         <Speed value="0.6992"/>
         <Acceleration value="0.6875"/>
         <StationaryTurningRate value="90"/>
@@ -441,13 +441,13 @@
             <LayoutButtons Face="SpectreWeaponsFree" Type="AbilCmd" AbilCmd="GhostWeaponsFree,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <RankDisplay value="Never"/>
-        <Description value="Button/Tooltip/BuildScienceVessel"/>
-        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
     </CUnit>
     <CUnit id="MissileTurret">
+        <AbilArray index="0" removed="1"/>
+        <AbilArray index="1" removed="1"/>
+        <AbilArray index="2" removed="1"/>
+        <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
-        <BehaviorArray index="5" removed="1"/>
-        <BehaviorArray index="6" removed="1"/>
     </CUnit>
     <CUnit id="Oracle">
         <FlagArray index="Hero" value="1"/>
@@ -457,9 +457,15 @@
         <Attributes index="Mechanical" value="0"/>
         <Attributes index="Psionic" value="0"/>
         <Attributes index="Heroic" value="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
         <EnergyStart value="700"/>
         <EnergyMax value="700"/>
         <EnergyRegenRate value="10"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
         <Speed value="3.5"/>
         <Acceleration value="3.5"/>
         <Sight value="19.6"/>
@@ -470,6 +476,7 @@
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
+        <BehaviorArray index="0" removed="1"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="Attack"/>
             <LayoutButtons index="6" Face="Vortex" AbilCmd="GuardianShield,Execute" Column="1"/>
@@ -478,13 +485,6 @@
             <LayoutButtons index="9" removed="1"/>
             <LayoutButtons index="10" removed="1"/>
         </CardLayouts>
-        <BehaviorArray index="0" removed="1"/>
-        <LifeStart value="77777"/>
-        <LifeMax value="77777"/>
-        <LifeRegenRate value="777"/>
-        <ShieldsStart value="77777"/>
-        <ShieldsMax value="77777"/>
-        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="PhotonCannonWeapon">
         <Race value="Terr"/>
@@ -498,16 +498,17 @@
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Uncursorable" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
-        <Height value="-8"/>
-        <Footprint value="Footprint2x2NoCollision"/>
-        <PlacementFootprint value="Footprint2x2NoCollision"/>
-        <Attributes index="Psionic" value="1"/>
         <Collide index="Burrow" value="0"/>
         <Collide index="Ground" value="0"/>
         <Collide index="Structure" value="0"/>
         <Collide index="Small" value="0"/>
+        <Attributes index="Psionic" value="1"/>
+        <Height value="-8"/>
+        <Footprint value="Footprint2x2NoCollision"/>
+        <PlacementFootprint value="Footprint2x2NoCollision"/>
     </CUnit>
     <CUnit id="Raven">
+        <FlagArray index="IgnoreTerrainZInit" value="1"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Mechanical" value="0"/>
         <LifeStart value="3773"/>
@@ -516,8 +517,11 @@
         <EnergyStart value="0"/>
         <EnergyMax value="637"/>
         <EnergyRegenRate value="10"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
         <Speed value="1"/>
         <Acceleration value="1"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
         <Sight value="9.8"/>
         <Height value="16.75"/>
         <Food value="0"/>
@@ -540,18 +544,18 @@
         </CardLayouts>
         <ScoreMake value="0"/>
         <ScoreKill value="0"/>
-        <RankDisplay value="Never"/>
         <MinimapRadius value="0.75"/>
-        <FlagArray index="IgnoreTerrainZInit" value="1"/>
-        <StationaryTurningRate value="360"/>
-        <TurningRate value="360"/>
-        <ShieldArmorName value="Unit/ShieldArmorName/CLOAKDRIVEShields"/>
+        <RankDisplay value="Never"/>
     </CUnit>
     <CUnit id="RipFieldGenerator">
         <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Uncursorable" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Structure" value="0"/>
+        <Collide index="Small" value="0"/>
         <Attributes index="Psionic" value="1"/>
         <Attributes index="Massive" value="1"/>
         <LifeStart value="77777"/>
@@ -562,10 +566,6 @@
         <BehaviorArray index="1" removed="1"/>
         <Footprint value="Footprint2x2NoCollision"/>
         <PlacementFootprint value="Footprint2x2NoCollision"/>
-        <Collide index="Burrow" value="0"/>
-        <Collide index="Ground" value="0"/>
-        <Collide index="Structure" value="0"/>
-        <Collide index="Small" value="0"/>
     </CUnit>
     <CUnit id="SOAPurifierBeamUnit">
         <FlagArray index="Movable" value="0"/>
@@ -575,47 +575,22 @@
         <AbilArray index="1" Link="attack"/>
         <AbilArray index="2" removed="1"/>
     </CUnit>
-    <CUnit id="TempestPurifier">
-        <FlagArray index="IgnoreTerrainZInit" value="1"/>
-        <LifeStart value="26411"/>
-        <LifeMax value="26411"/>
-        <LifeArmor value="0"/>
-        <LifeRegenRate value="49"/>
-        <EnergyMax value="77"/>
-        <EnergyRegenRate value="10"/>
-        <ShieldsStart value="0"/>
-        <ShieldsMax value="0"/>
-        <ShieldRegenRate value="0"/>
-        <LateralAcceleration value="22.5"/>
-        <StationaryTurningRate value="0"/>
-        <TurningRate value="22.5"/>
-        <Height value="13"/>
-        <Food value="0"/>
-        <AbilArray index="4" Link="ForceField"/>
-        <AbilArray index="5" removed="1"/>
-        <BehaviorArray index="0" Link="CloakspaceTurbineActive"/>
-        <WeaponArray index="0" removed="1"/>
-        <WeaponArray index="1" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute"/>
-        </CardLayouts>
-        <EquipmentArray Weapon="VolatileBurstDummy"/>
-    </CUnit>
     <CUnit id="VoidRiftUnselectable">
         <FlagArray index="Uncommandable" value="1"/>
         <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Uncursorable" value="1"/>
         <FlagArray index="Unradarable" value="1"/>
+        <Collide index="Structure" value="0"/>
+        <Attributes index="Psionic" value="1"/>
         <AbilArray index="0" removed="1"/>
         <AbilArray index="1" removed="1"/>
         <AbilArray index="2" removed="1"/>
         <AbilArray index="3" removed="1"/>
         <Footprint value="Footprint2x2NoCollision"/>
         <PlacementFootprint value="Footprint2x2NoCollision"/>
-        <Attributes index="Psionic" value="1"/>
-        <Collide index="Structure" value="0"/>
     </CUnit>
     <CUnit id="VoidSeeker">
+        <Description value="Button/Tooltip/Wraith"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
         <LifeStart value="100000"/>
@@ -638,6 +613,8 @@
         <AbilArray index="4" Link="SwitchToA"/>
         <AbilArray index="5" Link="SwitchToB"/>
         <AbilArray index="6" Link="CloakdriveTurbine"/>
+        <BehaviorArray Link="WeaponTypeA"/>
+        <WeaponArray Link="VolatileBurstDummy" Turret="FreeRotate"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" AbilCmd="AttackAllowsInvulnerable,Execute"/>
             <LayoutButtons index="5" Face="EvasiveCloakDrive3" AbilCmd="CloakdriveTurbine,Execute"/>
@@ -649,15 +626,28 @@
         <MinimapRadius value="0.75"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <RankDisplay value="Never"/>
-        <BehaviorArray Link="WeaponTypeA"/>
-        <WeaponArray Link="VolatileBurstDummy" Turret="FreeRotate"/>
-        <Description value="Button/Tooltip/Wraith"/>
+        <Attributes index="Massive" value="1"/>
     </CUnit>
     <CUnit id="WarpPrism">
         <FlagArray index="Hero" value="1"/>
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
+        <Attributes index="Armored" value="0"/>
+        <Attributes index="Mechanical" value="0"/>
+        <Attributes index="Psionic" value="0"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="77777"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
+        <EnergyStart value="700"/>
+        <EnergyMax value="700"/>
+        <EnergyRegenRate value="10"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenRate value="777"/>
+        <Speed value="3.5"/>
+        <Acceleration value="3.5"/>
         <Sight value="19.6"/>
         <Height value="16.75"/>
         <Food value="0"/>
@@ -669,29 +659,27 @@
             <LayoutButtons index="7" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="8" removed="1"/>
         </CardLayouts>
-        <Speed value="3.5"/>
-        <Acceleration value="3.5"/>
         <MinimapRadius value="1.5"/>
-        <Attributes index="Armored" value="0"/>
-        <Attributes index="Mechanical" value="0"/>
-        <Attributes index="Psionic" value="0"/>
-        <Attributes index="Heroic" value="1"/>
-        <EnergyMax value="700"/>
-        <EnergyRegenRate value="10"/>
-        <EnergyStart value="700"/>
-        <LifeStart value="77777"/>
-        <LifeMax value="77777"/>
-        <LifeRegenRate value="777"/>
-        <ShieldsStart value="77777"/>
-        <ShieldsMax value="77777"/>
-        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="WarpPrismPhasing">
+        <Description value="Button/Tooltip/WarpPrism"/>
         <FlagArray index="Movable" value="0"/>
         <FlagArray index="Hero" value="1"/>
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
+        <Attributes index="Armored" value="0"/>
+        <Attributes index="Mechanical" value="0"/>
+        <Attributes index="Psionic" value="0"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeMax value="77777"/>
+        <LifeRegenRate value="777"/>
+        <EnergyMax value="700"/>
+        <EnergyRegenRate value="10"/>
+        <ShieldsStart value="77777"/>
+        <ShieldsMax value="77777"/>
+        <ShieldRegenDelay value="0"/>
+        <ShieldRegenRate value="777"/>
         <Sight value="19.6"/>
         <Height value="16.75"/>
         <Food value="0"/>
@@ -713,19 +701,6 @@
             <LayoutButtons index="8" removed="1"/>
         </CardLayouts>
         <MinimapRadius value="1.5"/>
-        <Attributes index="Armored" value="0"/>
-        <Attributes index="Mechanical" value="0"/>
-        <Attributes index="Psionic" value="0"/>
-        <Attributes index="Heroic" value="1"/>
-        <EnergyMax value="700"/>
-        <EnergyRegenRate value="10"/>
-        <Description value="Button/Tooltip/WarpPrism"/>
-        <LifeMax value="77777"/>
-        <LifeRegenRate value="777"/>
-        <ShieldsStart value="77777"/>
-        <ShieldsMax value="77777"/>
-        <ShieldRegenDelay value="0"/>
-        <ShieldRegenRate value="777"/>
     </CUnit>
     <CUnit id="WraithAirWeaponLeft">
         <LifeStart value="77777"/>

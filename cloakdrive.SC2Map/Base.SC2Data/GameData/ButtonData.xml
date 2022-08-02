@@ -122,10 +122,6 @@
         <AlertIcon value="Assets\Textures\btn-ability-spearofadun-chronomancy.dds"/>
         <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
     </CButton>
-    <CButton id="SOAWarpTech">
-        <Icon value="Assets\Textures\btn-upgrade-karax-reconstructionbeamextratarget.dds"/>
-        <AlertIcon value="Assets\Textures\btn-upgrade-karax-reconstructionbeamextratarget.dds"/>
-    </CButton>
     <CButton id="SetWaypoint">
         <Icon value="Assets\Textures\ui_btn_aicommand_commandcard_rally.dds"/>
         <AlertIcon value="Assets\Textures\ui_btn_aicommand_commandcard_rally.dds"/>
@@ -162,6 +158,8 @@
     </CButton>
     <CButton id="VoodooShield">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
+        <Tooltip value="Button/Tooltip/ResistBehavior"/>
+        <AlertTooltip value="Button/Tooltip/ResistBehavior"/>
     </CButton>
     <CButton id="Vortex">
         <Icon value="btn-ability-rift.dds"/>

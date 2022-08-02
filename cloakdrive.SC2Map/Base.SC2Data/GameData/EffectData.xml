@@ -103,18 +103,18 @@
         <EffectArray value="SOASuperShieldApplyBehavior"/>
         <EffectArray value="ShieldProjectorHEAL"/>
     </CEffectSet>
-    <CEffectDamage id="TempestDM">
+    <CEffectDamage id="TurbineDM">
         <EditorCategories value=""/>
         <Amount value="184877"/>
     </CEffectDamage>
     <CEffectDamage id="TurbineChargeDummy">
         <EditorCategories value=""/>
     </CEffectDamage>
-    <CEffectEnumArea id="TempestSEARCH">
+    <CEffectEnumArea id="TurbineSEARCH">
         <EditorCategories value=""/>
         <ImpactLocation Value="SourceUnitOrPoint"/>
-        <SearchFilters value="-;Self,Neutral,Psionic,Hover,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="4.9" Effect="TempestDM"/>
+        <SearchFilters value="-;Self,Neutral,Psionic,Massive,Hover,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4.9" Effect="TurbineDM"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="TurbineAddCharge">
         <EditorCategories value=""/>
@@ -366,7 +366,6 @@
         <PeriodicPeriodArray index="1" removed="1"/>
         <Flags index="Channeled" value="0"/>
     </CEffectCreatePersistent>
-    <CEffectLaunchMissile id="WraithARightLaunchMissile"/>
     <CEffectDamage id="WraithAU">
         <EditorCategories value=""/>
         <AttributeBonus index="Armored" value="0"/>
