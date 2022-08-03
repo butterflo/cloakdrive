@@ -166,9 +166,9 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="VortexEventHorizon">
         <InfoIcon value="btn-ability-rift.dds"/>
-        <Duration value="7"/>
+        <Duration value="1"/>
         <ExpireEffect value="RiftREMOVE"/>
-        <Modification MoveSpeedMinimum="1" MoveSpeedBonus="1">
+        <Modification MoveSpeedMinimum="7" MoveSpeedBonus="7">
             <ModifyFlags index="Warpable" value="0"/>
             <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressEnergy" value="1"/>

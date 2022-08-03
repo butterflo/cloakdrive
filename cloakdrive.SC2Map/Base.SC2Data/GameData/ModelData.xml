@@ -14,6 +14,12 @@
         <ScaleMin value="0.600000,0.600000,0.600000"/-->
         <SelectionOffset value="0.000000,0.000000,0.000000"/>
     </CModel>
+    <CModel id="ArtanisVortexModel">
+        <Model value="Assets\Effects\Zerg\KineticBlastImpact\KineticBlastImpact.m3"/>
+        <ScaleMax value="48.000000,48.000000,48.000000"/>
+        <ScaleMin value="48.000000,48.000000,48.000000"/>
+        <AnimSpeed value="0.250000"/>
+    </CModel>
     <CModel id="ArtifactShrine">
         <AnimSpeed value="0.250000"/>
     </CModel>
@@ -231,9 +237,10 @@
         <ScaleMin value="1.400000,1.400000,1.400000"/>
     </CModel>
     <CModel id="SOAHeroicShieldModel">
+        <Model value="Assets\Effects\Protoss\Zealot_Purifier_Collection_Charge_Thrust\Zealot_Purifier_Collection_Charge_Thrust.m3"/>
         <AnimSpeed value="0.500000"/>
-        <ScaleMax value="0.500000,0.500000,0.500000"/>
-        <ScaleMin value="0.500000,0.500000,0.500000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
     </CModel>
     <CModel id="SOAPurifierBeam">
         <AnimSpeed value="16.000000"/>

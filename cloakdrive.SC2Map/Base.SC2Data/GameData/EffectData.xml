@@ -340,7 +340,7 @@
     </CEffectSet>
     <CEffectModifyUnit id="RiftZ">
         <EditorCategories value=""/>
-        <Height value="-0.1"/>
+        <Height value="-7"/>
         <HeightTime value="7"/>
     </CEffectModifyUnit>
     <CEffectEnumArea id="VortexEventHorizonSearchArea">
@@ -350,7 +350,7 @@
     <CEffectApplyForce id="VortexForce">
         <ValidatorArray index="0" removed="1"/>
         <WhichLocation Effect="" Value="SourceUnitOrPoint"/>
-        <Amount value="-0.25"/>
+        <Amount value="-1"/>
         <TimeScaleSource Value="Global"/>
     </CEffectApplyForce>
     <CEffectLaunchMissile id="WraithALeftLaunchMissile">

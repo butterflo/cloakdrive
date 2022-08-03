@@ -177,6 +177,9 @@ DocInfo/PatchNote061=* 아비터 쿨다운이 이제 전개 해제 후부터 시
 DocInfo/PatchNote062=* 화면 상단의 메시지가 이제 화면 중앙에 표시됨
 DocInfo/PatchNote063=* 일부 텍스트 수정
 DocInfo/PatchNote064=* 일부 인터페이스 다듬음
+DocInfo/PatchNote065=* AI 코드 최적화
+DocInfo/PatchNote066=* 중력장이 더 유닛을 빨리 먹음
+DocInfo/PatchNote067=* 일부 연출 다듬음
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -250,7 +253,7 @@ MapInfo/Player13/Name=CPU_13
 MapInfo/Player14/Name=CPU_14
 MapInfo/Player15/Name=Hostile
 Param/Value/00E29370=팁: 블랙홀로 흡수한 적 유닛에게서도 자원을 얻을 수 있습니다.
-Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>fairithm - wisdom<n/>fairithm - Kuroki Fuusetsu no Majo<n/>fairithm - Hades: the bloody rage<n/>fairithm - schwarzer sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
+Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>Yousei Teikoku - Wisdom<n/>Yousei Teikoku - Kuroki Fuusetsu no Majo<n/>Yousei Teikoku - Hades: the bloody rage<n/>Yousei Teikoku - Schwarzer Sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
 Param/Value/02E975EB=모함이 재생성되었습니다. <c val="FFFF00">[ 1 ]</c> 키로 모함을 선택하세요.
 Param/Value/04105D6E=팁: 궤도 포격은 버튼을 누르는 즉시 유닛의 현재 위치에 사용됩니다. 자신의 모함에 대고 발사하지 않도록 주의하세요.
 Param/Value/0564F4E1=<c val="00FF80">대규모 워프</c><n/><n/>이제, 공격 유닛을 생산하고 대규모 워프를 사용해 적 유닛을 처치해 보세요.
@@ -327,6 +330,7 @@ Param/Value/5A642DEB=팁: 아비터의 전송을 사용한 기습은 적 플레�
 Param/Value/5B2C8A74=</c> 획득
 Param/Value/5CC34E07=<c val="00FF80">기본 조작</c><n/><n/>화면에 보이는 유닛은 여러분의 모함입니다. 자신의 모함을 지키고, 상대방의 모함을 파괴하는 것이 본 게임의 목적입니다.
 Param/Value/5F445BE4=<s val="Cloakdrive14">> 랠리 해제
+Param/Value/5FAB497A=팁: 억제기는 궤도 포격으로 무력화시킬 수 있습니다.
 Param/Value/60B739D4=,
 Param/Value/610F595E=<c val="00FFFF">튜토리얼 완료</c><n/><n/>튜토리얼은 별도로 종료되지 않습니다. 연습이 충분해졌다 싶으면 직접 게임을 종료해 주세요.
 Param/Value/624BDD45= 
@@ -349,7 +353,7 @@ Param/Value/7867499D=모드 선택
 Param/Value/78B772CD=<c val="FFFF00">시뮬레이션 모듈 활성화
 Param/Value/7C0858ED=20분 후 정화설비가 가동됩니다.<n/>제한 시간 내에 적 모함을 최대한 많이 파괴하세요.
 Param/Value/7F5A00B2= ( 
-Param/Value/7FD6118A=완료: 플레이카운트 기준으로 호스트를 설정합니다.
+Param/Value/7FD6118A=완료: 호스트를 설정합니다.
 Param/Value/803AF2B4= ]]
 Param/Value/808E15C0=</c><c val="FFFF00"> (자폭, -1점)
 Param/Value/80DFED5B=위
@@ -388,6 +392,7 @@ Param/Value/B60DF783=<s val="Cloakdrive14">
 Param/Value/B895A408=팁: 궤도 포격은 워프 중인 유닛들도 파괴합니다.
 Param/Value/BA27F891=<s val="Cloakdrive14"><c val="00FFFF">대규모 전송 준비됨</c></s>
 Param/Value/BA453ED2=팁: 마우스를 스크롤하면 궤도 유닛을 포함해 더 넓은 범위를 볼 수 있습니다.
+Param/Value/BC350FE3=팁: 해방선은 저격 모드로 전환할 수 있습니다.
 Param/Value/BCFFB34F=30..
 Param/Value/BE22AA8A=<c val="FFFF00">게임 종료: 
 Param/Value/C057C1D7=팁: 밤까마귀의 보호막 투사기는 전투순양함의 2차 무기로 무력화시킬 수 있습니다.

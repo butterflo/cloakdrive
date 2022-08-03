@@ -177,12 +177,14 @@ DocInfo/PatchNote061=* Arbiters cooldown now starts from undeploying
 DocInfo/PatchNote062=* Upper screen messages are now shown on screen center
 DocInfo/PatchNote063=* Minor text changes
 DocInfo/PatchNote064=* Minor UI cleanup
+DocInfo/PatchNote065=* AI optimized
+DocInfo/PatchNote066=* Singularity eats units faster
+DocInfo/PatchNote067=* Minor FX cleanup
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
 Effect/Name/BFGDelay=BFG Delay
 Effect/Name/BFGSEARCH=BFG SEARCH
-Effect/Name/CloakDriveDummyMassLonger=Warp Relay DUMMY
 Effect/Name/DarkArchonConfusionApply=CloakspaceTurbineOrbApply
 Effect/Name/InhibitorApply=Inhibitor APPLY
 Effect/Name/InhibitorLoop=Inhibitor LOOP
@@ -250,13 +252,13 @@ MapInfo/Player13/Name=CPU_13
 MapInfo/Player14/Name=CPU_14
 MapInfo/Player15/Name=Hostile
 Param/Value/00E29370=TIP: Deploying a singularity tech unit is a good way to get resources.
-Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>fairithm - wisdom<n/>fairithm - Kuroki Fuusetsu no Majo<n/>fairithm - Hades: the bloody rage<n/>fairithm - schwarzer sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
+Param/Value/01BC2EB5=<s val="Cloakdrive14"><c val="FFFF00">BGM in order:</c><n/>Yousei Teikoku - Wisdom<n/>Yousei Teikoku - Kuroki Fuusetsu no Majo<n/>Yousei Teikoku - Hades: the bloody rage<n/>Yousei Teikoku - Schwarzer Sarg<n/><n/><c val="00FF00">Copyright Disclaimer:</c><n/>I do not own the songs, and this game is not used for any profit.
 Param/Value/02E975EB=Carrier respawned: press <c val="FFFF00">[ 1 ]</c> to select your Carrier.
 Param/Value/04105D6E=TIP: Orbital strike aims at the Z-axis bottom of the caster. Be careful to not to accidentally destroy your units.
 Param/Value/0564F4E1=<c val="00FF80">Mass Cloakdrive</c><n/><n/>Now, build some combat units and try to destroy some enemy units.
-Param/Value/06B19764=TIP: A T5 Seeker can be overwhelmed by well-timed ganks. Protect it, or overwhelm it.
-Param/Value/0769D90E=TIP: Having a good combination of units is more effective than doing micro.
-Param/Value/098A1EFD=TIP: Bounty increases faster for the players with higher scores.
+Param/Value/06B19764=TIP: A seeker can be overwhelmed by well-timed ganks.
+Param/Value/0769D90E=TIP: Having a good combination of units is an effective strategy.
+Param/Value/098A1EFD=TIP: Bounty increases faster for players with higher scores.
 Param/Value/0B6DAEEF=<c val="00FF80">Combat units</c><n/><n/>High tier units take longer to recharge the Cloakdrive. Press <c val="FFFF00">[ 2 ]</c> to select the units ready to jump.
 Param/Value/0C4B523B=<c val="FFFF00">
 Param/Value/0CBE6BDF=<c val="FFFF00">Alert: Hostile units inbound!!</c>
@@ -264,10 +266,9 @@ Param/Value/0CCDBA45=Loading..
 Param/Value/0D25A7EC=: Shield Upgrade II reached.<n/><n/>(1 left until infinity shield)
 Param/Value/0F8CE0AC=<c val="00FF80">Advanced controls</c><n/><n/>Use the mouse wheel to zoom out.
 Param/Value/10E535B8=<s val="Cloakdrive14"><c val="FF2000">Tech Unit Ready</c></s>
-Param/Value/114972A0= times played : 
 Param/Value/11C8B17F=<c val="00FFFF">Tutorial complete</c><n/><n/>In sandbox mode, minerals are provided every few seconds. Some enemy units are also spawned. Take your time to practice.
 Param/Value/12BB9CD8=<c val="FFFFFF"> >>> </c>
-Param/Value/12F43E79=TIP: Cloakdrive has infinite range. The way jumpdrives are meant to be.
+Param/Value/12F43E79=TIP: Cloakdrive has infinite range. The way hyperspace engines are meant to be.
 Param/Value/14447F34=<c val="FFFF00">
 Param/Value/15EC1D77=<s val="Cloakdrive14"><c val="808080">[[ P
 Param/Value/1712B51A=)
@@ -286,10 +287,10 @@ Param/Value/286A9CBD= place -
 Param/Value/287E31AE=OBJECTIVE: <c val="00FF80">Destroy enemy Carriers.
 Param/Value/28FF3D36=<c val="FFFF00">
 Param/Value/2A899D3B=<s val="ModCenterSize24Bold"><c val="00FF80">
-Param/Value/2AD73227=<s val="Cloakdrive14"><c val="80FF00">Cam aligning..</c><n/>Steady.
+Param/Value/2AD73227= 
 Param/Value/2C7E20CB=<c val="FFFF00">* 1 MINUTE LEFT *</c>
 Param/Value/2CEC4294=TIP: Hold <c val="FFFF00">[ TAB ]</c> and move the mouse around to see from different viewpoints.
-Param/Value/2E1FFC4C=TIP: Banshees can fire their weapon while moving around.
+Param/Value/2E1FFC4C=TIP: Banshees can fire weapons while moving.
 Param/Value/2EBFED0F=</c> <c val="FFFFFF">( +
 Param/Value/304540E6=<c val="00FF80">When timer expires, the player with the highest score wins.</c><n/><n/>Destroy enemy units, collect resources and expand your fleet.
 Param/Value/30507B2A=<c val="00FF80">* 5 MINUTES LEFT *</c>
@@ -303,42 +304,39 @@ Param/Value/3BEED82D=<c val="00FF80">Hotkeys</c><n/><n/><c val="FFFF00">[1]</c> 
 Param/Value/3CF50DAA=<c val="FFFF00">See you in the real game. (End)
 Param/Value/3D03C7AF=<c val="FFFF00">
 Param/Value/3EE08298=<s val="Cloakdrive14">Respawn in <c val="80FF00">
-Param/Value/3FA3F55D=<s val="Cloakdrive14"><전투> 유닛 파괴: 자원 +
 Param/Value/42B84A0D=TIP: Hold TAB key and move your mouse to use Free-cam mode.
 Param/Value/456AF322=<c val="00FF00">
 Param/Value/48A8798C= 
 Param/Value/499FE64E=[[ 
 Param/Value/4A8708DD=<s val="Cloakdrive14"><c val="80FF00">
 Param/Value/4B26A219=<c val="00FF80">Basic controls</c><n/><n/>Cloakdrive has unlimited range. Go further!
-Param/Value/4B975FAE=TIP: Arbiter Relays can be chained.
+Param/Value/4B975FAE=TIP: Arbiter relays can be chained.
 Param/Value/4C44910C=
 Param/Value/4ED16871=<s val="ModCenterSize24Bold">T2</s>
-Param/Value/50EC30E5=<s val="Cloakdrive14"><c val="FFFFFF">
 Param/Value/51675A53=<s val="ModCenterSize40Bold">
 Param/Value/5295BDE4=OBJECTIVE: <c val="00FF80">Follow the Tutorial.
 Param/Value/52F43F43=
 Param/Value/559ED564=
-Param/Value/55AADF65=TIP: Raven's shield projectors can be stacked up to 49 times.<n/><n/>A full stack absorbs a single hit from a T5 Seeker.
-Param/Value/57202303=TIP: Low tier units jump first in Mass Cloakdrive transfers.
+Param/Value/55AADF65=TIP: Raven shield projectors can be stacked up to 49 times.<n/><n/>A full stack absorbs a single hit from a seeker.
+Param/Value/57202303=TIP: Low tier units jump first in mass cloakdrive transfers.
 Param/Value/57EBFD61=
 Param/Value/58BD799A=<c val="00FF80">* 15 MINUTES LEFT *</c>
 Param/Value/58D0324B=<s val="Cloakdrive24">Start</s>
-Param/Value/5A642DEB=TIP: Arbiter Relay transfers do not trigger inbound alarm.
+Param/Value/5A642DEB=TIP: Arbiter relay transfers do not trigger the inbound alarm.
 Param/Value/5B2C8A74=</c> 획득
 Param/Value/5CC34E07=<c val="00FF80">Basic controls</c><n/><n/>This is your Carrier. The goal of this game is to destroy enemy Carriers and score as much as possible.
 Param/Value/5F445BE4=<s val="Cloakdrive14">> Rally cancelled
+Param/Value/5FAB497A=TIP: Deployed inhibitors can be disabled with an orbital disruptor strike.
 Param/Value/60B739D4=,
 Param/Value/610F595E=<c val="00FFFF">Tutorial complete</c><n/><n/>The game will stay active. You can choose when to exit the tutorial after practicing.
 Param/Value/624BDD45= 
-Param/Value/62C24F50=/
 Param/Value/6324CBD5=<c val="FFFF00">Destroy enemy units [ 
 Param/Value/65510783=<c val="00FF80">** PURGE IMMINENT **
 Param/Value/65A27FCC=nd
 Param/Value/66DB00E7=<c val="00FFFF">* PHASE 2: GAME SPEED INCREASED *</c>
 Param/Value/68BE97E9=<c val="FFFF00">[ Type III Purge ]<c val="FFFFFF"> was selected.</c>
 Param/Value/69CB8E4C= P
-Param/Value/6E627E99=<n/>- 
-Param/Value/6F886C6E=TIP: Upgrade Banshee Shield 3 times to get Infinity Shield.
+Param/Value/6F886C6E=TIP: Upgrade banshee shield 3 times to get infinity shield.
 Param/Value/7020CAF5=<c val="00FF80">Welcome!</c><n/><n/>This is a tutorial of Cloakdrive.
 Param/Value/717C099E=<s val="Cloakdrive14"><c val="00FFFF">Credits</c></s>
 Param/Value/740A4491=When the timer reaches zero, player with the best score wins the game.
@@ -348,7 +346,6 @@ Param/Value/77D6C8D1=<s val="Cloakdrive14">> Enemy unit destroyed: +
 Param/Value/7867499D=모드 선택
 Param/Value/78B772CD=<c val="FFFF00">Simulation module active
 Param/Value/7C0858ED=<c val="00FF80">*20 MINUTES LEFT*</c><n/><n/>Destroy enemy carriers to score points.
-Param/Value/7F5A00B2= ( 
 Param/Value/7FD6118A=Complete. Welcome back commander.
 Param/Value/803AF2B4= ]]
 Param/Value/808E15C0= (self-destruction, -1 point)
@@ -358,10 +355,8 @@ Param/Value/82B41F53=남은 시간:
 Param/Value/831014CA=
 Param/Value/833EE2CD=<c val="FFFF00">Alert: Turbine signature detected.
 Param/Value/8383B6D5=rd
-Param/Value/84A5FAE2= wins : KD 
 Param/Value/87A1354E=</c><c val="FFFFFF"> is not connected: respawn aborted.
 Param/Value/882FC29E=st
-Param/Value/88AAC987= - (New player)<n/>
 Param/Value/8A586320=<s val="Cloakdrive14"><c val="00FFFF">Mass Cloakdrive Ready</c></s>
 Param/Value/8B73F44E=SetRotation {
 Param/Value/8DFE8744=TIP: Carrier nukes are used like a regular weapon.
@@ -388,11 +383,12 @@ Param/Value/B60DF783=<s val="Cloakdrive14">
 Param/Value/B895A408=TIP: Orbital strikes also damage units in cloakspace.
 Param/Value/BA27F891=<s val="Cloakdrive14"><c val="00FFFF">Mass Cloakdrive Ready</c></s>
 Param/Value/BA453ED2=TIP: Use mouse wheel to zoom out and see orbital units.
+Param/Value/BC350FE3=TIP: Liberators can deploy to a sniper mode.
 Param/Value/BCFFB34F=30..
 Param/Value/BE22AA8A=<c val="FFFF00">Purge in : </c>
-Param/Value/C057C1D7=TIP: Raven's shield projector can be countered with Battlecruiser's secondary weapon.
+Param/Value/C057C1D7=TIP: Raven's shield projectors can be countered with the secondary weapon of battlecruisers.
 Param/Value/C25A1081=TIP: Singularities can pull units out of cloakspace.
-Param/Value/C382D550=TIP: AIs are not designed for practice.
+Param/Value/C382D550=TIP: The AI is not designed for practice.
 Param/Value/C50B8F85=<c val="FFFF00">
 Param/Value/C5C29628=
 Param/Value/C74E8809=<c val="FFFF00">[ Type II Purge ]<c val="FFFFFF"> was selected.</c>
@@ -404,30 +400,27 @@ Param/Value/D12EB370=완료 [
 Param/Value/D1ADFEDB=<s val="Cloakdrive14"><c val="00FF00">Purge in:
 Param/Value/D28E47C1=
 Param/Value/D4385BA4=<s val="Cloakdrive14"><c val="80FF00">Warping in..</c><n/><c val="FFFFFF">Standby.
-Param/Value/D4DC3715=TIP: Upgraded Banshees give more resources when destroyed.
+Param/Value/D4DC3715=TIP: Upgraded banshees give more income when destroyed.
 Param/Value/D5224D06=<c val="FFFFFF"> >>> </c>
 Param/Value/D59092BB=<c val="00FF80">Mass Cloakdrive</c><n/><n/>The Carrier has a unique ability: Mass Cloakdrive. When activated, it sends the units around the Carrier to the target location through a series of Cloakdrive jumps, without consuming each unit's energy. The Carrier does not jump.
-Param/Value/D665FB1B= ]]
+Param/Value/D665FB1B=]]
 Param/Value/D75208DF=<c val="00FF80">Combat units</c><n/><n/>Destroy enemy units to get resources. Try to build a combat unit! Select your Carrier and press <c val="FFFF00">[ Q ]</c> to see the build menu.
 Param/Value/D7B40C35=s..
-Param/Value/D7D1E298=TIP: Select your Carrier and press <c val="FFFF00">[ Z ]</c> to order all of your units to attack to that location.
-Param/Value/D8C87923=
+Param/Value/D7D1E298=TIP: Select your carrier and press <c val="FFFF00">[ Z ]</c> to order all of your units to attack to that location.
 Param/Value/D9935B62=<c val="00FF80">* 2 MINUTES LEFT *</c>
 Param/Value/DD3C83D8=)
 Param/Value/E04B0090=<c val="FFFF00">Warning: Singularity detected.</c>
 Param/Value/E04FF842=</c><c val="FFFFFF"> [ 
 Param/Value/E051B660=</c> )
 Param/Value/E2025BF4= / 3 ]
-Param/Value/E2450E31=TIP: Most of the weapons inflict splash damage, also on your units.
+Param/Value/E2450E31=TIP: Most weapons inflict splash damage, also to your units.
 Param/Value/E30CB1F3=TIP: High tier units have slower fire rates. Protect them when they are reloading.
 Param/Value/E5A2BD30=<s val="Cloakdrive24">Host: 
 Param/Value/E6A95545=</c> <c val="FFFFFF">( 
-Param/Value/E6F72CE3=
+Param/Value/E6F72CE3= 
 Param/Value/E75899E5=<c val="00FF80">Basic controls</c><n/><n/>All combat units are equipped with Cloakdrive by default. Select a unit, press <c val="FFFF00">[ C ]</c>, and click on a location to use it and jump to the target location.
-Param/Value/E9AA2953= )<n/>
 Param/Value/EA02264B=<s val="Cloakdrive14"><c val="FF2000">Tech Unit Ready</c></s>
 Param/Value/EA0A9FC8=<c val="00FF80">Basic controls</c><n/><n/>Now, try to jump in and destroy enemy units.<n/>Press <c val="FFFF00">[ 3 ]</c> to select all Banshees.
-Param/Value/EC0EB46A=<n/>
 Param/Value/EC447A43=<s val="Cloakdrive14"><c val="80FF00">Warping in..</c><n/>Standby.
 Param/Value/F0323C38=
 Param/Value/F0E12982=<s val="Cloakdrive14">> Mass Cloakdrive active
@@ -454,6 +447,7 @@ Unit/Name/Liberator=Liberator Laser Artillery
 Unit/Name/LiberatorAG=Liberator Laser Artillery
 Unit/Name/Oracle=Singularity Module
 Unit/Name/PhotonCannonWeapon=Rapid Plasma Cannon PROJ
+Unit/Name/PickupChronoRiftCharge=Singularity distortion effect 
 Unit/Name/PylonContainmentUnit=Purge Type III
 Unit/Name/Raven=Raven Type:F
 Unit/Name/RipFieldGenerator=Purge Type I
@@ -505,6 +499,7 @@ e_cmdCantTargetEnemyUnits=<s val="Cloakdrive14"><c val="FFFF00">> Cannot target 
 e_cmdCantTargetThatUnit=<s val="Cloakdrive14"><c val="FFFF00">> Cannot target that unit</c>
 e_cmdCantTargetYourOwnUnits=<s val="Cloakdrive14"><c val="FFFF00">> Cannot target own units</c>
 e_cmdCooldown=<s val="Cloakdrive14"><c val="FFFF00">> Cooldown active</c>
+e_cmdNotEnoughCharges=<s val="Cloakdrive14"><c val="FFFF00">> Not enough charges</c></s>
 e_cmdNotEnoughEnergy=<s val="Cloakdrive14"><c val="FFFF00">> Not enough energy</c>
 e_cmdNotEnoughMinerals=<s val="Cloakdrive14"><c val="FFFF00">> Not enough minerals</c>
 e_cmdQueueIsFull=<s val="Cloakdrive14"><c val="FFFF00">> Queue is full</c>

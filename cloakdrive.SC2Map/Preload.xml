@@ -15,7 +15,7 @@
 <Actor id="ArtifactShrine"/>
 <Actor id="EnergyNovaShockwave"/>
 <Actor id="AssemblyDestroyedSoundActorMini"/>
-<Actor id="AssemblyDestroyedSoundActor"/>
+<Actor id="CarrierDestroyedSoundActor"/>
 <Actor id="EnergyNovaShockwave2"/>
 <Behavior id="GhostCloak"/>
 <Behavior id="VoodooShield"/>
@@ -30,10 +30,10 @@
 <Light id="CutsceneFadeFromWhiteflash"/>
 <Model id="CloakModel"/>
 <Model id="PingBaseAttack"/>
-<Model id="PingWarning"/>
 <Model id="GhostEMPAttackImpactEffect"/>
 <Model id="TimeWarp"/>
 <Model id="WarpPrismPowerVisual"/>
+<Model id="ArtanisVortexModel"/>
 <Model id="SOAHeroicShieldModel"/>
 <Model id="InhibitorSnipedDeactivationModel"/>
 <Model id="InhibitorActivateFlare"/>
@@ -119,6 +119,7 @@
 <Unit id="ScienceVessel"/>
 <Unit id="VoidSeeker"/>
 <Unit id="RipFieldGenerator"/>
+<Unit id="PickupChronoRiftCharge"/>
 <Unit id="LabTurret"/>
 <Unit id="ExpeditionJumpGate"/>
 <Unit id="ArbiterMP"/>

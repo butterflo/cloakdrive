@@ -69,6 +69,7 @@
             <Value>1.15</Value>
             <Value>2.0</Value>
             <Value>2.1</Value>
+            <Value>2.2</Value>
         </Version>
         <Date>
             <Value>10/24/2015</Value>
@@ -89,6 +90,7 @@
             <Value>10/8/2021</Value>
             <Value>7/30/2022</Value>
             <Value>8/2/2022</Value>
+            <Value>8/14/2022</Value>
         </Date>
         <Notes>
             <Value>1,2</Value>
@@ -109,6 +111,7 @@
             <Value>47,48,49,50,51,52,53</Value>
             <Value>54,55,56,57,58</Value>
             <Value>59,60,61,62,63,64</Value>
+            <Value>65,66,67</Value>
         </Notes>
     </PatchNote>
     <Preload>
