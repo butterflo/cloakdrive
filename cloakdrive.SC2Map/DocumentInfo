@@ -70,6 +70,7 @@
             <Value>2.0</Value>
             <Value>2.1</Value>
             <Value>2.2</Value>
+            <Value>2.3</Value>
         </Version>
         <Date>
             <Value>10/24/2015</Value>
@@ -91,6 +92,7 @@
             <Value>7/30/2022</Value>
             <Value>8/2/2022</Value>
             <Value>8/14/2022</Value>
+            <Value>2/20/2023</Value>
         </Date>
         <Notes>
             <Value>1,2</Value>
@@ -112,14 +114,13 @@
             <Value>54,55,56,57,58</Value>
             <Value>59,60,61,62,63,64</Value>
             <Value>65,66,67</Value>
+            <Value>68,69,70,71,72,73,74,75</Value>
         </Notes>
     </PatchNote>
     <Preload>
         <Value>GameLink:Unit;Battlecruiser</Value>
-        <Value>GameLink:Unit;Banshee</Value>
         <Value>GameLink:Unit;DuskWing</Value>
         <Value>GameLink:Unit;Raven</Value>
-        <Value>GameLink:Unit;ScienceVessel</Value>
         <Value>GameLink:Unit;VoidSeeker</Value>
         <Value>GameLink:Unit;GhostAcademy</Value>
         <Value>GameLink:Unit;WarpPrism</Value>
@@ -141,6 +142,8 @@
         <Value>GameLink:Unit;Disruptor</Value>
         <Value>GameLink:Unit;Oracle</Value>
         <Value>GameLink:Model;CloakModel</Value>
+        <Value>GameLink:Unit;LiberatorAG</Value>
+        <Value>GameLink:Unit;Liberator</Value>
         <Value>AssetFile;Assets\Textures\ui_leaderpanel_buttonhover_terran.dds</Value>
         <Value>AssetFile;Assets\Textures\ui_loadingbar_metalframe_teran.dds</Value>
         <Value>AssetFile;Assets\Textures\ui_loadingbar_bar_highlighted_terran.dds</Value>

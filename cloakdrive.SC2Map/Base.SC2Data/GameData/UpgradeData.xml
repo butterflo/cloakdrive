@@ -45,7 +45,7 @@
         <ScoreResult value=""/>
         <EffectArray Reference="Weapon,WraithA,Range" Value="0.7"/>
         <EffectArray Reference="Abil,StarportTechLabResearch,InfoArray[Research7].Resource[Minerals]" Value="2401"/>
-        <EffectArray Reference="Weapon,InterceptorBeam2,Range" Value="0.7"/>
+        <EffectArray Reference="Weapon,Jumpstarter,Range" Value="0.7"/>
         <EditorCategories value=""/>
         <AffectedUnitArray index="0" removed="1"/>
         <MaxLevel value="14"/>
@@ -60,7 +60,7 @@
     <CUpgrade id="WraithCloak">
         <Alert value="UpgradeComplete"/>
         <Race value=""/>
-        <EffectArray Operation="Subtract" Reference="Abil,MassCloakDrive,Cost[0].Cooldown.TimeUse" Value="7.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MassCloakdrive,Cost[0].Cooldown.TimeUse" Value="7.000000"/>
         <EffectArray Reference="Abil,StarportTechLabResearch,InfoArray[Research5].Resource[Minerals]" Value="2401"/>
         <EditorCategories value=""/>
         <MaxLevel value="14"/>

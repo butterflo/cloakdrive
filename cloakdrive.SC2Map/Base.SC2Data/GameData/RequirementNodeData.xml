@@ -57,7 +57,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CloakspaceTurbineActive" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorWeaponTypeBCompleteOnlyAtUnit">
@@ -219,7 +218,6 @@
         <OperandArray index="0" value="CountBehaviorCloakfieldRelayCompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountBehaviorCloakspaceTurbineActiveCompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorWeaponTypeBCompleteOnlyAtUnit">

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<terrain version="114">
+<terrain version="115">
     <heightMap tileSet="BraxisAlphaEx1" uvtiling="24.000000 24.000000 -9.000000 -9.000000 " dim="257 257 " offset="0.000000 0.000000 0.000000 " scale="1.000000e+00 1.000000e+00 1.000000e+00 ">
         <cliffSetList num="1">
             <cliffSet i="0" name="HybridLabOuterCliff1"/>
         </cliffSetList>
-        <vertData quantizeBias="8.000870e+00" quantizeScale="2.593659e-04" standardHeight="8.000000e+00" name="t3HeightMap"/>
+        <vertData quantizeBias="8.001015e+00" quantizeScale="2.593664e-04" standardHeight="8.000000e+00" name="t3HeightMap"/>
         <masks name="t3TextureMasks"/>
         <textureSetList num="8">
             <textureSet i="0" name="BraxisAlphaEx1"/>

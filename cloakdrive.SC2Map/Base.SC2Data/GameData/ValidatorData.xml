@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CValidatorPlayerRequirement id="BansheeResist_is_1">
         <WhichPlayer Value="Caster"/>
@@ -26,4 +26,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="CloakfieldRelay"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="IsNotSeeker">
+        <CombineArray value="IsSeeker"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="IsSeeker">
+        <Value value="VoidSeeker"/>
+    </CValidatorUnitType>
 </Catalog>

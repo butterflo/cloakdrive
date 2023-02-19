@@ -31,7 +31,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="ArbiterMPRecall" AbilCmd="ArbiterMPRecall,Execute" Column="1"/>
             <LayoutButtons index="6" Face="Rally" AbilCmd="ProgressRally,Rally1" Column="4"/>
-            <LayoutButtons index="7" Face="EvasiveCloakDrive" Type="AbilCmd" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="7" Face="CloakdriveButton" Type="AbilCmd" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="8" Face="ArbiterMPRecall2" AbilCmd="TaurenStimpack,Execute" Column="1"/>
         </CardLayouts>
     </CUnit>
@@ -77,7 +77,7 @@
         <WeaponArray index="0" Link="PhotonCannon"/>
         <WeaponArray index="1" Link="SJPirateCapitalShip"/>
         <CardLayouts index="0">
-            <LayoutButtons index="5" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute"/>
+            <LayoutButtons index="5" Face="CloakdriveButton" AbilCmd="ForceField,Execute"/>
             <LayoutButtons index="6" Face="CannonTurnRight" AbilCmd="SwitchToB,Execute"/>
             <LayoutButtons index="7" Face="CannonTurnLeft" AbilCmd="SwitchToA,Execute" Column="1"/>
             <LayoutButtons index="8" removed="1"/>
@@ -166,7 +166,7 @@
             <LayoutButtons index="3" Face="MovePatrol" AbilCmd="move,Patrol" Column="3"/>
             <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Column="0"/>
             <LayoutButtons index="5" Face="SOAOrbitalStrike" AbilCmd="ArtanisPsionicShockwave,Execute" Row="2" Column="1"/>
-            <LayoutButtons index="6" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="6" Face="CloakdriveButton" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
         <Fidget>
@@ -201,11 +201,11 @@
         <AbilArray Link="SwitchToB"/>
         <BehaviorArray index="0" Link="WeaponTypeA"/>
         <WeaponArray index="0" Link="WraithA" Turret="FreeRotate"/>
-        <WeaponArray Link="InterceptorBeam2" Turret="FreeRotate"/>
+        <WeaponArray Link="Jumpstarter" Turret="FreeRotate"/>
         <CardLayouts index="0">
             <LayoutButtons index="3" AbilCmd="AttackAllowsInvulnerable,Execute"/>
             <LayoutButtons index="5" Face="VoodooShield" AbilCmd="VoodooShield,Execute" Row="1"/>
-            <LayoutButtons index="6" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="6" Face="CloakdriveButton" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="7" Face="CannonTurnLeft" Type="AbilCmd" AbilCmd="SwitchToA,Execute" Requirements="" Column="1"/>
             <LayoutButtons index="8" Face="CannonTurnRight" Type="AbilCmd" AbilCmd="SwitchToB,Execute" Requirements="" Column="1"/>
         </CardLayouts>
@@ -261,7 +261,7 @@
         <AbilArray index="3" Link="StarportTrain"/>
         <AbilArray Link="que1"/>
         <AbilArray Link="ForceField"/>
-        <AbilArray Link="MassCloakDrive"/>
+        <AbilArray Link="MassCloakdrive"/>
         <AbilArray Link="CancelWaypoint"/>
         <AbilArray Link="Waypoint"/>
         <AbilArray Link="HallucinationWarpPrism"/>
@@ -276,7 +276,7 @@
         <WeaponArray Link="HailstormMissilePods" Turret="FreeRotate"/>
         <CardLayouts index="0">
             <LayoutButtons index="0" Face="AttackBuilding" AbilCmd="attack,Execute" Column="4"/>
-            <LayoutButtons index="1" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="1" Face="CloakdriveButton" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="2" Face="SetWaypoint" AbilCmd="Waypoint,Rally1" Column="3"/>
             <LayoutButtons index="3">
                 <Face value="TerranBuild"/>
@@ -299,9 +299,10 @@
             <LayoutButtons index="5" Face="Move" AbilCmd="move,Move" Column="0"/>
             <LayoutButtons index="6" Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons index="7" Face="CancelWaypoint" AbilCmd="CancelWaypoint,Execute" Column="4"/>
-            <LayoutButtons>
+            <LayoutButtons index="8">
                 <Face value="TerranBuildAdvanced"/>
                 <Type value="Submenu"/>
+                <AbilCmd value=""/>
                 <SubmenuCardId value="0004"/>
                 <SubmenuIsSticky value="1"/>
                 <Row value="1"/>
@@ -309,7 +310,7 @@
             </LayoutButtons>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons Face="EvasiveCloakDrive2" Type="AbilCmd" AbilCmd="MassCloakDrive,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="CloakdriveMassButton" Type="AbilCmd" AbilCmd="MassCloakdrive,Execute" Row="2" Column="1"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="PhotonCruiserBTN" Type="AbilCmd" AbilCmd="StarportTrain,Train2" Row="0" Column="0"/>
@@ -343,6 +344,40 @@
         <ScoreKill value="0"/>
         <MinimapRadius value="3"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="GuideArrowUnit">
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Uncloakable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="IgnoreTerrainZInit" value="1"/>
+        <Height value="16.75"/>
+        <Attributes index="Psionic" value="1"/>
+    </CUnit>
+    <CUnit id="GuideArrowUnitRed">
+        <DeathRevealRadius value="3"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Uncloakable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="IgnoreTerrainZInit" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <LifeStart value="10000"/>
+        <LifeMax value="10000"/>
+        <Height value="16.75"/>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
+        <Attributes index="Psionic" value="1"/>
     </CUnit>
     <CUnit id="HyperionYamatoSpecialWeapon">
         <LifeStart value="77777"/>
@@ -397,7 +432,7 @@
         <WeaponArray index="1" removed="1"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="CannonTurnRight" AbilCmd="LiberatorMorphtoAG,Execute" Column="1"/>
-            <LayoutButtons Face="EvasiveCloakDrive" Type="AbilCmd" AbilCmd="ForceField,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="CloakdriveButton" Type="AbilCmd" AbilCmd="ForceField,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="HoldFire" Type="AbilCmd" AbilCmd="GhostHoldFire,Execute" Row="1" Column="4"/>
             <LayoutButtons Face="SpectreWeaponsFree" Type="AbilCmd" AbilCmd="GhostWeaponsFree,Execute" Row="1" Column="4"/>
         </CardLayouts>
@@ -436,7 +471,7 @@
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons Face="EvasiveCloakDrive" Type="AbilCmd" AbilCmd="ForceField,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="CloakdriveButton" Type="AbilCmd" AbilCmd="ForceField,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="HoldFire" Type="AbilCmd" AbilCmd="GhostHoldFire,Execute" Row="1" Column="4"/>
             <LayoutButtons Face="SpectreWeaponsFree" Type="AbilCmd" AbilCmd="GhostWeaponsFree,Execute" Row="1" Column="4"/>
         </CardLayouts>
@@ -480,7 +515,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="Attack"/>
             <LayoutButtons index="6" Face="Vortex" AbilCmd="GuardianShield,Execute" Column="1"/>
-            <LayoutButtons index="7" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="7" Face="CloakdriveButton" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="8" removed="1"/>
             <LayoutButtons index="9" removed="1"/>
             <LayoutButtons index="10" removed="1"/>
@@ -549,7 +584,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0"/>
             <LayoutButtons index="5" AbilCmd="AttackAllowsInvulnerable,Execute"/>
-            <LayoutButtons index="7" Face="EvasiveCloakDrive" Type="AbilCmd" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="7" Face="CloakdriveButton" Type="AbilCmd" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="8" Face="CannonTurnRight" Type="AbilCmd" AbilCmd="SwitchToB,Execute" Row="2" Column="1"/>
             <LayoutButtons index="9" Face="CannonTurnLeft" AbilCmd="SwitchToA,Execute"/>
             <LayoutButtons index="10" removed="1"/>
@@ -630,10 +665,10 @@
         <WeaponArray Link="VolatileBurstDummy" Turret="FreeRotate"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" AbilCmd="AttackAllowsInvulnerable,Execute"/>
-            <LayoutButtons index="5" Face="EvasiveCloakDrive3" AbilCmd="CloakdriveTurbine,Execute"/>
+            <LayoutButtons index="5" Face="CloakdriveTurbineButton" AbilCmd="CloakdriveTurbine,Execute"/>
             <LayoutButtons index="6" Face="CannonTurnRight" AbilCmd="SwitchToB,Execute"/>
             <LayoutButtons index="7" Face="CannonTurnLeft" AbilCmd="SwitchToA,Execute" Column="1"/>
-            <LayoutButtons index="8" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="8" Face="CloakdriveButton" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="9" removed="1"/>
         </CardLayouts>
         <MinimapRadius value="0.75"/>
@@ -669,7 +704,7 @@
         <AbilArray index="4" Link="ForceField"/>
         <CardLayouts index="0">
             <LayoutButtons index="6" Face="PhasingMode" AbilCmd="PhasingMode,Execute" Column="1"/>
-            <LayoutButtons index="7" Face="EvasiveCloakDrive" AbilCmd="ForceField,Execute" Column="0"/>
+            <LayoutButtons index="7" Face="CloakdriveButton" AbilCmd="ForceField,Execute" Column="0"/>
             <LayoutButtons index="8" removed="1"/>
         </CardLayouts>
         <MinimapRadius value="1.5"/>

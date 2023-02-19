@@ -30,7 +30,7 @@
         <RangeSlop value="0"/>
         <Period value="13.72"/>
         <Backswing value="0"/>
-        <Effect value="LDXDUMMY"/>
+        <Effect value="LDXFocusArrayLOOP"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
         <DamagePoint value="0"/>
@@ -56,7 +56,7 @@
         <MinScanRange value="0"/>
         <DamagePoint value="0"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="InterceptorBeam2">
+    <CWeaponLegacy id="Jumpstarter">
         <EditorCategories value="Race:Protoss"/>
         <Options index="DisplayCooldown" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>

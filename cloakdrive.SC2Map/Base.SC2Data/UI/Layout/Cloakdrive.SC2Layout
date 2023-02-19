@@ -82,12 +82,13 @@
         </Frame>
 
         <Frame type="MessageDisplay" name="ErrorDisplay">
-            <Anchor side="Top" relative="$parent/AlertPanel" pos="1.9" offset="0"/>
-            <MaxMessages val="7"/>
+            <Anchor side="Top" relative="$parent/AlertPanel" pos="3.0" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="0.7" offset="10"/>
+            <MaxMessages val="4"/>
             <MessageDuration val="7000"/>
             <FadeDuration val="700"/>
             <Width val="550"/>
-            <Height val="192"/>
+            <Height val="128"/>
         </Frame>
 
         <Frame type="MessageDisplay" name="ChatDisplay">
@@ -336,6 +337,7 @@
 
         <Frame type="AlertPanel" name="AlertPanel">
             <ItemHeight val="40"/>
+            <Alpha val="0"/>
         </Frame>
 
     </Frame>

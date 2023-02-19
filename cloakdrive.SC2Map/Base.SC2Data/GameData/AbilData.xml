@@ -4,7 +4,8 @@
         <Effect index="0" value="CloakDriveDummyMassLonger"/>
         <Cost index="0">
             <Vital index="Energy" value="0"/>
-            <Cooldown Link="Abil/ArbiterMPRecall" Operation="Set" TimeUse="70"/>
+            <Charge Link="Abil/ArbiterMPRecall" Location="Unit"/>
+            <Cooldown Link="Abil/ArbiterMPRecall" Location="Unit" TimeUse="1"/>
         </Cost>
         <CmdButtonArray index="Execute" Requirements="IsNotTransferring"/>
     </CAbilEffectTarget>
@@ -47,7 +48,7 @@
         <Arc value="360"/>
         <ArcSlop value="360"/>
         <CursorEffect index="0" removed="1"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EvasiveCloakDrive" Requirements="HasNoTurbineCharge">
+        <CmdButtonArray index="Execute" DefaultButtonFace="CloakdriveButton" Requirements="HasNoTurbineCharge">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
         <PlaceUnit value=""/>
@@ -56,7 +57,7 @@
     <CAbilEffectTarget id="CloakdriveTurbine" parent="ForceField">
         <Name value="Abil/Name/CloakdriveTurbine"/>
         <AbilSetId value=""/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EvasiveCloakDrive3" State="Suppressed" Requirements="HasTurbineCharge"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CloakdriveTurbineButton" State="Suppressed" Requirements="HasTurbineCharge"/>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="GuardianShield">
         <Effect index="0" value="RiftCHARGE"/>
@@ -121,6 +122,27 @@
         </Cost>
         <CmdButtonArray index="Execute" Requirements=""/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="MassCloakdrive">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="WarpMassDUMMY"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/ForceField"/>
+            <Cooldown Link="Abil/CloakDriveMass" TimeStart="140" TimeUse="140"/>
+        </Cost>
+        <Range value="500"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <ArcSlop value="360"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <AINotifyEffect value="ForceField"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CloakdriveMassButton"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <FollowRange value="0"/>
+    </CAbilEffectTarget>
     <CAbilMorph id="LiberatorMorphtoAA">
         <Flags index="DisableAbils" value="1"/>
         <InfoArray index="0">
@@ -143,27 +165,6 @@
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
-    <CAbilEffectTarget id="MassCloakDrive">
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <Effect index="0" value="WarpMassDUMMY"/>
-        <Flags index="RequireTargetVision" value="0"/>
-        <Cost>
-            <Charge Link="Abil/ForceField"/>
-            <Cooldown Link="Abil/CloakDriveMass" TimeStart="140" TimeUse="140"/>
-        </Cost>
-        <Range value="500"/>
-        <RangeSlop value="0"/>
-        <Arc value="360"/>
-        <ArcSlop value="360"/>
-        <Marker>
-            <MatchFlags index="Link" value="0"/>
-            <MatchFlags index="CasterUnit" value="1"/>
-        </Marker>
-        <AINotifyEffect value="ForceField"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EvasiveCloakDrive2"/>
-        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
-        <FollowRange value="0"/>
-    </CAbilEffectTarget>
     <CAbilMorph id="PhasingMode">
         <Flags index="WaitUntilStopped" value="0"/>
         <Cost>
@@ -277,7 +278,8 @@
         <Effect index="0" value="Stimpack"/>
         <Cost index="0">
             <Vital index="Life" value="0"/>
-            <Cooldown Link="Abil/ArbiterMPRecall"/>
+            <Charge Link="Abil/ArbiterMPRecall" Location="Unit"/>
+            <Cooldown Link="Abil/ArbiterMPRecall" Location="Unit" TimeUse="70"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPRecall2" Requirements="IsTransferring"/>
     </CAbilEffectInstant>

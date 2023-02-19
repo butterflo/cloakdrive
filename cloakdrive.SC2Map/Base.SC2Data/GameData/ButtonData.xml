@@ -2,9 +2,11 @@
 <Catalog>
     <CButton id="Arbiter">
         <Hotkey value="Button/Hotkey/ArbiterBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="ArbiterMPRecall">
         <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="ArbiterMPRecall2" parent="ArbiterMPRecall">
         <Name value="Button/Name/ArbiterMPRecall2"/>
@@ -18,54 +20,61 @@
         <AlertIcon value="btn-custom-resist_3up.dds"/>
         <Hotkey value="Button/Hotkey/BansheeENBTN"/>
         <EditorCategories value="Race:Terran"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="Cancel">
         <Hotkey value="Button/Hotkey/CancelBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="CannonTurnLeft">
         <Icon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="CannonTurnRight">
         <Icon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-techreactor.dds"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
-    <CButton id="EvasiveCloakDrive">
+    <CButton id="CloakdriveButton">
         <Icon value="btn-ability-cloakdrive.dds"/>
         <AlertIcon value="btn-ability-cloakdrive.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CloakOnGhost"/>
+        <HotkeySet value="CLOAKDRIVE"/>
         <HidesForSimpleText value="0"/>
-        <HotkeySet value="BansheeBlood"/>
     </CButton>
-    <CButton id="EvasiveCloakDrive2">
+    <CButton id="CloakdriveMassButton">
         <Icon value="btn-ability-cloakdrive-mass.dds"/>
         <AlertIcon value="btn-ability-cloakdrive-mass.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CloakOnGhost"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
         <HidesForSimpleText value="0"/>
     </CButton>
-    <CButton id="EvasiveCloakDrive3">
+    <CButton id="CloakdriveTurbineButton">
         <Icon value="btn-ability-cloakdrive-turbine.dds"/>
         <AlertIcon value="btn-ability-cloakdrive-turbine.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CloakOnGhost"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
         <HidesForSimpleText value="0"/>
     </CButton>
     <CButton id="Oracle">
         <Hotkey value="Button/Hotkey/SingularityDeviceBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="PhasingMode">
         <Icon value="btn-ability-inhibitordeploy.dds"/>
         <AlertIcon value="btn-ability-inhibitordeploy.dds"/>
         <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="PhoenixHallucination">
         <Icon value="Assets\Textures\btn-unit-protoss-disruptor.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-disruptor.dds"/>
         <Hotkey value="Button/Hotkey/LuxDriverBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="PhotonCruiserBTN">
         <Icon value="Assets\Textures\btn-unit-terran-battlecruiser.dds"/>
@@ -79,14 +88,14 @@
         <Icon value="Assets\Textures\btn-unit-terran-liberatorblackops.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-liberatorblackops.dds"/>
         <HidesForSimpleText value="0"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="CancelWaypoint">
         <Icon value="Assets\Textures\btn-command-holdposition.dds"/>
         <AlertIcon value="Assets\Textures\btn-command-holdposition.dds"/>
         <EditorCategories value="Race:Neutral"/>
         <HidesForSimpleText value="0"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="ResearchDurableMaterials">
         <Icon value="btn-custom-resist_1up.dds"/>
@@ -96,89 +105,104 @@
         <AlertName value="Button/Name/BansheeResistUpgrade1"/>
         <AlertTooltip value="Button/Tooltip/BansheeResistUpgrade1"/>
         <Name value="Button/Name/BansheeResistUpgrade1"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="BansheeResistUpgrade2">
         <Icon value="btn-custom-resist_2up.dds"/>
         <AlertIcon value="btn-custom-resist_2up.dds"/>
         <Hotkey value="Button/Hotkey/BansheeENBTN"/>
         <EditorCategories value="Race:Terran"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="ResearchMedivacEnergyUpgrade">
         <Icon value="Assets\Textures\btn-upgrade-protoss-researchbosoniccore.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-protoss-researchbosoniccore.dds"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="ResearchRavenEnergyUpgrade">
         <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
         <Hotkey value="Button/Hotkey/AssemblyREGENBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="ResearchSeekerMissile">
         <Icon value="Assets\Textures\btn-ability-terran-redlinereactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-redlinereactor.dds"/>
         <Hotkey value="Button/Hotkey/BansheeRNGBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="SOAOrbitalStrike">
         <Icon value="Assets\Textures\btn-ability-spearofadun-chronomancy.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-spearofadun-chronomancy.dds"/>
         <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="SetWaypoint">
         <Icon value="Assets\Textures\ui_btn_aicommand_commandcard_rally.dds"/>
         <AlertIcon value="Assets\Textures\ui_btn_aicommand_commandcard_rally.dds"/>
         <EditorCategories value="Race:Neutral"/>
         <HidesForSimpleText value="0"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="Raven">
         <Hotkey value="Button/Hotkey/RavenFBTN"/>
         <HidesForSimpleText value="0"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="TerranBuild">
         <Icon value="Assets\Textures\btn-building-terran-supplydepotlowered.dds"/>
         <Hotkey value="Button/Hotkey/BuildBTN"/>
         <TintRacially value="0"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="TerranBuildAdvanced">
         <Icon value="Assets\Textures\btn-building-terran-supplydepotlowered.dds"/>
         <Hotkey value="Button/Hotkey/BuildAdvancedBTN"/>
         <TintRacially value="0"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="TerranShipWeaponsLevel3">
         <Hotkey value="Button/Hotkey/BansheeATKBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="TestLearn">
         <Icon value="Assets\Textures\btn-building-terran-techreactor.dds"/>
         <Hotkey value="Button/Hotkey/UpgradeBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="TransportMode">
         <Icon value="btn-unit-prisminhibitor.dds"/>
         <AlertIcon value="btn-unit-prisminhibitor.dds"/>
         <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="VoodooShield">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
         <Tooltip value="Button/Tooltip/ResistBehavior"/>
         <AlertTooltip value="Button/Tooltip/ResistBehavior"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="Vortex">
         <Icon value="btn-ability-rift.dds"/>
         <Hotkey value="Button/Hotkey/SpecialUnitAbilityBTN"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="WarpPrism">
         <AlertIcon value="btn-unit-prisminhibitor.dds"/>
         <Hotkey value="Button/Hotkey/WarpPrismBTN"/>
         <Icon value="btn-unit-prisminhibitor.dds"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
     <CButton id="Wraith">
-        <Icon value="btn-custom-protoss-mohandar.dds"/>
-        <AlertIcon value="btn-custom-protoss-mohandar.dds"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-hero-summonvoidseeker.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-hero-summonvoidseeker.dds"/>
         <Hotkey value="Button/Hotkey/SeekerBTN"/>
-        <HotkeySet value="BansheeBlood"/>
+        <HotkeySet value="CLOAKDRIVE"/>
         <HidesForSimpleText value="0"/>
     </CButton>
     <CButton id="WraithCloak">
         <Icon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <HotkeySet value="CLOAKDRIVE"/>
     </CButton>
 </Catalog>

@@ -64,7 +64,7 @@
         <Modification>
             <StateFlags index="SuppressEnergyRegen" value="1"/>
             <AbilLinkDisableArray value="ForceField"/>
-            <AbilLinkDisableArray value="MassCloakDrive"/>
+            <AbilLinkDisableArray value="MassCloakdrive"/>
             <AbilLinkDisableArray value="CloakdriveTurbine"/>
             <AbilLinkDisableArray value="VoodooShield"/>
             <AbilLinkDisableArray value="GuardianShield"/>
@@ -191,7 +191,7 @@
             <WeaponDisableArray value="IonCannons"/>
             <WeaponDisableArray value="ParticleBeam"/>
             <WeaponDisableArray value="VolatileBurstDummy"/>
-            <WeaponDisableArray value="InterceptorBeam2"/>
+            <WeaponDisableArray value="Jumpstarter"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="WeaponTypeB">
@@ -203,7 +203,7 @@
             <WeaponEnableArray value="IonCannons"/>
             <WeaponEnableArray value="ParticleBeam"/>
             <WeaponEnableArray value="VolatileBurstDummy"/>
-            <WeaponEnableArray value="InterceptorBeam2"/>
+            <WeaponEnableArray value="Jumpstarter"/>
             <WeaponDisableArray value="PhotonCannon"/>
             <WeaponDisableArray value="ATALaserBattery"/>
             <WeaponDisableArray value="Diamondback"/>

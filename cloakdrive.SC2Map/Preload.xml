@@ -106,23 +106,25 @@
 <Soundtrack id="BansheeOSTT2"/>
 <Terrain id="BraxisAlphaEx1"/>
 <Unit id="GhostAcademy"/>
-<Unit id="Banshee"/>
 <Unit id="Raven"/>
 <Unit id="Battlecruiser"/>
 <Unit id="WarpPrism"/>
 <Unit id="WarpPrismPhasing"/>
 <Unit id="Oracle"/>
+<Unit id="LiberatorAG"/>
+<Unit id="Liberator"/>
 <Unit id="Disruptor"/>
 <Unit id="Beacon_Protoss"/>
 <Unit id="Beacon_Terran"/>
 <Unit id="DuskWing"/>
-<Unit id="ScienceVessel"/>
 <Unit id="VoidSeeker"/>
 <Unit id="RipFieldGenerator"/>
 <Unit id="PickupChronoRiftCharge"/>
 <Unit id="LabTurret"/>
 <Unit id="ExpeditionJumpGate"/>
+<Unit id="GuideArrowUnit"/>
 <Unit id="ArbiterMP"/>
 <Unit id="VoidRiftUnselectable"/>
 <Unit id="PylonContainmentUnit"/>
+<Unit id="GuideArrowUnitRed"/>
 </Preload>

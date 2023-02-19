@@ -13,7 +13,10 @@
         <On index="2" removed="1"/>
     </CActorRange>
     <CActorSplat id="ArbiterMPRecallCursorSplat">
-        <Scale value="4.000000"/>
+        <On index="0" Terms="ActorCreation" Send="Create CursorRegion"/>
+        <On index="1" Terms="ActorDestruction" Target="CursorRegion" Send="Destroy"/>
+        <On index="2" Terms="ActorOrphan" Target=""/>
+        <On index="3" removed="1"/>
     </CActorSplat>
     <CActorDoodad id="ArtifactShrine">
         <On index="0" Send="$Stand PlayForever,RandomStartOffset"/>
@@ -25,6 +28,9 @@
         <On index="2" removed="1"/>
         <Sound value="CarrierDestroyedMini"/>
     </CActorSound>
+    <CActorUnit id="Beacon_Terran">
+        <On Terms="ActorCreation" Send="SetTintColor {16,32,255 2.000000}"/>
+    </CActorUnit>
     <CActorModel id="CarrierModelAdd" parent="ModelAddition">
         <EditorCategories value=""/>
         <On Terms="UnitBirth.GhostAcademy" Send="Create"/>
@@ -45,11 +51,13 @@
         <On Terms="Effect.CloakDriveDummyMassLonger.Start" Send="SetTintColor {255,96,32 0.500000}"/>
         <On Terms="Behavior.CloakfieldRelay.Create" Send="SetTintColor {255,255,255 0.500000}"/>
         <On Terms="Effect.CloakDriveDummyMassLonger.Start" Send="SetHeight 7.000000"/>
-        <HostSiteOps Ops="SOpAttachOrigin" HoldRotation="1"/>
+        <On Terms="Behavior.CloakfieldRelay.Create" Send="SetHeight 7.000000"/>
+        <HostSiteOps HoldRotation="1"/>
         <Model value="ForceFieldEmitterShield"/>
         <Scale value="3.600000,3.600000,5.600000"/>
         <AddToProximitySystem value="0"/>
         <ModelFlags index="AllowHitTest" value="0"/>
+        <AcceptedTransfers index="Rotation" value="0"/>
     </CActorModel>
     <CActorSound id="ArbiterRelaySound" parent="SoundContinuous">
         <Filter index="Enemy" value="1"/>
@@ -80,6 +88,21 @@
         <Up value="0.000000,-1.000000,0.000000"/>
         <IsLocal value="1"/>
     </CActorSiteOpRotationExplicit>
+    <CActorModel id="CloakdriveWarpOutModelForSeeker" parent="ModelAddition">
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <EditorCategories value=""/>
+        <On Terms="Behavior.GhostCloak.Destroy; ValidateUnitType IsSeeker" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor {64,64,255 7.000000}"/>
+        <Host Subject="_Unit"/>
+        <HostSiteOps Ops="CloakDrive90Rotator CloakDrive90Rotator" HoldPosition="1" HoldRotation="1"/>
+        <Model value="CloakDriveFXModel"/>
+        <Scale value="1.400000"/>
+    </CActorModel>
+    <CActorAction id="DiamondbackAttack">
+        <LaunchAssets Sound="Battlecruiser_GroundAttackLaunch"/>
+    </CActorAction>
     <CActorBeamSimple id="DiamondbackAttackBeam">
         <FogVisibility value="Visible"/>
         <On Terms="ActorCreation" Send="SetTintColor {16,255,16 14.000000}"/>
@@ -203,6 +226,14 @@
         <StatusBarOn index="Energy" value="1"/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
+    <CActorModel id="EnergyNovaShockwave">
+        <On index="0" Terms="ActorCreation" Send="AnimPlay Birth Death"/>
+        <On index="1" Terms="AnimDone; AnimName Birth" Send="Destroy"/>
+        <On index="2" removed="1"/>
+        <On index="3" removed="1"/>
+        <Host Subject=""/>
+        <HostSiteOps Ops=""/>
+    </CActorModel>
     <CActorModel id="EnergyNovaShockwave2">
         <On Terms="ActorCreation" Send="$Birth"/>
         <On Terms="AnimDone; AnimName Birth" Send="Destroy"/>
@@ -274,6 +305,25 @@
         <SoundArray index="Highlight" value=""/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
+    <CActorSelection id="GroundLocalFlashingSelection">
+        <RotationSpeed value="2.000000"/>
+        <SegmentCount value="3"/>
+        <SegmentPercentSolid value="0.500000"/>
+    </CActorSelection>
+    <CActorSelection id="GroundLocalSelection">
+        <OuterWidth value="0.500000"/>
+        <HostRadiusPercent value="2.000000"/>
+        <SegmentCount value="3"/>
+        <SegmentPercentSolid value="0.050000"/>
+        <SelectionFlags index="UseCrescent" value="0"/>
+    </CActorSelection>
+    <CActorSelection id="GroundPreSelection">
+        <OuterWidth value="0.500000"/>
+        <HostRadiusPercent value="2.000000"/>
+        <RotationSpeed value="0.000000"/>
+        <SegmentCount value="3"/>
+        <SegmentPercentSolid value="0.050000"/>
+    </CActorSelection>
     <CActorModel id="GuardianShield">
         <FogVisibility value="Visible"/>
         <On index="0" Send="AnimBracketStart BSD Birth Stand Death Instant"/>
@@ -286,6 +336,32 @@
         <On Terms="ActorCreation" Send="SetOpacity 0.250000 7.000000"/>
         <Model value="WarpPrismPowerVisual"/>
     </CActorModel>
+    <CActorUnit id="GuideArrowUnit">
+        <ModelFlags index="WireframeRender" value="1"/>
+    </CActorUnit>
+    <CActorUnit id="GuideArrowUnitRed" parent="GenericUnitStandardNoAutoSoundLinks" unitName="GuideArrowUnitRed">
+        <On Terms="ActorCreation" Send="$Birth"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,32,32 2.000000}"/>
+        <Model value="GuideArrow"/>
+        <ModelFlags index="WireframeRender" value="1"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+    </CActorUnit>
+    <CActorUnit id="LabTurret">
+        <AcceptedHostedPropTransfers index="Scale" value="0"/>
+        <FogVisibility value="Visible"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,255,255 0.750000}"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="NeedsVolumeMonitoring" value="0"/>
+        <ModelFlags index="OutlineOccluder" value="0"/>
+        <ModelFlags index="AnimationsDontResetOnUnhide" value="1"/>
+        <ProximityPosition value="CenterActor"/>
+    </CActorUnit>
     <CActorUnit id="Liberator">
         <Scale value="1.400000"/>
         <DeathArray index="Normal" ModelLink="Liberator_CovertOps_Death"/>
@@ -323,8 +399,8 @@
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
     <CActorSound id="MedicHealSound">
-        <On index="3" Terms="WeaponStart.InterceptorBeam2.AttackStart"/>
-        <On index="4" Terms="WeaponStop.InterceptorBeam2.AttackStop"/>
+        <On index="3" Terms="WeaponStart.Jumpstarter.AttackStart"/>
+        <On index="4" Terms="WeaponStop.Jumpstarter.AttackStop"/>
     </CActorSound>
     <!--                                                                                         -->
     <!-- Oracle  ............................................................................... -->
@@ -340,6 +416,12 @@
         <On Terms="Effect.BFGDelay.Start" Send="Create"/>
         <Sound value="TitanMechGunShotChargeSound2"/>
     </CActorSound>
+    <!--                                                                                         -->
+    <!-- Chrono Rift Charge .................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="PickupChronoRiftCharge">
+        <Scale value="14.000000"/>
+    </CActorUnit>
     <CActorSound id="ProbeAttackLaunch">
         <On index="1" Terms="Effect.ParticleBeam.Start; At Caster"/>
     </CActorSound>
@@ -371,6 +453,7 @@
     </CActorModel>
     <CActorModel id="SeekerModelAdd" parent="ModelAddition">
         <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Opacity" value="0"/>
         <Inherits index="Scale" value="0"/>
         <Inherits index="Visibility" value="0"/>
         <EditorCategories value=""/>
@@ -383,9 +466,6 @@
         <Model value="VoidSeeker"/>
         <Scale value="0.700000,0.700000,2.100000"/>
     </CActorModel>
-    <CActorUnit id="Beacon_Terran">
-        <On Terms="ActorCreation" Send="SetTintColor {16,32,255 2.000000}"/>
-    </CActorUnit>
     <CActorModelMaterial id="GlazeSuperShield">
         <On index="4" Terms="ActorCreation" Send="ModelMaterialApplyTo SeekerModelAdd"/>
         <On index="5" Send="SetOpacity 0.100000"/>
@@ -394,20 +474,6 @@
         <On index="8" removed="1"/>
         <ModelMaterialGlazeDisplayLimit value="1"/>
     </CActorModelMaterial>
-    <CActorSelection id="GroundLocalSelection">
-        <OuterWidth value="0.500000"/>
-        <SelectionFlags index="UseCrescent" value="0"/>
-        <HostRadiusPercent value="2.000000"/>
-        <SegmentCount value="3"/>
-        <SegmentPercentSolid value="0.050000"/>
-    </CActorSelection>
-    <CActorSelection id="GroundPreSelection">
-        <OuterWidth value="0.500000"/>
-        <SegmentCount value="3"/>
-        <HostRadiusPercent value="2.000000"/>
-        <RotationSpeed value="0.000000"/>
-        <SegmentPercentSolid value="0.050000"/>
-    </CActorSelection>
     <CActorAction id="HyperionYamatoSpecialAttack">
         <ImpactSiteOps Ops=""/>
         <ImpactMap index="None" Model=""/>
@@ -439,32 +505,21 @@
         <HostSiteOps Ops="SOpShadow"/>
         <Sound value="InhibitorSound"/>
     </CActorSound>
-    <CActorModel id="CloakDriveWarpOutModel" parent="ModelAddition">
+    <CActorModel id="CloakdriveWarpOutModel" parent="ModelAddition">
         <Inherits index="CloakEffect" value="0"/>
         <Inherits index="Opacity" value="0"/>
         <Inherits index="TimeScale" value="0"/>
         <EditorCategories value=""/>
-        <On Terms="Behavior.GhostCloak.Destroy" Send="Create"/>
+        <On Terms="Behavior.GhostCloak.Destroy; ValidateUnitType IsNotSeeker" Send="Create"/>
         <On Terms="ActorCreation" Send="SetTintColor {64,64,255 7.000000}"/>
         <Host Subject="_Unit"/>
         <HostSiteOps HoldPosition="1" HoldRotation="1"/>
         <Model value="CloakDriveFXModel"/>
         <Scale value="1.400000"/>
     </CActorModel>
-    <CActorAction id="DiamondbackAttack">
-        <LaunchAssets Sound="Battlecruiser_GroundAttackLaunch"/>
-    </CActorAction>
     <CActorSound id="EnergyNovaExplosion">
         <On index="1" removed="1"/>
     </CActorSound>
-    <CActorModel id="EnergyNovaShockwave">
-        <On index="0" Terms="ActorCreation" Send="AnimPlay Birth Death"/>
-        <On index="1" Terms="AnimDone; AnimName Birth" Send="Destroy"/>
-        <On index="2" removed="1"/>
-        <On index="3" removed="1"/>
-        <Host Subject=""/>
-        <HostSiteOps Ops=""/>
-    </CActorModel>
     <!-- Force Field                                                                             -->
     <CActorSplat id="ForceFieldCursorSplat">
         <On index="0" Terms="ActorCreation" Send="Create CursorRegion"/>
@@ -498,16 +553,6 @@
         <On index="3" Terms="Effect.HailstormMissilePodsCreatePersistent.Initial"/>
         <On index="4" Terms="Effect.HailstormMissilePodsCreatePersistent.Stop; At Effect"/>
     </CActorSound>
-    <CActorUnit id="LabTurret">
-        <AcceptedHostedPropTransfers index="Scale" value="0"/>
-        <FogVisibility value="Visible"/>
-        <On Terms="ActorCreation" Send="SetTintColor {255,255,255 0.750000}"/>
-        <ModelFlags index="AllowHitTest" value="0"/>
-        <ModelFlags index="NeedsVolumeMonitoring" value="0"/>
-        <ModelFlags index="OutlineOccluder" value="0"/>
-        <ModelFlags index="AnimationsDontResetOnUnhide" value="1"/>
-        <ProximityPosition value="CenterActor"/>
-    </CActorUnit>
     <CActorModel id="OracleStasisTrapExplosion">
         <On index="2" Terms="Effect.OracleStasisTrapActivateCP.Start"/>
         <HostSiteOps HoldPosition="1" HoldRotation="1"/>
@@ -525,12 +570,6 @@
         <BarHeight value="1"/>
         <BarWidth value="1"/>
     </CActorMissile>
-    <!--                                                                                         -->
-    <!-- Chrono Rift Charge .................................................................... -->
-    <!--                                                                                         -->
-    <CActorUnit id="PickupChronoRiftCharge">
-        <Scale value="14.000000"/>
-    </CActorUnit>
     <!--                                                                                         -->
     <CActorBeamSimple id="ProbeAttackBeam">
         <On Terms="ActorCreation" Send="SetTintColor {14,255,255 14.000000}"/>
@@ -593,6 +632,46 @@
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="UseSyncSeed" value="0"/>
     </CActorModel>
+    <CActorModel id="TempestPurifierStormSphereAttachment">
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,192,128 4.000000}"/>
+        <On Terms="ActorCreation" Send="SetScale 7.000000 3.000000"/>
+        <On Terms="Behavior.CloakspaceTurbineActive.On" Send="Create"/>
+        <On Terms="Behavior.CloakspaceTurbineActive.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+    </CActorModel>
+    <!--                                                                                         -->
+    <!-- Void Seeker ........................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="VoidSeeker">
+        <On Terms="Effect.MassRecallSearchCursor.Start; At Caster" Target="StormSphereAttachment" Send="Signal Fire"/>
+        <On Terms="ActorCreation" Send="AnimPlay Spin GLstand PlayForever -1.000000 -1.000000 0.200000 AsTimeScale"/>
+        <On Terms="UnitDeath" Send="Create EnergyNovaShockwave"/>
+        <On Terms="UnitDeath" Send="Create CarrierDestroyedSoundActor"/>
+        <On Terms="UnitDeath" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetOpacity 0.001000"/>
+        <HostSiteOps Ops="CloakDrive90Rotator"/>
+        <Model value="ShieldBattery"/>
+        <Scale value="0.700000"/>
+        <AnimBlendTime value="60.000000"/>
+        <Baselines index="Walk" AnimProps="Stand"/>
+        <BarDistance value="40"/>
+        <BarHeight value="3"/>
+        <BarOffset value="40"/>
+        <BarWidth value="40"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
+        <Wireframe>
+            <Image index="0" value="Assets\Textures\Wireframe-Protoss-voidseeker-Shield01.dds"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image index="0" value="Assets\Textures\wireframe-protoss-voidseeker.dds"/>
+            <Image index="1" value="Assets\Textures\wireframe-protoss-voidseeker.dds"/>
+            <Image index="2" value="Assets\Textures\wireframe-protoss-voidseeker.dds"/>
+        </WireframeShield>
+        <ModelFlags index="WireframeRender" value="1"/>
+    </CActorUnit>
     <!--                                                                                         -->
     <!-- Vortex                                                                                  -->
     <!--                                                                                         -->
@@ -675,18 +754,18 @@
         <IsLocal value="1"/>
     </CActorSiteOpRotationExplicit>
     <CActorModel id="SPACE12" parent="ModelAddition">
-        <FogVisibility value="Visible"/>
-        <On index="1" Terms="UnitBirth.LabTurret" Send="Create"/>
-        <On index="2" removed="1"/>
-        <Model value="SkyBoxPortZionSpace"/>
-        <Scale value="2.000000"/>
-        <ProximityPosition value="CenterActor"/>
         <Inherits index="BaseModelScale" value="0"/>
         <Inherits index="LocalTintColor" value="1"/>
         <Inherits index="Scale" value="0"/>
         <Inherits index="Visibility" value="0"/>
+        <FogVisibility value="Visible"/>
+        <On index="1" Terms="UnitBirth.LabTurret" Send="Create"/>
+        <On index="2" removed="1"/>
         <HostSiteOps Ops="SOpAttachCenterSoft SOpSPACE360B"/>
+        <Model value="SkyBoxPortZionSpace"/>
+        <Scale value="2.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
+        <ProximityPosition value="CenterActor"/>
     </CActorModel>
     <CActorModel id="NukeAOE" parent="ScannerSweepModel">
         <FogVisibility value="Hidden"/>
@@ -748,16 +827,6 @@
         <Icon value="Assets\Textures\Blank.dds"/>
         <RangeFlags index="Minimap" value="1"/>
     </CActorRange>
-    <CActorModel id="TempestPurifierStormSphereAttachment">
-        <Inherits index="BaseModelScale" value="0"/>
-        <Inherits index="CloakEffect" value="0"/>
-        <Inherits index="Scale" value="0"/>
-        <On Terms="ActorCreation" Send="SetTintColor {255,192,128 4.000000}"/>
-        <On Terms="ActorCreation" Send="SetScale 7.000000 3.000000"/>
-        <On Terms="Behavior.CloakspaceTurbineActive.On" Send="Create"/>
-        <On Terms="Behavior.CloakspaceTurbineActive.Off" Send="Destroy"/>
-        <HostSiteOps Ops="SOpAttachCenter"/>
-    </CActorModel>
     <CActorModel id="CloakspaceTurbineChargeModel" parent="ModelAddition">
         <Macros value="GlobalLoopMacroMore"/>
         <Inherits index="BaseModelScale" value="0"/>
@@ -869,34 +938,6 @@
         <On index="0" Send="$Stand PlayForever,RandomStartOffset"/>
         <On index="1" removed="1"/>
     </CActorDoodad>
-    <!--                                                                                         -->
-    <!-- Void Seeker ........................................................................... -->
-    <!--                                                                                         -->
-    <CActorUnit id="VoidSeeker">
-        <On Terms="Effect.MassRecallSearchCursor.Start; At Caster" Target="StormSphereAttachment" Send="Signal Fire"/>
-        <On Terms="ActorCreation" Send="AnimPlay Spin GLstand PlayForever -1.000000 -1.000000 0.200000 AsTimeScale"/>
-        <On Terms="UnitDeath" Send="Create EnergyNovaShockwave"/>
-        <On Terms="UnitDeath" Send="Create AssemblyDestroyedSoundActor"/>
-        <On Terms="UnitDeath" Send="Destroy"/>
-        <HostSiteOps Ops="CloakDrive90Rotator"/>
-        <Model value="ShieldBattery"/>
-        <Scale value="0.700000"/>
-        <AnimBlendTime value="60.000000"/>
-        <Baselines index="Walk" AnimProps="Stand"/>
-        <BarDistance value="40"/>
-        <BarHeight value="3"/>
-        <BarOffset value="40"/>
-        <BarWidth value="40"/>
-        <ShieldArmorIcon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
-        <Wireframe>
-            <Image index="0" value="Assets\Textures\Wireframe-Protoss-voidseeker-Shield01.dds"/>
-        </Wireframe>
-        <WireframeShield>
-            <Image index="0" value="Assets\Textures\wireframe-protoss-voidseeker.dds"/>
-            <Image index="1" value="Assets\Textures\wireframe-protoss-voidseeker.dds"/>
-            <Image index="2" value="Assets\Textures\wireframe-protoss-voidseeker.dds"/>
-        </WireframeShield>
-    </CActorUnit>
     <CActorAction id="VoidSeekerAttack" effectAttack="VoidSeekerU" effectImpact="" effectLaunch="">
         <On index="0" Terms="Effect.VoidSeekerU.Stop; FromEffectTreeDescendant"/>
         <On index="1" Terms="Effect.Start; FromEffectTreeDescendant"/>
