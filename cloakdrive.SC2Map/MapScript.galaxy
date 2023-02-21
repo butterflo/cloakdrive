@@ -2998,7 +2998,7 @@ void gt_init_tutorial_Init () {
 bool gt_tutorial_01_Func (bool testConds, bool runActions) {
     // Variable Declarations
     point lv_location;
-    unitgroup lv_target_unit_group;
+    unitgroup lv_targetgroup;
 
     // Automatic Variable Declarations
     playergroup autoCE746540_g;
@@ -3015,7 +3015,7 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
     int auto108E8A0D_var;
 
     // Variable Initialization
-    lv_target_unit_group = UnitGroupEmpty();
+    lv_targetgroup = UnitGroupEmpty();
 
     // Actions
     if (!runActions) {
@@ -3049,8 +3049,8 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
     for ( ; autoC1652A2C_var <= autoC1652A2C_ae; autoC1652A2C_var += 1 ) {
         lv_location = gf_get_randompoint_far(UnitGetPosition(gv_carrier_array[1]));
         UnitCreate(7, "DuskWing", 0, 15, lv_location, libNtve_gf_RandomAngle());
-        UnitGroupAddUnitGroup(lv_target_unit_group, UnitLastCreatedGroup());
-        while ((UnitGroupCount(lv_target_unit_group, c_unitCountAlive) > 0)) {
+        UnitGroupAddUnitGroup(lv_targetgroup, UnitLastCreatedGroup());
+        while ((UnitGroupCount(lv_targetgroup, c_unitCountAlive) > 0)) {
             MinimapPing(PlayerGroupAll(), lv_location, 2.0, Color(100.00, 0.00, 0.00));
             Wait(3.0, c_timeGame);
         }
@@ -3097,10 +3097,10 @@ bool gt_tutorial_01_Func (bool testConds, bool runActions) {
     for ( ; auto108E8A0D_var <= auto108E8A0D_ae; auto108E8A0D_var += 1 ) {
         lv_location = gf_get_randompoint_far(UnitGetPosition(gv_carrier_array[1]));
         UnitCreate(14, "Battlecruiser", 0, 15, lv_location, libNtve_gf_RandomAngle());
-        UnitGroupAddUnitGroup(lv_target_unit_group, UnitLastCreatedGroup());
+        UnitGroupAddUnitGroup(lv_targetgroup, UnitLastCreatedGroup());
         UnitCreate(7, "Raven", 0, 15, lv_location, libNtve_gf_RandomAngle());
-        UnitGroupAddUnitGroup(lv_target_unit_group, UnitLastCreatedGroup());
-        while ((UnitGroupCount(lv_target_unit_group, c_unitCountAlive) > 0)) {
+        UnitGroupAddUnitGroup(lv_targetgroup, UnitLastCreatedGroup());
+        while ((UnitGroupCount(lv_targetgroup, c_unitCountAlive) > 0)) {
             MinimapPing(PlayerGroupAll(), lv_location, 2.0, Color(100.00, 0.00, 0.00));
             Wait(3.0, c_timeGame);
         }
@@ -4864,7 +4864,7 @@ bool gt_leaderboard_Func (bool testConds, bool runActions) {
     while (true) {
         auto7ED3F90A_var = PlayerGroupNextPlayer(auto7ED3F90A_g, auto7ED3F90A_var);
         if (auto7ED3F90A_var < 0) { break; }
-        BoardItemSetText(BoardLastCreated(), 1, gv_player_board_idx[auto7ED3F90A_var], (StringExternal("Param/Value/99B9013D") + TextWithColor(StringExternal("Param/Value/499FE64E"), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(auto7ED3F90A_var, false))) + StringExternal("Param/Value/69CB8E4C") + IntToText(auto7ED3F90A_var) + StringExternal("Param/Value/E6F72CE3") + TextWithColor(StringExternal("Param/Value/D665FB1B"), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(auto7ED3F90A_var, false)))));
+        BoardItemSetText(BoardLastCreated(), 1, gv_player_board_idx[auto7ED3F90A_var], (StringExternal("Param/Value/99B9013D") + TextWithColor(StringExternal("Param/Value/499FE64E"), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(auto7ED3F90A_var, false))) + StringExternal("Param/Value/69CB8E4C") + IntToText(auto7ED3F90A_var) + TextWithColor(StringExternal("Param/Value/D665FB1B"), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(auto7ED3F90A_var, false)))));
         BoardItemSetAlignment(BoardLastCreated(), 2, gv_player_board_idx[auto7ED3F90A_var], c_alignCenter);
         BoardItemSetText(BoardLastCreated(), 2, gv_player_board_idx[auto7ED3F90A_var], gf_player_kda_text(auto7ED3F90A_var));
     }

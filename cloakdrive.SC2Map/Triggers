@@ -39318,7 +39318,6 @@
         <Parameter Type="Param" Id="FC0EC6F5"/>
         <Parameter Type="Param" Id="69CB8E4C"/>
         <Parameter Type="Param" Id="3A5DD7AC"/>
-        <Parameter Type="Param" Id="E6F72CE3"/>
         <Parameter Type="Param" Id="E4AD1C69"/>
     </Element>
     <Element Type="Param" Id="99B9013D">
@@ -39384,10 +39383,6 @@
     </Element>
     <Element Type="FunctionCall" Id="044D12CE">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
-    </Element>
-    <Element Type="Param" Id="E6F72CE3">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="4DF6106C"/>
-        <ValueType Type="text"/>
     </Element>
     <Element Type="Param" Id="E4AD1C69">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="4DF6106C"/>

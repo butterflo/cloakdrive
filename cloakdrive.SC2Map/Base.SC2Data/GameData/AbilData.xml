@@ -168,7 +168,8 @@
     <CAbilMorph id="PhasingMode">
         <Flags index="WaitUntilStopped" value="0"/>
         <Cost>
-            <Cooldown Operation="Set" TimeUse="70"/>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit" TimeUse="1"/>
         </Cost>
     </CAbilMorph>
     <CAbilResearch id="StarportTechLabResearch">
@@ -286,7 +287,8 @@
     <CAbilMorph id="TransportMode">
         <Flags index="WaitUntilStopped" value="0"/>
         <Cost>
-            <Cooldown Link="Abil/PhasingMode"/>
+            <Charge Location="Unit"/>
+            <Cooldown Link="Abil/PhasingMode" Location="Unit" TimeUse="70"/>
         </Cost>
     </CAbilMorph>
     <CAbilEffectInstant id="VoodooShield">

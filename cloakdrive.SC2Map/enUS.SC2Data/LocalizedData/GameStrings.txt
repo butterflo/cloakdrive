@@ -161,21 +161,21 @@ DocInfo/PatchNote043=* Remove the delay after carrier destruction and explosion 
 DocInfo/PatchNote044=* Fix where Raven's secondary weapon was not charging other units shield after full stack
 DocInfo/PatchNote045=* New loading screen
 DocInfo/PatchNote046=* Change Cancel hotkey from X to Esc
-DocInfo/PatchNote047=* Fix Orbital Focus sound bug
-DocInfo/PatchNote048=* Decrease BGM volume
+DocInfo/PatchNote047=* Fixed where orbital disruptor was not playing sound
+DocInfo/PatchNote048=* Decreased BGM volume
 DocInfo/PatchNote049=* Seeker production is now unlimited
-DocInfo/PatchNote050=* Now Tech units cannot be destroyed
-DocInfo/PatchNote051=* (Now Singularity rift does not kill tech units)
-DocInfo/PatchNote052=* (Now Orbital strike now only disables inhibitor field instead of destroying the unit)
+DocInfo/PatchNote050=* Tech units are now undestroyable
+DocInfo/PatchNote051=* (Singularities now do not eat tech units)
+DocInfo/PatchNote052=* (Orbital disruptor now only disables inhibitor field instead of destroying the unit)
 DocInfo/PatchNote053=
-DocInfo/PatchNote054=* Reverted "Decrease BGM volume"
+DocInfo/PatchNote054=* Reverted "Decreased BGM volume"
 DocInfo/PatchNote055=* Removed T5 unit pings
 DocInfo/PatchNote056=* Endgame scores are now displayed on chat instead of screen center
 DocInfo/PatchNote057=* Rally lines are now invisible
-DocInfo/PatchNote058=* Version sync between regions
+DocInfo/PatchNote058=* Synced game version between regions
 DocInfo/PatchNote059=* T5 Seekers are now immune from turbine damage
-DocInfo/PatchNote060=* Inhibitors now have a 70s cooldown that starts from undeploying
-DocInfo/PatchNote061=* Arbiters cooldown now starts from undeploying
+DocInfo/PatchNote060=* Inhibitors now have a 70s cooldown that starts after undeploying
+DocInfo/PatchNote061=* Arbiters cooldown now starts after undeploying
 DocInfo/PatchNote062=* Upper screen messages are now shown on screen center
 DocInfo/PatchNote063=* Minor text changes
 DocInfo/PatchNote064=* Minor UI cleanup
@@ -183,13 +183,14 @@ DocInfo/PatchNote065=* AI optimized
 DocInfo/PatchNote066=* Singularity eats units faster
 DocInfo/PatchNote067=* Minor FX cleanup
 DocInfo/PatchNote068=* Fixed where AI was not doing upgrades
-DocInfo/PatchNote069=* Fixed where arbiter cloakfield cooldown was not being reset after undeploying
-DocInfo/PatchNote070=* Arbiter cloakfield gains direction indicators
-DocInfo/PatchNote071=* Fixed a visual glitch where seeker warp-out effect was in the wrong direction
-DocInfo/PatchNote072=* Fixed a visual glitch where seeker was not showing selection indicators
-DocInfo/PatchNote073=* Changed seeker icon to match the actual unit
-DocInfo/PatchNote074=* Minor text updates
-DocInfo/PatchNote075=* Minor UI updates
+DocInfo/PatchNote069=* Fixed where arbiter cloakfield was usable before cooldown
+DocInfo/PatchNote070=* Fixed where inhibitor field was usable before cooldown
+DocInfo/PatchNote071=* Arbiter cloakfield gains direction indicators
+DocInfo/PatchNote072=* Fixed a visual glitch where seeker warp-out effect was in the wrong direction
+DocInfo/PatchNote073=* Fixed a visual glitch where seeker was not showing selection indicators
+DocInfo/PatchNote074=* Changed seeker icon to match the actual unit
+DocInfo/PatchNote075=* Minor text updates
+DocInfo/PatchNote076=* Minor UI updates
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -290,7 +291,7 @@ Param/Value/1735D4CC=<s val="Cloakdrive14">Player</s>
 Param/Value/18384A10=: Shield Upgrade III reached.<n/>
 Param/Value/1AF2E0D2=<c val="FFFF00">Destroy enemy units [ 
 Param/Value/1BA6A432=<c val="00FF80">All units are equipped with Cloakdrive.</c><n/><n/>Press <c val="FFFF00">[C]</c> to jump to anywhere.
-Param/Value/1C2B9B06=<s val="Cloakdrive14"><c val="FFFF00">Score (bounty)</c></c></s>
+Param/Value/1C2B9B06=<s val="Cloakdrive14"><c val="FFFF00">Score ( bounty )</c></c></s>
 Param/Value/1CB9A7F6=<s val="Cloakdrive14"><c val="80FF00">Cam aligning..</c><n/><c val="FFFFFF">Steady.
 Param/Value/23FFAA08=<c val="00FFFF">Tutorial complete</c><n/><n/>The tutorial is now complete.<n/>Sandbox mode is now active.
 Param/Value/286A9CBD= place - 
@@ -334,7 +335,7 @@ Param/Value/65510783=<c val="00FF80">** PURGE IMMINENT **
 Param/Value/65A27FCC=nd
 Param/Value/66DB00E7=<c val="00FFFF">* PHASE 2: GAME SPEED INCREASED *</c>
 Param/Value/68BE97E9=<c val="FFFF00">[ Type III Purge ]<c val="FFFFFF"> was selected.</c>
-Param/Value/69CB8E4C= P
+Param/Value/69CB8E4C=P
 Param/Value/6F886C6E=TIP: Upgrade banshee shield 3 times to get the infinity shield.
 Param/Value/7020CAF5=<c val="00FF80">Welcome!</c><n/><n/>This is a tutorial of Cloakdrive.
 Param/Value/717C099E=<s val="Cloakdrive14"><c val="00FFFF">Credits</c></s>
@@ -359,7 +360,7 @@ Param/Value/8DFE8744=TIP: Carrier nukes are used like a regular weapon.
 Param/Value/8E9E7B3D=
 Param/Value/8EBA2D09=<c val="80FF00">
 Param/Value/8F9E1150= )</c>
-Param/Value/951B6973=)
+Param/Value/951B6973= )
 Param/Value/99B9013D=<s val="Cloakdrive16">
 Param/Value/9D5D67C2=
 Param/Value/9E375BB0= 
@@ -393,12 +394,12 @@ Param/Value/D4385BA4=<s val="Cloakdrive14"><c val="80FF00">Warping in..</c><n/><
 Param/Value/D4DC3715=TIP: Upgraded banshees give more income when destroyed.
 Param/Value/D5224D06=<c val="FFFFFF"> >>> </c>
 Param/Value/D59092BB=<c val="00FF80">Mass Cloakdrive</c><n/><n/>The Carrier has a unique ability: Mass Cloakdrive. When activated, it sends the units around the Carrier to the target location through a series of Cloakdrive jumps, without consuming each unit's energy. The Carrier does not jump.
-Param/Value/D665FB1B=]]
+Param/Value/D665FB1B= ]]
 Param/Value/D75208DF=<c val="00FF80">Combat units</c><n/><n/>Destroy enemy units to get resources. Try to build a combat unit! Select your Carrier and press <c val="FFFF00">[ Q ]</c> to see the build menu.
 Param/Value/D7B40C35=s..
 Param/Value/D7D1E298=TIP: Select your carrier and press <c val="FFFF00">[ Z ]</c> to order all of your units to attack to that location.
 Param/Value/D9935B62=<c val="00FF80">* 2 MINUTES LEFT *</c>
-Param/Value/DD3C83D8=)
+Param/Value/DD3C83D8= )
 Param/Value/E04B0090=<c val="FFFF00">Warning: Singularity detected.</c>
 Param/Value/E04FF842=</c><c val="FFFFFF"> [ 
 Param/Value/E051B660= )</c>
@@ -407,7 +408,6 @@ Param/Value/E2450E31=TIP: Most weapons inflict splash damage, also to your units
 Param/Value/E30CB1F3=TIP: High tier units have slower fire rates. Protect them when they are reloading.
 Param/Value/E5A2BD30=<s val="Cloakdrive24">Host: 
 Param/Value/E6A95545=</c> <c val="FFFFFF">( 
-Param/Value/E6F72CE3= 
 Param/Value/E75899E5=<c val="00FF80">Basic controls</c><n/><n/>All combat units are equipped with Cloakdrive by default. Select a unit, press <c val="FFFF00">[ C ]</c>, and click on a location to use it and jump to the target location.
 Param/Value/EA02264B=<s val="Cloakdrive14"><c val="FF2000">Tech Unit Ready</c></s>
 Param/Value/EA0A9FC8=<c val="00FF80">Basic controls</c><n/><n/>Now, try to jump in and destroy enemy units.<n/>Press <c val="FFFF00">[ 3 ]</c> to select all Banshees.

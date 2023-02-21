@@ -183,13 +183,14 @@ DocInfo/PatchNote065=* AI 코드 최적화
 DocInfo/PatchNote066=* 중력장이 더 유닛을 빨리 먹음
 DocInfo/PatchNote067=* 일부 연출 다듬음
 DocInfo/PatchNote068=* AI가 업그레이드를 안 하던 문제 수정
-DocInfo/PatchNote069=* 아비터의 전송장을 쿨다운 완료 전에도 사용할 수 있던 문제 수정
-DocInfo/PatchNote070=* 아비터 전송장의 방향 표시기 추가
-DocInfo/PatchNote071=* T5 유닛의 워프아웃 시각효과가 잘못된 방향으로 그려지던 문제 수정
-DocInfo/PatchNote072=* T5 유닛 선택시 선택됨 표기가 안 그려지던 문제 수정
-DocInfo/PatchNote073=* T5 유닛의 아이콘을 실제와 맞게 변경
-DocInfo/PatchNote074=* 일부 텍스트 다듬음
-DocInfo/PatchNote075=* 일부 인터페이스 다듬음
+DocInfo/PatchNote069=* 아비터를 쿨다운 완료 전에도 사용할 수 있던 문제 수정
+DocInfo/PatchNote070=* 억제기를 쿨다운 완료 전에도 사용할 수 있던 문제 수정
+DocInfo/PatchNote071=* 아비터 전송장의 방향 표시기 추가
+DocInfo/PatchNote072=* T5 유닛의 워프아웃 시각효과가 잘못된 방향으로 그려지던 문제 수정
+DocInfo/PatchNote073=* T5 유닛 선택시 선택됨 표기가 안 그려지던 문제 수정
+DocInfo/PatchNote074=* T5 유닛의 아이콘을 실제와 맞게 변경
+DocInfo/PatchNote075=* 일부 텍스트 다듬음
+DocInfo/PatchNote076=* 일부 인터페이스 다듬음
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
@@ -286,7 +287,7 @@ Param/Value/1735D4CC=<s val="Cloakdrive14">플레이어</s>
 Param/Value/18384A10=</c><c val="FFFF00">: 저항 업그레이드 3단계 달성.</c>
 Param/Value/1AF2E0D2=<c val="FFFF00">처치 완료 [ 
 Param/Value/1BA6A432=<c val="00FF80">모든 유닛은 워프 엔진을 사용합니다.</c><n/><c val="FFFFFF"><c val="FFFF00">[C]</c> 키로 어디로든 워프하세요! <c val="FFFF00">[2]</c> 키로 워프가 준비된 유닛들을 확인할 수 있습니다.
-Param/Value/1C2B9B06=<s val="Cloakdrive14"><c val="FFFF00">점수 (현상금)</c></c></s>
+Param/Value/1C2B9B06=<s val="Cloakdrive14"><c val="FFFF00">점수 ( 현상금 )</c></c></s>
 Param/Value/1CB9A7F6=<s val="Cloakdrive14"><c val="80FF00">카메라 정렬중.</c><n/><c val="FFFFFF">곧 완료됩니다.
 Param/Value/23FFAA08=<c val="00FFFF">튜토리얼 완료</c><n/><n/>이것으로 튜토리얼을 마칩니다. 수고하셨습니다.<n/>곧 샌드박스 모드가 활성화됩니다.
 Param/Value/286A9CBD= - 
@@ -331,7 +332,7 @@ Param/Value/65510783=<c val="00FF80">** 정화 준비 **
 Param/Value/65A27FCC=위
 Param/Value/66DB00E7=<c val="00FFFF">* 페이즈 2: 게임 속도 증가 *</c>
 Param/Value/68BE97E9=<c val="FFFF00">[ 타입 III 정화장치 ]<c val="FFFFFF"> 가 대기 중입니다.</c>
-Param/Value/69CB8E4C= P
+Param/Value/69CB8E4C=P
 Param/Value/6F886C6E=팁: 밴시의 저항 능력을 3회 업그레이드하면 무제한 연속 시전이 가능해집니다.
 Param/Value/7020CAF5=<c val="00FF80">환영합니다!</c><n/><n/>Cloakdrive의 튜토리얼 모드를 시작합니다.
 Param/Value/717C099E=<s val="Cloakdrive14"><c val="00FFFF">BGM 정보</c></s>
@@ -356,7 +357,7 @@ Param/Value/8DFE8744=팁: 모함의 핵은 기본 공격과 같은 방식으로 
 Param/Value/8E9E7B3D=
 Param/Value/8EBA2D09=<c val="80FF00">
 Param/Value/8F9E1150= )</c>
-Param/Value/951B6973=)
+Param/Value/951B6973= )
 Param/Value/99B9013D=<s val="Cloakdrive14">
 Param/Value/9D5D67C2=
 Param/Value/9E375BB0= 
@@ -395,7 +396,7 @@ Param/Value/D75208DF=<c val="00FF80">공격 유닛</c><n/><n/>적 유닛을 처�
 Param/Value/D7B40C35=초..
 Param/Value/D7D1E298=팁: 모함을 선택한 상태에서 Z 키를 누르고 대상 위치를 지정하면,<n/>모든 유닛에게 한번에 공격 명령을 보낼 수 있습니다.
 Param/Value/D9935B62=<c val="00FF80">* 2분 남음 *</c>
-Param/Value/DD3C83D8=)
+Param/Value/DD3C83D8= )
 Param/Value/E04B0090=<c val="FFFF00">경고: 블랙홀 생성 감지.</c>
 Param/Value/E04FF842=</c><c val="FFFFFF"> [ 
 Param/Value/E051B660= )</c>
