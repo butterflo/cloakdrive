@@ -391,6 +391,12 @@
         <StatusBarOn index="Energy" value="1"/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
+    <CActorSound id="LiberatorAGSound"/>
+    <CActorSound id="Liberatordeploysoundactor2" parent="SoundOneShot">
+        <On Terms="AbilMorph.*.Start; MorphTo LiberatorAG" Send="Create"/>
+        <On Terms="UnitDeath.LiberatorAG" Send="Destroy"/>
+        <Sound value="Liberatordeploysound2"/>
+    </CActorSound>
     <CActorUnit id="LiberatorMorphModel">
         <DeathArray index="Normal" ModelLink="Liberator_CovertOps_Death"/>
         <DeathCustoms index="5" ModelLink="Liberator_CovertsOps_Collection_DeathRagdoll"/>
@@ -398,6 +404,11 @@
         <StatusBarOn index="Energy" value="1"/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
+    <CActorSound id="Liberatordeploysoundactor1" parent="SoundOneShot">
+        <On Terms="AbilMorph.*.Start; MorphTo LiberatorAG" Send="Create"/>
+        <On Terms="UnitDeath.LiberatorAG" Send="Destroy"/>
+        <Sound value="Liberatordeploysound1"/>
+    </CActorSound>
     <CActorSound id="MedicHealSound">
         <On index="3" Terms="WeaponStart.Jumpstarter.AttackStart"/>
         <On index="4" Terms="WeaponStop.Jumpstarter.AttackStop"/>

@@ -108,12 +108,12 @@ Button/Tooltip/WarpPrism=<c val="FF2000">TECH UNIT</c><n/><c val="FFFFFF">Disabl
 Button/Tooltip/Wraith=<c val="00FF00">T5 UNIT</c><n/><c val="FF0000">[DATA EXPUNGED]</c><n/><c val="FF0000">[DATA EXPUNGED]</c>
 Button/Tooltip/WraithCloak=<c val="FFFFFF">Mass cloakdrive cooldown -7s</c><n/><c val="00FFFF">(Provides charge immediately)</c><n/><c val="00FFFF">Cooldown: <d ref="Abil,MassCloakdrive,Cost[0].Cooldown.TimeStart"/>s (current)</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=Epic space warfare.<n/><n/>* Press C to warp anywhere.<n/>* Up to 7 players with AI support.
+DocInfo/DescLong=Chaotic space warfare.<n/><n/>* Press C to go everywhere.<n/>* Up to 7 players with AI support.<n/>* Try the tutorial.
 DocInfo/DescShort=.
-DocInfo/HowToPlayBasic00=Destroy enemy units to loot resources. Build high-tier units and warp in.
-DocInfo/HowToPlayBasic01=Use combat units and Cloakdrive ability to destroy enemy Carriers.
+DocInfo/HowToPlayBasic00=Cloakdrive has unlimited range. Use combat units and cloakdrive to destroy enemy carriers.
+DocInfo/HowToPlayBasic01=Destroy enemy units to loot minerals. Build high-tier units and dive in.
 DocInfo/HowToPlayBasic02=Try the tutorial.
-DocInfo/HowToPlayWinning00=Destroy enemy Carriers and get the highest score to win.
+DocInfo/HowToPlayWinning00=Destroy enemy carriers and get the highest score to win.
 DocInfo/Name=CLOAKDRIVE
 DocInfo/PatchNote001=* New game
 DocInfo/PatchNote002=* Global release
@@ -191,6 +191,8 @@ DocInfo/PatchNote073=* Fixed a visual glitch where seeker was not showing select
 DocInfo/PatchNote074=* Changed seeker icon to match the actual unit
 DocInfo/PatchNote075=* Minor text updates
 DocInfo/PatchNote076=* Minor UI updates
+DocInfo/PatchNote077=* Changed liberator deploy sound
+DocInfo/Website=https://butterflo.me/cloakdrive
 Effect/Name/AnnihilatorAPPLY=Annihilator
 Effect/Name/ApplyModeA=ApplyModeA
 Effect/Name/ApplyModeB=ApplyModeB
