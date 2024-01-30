@@ -638,7 +638,7 @@ trigger gt_ui_init_hp_bar;
 trigger gt_ui_refresh_hp_bar_loop;
 trigger gt_ui_refresh_maingame_timer_loop;
 trigger gt_upgrade_detect;
-trigger gt_cloakdrive_upgrade_detect;
+trigger gt_carrier_cloakdrive_upgrade_is_used;
 trigger gt_init_constants;
 trigger gt_cloakdrive_event;
 trigger gt_cloakdrive_turbine_charged;
@@ -3339,9 +3339,9 @@ void gt_upgrade_detect_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: cloakdrive_upgrade_detect
+// Trigger: carrier_cloakdrive_upgrade_is_used
 //--------------------------------------------------------------------------------------------------
-bool gt_cloakdrive_upgrade_detect_Func (bool testConds, bool runActions) {
+bool gt_carrier_cloakdrive_upgrade_is_used_Func (bool testConds, bool runActions) {
     // Variable Declarations
     int lv_player;
 
@@ -3359,9 +3359,9 @@ bool gt_cloakdrive_upgrade_detect_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void gt_cloakdrive_upgrade_detect_Init () {
-    gt_cloakdrive_upgrade_detect = TriggerCreate("gt_cloakdrive_upgrade_detect_Func");
-    TriggerAddEventUnitAbility(gt_cloakdrive_upgrade_detect, null, AbilityCommand("StarportTechLabResearch", 4), c_unitAbilStageComplete, false);
+void gt_carrier_cloakdrive_upgrade_is_used_Init () {
+    gt_carrier_cloakdrive_upgrade_is_used = TriggerCreate("gt_carrier_cloakdrive_upgrade_is_used_Func");
+    TriggerAddEventUnitAbility(gt_carrier_cloakdrive_upgrade_is_used, null, AbilityCommand("StarportTechLabResearch", 4), c_unitAbilStageComplete, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -5584,7 +5584,7 @@ void InitTriggers () {
     gt_ui_refresh_hp_bar_loop_Init();
     gt_ui_refresh_maingame_timer_loop_Init();
     gt_upgrade_detect_Init();
-    gt_cloakdrive_upgrade_detect_Init();
+    gt_carrier_cloakdrive_upgrade_is_used_Init();
     gt_init_constants_Init();
     gt_cloakdrive_event_Init();
     gt_cloakdrive_turbine_charged_Init();

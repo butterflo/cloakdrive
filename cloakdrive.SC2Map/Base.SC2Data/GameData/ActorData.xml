@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CActorDoodad id="Aiur_EnergyWall">
+        <On index="0" Send="$Stand PlayForever,RandomStartOffset"/>
+        <On index="1" Terms="Signal.*.stoppurplesound" Target="Aiur_EnergyWall_Loop_ActorSound" Send="Destroy"/>
+        <On index="2" removed="1"/>
+        <On index="3" removed="1"/>
+    </CActorDoodad>
     <!--                                                                                         -->
     <!-- Arbiter ........................................................................... -->
     <!--                                                                                         -->
@@ -594,38 +600,77 @@
         <HostSiteOps Ops="SOpAttachCenter SOpMoveDownBy1 SOpMoveDownByDot25"/>
     </CActorModel>
     <CActorUnit id="PylonContainmentUnit">
-        <On index="35" Terms="UnitFidget" Send="AnimPlay Fidget Fidget"/>
-        <On index="36" Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Fidget"/>
-        <On index="37" Terms="UnitDetectedByViewer.*.On; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOn"/>
-        <On index="38" Terms="UnitDetectedByViewer.*.Off; ValidateUnit IsHallucination" Send="Signal HallucinationTintOff"/>
-        <On index="39" Terms="UnitDeathCustomize; ValidateUnit NotStructure; IsStatus InAir 1" Target="" Send="DeathCustomize AntiGravGeneric"/>
-        <On index="40" Terms="UnitDeathCustomize; ValidateUnit IsProtossUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravProtoss"/>
-        <On index="41" Terms="UnitDeathCustomize; ValidateUnit IsTerranUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravTerran"/>
-        <On index="42" Terms="UnitDeathCustomize; ValidateUnit IsZergUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravZerg"/>
-        <On index="43" Terms="UnitDeathCustomize; ValidateUnit IsVortexed" Send="DeathCustomize Vortex"/>
-        <On index="44" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathProtoss" Send="DeathCustomize AntiGravProtoss"/>
-        <On index="45" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathZerg" Send="DeathCustomize AntiGravZerg"/>
-        <On index="46" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathTerran" Send="DeathCustomize AntiGravTerran"/>
-        <On index="47" Terms="Behavior.PhoenixAntiGrav.On" Send="ModelSuddenMotionStart"/>
-        <On index="48" Terms="Behavior.PhoenixAntiGrav.Off" Send="ModelSuddenMotionStop"/>
-        <On index="49" Terms="Behavior.ForceLowDeath.On" Send="DeathCustomsEnablePhysics 0"/>
-        <On index="50" Terms="UnitTaunt.*.Start; Taunt" Send="AnimPlay Cheer Stand,Victory"/>
-        <On index="51" Terms="UnitTaunt.*.Stop; Taunt" Send="AnimClear Cheer"/>
-        <On index="52" Terms="UnitTaunt.*.Start; Taunt Dance" Send="AnimPlay Dance Stand,Dance"/>
-        <On index="53" Terms="UnitTaunt.*.Stop; Taunt Dance" Send="AnimClear Dance"/>
-        <On index="54" Terms="UnitTaunt.*.Start; Taunt Tease" Send="AnimPlay Taunt Taunt"/>
-        <On index="55" Terms="UnitTaunt.*.Stop; Taunt Tease" Send="AnimClear Taunt"/>
-        <On index="56" Terms="ActorCreation" Send="StatusSet InAir 0"/>
-        <On index="57" Terms="UnitHeightUpdate.*.Lift" Send="StatusSet InAir 1"/>
-        <On index="58" Terms="UnitHeightUpdate.*.Land" Send="StatusSet InAir 0"/>
-        <On index="59" Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
-        <On index="60" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="61" Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
-        <On index="62" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
-        <On index="63" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
-        <On index="64" Terms="ActorCreation" Send="Create Pylon_Containment_Unit_Loop_ActorSound"/>
-        <On index="65" Terms="UnitDeath" Target="Pylon_Containment_Unit_Loop_ActorSound" Send="Destroy"/>
-        <On index="66" Terms="ActorCreation" Send="AnimPlay Spin Stand PlayForever -1.000000 -1.000000 0.100000 AsTimeScale"/>
+        <On index="0" Send="Create"/>
+        <On index="1" Terms="UnitRevive.PylonContainmentUnit"/>
+        <On index="2" Send="RefSet ::HostTurretBody _Selectable"/>
+        <On index="3" Terms="UnitConstruction.PylonContainmentUnit.Start" Send="Create"/>
+        <On index="4" Terms="UnitConstruction.PylonContainmentUnit.Finish" Send="AnimPlay ConstructionDeath Stand,Birth,Death FullMatch"/>
+        <On index="5" Terms="AnimDone.*.Missing; AnimName ConstructionDeath" Send="Destroy"/>
+        <On index="6" Terms="ActorCreation; ValidateUnit IsFlying; Option Shadow Low; $AllowBlobShadow" Send="Create FlyerShadow"/>
+        <On index="7" Terms="ActorCreation; ValidateUnit IsNotFlying; Option Shadow Low; $AllowBlobShadow" Send="Create GroundShadow"/>
+        <On index="8" Terms="StatusOn.*.PreTargetingModel" Send="Create ModelPretargetGround"/>
+        <On index="9" Terms="StatusOff.*.PreTargetingModel" Target="ModelPretargetGround" Send="Destroy"/>
+        <On index="10" Terms="StatusOn.*.PreTargetingModel; ValidateUnit IsFlying" Target="" Send="Create GroundPreSelection"/>
+        <On index="11" Terms="StatusOff.*.PreTargetingModel" Target="GroundPreSelection" Send="Destroy"/>
+        <On index="12" Terms="StatusIncrement.*.PreTargetingModel; IsStatus PreTargetingModel 2" Target="" Send="StatusSet PreTargetingModel 1"/>
+        <On index="13" Terms="PreTargetingUpdate.*.Start" Send="SetTintColorBlendPair 255,192,192 255,128,128 0.150000 Bounce Pretarget"/>
+        <On index="14" Terms="PreTargetingUpdate.*.Stop" Send="ClearTintColor 0.100000 Pretarget"/>
+        <On index="15" Terms="StatusOn.*.PreTargetingTint" Send="PreTargetingUpdate Start"/>
+        <On index="16" Terms="StatusOff.*.PreTargetingTint" Send="PreTargetingUpdate Stop"/>
+        <On index="17" Terms="StatusIncrement.*.PreTargetingTint; IsStatus PreTargetingTint 2" Send="StatusSet PreTargetingTint 1"/>
+        <On index="18" Terms="CursorUpdate.*.Start; ValidateUnit IsFlying" Send="StatusIncrement FlyerHelper"/>
+        <On index="19" Terms="CursorUpdate.*.Stop; ValidateUnit IsFlying; HasStatus FlyerHelper" Send="StatusDecrement FlyerHelper"/>
+        <On index="20" Terms="ActorCreation; ScopeContains GroundLocalSelection" Send="StatusSet Selected 1"/>
+        <On index="21" Terms="SelectionLocalUpdate.*.Start"/>
+        <On index="22" Terms="SelectionLocalUpdate.*.Stop" Send="StatusSet Selected 0"/>
+        <On index="23" Terms="StatusOn.*.Selected; ValidateUnit IsFlying" Send="StatusIncrement FlyerHelper"/>
+        <On index="24" Terms="StatusOff.*.Selected; ValidateUnit IsFlying; HasStatus FlyerHelper" Send="StatusDecrement FlyerHelper"/>
+        <On index="25" Terms="StatusOn.*.FlyerHelper; FlyerHelper All" Send="Create FlyerHelperSplat"/>
+        <On index="26" Terms="StatusOn.*.FlyerHelper; FlyerHelper Selected"/>
+        <On index="27" Terms="StatusOff.*.FlyerHelper; FlyerHelper Selected" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="28" Terms="ActorCreation; FlyerHelper All; ValidateUnit IsFlying" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="29" Terms="ActorDestruction; FlyerHelper All; !HasStatus FlyerHelper" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="30" Terms="FlyerHelperChange; FlyerHelper None"/>
+        <On index="31" Terms="FlyerHelperChange; FlyerHelper Selected; HasStatus FlyerHelper; !ScopeContains FlyerHelperSplat" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="32" Terms="FlyerHelperChange; FlyerHelper Selected; !HasStatus FlyerHelper" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="33" Terms="FlyerHelperChange; FlyerHelper All; ValidateUnit IsFlying; !ScopeContains FlyerHelperSplat" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="34" Terms="UnitFidget" Send="AnimPlay Fidget Fidget"/>
+        <On index="35" Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Fidget"/>
+        <On index="36" Terms="UnitDetectedByViewer.*.On; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOn"/>
+        <On index="37" Terms="UnitDetectedByViewer.*.Off; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOff"/>
+        <On index="38" Terms="UnitDeathCustomize; ValidateUnit NotStructure; IsStatus InAir 1" Target="" Send="DeathCustomize AntiGravGeneric"/>
+        <On index="39" Terms="UnitDeathCustomize; ValidateUnit IsProtossUnit; IsStatus InAir 1" Target="" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="40" Terms="UnitDeathCustomize; ValidateUnit IsTerranUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravTerran"/>
+        <On index="41" Terms="UnitDeathCustomize; ValidateUnit IsZergUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravZerg"/>
+        <On index="42" Terms="UnitDeathCustomize; ValidateUnit IsVortexed" Send="DeathCustomize Vortex"/>
+        <On index="43" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathProtoss" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="44" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathZerg" Send="DeathCustomize AntiGravZerg"/>
+        <On index="45" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathTerran" Send="DeathCustomize AntiGravTerran"/>
+        <On index="46" Terms="Behavior.PhoenixAntiGrav.On" Send="ModelSuddenMotionStart"/>
+        <On index="47" Terms="Behavior.PhoenixAntiGrav.Off" Send="ModelSuddenMotionStop"/>
+        <On index="48" Terms="Behavior.ForceLowDeath.On" Send="DeathCustomsEnablePhysics 0"/>
+        <On index="49" Terms="UnitTaunt.*.Start; Taunt" Send="AnimPlay Cheer Stand,Victory"/>
+        <On index="50" Terms="UnitTaunt.*.Stop; Taunt" Send="AnimClear Cheer"/>
+        <On index="51" Terms="UnitTaunt.*.Start; Taunt Dance" Send="AnimPlay Dance Stand,Dance"/>
+        <On index="52" Terms="UnitTaunt.*.Stop; Taunt Dance" Send="AnimClear Dance"/>
+        <On index="53" Terms="UnitTaunt.*.Start; Taunt Tease" Send="AnimPlay Taunt Taunt"/>
+        <On index="54" Terms="UnitTaunt.*.Stop; Taunt Tease" Send="AnimClear Taunt"/>
+        <On index="55" Terms="ActorCreation" Send="StatusSet InAir 0"/>
+        <On index="56" Terms="UnitHeightUpdate.*.Lift" Send="StatusSet InAir 1"/>
+        <On index="57" Terms="UnitHeightUpdate.*.Land"/>
+        <On index="58" Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On index="59" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="60" Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On index="61" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="62" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On index="63" Terms="UnitDeath" Target="Pylon_Containment_Unit_Loop_ActorSound" Send="Destroy"/>
+        <On index="64" Terms="ActorCreation" Send="AnimPlay Spin Stand PlayForever -1.000000 -1.000000 0.100000 AsTimeScale"/>
+        <On index="65" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="66" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On index="67" Terms="UnitDeath" Target="Pylon_Containment_Unit_Loop_ActorSound" Send="Destroy"/>
+        <On index="68" removed="1"/>
+        <On index="69" removed="1"/>
+        <On index="70" removed="1"/>
     </CActorUnit>
     <CActorModel id="ShieldModel" parent="ModelAddition">
         <Aliases index="0" removed="1"/>

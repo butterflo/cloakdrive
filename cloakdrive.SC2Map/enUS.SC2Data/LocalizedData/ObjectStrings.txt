@@ -29,6 +29,7 @@ Abil/EditorSuffix/HallucinationOracle=(summon)
 Abil/EditorSuffix/HallucinationPhoenix=(summon)
 Abil/EditorSuffix/HallucinationProbe=(summon)
 Abil/EditorSuffix/HallucinationWarpPrism=(summon)
+Actor/EditorPrefix/Aiur_EnergyWall=CLOAKDRIVE -
 Actor/EditorPrefix/AnnihilatorActorHitModel=CLOAKDRIVE
 Actor/EditorPrefix/AnnihilatorActorHitSound=CLOAKDRIVE
 Actor/EditorPrefix/ArbiterMP=CLOAKDRIVE

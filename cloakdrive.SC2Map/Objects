@@ -44,7 +44,7 @@
         <CameraValue Index="ShadowClip" Value="300"/>
         <CameraValue Index="Distance" Value="70"/>
         <CameraValue Index="Pitch" Value="60"/>
-        <CameraValue Index="Yaw" Value="179.6787"/>
+        <CameraValue Index="Yaw" Value="179.6647"/>
         <CameraValue Index="HeightOffset" Value="10.1093"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffStart" Value="0.0002"/>
